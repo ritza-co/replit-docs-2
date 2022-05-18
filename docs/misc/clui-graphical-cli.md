@@ -18,10 +18,10 @@ Expand the following top-level commands to learn more.
 <details>
   <summary><b>account</b>: Manage your account</summary>
 
-  `account view-warns` <br>
+  `account view-warns` <br></br>
   View warnings you have been issued.
 
-  `account change-username` <br>
+  `account change-username` <br></br>
   Change your username (this can only be done once).
 
 </details>
@@ -29,10 +29,10 @@ Expand the following top-level commands to learn more.
 <details>
   <summary><b>trash</b>: List and restore deleted repls</summary>
 
-  `trash restore --title $title` <br>
+  `trash restore --title $title` <br></br>
   Restore a deleted repl by its title. If multiple repls exist with the same name, the most recently deleted repl will be restored.
 
-  `trash view` <br>
+  `trash view` <br></br>
   View your most recently deleted repls.
 
 </details>
@@ -40,10 +40,10 @@ Expand the following top-level commands to learn more.
 <details>
   <summary><b>team</b>: View and manage your teams</summary>
 
-  `view` <br>
+  `view` <br></br>>
   View the members of your team.
   
-  `transfer-repl` <br>
+  `transfer-repl` <br></br>
   Transfer an own repl to team.
 
 </details>
@@ -51,7 +51,7 @@ Expand the following top-level commands to learn more.
 <details>
   <summary><b>clear</b>: Clears the screen</summary>
 
-  `clear` <br>
+  `clear` <br></br>
   Clears screen.
 </details>
 

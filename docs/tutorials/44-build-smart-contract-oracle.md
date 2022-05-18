@@ -30,9 +30,12 @@ Once you've installed MetaMask, follow the prompts to create a wallet and sign i
 
 If you're already using MetaMask, we recommend creating a new account for testing with Replit. You can do this from the account menu, which appears when you click on the account avatar in the top right corner of the MetaMask interface.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/44-smart-contract-oracle/createaccount.png"
-    alt="New testing account in metamask"
-    style="width: 50% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/44-smart-contract-oracle/createaccount.png"
+  alt="New testing account in metamask"
+  style={{ width: "50% !important" }}
+/>
+
 
 ## Oracle design
 
@@ -844,9 +847,11 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 
 Now that we have everything connected, we want to replace the Solidity starter interface with our data provider application and client frontend. To do this, make sure that hidden files are showing and open `.replit`. 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/44-smart-contract-oracle/showhidden.png"
-alt="Show hidden"
-style="width: 40% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/44-smart-contract-oracle/showhidden.png"
+  alt="Show hidden"
+  style={{ width: "40% !important" }}
+/>
 
 Replace `run = "node tools"` with the following:
 
@@ -868,9 +873,12 @@ We must run the provider as a Hardhat script rather than a plain Node.js applica
 
 Our client and oracle are finally both ready to roll. Stop your repl and rerun it. You should see our frontend in the repl browser. Click the button to request a random number and watch the events come in.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/44-smart-contract-oracle/finalapp.png"
-alt="Final app"
-style="width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/44-smart-contract-oracle/finalapp.png"
+  alt="Final app"
+  style={{ width: "60% !important" }}
+/>
+
 
 ## Where next?
 

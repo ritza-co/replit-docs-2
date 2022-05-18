@@ -4,9 +4,12 @@ Every new repl comes with a `.replit` and a `replit.nix` file that let you confi
 
 In most repls, these files are hidden by default. But you can find them easily by clicking the three dot menu in the file tree, and selecting _Show hidden files_.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/show-hidden-files.png"
-    alt="Show configuration"
-    style="width: 350px !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/show-hidden-files.png"
+  alt="Show configuration"
+  style={{ width: "200px !important" }}
+/>
+
 
 ## `replit.nix`
 
@@ -45,11 +48,20 @@ The `.replit` file allows you to configure many options for your repl, most basi
 
 Check out how the repl below is using `.replit` to print "hello world" instead of running the code:
 
-<iframe width="100%" src="https://replit.com/@turbio/dotreplit-example?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" style="margin-bottom: 10px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe width="100%" src="https://replit.com/@turbio/dotreplit-example?lite=true" scrolling="no" frameBorder="no" allowTransparency="true" allowFullScreen="true"   style={{ marginBottom: 10 }} sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" />
 
 And here's a video on how to use the `.replit` file to configure a repl to enable [Clojure](https://clojure.org):
 
-<iframe width="640" height="400" style="margin-bottom: 10px;" src="https://www.loom.com/embed/cbe1f74399c546c38e0c1871893816c5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe
+  width={640}
+  height={400}
+  style={{ marginBottom: 10 }}
+  src="https://www.loom.com/embed/cbe1f74399c546c38e0c1871893816c5"
+  frameBorder={0}
+  webkitallowfullscreen=""
+  mozallowfullscreen=""
+  allowFullScreen=""
+/>
 
 `.replit` files follow the [toml configuration format](https://learnxinyminutes.com/docs/toml/) and look something like this:
 

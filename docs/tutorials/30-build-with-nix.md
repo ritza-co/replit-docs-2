@@ -75,10 +75,12 @@ We've made a Nix repl containing the production web stack available here: [https
 
 Open it now, or fork it to your profile, and we'll go over how it works. Ensure that the repl's config files are showing. 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/
   show-hidden-files.png"
-   alt="Show configuration"
-   style="width: 350px !important;"/>
+  alt="Show configuration"
+  style={{ width: "350px !important" }}
+/>
 
 The first file we'll look at is `replit.nix`. This is the base Nix file that tells our repl what packages to install. In the [default Nix repl](https://replit.com/@ritza/nix), it looks like this:
 

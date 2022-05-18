@@ -30,7 +30,10 @@ To invite people with their Replit username or email address, follow the steps d
 
 If you've already created a team, navigate to your [team dashboard](https://replit.com/teams), click on your chosen team username, and then click "Manage team members".
 
-<img style="width: 300px" src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/manageTeamMembers.png" />
+<img
+  style={{ width: 300 }}
+  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/manageTeamMembers.png"
+/>
 
 ### You may add team members by:
 

@@ -60,9 +60,11 @@ run = "sh start.sh"
 
 Next we need to create `start.sh` in the repl's files tab:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/new-file.png"
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/new-file.png"
   alt="Start script"
-  style="width: 350px !important;"/>
+  style={{ width: "350px !important" }}
+/>
 
 And add the following bash code to `start.sh`:
 
@@ -96,9 +98,12 @@ The third section starts Redis. We use the `--bind` flag to listen on the local 
 
 Before we run our repl, we'll need to create our MongoDB data and logging directories, `data` and `log`. Create these directories now in your repl's filepane.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/mongodirs.png"
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/mongodirs.png"
   alt="Mongo directories"
-  style="width: 350px !important;"/>
+  style={{ width: "350px !important" }}
+/>
+
 
 Once that's done, you can run your repl, and it will start MongoDB and Redis. You can interact with MongoDB by running `mongo` in your repl's shell, and with Redis by running `redis-cli`. If you're interested, you can find an introduction to these clients at the links below:
 
@@ -157,9 +162,11 @@ print(get_title("https://news.ycombinator.com/rss"))
 
 Instead of rewriting our `start.sh` script to run this Python file, we can just run `python lib/scraper.py` in our repl's shell tab, as shown below. If it's working correctly, we should see "Hacker News" as the script's output.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/script-test.png"
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/script-test.png"
   alt="Scrapper cript test"
-  style="width: 400px !important;"/>
+  style={{ width: "400px !important" }}
+/>
 
 Now we need to write the second function. Add the following code to the `get_items` function definition:
 
@@ -225,9 +232,12 @@ To find your API key, navigate to **Settings → API Keys**. Click on the view i
 
 Back in your repl, create two environment variables, `MAILGUN_DOMAIN` and `MAILGUN_APIKEY`, and provide the strings you copied from Mailgun as values for each.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/add-env-var.png"
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/add-env-var.png"
   alt="Add environment variable"
-  style="width: 400px !important;"/>
+  style={{ width: "400px !important" }}
+/>
+
 
 Run your repl now to set these environment variables. Then create a file named `lib/tasks.py`, and populate it with the code below.
 
@@ -467,9 +477,11 @@ python main.py
 
 Once that's done, run your repl. You should see a login form.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/login-form.png"
-alt="Start script"
-style="width: 450px !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/login-form.png"
+  alt="Start script"
+  style={{ width: "450px !important" }}
+/>
 
 
 ## Adding user login

@@ -27,10 +27,11 @@ After the repl has booted up, you should see a `main.js` file under the "Code" s
 
 Download [this archive of sprite and asset files](/tutorial-files/mario-kaboom/mario-resources.zip) that we'll need for the game, and unzip them on your computer. In the Kaboom editor, click the "Files" icon in the sidebar. Now drag and drop all the sprite and asset files into the "sprites" folder. Once they have uploaded, you can click on the "Kaboom" icon in the sidebar, and return to the "main" code file.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/32-mario-kaboom/upload-assets.gif"
-    alt="Uploading assets"
-    style="width: 500px !important;"/>
-
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/32-mario-kaboom/upload-assets.gif"
+  alt="Uploading assets"
+  style={{ width: "500px !important" }}
+/>
 
 ## Setting up Kaboom
 
@@ -282,9 +283,12 @@ Finally, we use the [`go`](https://kaboomjs.com/#go) function to go to the start
 
 After copying the code into your repl, press Command + S (Mac) or Control + S (Windows/Linux) to update the output window. You should see something like this:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/32-mario-kaboom/start-scene.png"
-alt="start game screen"
-style="width: 600px !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/32-mario-kaboom/start-scene.png"
+  alt="start game screen"
+  style={{ width: "600px !important" }}
+/>
+
 
 Note that if you push enter now to start the game, you'll get an error message. Don't worry, we'll sort that out soon.
 

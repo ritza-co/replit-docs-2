@@ -59,13 +59,17 @@ Similarly, we'll use a sprite sheet for the player's ship, so that we can animat
 
 This is what the two sprite sheets look like, for the aliens and the player:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/alien-sprite.png"
+<img
+    src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/alien-sprite.png"
     alt="Alien sprite sheet"
-    style="Width: 30% !important;"/>
-
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/player-sprite.png"
+    style={{ width: "30% !important" }}
+  />
+  <img
+    src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/player-sprite.png"
     alt="Player sprite sheet"
-    style="Width: 30% !important;"/>
+    style={{ width: "30% !important" }}
+  />
+
 
 We need to describe how to use each of the images in the sprite sheets. Kaboom's [`loadSpriteAtlas`](https://kaboomjs.com/#loadSpriteAtlas) function accepts an object describing all these details. Add the following code to the "main" code file:
 
@@ -124,10 +128,11 @@ Then we load the sprite sheets. The first argument is the path to the sprite she
 
 For this tutorial, we'll omit the intro scene, since we already know what *Space Invaders* is and how to play it. You might like to add your own intro scene in later!
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/game-scenes.png"
-    alt="game scenes"
-    style="width: 350px !important; height: 40% !important;"/>
-
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/game-scenes.png"
+  alt="game scenes"
+  style={{ width: "350px !important", height: "40% !important" }}
+/>
 
 Let's add the code for defining each scene: 
 

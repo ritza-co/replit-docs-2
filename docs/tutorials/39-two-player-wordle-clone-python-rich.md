@@ -4,8 +4,7 @@ In this guide, we'll build a version of the popular game *Wordle*. Instead of th
 
 Once you're done, you'll be able to play a command-line-based game with a friend (with both of you sitting at the same machine), as shown below.
 
-<video width="800" autoplay loop>
-    <source src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/twordledemo.mp4" type="video/mp4">
+<video width="800" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/twordledemo.mp4" type="video/mp4">
 </video>
 
 
@@ -29,9 +28,12 @@ python3 -m poetry add rich
 
 This will create a `pyproject.toml` file to define Rich as a dependency, and Replit will automatically install it for us next time we run our app.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/shell.png"
-    alt="Running commands in shell"
-    style="Width: 75% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/shell.png"
+  alt="Running commands in shell"
+  style={{ width: "75% !important" }}
+/>
+
 
 ## Printing colored text
 
@@ -77,9 +79,12 @@ if __name__ == '__main__':
 Run this code, and you'll see a Wordle-styled welcome message, demonstrating all three styles, as shown below.
 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/welcometowordle.png"
-    alt="Wordle welcome message"
-    style="Width: 80% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/welcometowordle.png"
+  alt="Wordle welcome message"
+  style={{ width: "80% !important" }}
+/>
+
 
 ## Creating the game loop
 
@@ -131,9 +136,12 @@ def main():
 If you run this, you'll be prompted (as player 1) to enter a word. The entered word will then be hidden from view to avoid spoiling the game, and player 2 can enter up to six guesses. At this stage, player 2 doesn't get any feedback on correct or incorrect letters, which makes the game pretty hard for player 2! If player 2 does happen to guess correctly, the loop will break and the game will display how many guesses were used.
 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/gameloop.png"
-alt="Game loop"
-style="Width: 80% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/gameloop.png"
+  alt="Game loop"
+  style={{ width: "80% !important" }}
+/>
+
 
 
 ### Providing feedback on correct letters
@@ -155,7 +163,7 @@ def score_guess(guess, answer):
 
 This function takes in player 2's guess and the correct answer and compares them letter by letter. It uses the helper functions we defined earlier to create the Rich formatting string for each letter, and then joins them all together into a single string.
 
-<hr>
+<hr />
 
 **NOTE:** Here we simplify how duplicate letters are handled. In classic *Wordle*, letters are colored based on how often they occur in the correct answer, for example, if you guess "SPEED" and the correct word is "THOSE", the second E in your guess will be colored as incorrect. In our version, it will be labeled as a correct letter in the wrong place. Handling duplicate letters is tricky, and implementing this logic correctly is left as an exercise to the reader.
 <hr />
@@ -173,9 +181,11 @@ Call this function from inside the `while` loop in `main()` by adding the `conso
 
 Now player 2 has something to work on from each guess, and it should be a lot easier to guess the correct word by incrementally finding more correct letters, as shown in the example below.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/feedback.png"
-    alt="Feedback"
-    style="Width: 80% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/feedback.png"
+  alt="Feedback"
+  style={{ width: "80% !important" }}
+/>
 
 
 ## Adding an emoji representation for spoiler-free sharing
@@ -232,9 +242,12 @@ To use this in the main function, replace the code for the `while` loop with the
 
 If you run again, the game will work as before, but now you'll see the emoji representation printed after the game ends. This can be copy-pasted to share and help our game go viral. You can see what it looks like in the image below.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/withemoji.png"
-alt="EmojiS"
-style="Width: 85% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/withemoji.png"
+  alt="EmojiS"
+  style={{ width: "85% !important" }}
+/>
+
 
 ## Some finishing touches
 
@@ -262,9 +275,12 @@ Replace the `while` loop in the `main()` function with the following code:
 
 This clears the console completely after each guess by player 2, and then prints out each of the (styled) guesses. The output looks neater now, as shown below.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/clearedinputs.png"
-    alt="Cleared inputs"
-    style="Width: 85% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/clearedinputs.png"
+  alt="Cleared inputs"
+  style={{ width: "85% !important" }}
+/>
+
 
 ### Adding instructions
 

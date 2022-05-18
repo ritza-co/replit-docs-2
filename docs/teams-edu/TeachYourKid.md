@@ -2,10 +2,10 @@
 
 If you're a parent who wants to teach your child how to code from scratch, this guide is for you. We've put together some examples that are easy to get started with, don't require any setup, and are fun from the start.
 
-<hr>
+<hr />
 
 **A note on privacy:** Especially if your child is young, you're probably worried about privacy and data protection. In many countries, storing and processing personal data of minors is treated differently. In the USA, there are regulations concerning anyone under the age of 13. You can use our Teams for Education package from [Replit teams](https://replit.com/teams) which includes an anonymous invite feature. This allows you to invite your child to create a fully anonymous account. You can find more information on invitations and the privacy invite links [here](/teams-edu/inviting-teachers-students).
-<hr>
+<hr />
 
 ## The benefits of teaching children to code
 

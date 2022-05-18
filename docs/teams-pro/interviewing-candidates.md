@@ -4,8 +4,21 @@ You can use Replit to conduct technical interviews. The Teams Pro guest feature 
 
 In this tutorial, we'll show you step-by-step how to conduct a technical interview using Teams Pro. Watch the video or read the text below.
 
-<div class="video-container" style="text-align: center;margin: 30px 0;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pOOdoXUu5SI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div
+  className="video-container"
+  style={{ textAlign: "center", margin: "30px 0" }}
+>
+  <iframe
+    width={560}
+    height={315}
+    src="https://www.youtube.com/embed/pOOdoXUu5SI"
+    title="YouTube video player"
+    frameBorder={0}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen=""
+  />
+</div>
+
 
 ## Steps to follow:
 
@@ -21,9 +34,12 @@ To create a repl for an interview, you need to be a team admin. See the document
 
 Navigate to the "Teams" page. Under "Team Repls", click the "Create team repl" button and the following popup window will appear:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/create_interview_repl.png"
-    alt="Creating a repl"
-    style="width: 80% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/create_interview_repl.png"
+  alt="Creating a repl"
+  style={{ width: "80% !important" }}
+/>
+
 
 Choose the template language you will be using for the interview and give you repl a name, then click the "Create repl" button. 
 
@@ -35,16 +51,22 @@ Once the repl has been created, you will be able to add the relevant files requi
 
 Once you have written your challenges, invite candidates by clicking on the "Invite" button in the top-right corner of the window.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/invite_members.png"
-    alt="repl invitation"
-    style="width: 90% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/invite_members.png"
+  alt="repl invitation"
+  style={{ width: "90% !important" }}
+/>
+
 
 You can invite candidates by entering their email address or by generating a join link to share with them. Candidates will get a notification of the invite. They will need to sign up for a Replit account before they can accept the invitation.
 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/notification.png"
-    alt="invite notification"
-    style="width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/notification.png"
+  alt="invite notification"
+  style={{ width: "60% !important" }}
+/>
+
 
 ## 3. Observe candidates
 
@@ -62,9 +84,11 @@ Candidates can also view your IDE in the same way. This lets them see the change
 
 To remove candidates from interview repls so they cannot access the interview once it is complete, click on the "Invite" button. In the pop-up window, find the candidate’s name or email.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/remove-candidates.png"
-    alt="remove candidate access"
-    style="width: 90% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/remove-candidates.png"
+  alt="remove candidate access"
+  style={{ width: "90% !important" }}
+/>
 
 Click on the "x" next to their name and they will be removed from the interview rempl. They will no longer be able to access the repl via the invite link.
 

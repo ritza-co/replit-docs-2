@@ -99,9 +99,12 @@ function draw() {
 
 In this sketch, we draw a few shapes in various colors on the screen, in a kind of 80s geometric art style:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/p5-shapes.png"
-    alt="p5 shapes examples"
-    style="width: 500px !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/p5-shapes.png"
+  alt="p5 shapes examples"
+  style={{ width: "500px !important" }}
+/>
+
 
 
 The [p5.js website](https://p5js.org/get-started/) has a guide to getting started, plus a lot of references and examples to experiment with. 
@@ -238,9 +241,12 @@ class App:
 App()
 ```
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/pyxel-rect.gif"
-    alt="Changing rectangles in pyxel"
-    style="width: 500px !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/pyxel-rect.gif"
+  alt="Changing rectangles in pyxel"
+  style={{ width: "500px !important" }}
+/>
+
 
 
 Take a look in the [examples folder](https://github.com/kitao/pyxel/tree/main/pyxel/examples) on the Pyxel GitHub project to see more ways to use Pyxel. 

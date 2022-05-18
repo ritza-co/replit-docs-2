@@ -13,7 +13,7 @@ To edit these files and customize the environment, ensure that the repl's config
 
 <img src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/show-hidden-files.png"
     alt="Show configuration"
-    style="width: 350px !important;"/>
+    style={{width: "350px !important"}}/>
 
 The first file we'll look at is `replit.nix`. This is the base Nix file that configures the Nix environment and tells our repl what packages to install.
 It should look something like this:

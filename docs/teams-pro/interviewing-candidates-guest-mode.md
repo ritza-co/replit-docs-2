@@ -8,5 +8,17 @@ Here's how to invite a guest:
 2. Once there, click on the "Invite" button in the top right. 
 3. Through the modal, you have the option to invite someone with a guest role by sharing a link with them, or directly inviting them via their email address or Replit username.
 
-  <div class="video-container" style="text-align: center;margin: 30px 0;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pOOdoXUu5SI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div
+  className="video-container"
+  style={{ textAlign: "center", margin: "30px 0" }}
+>
+  <iframe
+    width={560}
+    height={315}
+    src="https://www.youtube.com/embed/pOOdoXUu5SI"
+    title="YouTube video player"
+    frameBorder={0}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen=""
+  />
+</div>

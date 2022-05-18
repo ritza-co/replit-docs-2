@@ -36,9 +36,12 @@ The Replit Kaboom interface is specialised for game-making. Besides the Space In
 
 If you haven't already, download this [zip file](/tutorial-files/space-shooter-kaboom/space-shooter-resources.zip) which contains all the sprites and sounds for the game. Extract the file on your computer, then add the sprites to the "Sprites" section in the Replit editor, and the sounds to the "Sounds" section.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/24-space-shooter-kaboom/upload-sprites.gif"
-    alt="Uploading assets"
-    style="width: 500px !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/24-space-shooter-kaboom/upload-sprites.gif"
+  alt="Uploading assets"
+  style={{ width: "500px !important" }}
+/>
+
 
 Kaboom makes good use of JavaScript's support for [callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function): instead of writing loops to read keyboard input and check if game objects have collided, Kaboom uses an event model that tells us when these events have happened. We can then write [callback functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) to act on these events.
 

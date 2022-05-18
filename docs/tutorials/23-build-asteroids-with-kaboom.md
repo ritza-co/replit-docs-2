@@ -32,9 +32,12 @@ Kaboom repls are quite different from other kinds of repls you may have seen bef
 
 Before we start coding, we need to upload our sprites and sounds. Download [this ZIP file](/tutorial-files/asteroids-kaboom/asteroids-resources.zip) and extract it on your computer. Click the "Files" icon on the sidebar then, upload everything in Sounds folder to the "sounds" section of your repl, and everything in the Sprites folder to the "sprites" section of your repl.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/23-asteroids-kaboom/upload-sprites.gif"
-    alt="Uploading files"
-    style="width: 55% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/23-asteroids-kaboom/upload-sprites.gif"
+  alt="Uploading files"
+  style={{ width: "55% !important" }}
+/>
+
 
 Once you've uploaded the files, you can click on the "Kaboom" icon in the sidebar, and return to the "main" code file.
 

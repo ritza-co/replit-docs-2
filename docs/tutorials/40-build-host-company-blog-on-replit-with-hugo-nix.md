@@ -2,8 +2,7 @@
 
 In this tutorial, we will detail how you can use Replit to write and publish a blog or website. This can be a solo endeavour or a group or company blog. We'll build on the versatile Nix repl, using a static site generator called [Hugo](https://gohugo.io/) to ensure our site is fast, secure and flexible. We'll also use some repl tricks which will allow us to develop and host our blog without ever leaving Replit.
 
-<video width="800" autoplay loop>
-    <source src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/blogdemo.mp4" type="video/mp4">
+<video width="800" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/blogdemo.mp4" type="video/mp4">
 </video>
 
 After this tutorial, you will:
@@ -50,9 +49,12 @@ This will create a new Hugo site in our repl. The `--force` flag is necessary be
 
 You should now see a number of new directories and files in your repl's file pane. This is the skeleton of your Hugo site. Don't worry about what each of these files and directories is for – you only need to know about a few of them to start blogging, and we'll explain them as we go.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/hugo-files.png"
-    alt="hugo files"
-    style="width: 40% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/hugo-files.png"
+  alt="hugo files"
+  style={{ width: "40% !important" }}
+/>
+
 
 Because Hugo is highly flexible and unopinionated, it doesn't even come with a default theme, so we won't be able to see our site in action until we choose one. There are a large number of choices on [Hugo's official themes website](https://themes.gohugo.io/). For this tutorial, we'll be using [Radek Kozieł](https://radoslawkoziel.pl/)'s [Terminal](https://themes.gohugo.io/themes/hugo-theme-terminal/) theme, but feel free to pick a different one later.
 
@@ -172,15 +174,21 @@ This post and all subsequent new posts will be marked as drafts, and will thus o
 
 Select the version control tab in your repl's side pane and click on **Create a Git Repo**. This will create a local repository to track your code changes. From here, you can create snapshots of your code (called commits), which can you can revert to if needed.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/create-repo.png"
-    alt="Creating a GitHub repo"
-    style="width: 40% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/create-repo.png"
+  alt="Creating a GitHub repo"
+  style={{ width: "40% !important" }}
+/>
+
 
 To push our repl to a repository on GitHub, we'll need a GitHub account. [Create one](https://github.com/signup) if you haven't before. Once you've created an account or logged into your existing one, return to your repl and click on **Connect to GitHub**. Accept the Oauth confirmation message that appears.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/connect-github.png"
-    alt="Connect to GitHub"
-    style="width: 40% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/connect-github.png"
+  alt="Connect to GitHub"
+  style={{ width: "40% !important" }}
+/>
+
 
 Replit will then prompt you to specify a repository name, optional description and privacy setting. You can call your repository "blog". If you have a paid Replit plan, you can make it private, otherwise it will have to be public. Once you've created the GitHub repository, you'll be able to view it on your GitHub account.
 
@@ -213,17 +221,23 @@ Here we've used a couple of [repl metadata environment variables](https://docs.r
 
 Return to your repl's version control tab and commit and push your changes. We are now ready to create the production repl.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/commitpush.png"
-alt="Commit and push to GitHub"
-style="width: 40% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/commitpush.png"
+  alt="Commit and push to GitHub"
+  style={{ width: "40% !important" }}
+/>
+
 
 ## Creating the production repl
 
 Fork your development repl. Give the new repl a different name, such as "blog".
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/fork-repl.png"
-alt="Fork repl"
-style="width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/fork-repl.png"
+  alt="Fork repl"
+  style={{ width: "60% !important" }}
+/>
+
 
 Since we've forked our development repl, both repls will be backed by the same repository on GitHub. This means we can commit and push changes from one repl (development) and pull those changes into the other repl (production). We could also achieve this by creating a new repl from our GitHub repository, but forking is quicker.
 
@@ -236,7 +250,12 @@ Let's test out our publishing flow.
 3. From the **development** repl's version control tab, commit and push your changes.
 4. In your **production** repl, navigate to the version control tab and click on the "← Pull" link. This will pull the changes we just pushed from development.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/pull.png" alt="Pull from GitHub" style="width: 40% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/pull.png"
+  alt="Pull from GitHub"
+  style={{ width: "40% !important" }}
+/>
+
 
 5. Rerun your **production** repl. You should now see the contents of the second blog post live on the website.
 
@@ -271,9 +290,11 @@ Replit's multiplayer editing features aren't only good for collaborative program
 
 If you need to include diagrams in your blog posts, you can draw them using your repl's [built-in Excalidraw](https://blog.replit.com/draw). Just create a new file with a `.draw` extension and start diagramming. When you're done, select your diagram, right-click and chose "Copy to clipboard as SVG". Then paste into the post you want to include the diagram in. Note that Goldmark must be configured in the manner shown above for this to work, as SVG images are part of HTML.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/diagram.png"
-alt="Drawing on Replit"
-style="width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/diagram.png"
+  alt="Drawing on Replit"
+  style={{ width: "60% !important" }}
+/>
 
 ## Where next?
 

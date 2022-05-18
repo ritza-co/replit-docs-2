@@ -25,9 +25,12 @@ Kaboom repls are quite different from other kinds of repls you may have seen bef
 
 Before we start coding, we need to upload our sprites and sounds. Download [this ZIP file](/tutorial-files/breakout-kaboom/breakout-resources.zip) and extract it on your computer. Click the "Files" icon on the sidebar and upload everything in the extracted file's Sounds folder to the "sounds" section of your repl, and everything in the Sprites folder to the "sprites" section of your repl.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/upload-assets.gif"
-    alt="Uploading assets"
-    style="width: 50% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/upload-assets.gif"
+  alt="Uploading assets"
+  style={{ width: "50% !important" }}
+/>
+
 
 Once you've uploaded the files, you can click on the "Kaboom" icon in the sidebar, and return to the "main" code file.
 
@@ -140,9 +143,12 @@ loadFont("breakout", "sprites/breakout_font.png", 6, 8,  { chars: "ABCDEFGHIJKLM
 
 We've used Kaboom's [`loadFont()`](https://kaboomjs.com/#loadFont) function, specifying the name of the font, the image file to source it from, the width and height of individual characters, and the characters it contains. Take a look at the layout of `breakout_font.png` to see the format Kaboom expects. Also note that we will not be able to use any characters outside of the ones represented here – this includes lowercase letters.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/breakout_font.png"
-    alt="Breakout font"
-    style="width: 30% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/breakout_font.png"
+  alt="Breakout font"
+  style={{ width: "30% !important" }}
+/>
+
 
 Lastly, we need to load our sound effects and music. Add the following code at the bottom to do this:
 

@@ -4,7 +4,10 @@ Replit offers virtual network computing (VNC) functionality. VNC is a mature vir
 
 This streaming technology allows you to work with legacy applications in your browser from any device! For example, you could run a Python-powered game designed for desktop right on your mobile phone or tablet, without making any changes to the underlying code.
 
-<img style="width:600px" src="https://docs.replit.com/images/vnc/tetris.png"/>
+<img
+  style={{ width: 600 }}
+  src="https://docs.replit.com/images/vnc/tetris.png"
+/>
 
 <a href="https://replit.com/@demcrepl/Tetris-in-Pygame" target="_blank">Tetris (powered by PyGame)</a>
 
@@ -25,7 +28,7 @@ You must have secured your repl as instructed above, to proceed with these steps
 
 1. Execute the following command in your "Shell" tab: `echo $REPL_ID`
 
-   <img style="width:300px" src="https://docs.replit.com/images/vnc/replid.png"/>
+   <img style={{ width: 600 }} src="https://docs.replit.com/images/vnc/replid.png"/>
 
 2. Construct your connection URL by replacing `REPL_ID` in with the output from above: `<REPL_ID>.id.repl.co`
 
@@ -33,15 +36,15 @@ You must have secured your repl as instructed above, to proceed with these steps
 
 4. Open connection settings.
 
-   <img style="width:50px" src="https://docs.replit.com/images/vnc/settings.png"/>
+   <img style={{ width: 50 }} src="https://docs.replit.com/images/vnc/settings.png"/>
 
 5. Expand the WebSockets field. Enter your connection URL (`<REPL_ID>.id.repl.co`) in the `host` field, and leave the `path` field empty.
 
-   <img style="width:200px" src="https://docs.replit.com/images/vnc/host.png"/>
+   <img style={{ width: 200 }} src="https://docs.replit.com/images/vnc/host.png"/>
 
 6. Change the `Scaling Mode` to `Remote Resizing`:
    
-   <img style="width:200px" src="https://docs.replit.com/images/vnc/scaling.png"/>
+   <img style={{ width: 200 }} src="https://docs.replit.com/images/vnc/scaling.png"/>
 
 7. Use the `runner` username and the password configured above when asked for credentials.
 

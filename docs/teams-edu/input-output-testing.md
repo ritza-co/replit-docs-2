@@ -1,3 +1,4 @@
+
 # Input/output testing
 
 Repl input/output testing allows a teacher to create simple tests that automatically match input values to expected output in student projects. Students can also easily test their code before submitting projects, which improves persistence. You can even use regular expressions (regex) for complex, flexible pattern matching.
@@ -15,7 +16,15 @@ If you are new to projects, you can find more info on creating a project [here](
 
 ## Input/Output Tests
 
-Once your project is created, you'll find the "Input/Output Tests" window by clicking <img src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/in-out-icon.png" style="width: 38px; margin: 0; display: inline-block; vertical-align: middle;"> in the left side bar.
+Once your project is created, you'll find the "Input/Output Tests" window by clicking <img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/in-out-icon.png"
+  style={{
+    width: 38,
+    margin: 0,
+    display: "inline-block",
+    verticalAlign: "middle"
+  }}
+/> in the left side bar.
 
 ![Image showing in/out tests location](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/in-out-testing-location.png)
 

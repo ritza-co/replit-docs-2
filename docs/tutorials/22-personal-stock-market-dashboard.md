@@ -28,10 +28,11 @@ Our dashboard will need to have three functions:
 
 Let's start by creating an HTML frontend with the basic data and form elements necessary to enable this functionality. In your repl's file pane, create a directory named `templates`, and in that folder, create a file called `index.html` (this file structure is necessary for building Flask applications).
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/create-files.png"
-    alt="Creating the file structure"
-    style="Width: 75% !important;"/>
-
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/create-files.png"
+  alt="Creating the file structure"
+  style={{ width: "75% !important" }}
+/>
 
 Then enter the following HTML into the `index.html` file:
 
@@ -108,9 +109,12 @@ from replit import db
 
 Now we can use the globally scoped variable `db` like a Python dictionary, keeping in mind that whatever we store in it will persist between executions of our application. A cheat sheet for using the database is available from your repl's database tab on the sidebar.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/database-sidebar.png"
-    alt="Database sidebar"
-    style="Width: 55% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/database-sidebar.png"
+  alt="Database sidebar"
+  style={{ width: "55% !important" }}
+/>
+
 
 Let's give it a spin and write the function for buying shares. Add the following code just above the line beginning with `site.run`:
 

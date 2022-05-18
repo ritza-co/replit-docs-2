@@ -96,9 +96,12 @@ nav:
  
 This will add the new page to the website's navigation bar.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/new-page.gif"
-alt="new page"
-style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/new-page.gif"
+  alt="new page"
+  style={{ width: "60% !important" }}
+/>
+
 
 
 You can repeat this process to add more pages to your website - create a new Markdown file in the `docs` folder and reference it in the `mkdocs.yml` configuration file.
@@ -115,9 +118,12 @@ Now the docs will be served whenever you hit the big green "Run" button.
 
 Next, click on the name of your repl and turn on "Always On" and "Add Boost". This will mean users can always visit your site and it won't get turned off. The boost will give you some extra processing power, which will make it faster to build your site once you have a lot of Markdown files.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/boost.png"
-alt="boost repl"
-style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/boost.png"
+  alt="boost repl"
+  style={{ width: "60% !important" }}
+/>
+
 
 
 ## Adding version control
@@ -126,22 +132,30 @@ You can track changes and updates to your documentation with version control. Re
 
 Navigate to the "Version control" tab on the left-hand side of your project workspace and click on "Create a Git Repo".
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/create-repo.png"
-alt="create a repo"
-style="Width: 50% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/create-repo.png"
+  alt="create a repo"
+  style={{ width: "50% !important" }}
+/>
+
 
 
 This will initiate a repository with the current version of your project. Cick on "Connect to GitHub" to connect to your GitHub account. If you haven't already linked your GitHub account, you will be prompted to authorize Replit to access your GitHub account. 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/connect-github.png"
-alt="connect to GitHub"
-style="Width: 50% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/connect-github.png"
+  alt="connect to GitHub"
+  style={{ width: "50% !important" }}
+/>
+
 
 From the popup window, choose the name of your repository and create it.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/create-git-repo.png"
-alt="create git repo"
-style="Width: 70% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/create-git-repo.png"
+  alt="create git repo"
+  style={{ width: "70% !important" }}
+/>
 
 
 This will automatically upload the contents of the entire site's documentation to your repository on GitHub. Any time you make a change from Replit, you can commit and push the changes to GitHub to ensure that nothing gets lost and you have a log of all changes made to the docs.
@@ -154,9 +168,11 @@ Navigate to the "Version control" tab and check if your project is up to date wi
 
 To add those changes, click on the pull button which will update your project.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/replit-pr.png"
-alt="pull changes"
-style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/replit-pr.png"
+  alt="pull changes"
+  style={{ width: "60% !important" }}
+/>
 
 
 Once your changes have been pulled from GitHub, your project will be up to date with the Github repository. You may have to stop and start the repl to see the changes reflect live.
@@ -166,9 +182,12 @@ Once your changes have been pulled from GitHub, your project will be up to date 
 
 For a more professional docs site, you'll probably want to run it on your own domain, such as `docs.example.com`. You can add a custom domain by clicking the pencil icon on the right of the domain that Replit assigned to your site, and setting up your DNS settings as prompted. You can find more detailed instructions in our guide to [Hosting web pages](https://docs.replit.com/hosting/hosting-web-pages#custom-domains)
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/domain.png"
-alt="custom domain"
-style="Width: 70% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/hosting-docs/domain.png"
+  alt="custom domain"
+  style={{ width: "70% !important" }}
+/>
+
 
 ## Scaling your docs platform
 
@@ -185,6 +204,4 @@ You could also set up two separate repls: a Python repl, as we did in this guide
 The [Replit docs](https://docs.replit.com) are built and hosted completely on Replit itself, so if you want help with anything or have any feedback, just email us at pro@replit.com.
 
 <iframe height="400px" width="100%" src="https://replit.com/@ritza/docs-site?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-
 

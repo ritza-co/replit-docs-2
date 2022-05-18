@@ -21,10 +21,16 @@ For more information on how to configure your repl, see the [.replit documentati
 
 ## Adding a "Run on Replit" Badge
 
-<img style="height: 40px; width: 190px;" src='/images/repls/run-on-replit.svg'>
+<img
+  style={{ height: 40, width: 190 }}
+  src="/images/repls/run-on-replit.svg"
+/>
 
 After configuring a run command for your repl, you can add a badge to your repository README that will allow anyone to run your project automatically!
 
 ### Generate a badge
 
-<iframe style="border:0;" src="https://run-on-replit.util.repl.co" />
+<iframe
+  style={{ border: 0 }}
+  src="https://run-on-replit.util.repl.co">
+</iframe>

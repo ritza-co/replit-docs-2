@@ -22,7 +22,13 @@ Like this (which you can try out [here](https://replit.com/@masonclayton/rotatif
 You can edit a file's name or delete it if you wish by clicking on the
 <img
   src="https://i.imgur.com/Fsg7XB2.png"
-  style="height: 24px; vertical-align:text-bottom; width: 6px; margin: 0 3px; display: inline-block;"
+  style={{
+    height: 24,
+    verticalAlign: "text-bottom",
+    width: 6,
+    margin: "0 3px",
+    display: "inline-block"
+  }}
 />
 icon beside it. When renaming your file, make sure to use the correct
 file extension.

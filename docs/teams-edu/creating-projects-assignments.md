@@ -18,7 +18,10 @@ From your team dashboard, create a new project.
 
 **Select project language, title, description, due date, and whether this will be a [group project](/teams-edu/group-projects).** You'll be redirected to the IDE to add any comments, tests, and initial coding blocks you'd like your students to start from. You'll assign groups when you publish the project. 
 
-<img style="max-width: 600px" src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/project-create.png" />
+<img
+  style={{ maxWidth: 600 }}
+  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/project-create.png"
+/>
 
 ### Publishing
 

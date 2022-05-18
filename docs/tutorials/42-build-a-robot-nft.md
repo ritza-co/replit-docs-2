@@ -32,9 +32,12 @@ Once you've installed MetaMask, follow the prompts to create a wallet and sign i
 
 If you're already using MetaMask, we recommend creating a new account for testing with Replit. You can do this from the account menu, which appears when you click on the account avatar in the top right corner of the MetaMask interface.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/createaccount.png"
-alt="Create new metamask account"
-style="Width: 50% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/createaccount.png"
+  alt="Create new metamask account"
+  style={{ width: "50% !important" }}
+/>
+
 
 
 ## Introduction to smart contract development
@@ -56,21 +59,25 @@ Solidity, which we will be using below, is the most popular language for develop
 Our ReplBot NFT will consist of a base robot and three accessories. The base robot looks like this:
 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/bothead-01.svg"
-alt="Base robot"
-style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/bothead-01.svg"
+  alt="Base robot"
+  style={{ width: "60% !important" }}
+/>
+
 
 Each NFT will have three different colors for its frame, visor, and background. Each NFT will also have three different accessories: headgear (a hat or wig), eargear (animal ears or headphones), and facegear (glasses or masks). Some examples:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-1.svg"
-alt="NFT 1"
-style="Width: 60% !important;"/>
-
-
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-2.svg"
-alt="NFT 2"
-style="Width: 60% !important;"/>
-
+<img
+    src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-1.svg"
+    alt="NFT 1"
+    style={{ width: "60% !important" }}
+/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-2.svg"
+  alt="NFT 2"
+  style={{ width: "60% !important" }}
+/>
 
 Which colors and accessories each NFT has will be randomly determined at creation time.
 
@@ -364,9 +371,12 @@ Now you can deploy your contracts. Select "ReplBots" from the drop-down box and 
 
 ![Deploy the contract](https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/deploy.png)
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/confirmdeploy.png"
-alt="Confirm deploy"
-style="Width: 50% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/confirmdeploy.png"
+  alt="Confirm deploy"
+  style={{ width: "50% !important" }}
+/>
+
 
 
 Once this contract has been deployed, it will show up as an expandable box below the drop-down box. Expand it and take a look at all the different functions available.

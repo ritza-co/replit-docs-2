@@ -107,9 +107,12 @@ renderer.render(scene, camera);
 
 Now try running the code, by pushing the `Run` button at the top of the Replit window. You should see your first scene, a green cube and torus:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/static-scene.png"
-    alt="static-scene"
-    style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/static-scene.png"
+  alt="static-scene"
+  style={{ width: "60% !important" }}
+/>
+
 
 
 Our scene doesn't look very "3D" yet, but we'll get there soon.
@@ -140,9 +143,12 @@ To kick off the animation for the first time, we call the `animate()` function o
 
 Press the "Run" button again and you should see the torus and cube rotating in the Replit window:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/animated-scene.gif"
-    alt="animated-scene"
-    style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/animated-scene.gif"
+  alt="animated-scene"
+  style={{ width: "60% !important" }}
+/>
+
 
 That looks a lot more 3D now!
 
@@ -164,9 +170,12 @@ Let's use this [model of soda cans](https://sketchfab.com/3d-models/soda-cans-4e
 
 Add the model to your repl by dragging the folder into the "Files" panel on the left.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/add-model.gif"
-    alt="add-model"
-    style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/add-model.gif"
+  alt="add-model"
+  style={{ width: "60% !important" }}
+/>
+
 
 
 We'll need to remove or comment out the previous code that drew the cube and torus. Remove the lines that create the cube and torus geometries, materials, and meshes, as well as the animation code. You should have only the following lines remaining:
@@ -278,9 +287,11 @@ You'll notice that, along with calls to the new function, we added in an extra l
 
 If you run the code, you'll see that the model is now visible in the scene. However, it's a side-on view and a bit far away. 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/model-side-view.png"
-    alt="model-side-view"
-    style="Width: 60% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/model-side-view.png"
+  alt="model-side-view"
+  style={{ width: "60% !important" }}
+/>
 
 
 ## Adding controls to the scene
@@ -320,9 +331,12 @@ animate();
 
 Save and run the project. Now you can try using the mouse to rotate the model and zoom in and out. 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/model-orbit-controls.gif"
-    alt="model-orbit-controls"
-    style="Width: 90% !important;"/>
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/model-orbit-controls.gif"
+  alt="model-orbit-controls"
+  style={{ width: "90% !important" }}
+/>
+
 
 ## Next Steps
 

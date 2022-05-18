@@ -40,7 +40,10 @@ Open the testing pane within a project.
 
 If prompted, select "Unit tests".
 
-<img src="https://replit-docs-images.bardia.repl.co/images/unit-testing/testing-method.png" style="width: 200px;">
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/unit-testing/testing-method.png"
+  style={{ width: 200 }}
+/>
 
 Write a function within the main file that's easy to test: something which accepts parameters and returns a single result. Our example includes an `add` function which simply returns the result of adding two numbers.
 

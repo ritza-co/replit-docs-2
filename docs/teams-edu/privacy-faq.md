@@ -77,20 +77,31 @@ This list is **not exhaustive** and we will continue to update it over time. How
 - [Montana Student Privacy Alliance](https://sdpc.a4l.org/view_alliance.php?state=MT)
 - [MA-RI-NH NDPA](https://sdpc.a4l.org/search_company_national.php?company_name=repl.it&state2=)
 
-<img 
-src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/SPP_Logo_Vertical_.png" style= "float:left; width:8%;"> 
-<img 
-src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/dpa logo.png" style= "float:left; width:16%;"> 
-<img 
-src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/HECVAT logo.png" style= "float:left; width:16%;"> 
 <img
-src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/nist-logo.png" style= "float:left; width:16%;"> 
-<img
-src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/CCPA logo.jpeg" style= "float:left; width:16%;"> 
-<img
-src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/Montana logo.png" style= "float:left; width:20%;">
-<div style="clear:both"></div>
-
+    src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/SPP_Logo_Vertical_.png"
+    style={{ float: "left", width: "8%" }}
+  />
+  <img
+    src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/dpa logo.png"
+    style={{ float: "left", width: "16%" }}
+  />
+  <img
+    src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/HECVAT logo.png"
+    style={{ float: "left", width: "16%" }}
+  />
+  <img
+    src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/nist-logo.png"
+    style={{ float: "left", width: "16%" }}
+  />
+  <img
+    src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/CCPA logo.jpeg"
+    style={{ float: "left", width: "16%" }}
+  />
+  <img
+    src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/Montana logo.png"
+    style={{ float: "left", width: "20%" }}
+  />
+  <div style={{ clear: "both" }} />
 
 **11. Will Replit sign our university's, school's or district's Data Security or Privacy Agreement?**
 

@@ -28,7 +28,7 @@ With [Teams for Education](https://replit.com/teams-for-education) and [Private 
 
 When you share that link (for example by emailing it to your students outside of Replit, or by pasting the link into your LMS or curriculum), we will not ask students to provide names, emails, or other personal information when they sign up. Neither you nor the students will need to provide us with that information. Students will have view-only access to the [Repl Talk forum](https://replit.com/talk/all), so they can still see all the great content, guides, and tutorials from the community, but they post or can't be contacted, which protects their privacy.
 
-![private invite](/images/teamsForEducation/privacy-invite-tooltip.png)
+![private invite](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/privacy-invite-tooltip.png)
 
 **3. What data does Replit collect about students through Teams for Education?**
 
@@ -78,17 +78,17 @@ This list is **not exhaustive** and we will continue to update it over time. How
 - [MA-RI-NH NDPA](https://sdpc.a4l.org/search_company_national.php?company_name=repl.it&state2=)
 
 <img 
-src="/images/teamsForEducation/SPP_Logo_Vertical_.png" style= "float:left; width:8%;"> 
+src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/SPP_Logo_Vertical_.png" style= "float:left; width:8%;"> 
 <img 
-src="/images/teamsForEducation/dpa logo.png" style= "float:left; width:16%;"> 
+src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/dpa logo.png" style= "float:left; width:16%;"> 
 <img 
-src="/images/teamsForEducation/HECVAT logo.png" style= "float:left; width:16%;"> 
+src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/HECVAT logo.png" style= "float:left; width:16%;"> 
 <img
-src="/images/teamsForEducation/nist-logo.png" style= "float:left; width:16%;"> 
+src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/nist-logo.png" style= "float:left; width:16%;"> 
 <img
-src="/images/teamsForEducation/CCPA logo.jpeg" style= "float:left; width:16%;"> 
+src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/CCPA logo.jpeg" style= "float:left; width:16%;"> 
 <img
-src="/images/teamsForEducation/Montana logo.png" style= "float:left; width:20%;">
+src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/Montana logo.png" style= "float:left; width:20%;">
 <div style="clear:both"></div>
 
 

@@ -65,7 +65,7 @@ Once the loader is added, we can replace our placeholder pins with the HTML belo
 
 This means you will see this while our JavaScript loads (you don't have any JavaScript now, so it should be in this state indefinitely):
 
-![Page loading animation](/images/teamsForEducation/pinboard-project/image-7.png)
+![Page loading animation](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/image-7.png)
 
 However, there are still some other left-overs from our hardcoded HTML in part 1. If we enter a value into the filter field (top-left), we will still get autocompleted recommendations from our previous pins (even though we have no pins or tags on the page at the moment). To fix this, we must clear the contents of our `<datalist>` HTML element (since we'll be managing these via JavaScript): 
 

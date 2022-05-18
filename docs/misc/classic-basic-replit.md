@@ -6,7 +6,7 @@
 
 [Start here](https://replit.com/new/basic).
 
-![basic environment](/images/basic.png)
+![basic environment](https://replit-docs-images.bardia.repl.co/images/basic.png)
 
 ## Syntax
 

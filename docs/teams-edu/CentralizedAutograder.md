@@ -18,7 +18,7 @@ We assume that your students are learning Python. We'll give an example Python a
 
 The basic workflow is similar to in the previous guide, but this time you won't need to look at each student's submission individually. Instead, students will submit them to a centralised server, and you can view their code there, or just look at the summary report it will generate.
 
-![](/images/teamsForEducation/centralized-autograder-python/01-overview-python.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/01-overview-python.png)
 
 After a student starts the assignment, they will be able to write their code, test it on their own, and then submit it when they are satisfied with their answers. 
 
@@ -34,7 +34,7 @@ We'll start by creating the grading server. We don't want to share this code for
 4. Make a note to remind yourself and other admins not to publish this project
 5. Press the Create button
 
-![](/images/teamsForEducation/centralized-autograder-python/02-create-project-python.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/02-create-project-python.png)
 
 Our grading server will consist of a few different components, namely:
 
@@ -199,7 +199,7 @@ The logic in `main.py` that you created earlier will copy a new version of this 
 
 That's it for our server. Press the `Run` button and your server should start running and display an "OK" message, as shown below. (Take note of the URL, which is based on your team and project name, as we'll need to add this to the student assignment that we create in the next step.)
 
-![](/images/teamsForEducation/centralized-autograder-python/03-run-server.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/03-run-server.png)
 
 
 ## Setting up the assignment 
@@ -210,7 +210,7 @@ Now that we have a server, we need to build the other half: the assignment proje
 
 On your teams page, create a new project. This will be specific to a single assignment for your students so call it something like "Grade 10 Python homework week 1" so you can keep track of different assignments for different classes.
 
-![](/images/teamsForEducation/centralized-autograder-python/04-create-assignment-project.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/04-create-assignment-project.png)
 
 ### Add the code for the assignment
 
@@ -295,7 +295,7 @@ Change the URL to the one that you copied in the final step of the server setup,
 
 To make sure that everything works as expected, run the project. It's still in test mode, so it should run the two functions with the example inputs and display the output. Because we only have the starter code, we can see that the functions don't work yet.
 
-![](/images/teamsForEducation/centralized-autograder-python/05-first-test.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/05-first-test.png)
 
 Now fill out the two functions so that they look as follows. Note that we have a deliberate error in the `subtract()` function to make sure that our grading is working as expected.
 
@@ -311,11 +311,11 @@ def subtract(a, b):
 
 Hit `Run` again and you should see that the functions return results now.
 
-![](/images/teamsForEducation/centralized-autograder-python/06-test-mode.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/06-test-mode.png)
 
 Uncomment the `# MODE = "SUBMIT"` line and press `Run` again. This time it should submit the solution to the grader and return a confirmation message.
 
-![](/images/teamsForEducation/centralized-autograder-python/07-submit-mode.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/07-submit-mode.png)
 
 Fix the subtract function by swapping `b` and `a` as follows and submit it one more time by pressing the `Run` button. This lets us test that resubmissions are working.
 
@@ -352,13 +352,13 @@ You can also see `report.md` has been generated, with details of the two submiss
 
 If you want to discuss the submitted code with the student, you can navigate to the grading-project submissions page and view the submission in question. From there you can select a piece of code from your student's submission and click on the annotate button to leave a message. This makes it easy to ask for clarification or give advice. You can read more on the annotation feature [here](/teams-edu/reviewing-submissions)
 
-![](/images/teamsForEducation/centralized-autograder-python/08-report-serverside.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/08-report-serverside.png)
 
 ## Publishing the project for students to use
 
 Once you are happy with the assignment, press the "publish project" button in the top right. Students will get a notification that their homework is ready and be able to start the project, modify the code, and submit it to the grading server.
 
-![](/images/teamsForEducation/centralized-autograder-python/09-publish-project.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-python/09-publish-project.png)
 
 Leave the grading server running (don't press the "Stop" button) so that the students can submit when they are ready. You can visit your server URL (that you pasted into the `submit.py` file) to make sure that it stays up (it should display "OK" if everything is running as expected. If you see an error or the page does not load, navigate back to the unpublished project file and hit the `Run` button again.)
 

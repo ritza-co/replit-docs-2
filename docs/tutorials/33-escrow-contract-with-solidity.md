@@ -18,7 +18,7 @@ We need two things to get started with this project: a Solidity repl and a brows
 
 Sign in to [Replit](https://replit.com/) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a Solidity starter repl.
 
-![Create a solidity repl](/images/tutorials/33-escrow-solidity/solidity-starter-repl.png)
+![Create a solidity repl](https://replit-docs-images.bardia.repl.co/images/tutorials/33-escrow-solidity/solidity-starter-repl.png)
 
 The Solidity starter repl works a little differently from other repls you may have used in the past. Rather than running our repl every time we want to test out a new piece of code, we can run our repl once, to start it up, and it will automatically reload when changes are made to our Solidity code in `contract.sol`.
 
@@ -341,18 +341,18 @@ Now that we've written our contracts, it's time to deploy them to the Replit tes
 
 First, run your repl. Once all of the dependencies are installed, you should see the Replit Ethereum web interface in your repl's browser. It looks like this:
 
-![Replit Ethereum web interface](/images/tutorials/33-escrow-solidity/replit-eth-web.png)
+![Replit Ethereum web interface](https://replit-docs-images.bardia.repl.co/images/tutorials/33-escrow-solidity/replit-eth-web.png)
 
 Connect your MetaMask wallet to the web interface and switch to the Replit testnet. Then click the link to get 1 ETH for testing. Wait until 1 ETH shows up in your wallet balance on the top right of the page.
 
-![Switch to test](/images/tutorials/33-escrow-solidity/switch-to-test.png)
-![Get one Ether](/images/tutorials/33-escrow-solidity/get-one.png)
+![Switch to test](https://replit-docs-images.bardia.repl.co/images/tutorials/33-escrow-solidity/switch-to-test.png)
+![Get one Ether](https://replit-docs-images.bardia.repl.co/images/tutorials/33-escrow-solidity/get-one.png)
 
 Now you can deploy your contracts. Select "Escrow" from the drop-down box and click **Deploy**. Approve the MetaMask pop-up that appears. Then do the same with "EscrowNFT".
 
 Once both of these contracts have been deployed, they will show up as expandable boxes below the drop-down box. Expand both and take a look at all the different functions available.
 
-![Deployed contracts](/images/tutorials/33-escrow-solidity/deployed-contracts.png)
+![Deployed contracts](https://replit-docs-images.bardia.repl.co/images/tutorials/33-escrow-solidity/deployed-contracts.png)
 
 Before we can use either of these contracts, we need to do some setup. First, let's initialize `Escrow`.
 

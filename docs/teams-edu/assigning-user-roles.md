@@ -13,14 +13,14 @@ You can assign different members of your team different roles.
 * To add a new Org Admin or Owner, find your Organization and click on the settings gear.
 * Click "Add Org Admin or Owner"
 * Invite an Org Admin or Owner using their username or email. They'll receive a notification to join your team with their new role! 
-![Adding Team Admins](/images/teamsForEducation/inviting-users/add_org_admin.gif)
+![Adding Team Admins](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/inviting-users/add_org_admin.gif)
 
 * Once they've accepted the invitation, you can go back to edit their role or remove them.
-![Editing org admins](/images/teamsForEducation/inviting-users/edit_org_admin.gif)
+![Editing org admins](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/inviting-users/edit_org_admin.gif)
 
 
 ## Assigning Team Admins and Team Members 
 You can assign roles to members who are part of your team by navigating to your [team dashboard](https://replit.com/teams) and choosing "Manage team members".
 
-<img src="/images/teamsForEducation/team-roles.png" />
+<img src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/team-roles.png" />
 

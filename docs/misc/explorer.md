@@ -8,6 +8,6 @@ Note that enabling these newer features before they are generally released might
 
 To enable explorer mode, navigate to [your account settings](https://replit.com/account) and scroll down until you see the "Roles" section. Expand this and check the box next to "Explorer".
 
-![Enable explorer mode](/images/misc/explorer-enable.png)
+![Enable explorer mode](https://replit-docs-images.bardia.repl.co/images/misc/explorer-enable.png)
 
 To disable explorer, simply uncheck the box again at any time.

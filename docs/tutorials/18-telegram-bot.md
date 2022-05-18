@@ -6,7 +6,7 @@ In this tutorial, we'll build a public message board and instead of users postin
 
 The messages will simply contain the message text, but we'll provide further information on how to use other data, such as the usernames of users. We will leave it as an exercise for you to expand the functionality.
 
-![Bot functionality](/images/tutorials/18-telegram-bot/bot_functionality.gif)
+![Bot functionality](https://replit-docs-images.bardia.repl.co/images/tutorials/18-telegram-bot/bot_functionality.gif)
 
 ## Prerequisites
 To follow along in this tutorial:
@@ -21,11 +21,11 @@ We need to register our bot on Telegram to generate the credentials we'll use to
 
 To do this, start by signing into your Telegram client and searching for "@bot" in the chat search. **Be sure to select the verified account** (the one with the checkmark beside it), otherwise we may end up talking to someone impersonating the official BotFather.
 
-![BotFather search](/images/tutorials/18-telegram-bot/bot_father.png)
+![BotFather search](https://replit-docs-images.bardia.repl.co/images/tutorials/18-telegram-bot/bot_father.png)
 
 To activate the BotFather, click on "start".
 
-![Activating BotFather](/images/tutorials/18-telegram-bot/bot_father_start.png)
+![Activating BotFather](https://replit-docs-images.bardia.repl.co/images/tutorials/18-telegram-bot/bot_father_start.png)
 
 We can send BotFather the command "/newbot" to begin the bot creation workflow.
 
@@ -37,7 +37,7 @@ It will ask us for:
 
 Note: It is useful to have a short username to make it easier for users to type it out – especially if you plan on adding an inline mode.
 
-![Generating bot token](/images/tutorials/18-telegram-bot/token.png)
+![Generating bot token](https://replit-docs-images.bardia.repl.co/images/tutorials/18-telegram-bot/token.png)
 
 Once we have answered all the questions, the BotFather will send us our authentication token which will look something like this: `110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw`.
 
@@ -47,13 +47,13 @@ Note that the whole string (the colon and both strings on either side of it) is 
 
 We can now begin writing the part of the program that handles requests from Telegram. Create a new repl and select Python from the language dropdown.
 
-![Creating a new Repl](/images/tutorials/18-telegram-bot/new_repl.png)
+![Creating a new Repl](https://replit-docs-images.bardia.repl.co/images/tutorials/18-telegram-bot/new_repl.png)
 
 Our bot needs to interact with Telegram. We will need to access the Telegram REST API. There are many ways of doing this, but for the sake of this tutorial, we'll use a convenience library that wraps around the API.
 
 Before we can go any further, we need to make our token accessible for our bot to use later on. Create a `TOKEN` environment variable by clicking the lock icon in the sidebar as shown below, and paste your bot token that you noted earlier, something like `110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw`:
 
-![Creating a new environment variables](/images/tutorials/18-telegram-bot/env_variables.png)
+![Creating a new environment variables](https://replit-docs-images.bardia.repl.co/images/tutorials/18-telegram-bot/env_variables.png)
 
 This will ensure that our token is available as an environment variable and that it cannot be accessed by people publicly viewing the repl.
 

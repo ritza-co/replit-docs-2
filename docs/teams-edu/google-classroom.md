@@ -13,10 +13,10 @@ To add your students from Google Classrooms into a Replit Team for Education, cl
 
 This will prompt you to connect your Replit Team for Education with your Google Classroom, and select students from your Google Classroom to add to your Teams roster. 
 
-![Inviting students to Replit via Google Classroom](/images/teamsForEducation/invite_via_gc.png)
+![Inviting students to Replit via Google Classroom](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/invite_via_gc.png)
 
 ## Creating Assignments in Google Classrooms from Replit 
 
 To create an assignment in Google Classroom directly from your Teams for Education dashboard, click on the dropdown menu next to a Team Project, and select "Share to Google Classroom". This will automatically create an assignment in your Google Classroom with a link to your Replit Project. 
 
-![Inviting students to Replit via Google Classroom](/images/teamsForEducation/create_assignment_gc.png)
+![Inviting students to Replit via Google Classroom](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/create_assignment_gc.png)

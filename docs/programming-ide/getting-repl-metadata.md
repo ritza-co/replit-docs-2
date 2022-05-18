@@ -4,7 +4,7 @@ In some cases, it's useful to automatically retrieve metadata about a repl from 
 
 You can find **owner** and **project name** of the current repl in environment variables `REPL_OWNER` and `REPL_SLUG` respectively.
 
-![owner and slug](/images/misc/ownerproject.png)
+![owner and slug](https://replit-docs-images.bardia.repl.co/images/misc/ownerproject.png)
 
 ## Using Python:
 

@@ -11,7 +11,7 @@ In this tutorial, we'll be building a simple web application that will take in d
 
 We'll be using Python for this tutorial. Sign into [Replit](https://replit.com) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a new Python repl.
 
-![New repl](/images/tutorials/26-pdf-report-generator/new-repl.png)
+![New repl](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/new-repl.png)
 
 ## Creating the web application
 
@@ -128,7 +128,7 @@ For now, if you run your repl and try to upload spreadsheets, it will lead to an
 
 Now that we've created our interface, we can start doing some data processing. We'll be using [this spreadsheet of fruit sales](/tutorial-files/pdf-report-generator/sales-july-2021.xlsx) as an example. Download it now and take a look inside. You'll see two worksheets: one with sales data, and one with inventory data.
 
-![Spreadsheet data](/images/tutorials/26-pdf-report-generator/spreadsheet_data.gif)
+![Spreadsheet data](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/spreadsheet_data.gif)
 
 Return to Replit and at the top of `main.py`, add the following lines:
 
@@ -169,7 +169,7 @@ To see what the newly joined sales DataFrame looks like, add the following line 
 
 Then run your repl, upload the `sales-july-2021.xlsx` spreadsheet, click "Generate report" after selecting the spreadsheet, and watch the Replit console. You should see something like this:
 
-![Sales dataframe](/images/tutorials/26-pdf-report-generator/sales_dataframe.png)
+![Sales dataframe](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/sales_dataframe.png)
 
 ## Calculating insights from data
 
@@ -212,7 +212,7 @@ Note that we're using a backslash (`\`) to [split a single line of code over two
 
 If we look at our data now (use a `print` statement like the one we used earlier to print to the console and rerun your repl), you'll notice that the Sale Revenue column contains more than two decimal places. 
 
-![Decimal places](/images/tutorials/26-pdf-report-generator/sale_revenuedp.png)
+![Decimal places](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/sale_revenuedp.png)
 
 Seeing as this is a currency column, we want to round it down to the nearest hundredth. We'll write a quick inner function for this now, by placing the following code just below `def process_spreadsheet(filename):` above:
 
@@ -309,7 +309,7 @@ Note the notation in the final line: this allows us to show only selected column
 
 Now run your repl and upload the `sales-july-2021.xlsx` spreadsheet you downloaded earlier. If your code is working correctly, you should see a number of tables in the Replit console, similar to the screenshot below.
 
-![Console dataframe output](/images/tutorials/26-pdf-report-generator/console_dataframe_output.png)
+![Console dataframe output](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/console_dataframe_output.png)
 
 ## Plotting graphs
 
@@ -367,7 +367,7 @@ Below this function definition, we'll add the following calls, which will genera
 
 If you run your repl now and reupload the spreadsheet, you should see two new image files in the `plots` directory.
 
-![Piechart plots](/images/tutorials/26-pdf-report-generator/piechart_plots.png)
+![Piechart plots](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/piechart_plots.png)
 
 ### Discount bar chart
 
@@ -512,11 +512,11 @@ Our report is now complete. End the `process_spreadsheet()` function with the fo
 
 To ensure that your PDF opens correctly, open your repl's website in a new tab.
 
-![Replit browser open in new tab](/images/tutorials/26-pdf-report-generator/replit-browser-open-in-new-tab.png)
+![Replit browser open in new tab](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/replit-browser-open-in-new-tab.png)
 
 Then upload `sales-july-2021.xlsx` again, and wait for your report to generate. It should look something like this:
 
-![Final report](/images/tutorials/26-pdf-report-generator/final_report.png)
+![Final report](https://replit-docs-images.bardia.repl.co/images/tutorials/26-pdf-report-generator/final_report.png)
 
 ## Where next?
 

@@ -14,17 +14,17 @@
 ## Creating Team Projects
 From your team dashboard, create a new project.
 
-![Create project button](/images/teamsForEducation/project-create-button.png)
+![Create project button](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/project-create-button.png)
 
 **Select project language, title, description, due date, and whether this will be a [group project](/teams-edu/group-projects).** You'll be redirected to the IDE to add any comments, tests, and initial coding blocks you'd like your students to start from. You'll assign groups when you publish the project. 
 
-<img style="max-width: 600px" src="/images/teamsForEducation/project-create.png" />
+<img style="max-width: 600px" src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/project-create.png" />
 
 ### Publishing
 
 When you are done editing your project and it is ready to be published, click "Publish project" from the IDE. Once published, your project will be viewable and editable by all members assigned to that project. 
 
-![Project publish button](/images/teamsForEducation/project-publish-button.png)
+![Project publish button](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/project-publish-button.png)
 
 A modal appears, where you can toggle the project between "Published" and "Unpublished". You can also toggle this from your team homepage to unlist projects from your team.
 
@@ -32,5 +32,5 @@ A modal appears, where you can toggle the project between "Published" and "Unpub
 
 When students have completed their work on the project, they click "Submit" in the IDE header, which will notify all teachers of their submission. Students may continue working on projects and resubmit them after hitting "Submit." 
 
-![Project submit](/images/teamsForEducation/project-submit.png)
+![Project submit](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/project-submit.png)
 

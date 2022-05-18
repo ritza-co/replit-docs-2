@@ -7,13 +7,13 @@ By the end of this tutorial, you'll be able to:
 * Build a dynamic web application with `replit.web`.
 * Use [Stripe](https://stripe.com/) to sell digital content.
 
-![Paid content site functionality](/images/tutorials/29-paid-content-site/site-functionality.gif)
+![Paid content site functionality](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/site-functionality.gif)
 
 ## Getting started
 
 To get started, create a Python repl.
 
-![Create python repl](/images/tutorials/29-paid-content-site/create-python-repl.png)
+![Create python repl](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/create-python-repl.png)
 
 Our application will have the following functionality:
 
@@ -70,13 +70,13 @@ import random, string
 ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(20))
 ```
 
-![Random string](/images/tutorials/29-paid-content-site/randomstring.png)
+![Random string](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/randomstring.png)
 
 Rather than putting this value directly into our code, we'll retrieve it from an [environment variable](https://en.wikipedia.org/wiki/Environment_variable). This will keep it out of source control and is good practice for sensitive data.
 
 In your repl's Secrets tab, add a new key named `SECRET_KEY` and enter the random string you just generated as its value.
 
-![Repl secrets](/images/tutorials/29-paid-content-site/repl-secrets.png)
+![Repl secrets](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/repl-secrets.png)
 
 Once that's done, return to `main.py` and add the code below to initialize our Replit database:
 
@@ -127,7 +127,7 @@ web.run(app)
 
 Because we've added the `@web.authenticated` [function decorator](https://realpython.com/primer-on-python-decorators/) to our index page, it will only be available to logged-in users. You should see this now, as your app will show a login button. Click on that button, and authorize your application to use Replit authentication in the window that pops up.
 
-![Login button](/images/tutorials/29-paid-content-site/login-button.png)
+![Login button](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/login-button.png)
 
 Having done that, you should now see the greeting we implemented above. If you send your repl to a friend, they will also be able to log in and see their Replit username on the greeting message.
 
@@ -205,7 +205,7 @@ The first function will let our admins create content, and the second will allow
 
 Before we can fill in the code for content creation, we need to create the web form our admins will use. As the form creation code will include a lot of information and functionality and require several special imports, we're going to put it in its own file so we can keep a navigable codebase. In your repl's files pane, create `forms.py`.
 
-![Create forms.py file](/images/tutorials/29-paid-content-site/forms-py-in-file-pane.png)
+![Create forms.py file](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/forms-py-in-file-pane.png)
 
 Enter the following `import` statements at the top of `forms.py`:
 
@@ -454,7 +454,7 @@ templates/
     |__  layout.html
 ```
 
-![Folder structure](/images/tutorials/29-paid-content-site/folder-structure.png)
+![Folder structure](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/folder-structure.png)
 
 Once you've created these files, let's populate them, starting with `templates/layout.html`:
 
@@ -611,11 +611,11 @@ This will give every page most of the application's state, including the full co
 
 Run your repl now and add some content. For best results, open the site in a new tab, rather than using it in your repl's browser.
 
-![Open in new window](/images/tutorials/29-paid-content-site/open-new-window.png)
+![Open in new window](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/open-new-window.png)
 
 If you add free PDFs, you'll be able to download them, but you won't be able to purchase paywalled PDFs yet.
 
-![Free pdf download](/images/tutorials/29-paid-content-site/free-pdf-download.png)
+![Free pdf download](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/free-pdf-download.png)
 
 ## Integrating with Stripe
 
@@ -634,11 +634,11 @@ DOMAIN = "YOUR-REPL-URL-HERE"
 
 You can find your Stripe API keys on [this page of the developer dashboard](https://dashboard.stripe.com/test/apikeys). Make sure that you're in test mode and copy the secret key to your clipboard. Then return to your repl and create an environment variable called `STRIPE_KEY` with the value you just copied from Stripe.
 
-![Stripe Key](/images/tutorials/29-paid-content-site/stripe-key.png)
+![Stripe Key](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/stripe-key.png)
 
 You will also need to replace the value of `DOMAIN` with your repl's root URL. You can get this URL from the in-repl browser.
 
-![Repl URL](/images/tutorials/29-paid-content-site/repl-url.png)
+![Repl URL](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/repl-url.png)
 
 ### Stripe Checkout
 
@@ -723,8 +723,8 @@ We reuse Stripe's [Checkout Session](https://stripe.com/docs/api/checkout/sessio
 
 If you run your repl now, you should be able to reach the Stripe checkout page for any paywalled content you've added. Don't try to pay for anything yet though, as we still need to build order fulfillment.
 
-![Paywall](/images/tutorials/29-paid-content-site/alice-paywall.png)
-![Checkout page](/images/tutorials/29-paid-content-site/checkout-page.png)
+![Paywall](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/alice-paywall.png)
+![Checkout page](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/checkout-page.png)
 
 ### Stripe fulfillment
 
@@ -778,7 +778,7 @@ def cancel():
 
 If you run your repl now, you should be able to purchase content. You can find test credit card numbers on the Stripe integration [testing](https://stripe.com/docs/testing) documentation page. You can use any future date as the expiry date and any CVV.
 
-![PDF purchased](/images/tutorials/29-paid-content-site/alice-purchased.gif)
+![PDF purchased](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/alice-purchased.gif)
 
 ### Webhooks
 
@@ -788,20 +788,20 @@ For this reason, Stripe provides an additional method for fulfilling orders, bas
 
 First, you'll need to create a webhook on your Stripe Dashboard. Visit the [Webhooks](https://dashboard.stripe.com/test/webhooks) page and click **Add endpoint**. You should then see a page like this:
 
-![Add webhook](/images/tutorials/29-paid-content-site/add-webhook.png)
+![Add webhook](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/add-webhook.png)
 
 On this page, do the following:
 
 1. For the **Endpoint URL** value, enter your repl's URL, followed by `/fulfill-hook`.
 2. Select the `checkout.session.completed` event from **Select events to listen to**.
 
-    ![Webhook event](/images/tutorials/29-paid-content-site/webhook-event.png)
+    ![Webhook event](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/webhook-event.png)
 
 3. Click **Add endpoint**.
 
 Stripe should then redirect you to your new webhook's details page. From here you can see webhook details, logs and the signing secret. The signing secret is used to ensure that our webhook only accepts requests from Stripe – otherwise, anyone could call it with spoofed data and complete orders without paying. Reveal your webhook's signing secret and copy it to your clipboard, then return to your repl.
 
-![Signing secret](/images/tutorials/29-paid-content-site/signing-secret.png)
+![Signing secret](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/signing-secret.png)
 
 We'll use another environment variable here. Add the following code below your `cancel` function definition:
 
@@ -847,7 +847,7 @@ After ensuring that the request we've received comes from Stripe, we retrieve th
 
 If you run your repl now, you should be able to purchase a PDF, close the checkout page after your payment is accepted but before being redirected, and still end up with the PDF in your library. You can also view webhook invocation logs on the [Stripe Dashboard](https://dashboard.stripe.com/test/webhooks).
 
-![Stripe webhook success](/images/tutorials/29-paid-content-site/stripe-webhook-success.png)
+![Stripe webhook success](https://replit-docs-images.bardia.repl.co/images/tutorials/29-paid-content-site/stripe-webhook-success.png)
 
 ## Where next?
 

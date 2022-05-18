@@ -9,7 +9,7 @@ Teachers may create project solutions to reference and provide students with sol
 
 ### Creating project solutions 
 To create a project solution, click on the three dots to the right of a Team Project and select "Create Solution".
-![Create solution](/images/teamsForEducation/model-solutions/create_solution.gif)
+![Create solution](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/model-solutions/create_solution.gif)
 
 This will create a duplicate of the Team Project that is hidden from students. Teachers may add solution code to this repl and run it against their [unit and I/O tests](/teams-edu/testing-assessments-autograding). 
 
@@ -19,14 +19,14 @@ To publish or update the project solution, click the "Update Solution" button on
 
 Select the check boxes to indicate when students will be able to view the solution.
 
-![Update solution](/images/teamsForEducation/model-solutions/update_solution.gif)
+![Update solution](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/model-solutions/update_solution.gif)
 
 Project solutions are hidden from students until:
   - student submits the project
   - student passes all tests
   - after the project due date
 
-![project solution reveal settings](/images/teamsForEducation/model-solutions/update_solution_status.png)
+![project solution reveal settings](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/model-solutions/update_solution_status.png)
 
 ### Updating and Referencing project solutions
 
@@ -41,7 +41,7 @@ No changes made in their solution fork will ever affect the teacher solution. Th
 
 Students may [delete their solution and start over](https://www.loom.com/share/513259afbb9d4d11a918ea18c22dffab) should they choose. 
 
-![Student view of project solution](/images/teamsForEducation/model-solutions/solution_student_view.png)
+![Student view of project solution](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/model-solutions/solution_student_view.png)
 
 
 

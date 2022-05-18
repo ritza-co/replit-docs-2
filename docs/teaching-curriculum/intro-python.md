@@ -35,7 +35,7 @@ Inside this folder, each of the six lessons will have its own folder along with 
 
 ## Our Awesome Creator
 
-<img class="profile_pic" src="/images/curriculumImg/andy.jpg" width="300px"/>
+<img class="profile_pic" src="https://replit-docs-images.bardia.repl.co/images/curriculumImg/andy.jpg" width="300px"/>
 
 This course was created by **Andy Colley.**
 

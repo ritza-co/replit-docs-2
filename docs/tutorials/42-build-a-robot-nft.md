@@ -18,7 +18,7 @@ We need two things to get started with this project: a Solidity repl and a brows
 
 Sign in to [Replit](https://replit.com) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a Solidity starter repl.
 
-![Creating a new Repl](/images/tutorials/42-robot-nft-ethereum/solidity-repl.png)
+![Creating a new Repl](https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/solidity-repl.png)
 
 The Solidity starter repl works a little differently from other repls you may have used in the past. Rather than running our repl every time we want to test out a new piece of code, we can run our repl once, to start it up, and it will automatically reload when changes are made to our Solidity code in `contract.sol`.
 
@@ -32,7 +32,7 @@ Once you've installed MetaMask, follow the prompts to create a wallet and sign i
 
 If you're already using MetaMask, we recommend creating a new account for testing with Replit. You can do this from the account menu, which appears when you click on the account avatar in the top right corner of the MetaMask interface.
 
-<img src="/images/tutorials/42-robot-nft-ethereum/createaccount.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/createaccount.png"
 alt="Create new metamask account"
 style="Width: 50% !important;"/>
 
@@ -56,18 +56,18 @@ Solidity, which we will be using below, is the most popular language for develop
 Our ReplBot NFT will consist of a base robot and three accessories. The base robot looks like this:
 
 
-<img src="/images/tutorials/42-robot-nft-ethereum/bothead-01.svg"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/bothead-01.svg"
 alt="Base robot"
 style="Width: 60% !important;"/>
 
 Each NFT will have three different colors for its frame, visor, and background. Each NFT will also have three different accessories: headgear (a hat or wig), eargear (animal ears or headphones), and facegear (glasses or masks). Some examples:
 
-<img src="/images/tutorials/42-robot-nft-ethereum/replbot-nft-1.svg"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-1.svg"
 alt="NFT 1"
 style="Width: 60% !important;"/>
 
 
-<img src="/images/tutorials/42-robot-nft-ethereum/replbot-nft-2.svg"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-2.svg"
 alt="NFT 2"
 style="Width: 60% !important;"/>
 
@@ -353,18 +353,18 @@ Now that we've implemented our NFT's core functionality, it's time to deploy to 
 
 First, run your repl. Once all of the dependencies are installed, you should see the Replit Ethereum web interface in your repl's browser. It looks like this:
 
-![REPL Ethereum web interface](/images/tutorials/42-robot-nft-ethereum/repl-eth-web.png)
+![REPL Ethereum web interface](https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/repl-eth-web.png)
 
 Connect your MetaMask wallet to the web interface and switch to the Replit Testnet. Then click the link to get 1 ETH for testing. Wait until 1 ETH shows up in your wallet balance on the top right of the page.
 
-![Switching to test](/images/tutorials/42-robot-nft-ethereum/switch-to-test.png)
-![Getting one Ether](/images/tutorials/42-robot-nft-ethereum/get-one.png)
+![Switching to test](https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/switch-to-test.png)
+![Getting one Ether](https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/get-one.png)
 
 Now you can deploy your contracts. Select "ReplBots" from the drop-down box and click "Deploy". Approve the MetaMask pop-up that appears.
 
-![Deploy the contract](/images/tutorials/42-robot-nft-ethereum/deploy.png)
+![Deploy the contract](https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/deploy.png)
 
-<img src="/images/tutorials/42-robot-nft-ethereum/confirmdeploy.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/confirmdeploy.png"
 alt="Confirm deploy"
 style="Width: 50% !important;"/>
 
@@ -372,20 +372,20 @@ style="Width: 50% !important;"/>
 Once this contract has been deployed, it will show up as an expandable box below the drop-down box. Expand it and take a look at all the different functions available.
 
 <video width="80%" autoplay loop>
-    <source src="/images/tutorials/42-robot-nft-ethereum/expand.mp4" type="video/mp4">
+    <source src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/expand.mp4" type="video/mp4">
 </video>
 
 Mint your first NFT by navigating to the `mint` function. Click on your wallet address in the top right corner of the page to copy it, and then paste it into the `recipient` field. Then run the function and approve the MetaMask pop-up that appears.
 
 <video width="80%" autoplay loop>
-    <source src="/images/tutorials/42-robot-nft-ethereum/mint.mp4" type="video/mp4">
+    <source src="https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/mint.mp4" type="video/mp4">
 </video>
 
 After a few seconds, you should see a pop-up indicating that your transaction has gone through. Congratulations, you're the proud owner of a ReplBot NFT! Check out its colors and accessories by entering ID 0 into `botColors` and `botAccessories`.
 
 If you mint again, you should receive a ReplBot with ID 1 and a different set of colors and accessories.
 
-![Bot colors](/images/tutorials/42-robot-nft-ethereum/botcolors.png)
+![Bot colors](https://replit-docs-images.bardia.repl.co/images/tutorials/42-robot-nft-ethereum/botcolors.png)
 
 ## Breeding bots
 

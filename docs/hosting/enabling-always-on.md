@@ -11,11 +11,11 @@ Always-on is controlled by a toggle inside your repl. To enable it:
 2. open the info panel by clicking on your repl's name. 
 3. Enable Always-on by clicking on the toggle at the bottom:
 
-![screenshot of Always-on toggle](/images/repls/always-on-toggle.png)
+![screenshot of Always-on toggle](https://replit-docs-images.bardia.repl.co/images/repls/always-on-toggle.png)
 
 After Always-on is enabled, you will see a green indicator next to your repl's name:
 
-![screenshot of repl with Always-on enabled](/images/repls/always-on-enabled.png)
+![screenshot of repl with Always-on enabled](https://replit-docs-images.bardia.repl.co/images/repls/always-on-enabled.png)
 
 That's it! We will run your repl whenever it goes to sleep.
 

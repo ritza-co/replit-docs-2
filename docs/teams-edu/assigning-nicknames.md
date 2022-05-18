@@ -7,7 +7,7 @@ Team nicknames allow teachers, and other admins, the ability to assign nicknames
   - Students that sign up using the privacy enabled link are assigned a random username. In the past it has been up to the teachers to keep track of which student belonged to which generated username. Nicknames will allow teachers to assign the correct name to the student without violating COPPA regulations. 
 - Sectioning Students
   - Teachers who use Teams for multiple class sections or cohorts can now sort their students' submissions by section by assigning nicknames with identifiers such as section number or cohort year. 
-  ![Searching project submissions by section](/images/teamsForEducation/nicknamesections.png)
+  ![Searching project submissions by section](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/nicknamesections.png)
 
 ## How to use
 - Open the 'Manage team members' modal on the home screen of a team. 
@@ -22,7 +22,7 @@ To update and delete a nickname:
 - Update the nickname and press enter.
 - To delete the nickname completely, remove all characters from the input box and press the enter key. 
 
-![Assigning nicknames](/images/teamsForEducation/nicknames.gif)
+![Assigning nicknames](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/nicknames.gif)
 
 ## Where nicknames will appear
 

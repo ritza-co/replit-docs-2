@@ -37,7 +37,7 @@ However, this isn't recommended because external images might be under copyright
 
 It is highly suggested to have images stored in a subfolder in our root directory. Assuming that we have stored it in our "images" folder, our code will look like this:
 >```
-><img src="/images/sample.jpg" alt="Sample Image">
+><img src="https://replit-docs-images.bardia.repl.co/images/sample.jpg" alt="Sample Image">
 >```
 >
 ## Width and Height of Images

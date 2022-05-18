@@ -6,7 +6,7 @@ In this tutorial, we will be building a single-page web dashboard for tracking a
 * Track the current price of all stocks held through web scraping.
 * Show the user the percentage gain or loss on their holdings, for each stock and in total.
 
-![Dashboard functionality](/images/tutorials/22-stock-market/dashboard_functionality.png)
+![Dashboard functionality](https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/dashboard_functionality.png)
 
 After working through this tutorial, you'll:
 
@@ -18,7 +18,7 @@ After working through this tutorial, you'll:
 
 We're going to build our dashboard using Python (plus a bit of JavaScript). Sign in to [Replit](https://replit.com) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a new Python repl.
 
-![Creating a Python repl](/images/tutorials/22-stock-market/create-python-repl.png)
+![Creating a Python repl](https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/create-python-repl.png)
 
 Our dashboard will need to have three functions:
 
@@ -28,7 +28,7 @@ Our dashboard will need to have three functions:
 
 Let's start by creating an HTML frontend with the basic data and form elements necessary to enable this functionality. In your repl's file pane, create a directory named `templates`, and in that folder, create a file called `index.html` (this file structure is necessary for building Flask applications).
 
-<img src="/images/tutorials/22-stock-market/create-files.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/create-files.png"
     alt="Creating the file structure"
     style="Width: 75% !important;"/>
 
@@ -90,7 +90,7 @@ site.run(host='0.0.0.0', port=8080)
 
 Now run your repl. The resulting page should look like this:
 
-![Initial dashboard](/images/tutorials/22-stock-market/initial-dashboard.png)
+![Initial dashboard](https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/initial-dashboard.png)
 
 The first thing we need to implement to get this page functional is the share purchase form. Let's do that now.
 
@@ -108,7 +108,7 @@ from replit import db
 
 Now we can use the globally scoped variable `db` like a Python dictionary, keeping in mind that whatever we store in it will persist between executions of our application. A cheat sheet for using the database is available from your repl's database tab on the sidebar.
 
-<img src="/images/tutorials/22-stock-market/database-sidebar.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/database-sidebar.png"
     alt="Database sidebar"
     style="Width: 55% !important;"/>
 
@@ -358,11 +358,11 @@ This code uses the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/
 
 Run your repl and open its web page in a new tab.
 
-![Opn in new tab](/images/tutorials/22-stock-market/replit-browser-open-in-new-tab.png)
+![Opn in new tab](https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/replit-browser-open-in-new-tab.png)
 
 Then open your browser's devtools with F12, and you should see your portfolio JSON object in the console. If you don't, give it a few seconds.
 
-![In browser console](/images/tutorials/22-stock-market/json-portfolio-in-browser-console.png)
+![In browser console](https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/json-portfolio-in-browser-console.png)
 
 Now let's add the rest of our JavaScript code. Delete `console.log(data);` and add the following code in its place:
 
@@ -446,7 +446,7 @@ setInterval(function() {
 
 Run your repl, add some stocks if you haven't, and you should see something like this:
 
-![Dashboard with portfolio](/images/tutorials/22-stock-market/dashboard-with-portfolio.png)
+![Dashboard with portfolio](https://replit-docs-images.bardia.repl.co/images/tutorials/22-stock-market/dashboard-with-portfolio.png)
 
 From this point on, we highly recommend viewing your application in a new browser tab rather than Replit's in-page browser, to get the full-page dashboard experience.
 

@@ -49,7 +49,7 @@ The tasks in this course make use of the [PRIMM pedagogical approach](https://pr
 
 ## Our Awesome Creator
 
-<img class="profile_pic" src="/images/curriculumImg/andy.jpg" width="300px"/>
+<img class="profile_pic" src="https://replit-docs-images.bardia.repl.co/images/curriculumImg/andy.jpg" width="300px"/>
 
 This course was created by **Andy Colley.**
 

@@ -22,11 +22,11 @@ Let's refactor the WeatherStack project to prevent our key from being made publi
 
 Visit [https://replit.com/@ritza-co/cwr-02-weather-report](https://replit.com/@GarethDwyer1/cwr-02-weather-report) (or your own version of this if you followed along previously) and create a new fork by pressing the pencil icon and then `fork`. 
 
-![**Image 1:** *Forking our repl before refactoring it.*](/images/tutorials/08-storing-secrets/08-01-fork-repl.png)
+![**Image 1:** *Forking our repl before refactoring it.*](https://replit-docs-images.bardia.repl.co/images/tutorials/08-storing-secrets/08-01-fork-repl.png)
 
 We have `API_KEY` defined near the top of `main.py`, and this is the value that we want to keep secret. Let's add it as an environment variable instead. In the environment variables pane, add a new variable called `API_KEY` and the API key as a value.
 
-![**Image 2:** *Adding an environment variable*](/images/tutorials/08-storing-secrets/08-saving-env-var.png)
+![**Image 2:** *Adding an environment variable*](https://replit-docs-images.bardia.repl.co/images/tutorials/08-storing-secrets/08-saving-env-var.png)
 
 Save the new variable and remove the API_KEY variable from the `main.py.
 
@@ -51,7 +51,7 @@ The `getenv` function looks for an environment variable of a specific name. Now 
 
 There are many other environment variables that make various parts of an operating system work correctly. For example, you could also take a look at the `LANG` and `PATH` environment variables, which will show you that Replit has their servers configured to use US English and 8-bit unicode character encoding, and have some default places where the system looks for executable programs.
 
-![**Image 4:** *Looking at other environment variables.*](/images/tutorials/08-storing-secrets/08-04-using-env-variables.png)
+![**Image 4:** *Looking at other environment variables.*](https://replit-docs-images.bardia.repl.co/images/tutorials/08-storing-secrets/08-04-using-env-variables.png)
 
 ## Time travelling to find secrets
 
@@ -61,11 +61,11 @@ Replit saves every change you make to a project so that you can always go back t
 
 Click on the history button in the top bar, as shown below.
 
-![**Image 5:** *Diving into the history of our repl.*](/images/tutorials/08-storing-secrets/08-05-open-history.png)
+![**Image 5:** *Diving into the history of our repl.*](https://replit-docs-images.bardia.repl.co/images/tutorials/08-storing-secrets/08-05-open-history.png)
 
 You should see a bunch of entries from each change you've made to this project. Click through them and find the one where you deleted your API key. As you can see, the history viewer shows not only which lines have been changed, but also what was there before.
 
-![**Image 6:** *Finding the credentials in the change logs.*](/images/tutorials/08-storing-secrets/08-06-key-visible-history.png)
+![**Image 6:** *Finding the credentials in the change logs.*](https://replit-docs-images.bardia.repl.co/images/tutorials/08-storing-secrets/08-06-key-visible-history.png)
 
 Luckily history is not included when other people fork your repl so this is not a huge problem, but it's important to keep in mind where people might find your credentials.
 
@@ -77,7 +77,7 @@ Even if there's a small chance that your API key has been exposed, it's importan
 
 In the case of WeatherStack, there is no option to create a new key while keeping the old one active, so we need to reset it and then copy the new key to our environment variables pane (meaning that our app can't function between the time that we disable the old key and replace it with the new one).
 
-![**Image 7:** *Rotating our WeatherStack API key.*](/images/tutorials/08-storing-secrets/08-07-weatherstack-reset-api.png)
+![**Image 7:** *Rotating our WeatherStack API key.*](https://replit-docs-images.bardia.repl.co/images/tutorials/08-storing-secrets/08-07-weatherstack-reset-api.png)
 
 Visit your WeatherStack account and press the `reset` button to get your new API key.
 

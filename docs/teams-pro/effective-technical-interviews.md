@@ -33,15 +33,15 @@ Replit [Teams Pro](https://docs.replit.com/teams-pro/intro-teams-pro) can be use
 
 * In-built support for multiple programming languages and frameworks
 
-![Languages](/images/teamsPro/effective-technical-interviews/languages.png)
+![Languages](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/languages.png)
 
 * Team collaboration using threads
 
-![Threads](/images/teamsPro/effective-technical-interviews/threads.png)
+![Threads](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/threads.png)
 
 * Multiplayer feature that allows interviewers to view a candidate's repl in real time
 
-![Multiplayer](/images/teamsPro/effective-technical-interviews/multiplayer.png)
+![Multiplayer](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/multiplayer.png)
 
 For more information on getting started with conducting interviews using Teams Pro, take a look at our [Introduction to Teams Pro](https://docs.replit.com/teams-pro/intro-teams-pro).
 
@@ -73,7 +73,7 @@ Due to how restrictive this process is, companies could potentially miss out on 
 
 Automated tests can be created by setting up unit testing. Unit testing allows you to create code-driven tests that compare actual function output with expected output. Repl [Unit Testing](https://docs.replit.com/teams-edu/unit-testing) allows a repl author to write full unit tests in Java (JUnit), Python (unittest), or JavaScript (Jest). 
 
-![Unit Testing](/images/teamsPro/effective-technical-interviews/unit_testing.png)
+![Unit Testing](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/unit_testing.png)
 
 #### *Take-home assessments*
 
@@ -120,6 +120,6 @@ Onsite interviews usually consist of different types of tasks, from pair-program
 
 [Excalidraw](https://docs.replit.com/teams-pro/excalidraw-with-replit) is a cool feature on Teams Pro that is ideal for whiteboard challenges. If you are observing many candidates at once, Excalidraw can be a great tool for monitoring them through interview repls.
 
-![Excalidraw](/images/teamsPro/effective-technical-interviews/excalidraw.png)
+![Excalidraw](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/excalidraw.png)
 
 

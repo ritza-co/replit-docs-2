@@ -6,7 +6,7 @@ If you encounter any issues with Replit or have a feature you want to request, w
 2. Click "Get Help" from the left menu
 3. Choose the most applicable option and follow the steps provided
 
-![Reporting bugs and submitting feedback](/images/misc/help-bug-report.png)
+![Reporting bugs and submitting feedback](https://replit-docs-images.bardia.repl.co/images/misc/help-bug-report.png)
 
 You can also get help in [our Discord](https://replit.com/discord) or in [our online community](https://replit.com/talk/ask).
 

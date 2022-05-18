@@ -35,7 +35,7 @@ If you're using Teams for Education, you should make sure that you're added as a
 
 This means that you will be able to see all student versions of the homework, while your students will only be able to see the skeleton project that you provide.
 
-![](/images/teamsForEducation/simple-autograding-java/01-manage-team.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/01-manage-team.png)
 
 ### Understanding projects
 
@@ -51,7 +51,7 @@ Only admins can see all submissions of a project. This means that students canno
 
 Create a project for the homework assignment you want to prepare and add some details to help you and your students identify it. You can also specify what programming language to use. In this example, we'll use Java.
 
-![](/images/teamsForEducation/simple-autograding-java/02-create-project.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/02-create-project.png)
 
 Hit the create button and you'll be taken to a normal repl but with some additional features. Note the 'publish project' button in the top right that we'll use later.
 
@@ -97,11 +97,11 @@ In this example, we are only asking students to create two basic functions: `add
 
 If you need to provide more comprehensive instructions you can create a [markdown](https://en.wikipedia.org/wiki/Markdown) file from within the repl by pressing the `add file` button in the files pane and calling it `README.md`. Markdown files have two modes, "edit" and "preview", so your students will be able to see basic formatting like links or bullet points and Replit will automatically display the `README.md` file when the student opens up the project.
 
-![](/images/teamsForEducation/simple-autograding-java/03-instructions-readme.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/03-instructions-readme.png)
 
 If you already have the instructions in a different format such as PDF, you can upload the file from your local machine and students will be able to view it directly within the Replit interface.
 
-![](/images/teamsForEducation/simple-autograding-java/04-upload-instructions-file.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/04-upload-instructions-file.png)
 
 ## Installing JUnit
 
@@ -112,7 +112,7 @@ To run the tests, we'll use JUnit. Replit can import JUnit automatically but you
 3. clicking on `org.hamcrest:hamcrest` from the results
 4. clicking the plus button to install the package.
 
-![](/images/teamsForEducation/simple-autograding-java/05-instsall-hamcrest.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/05-instsall-hamcrest.png)
 
 Because we installed hamcrest in the main version of the project, it will automatically be installed in students' versions the first time they run code, so they won't have to complete these steps in their copies.
 
@@ -122,7 +122,7 @@ We call JUnit in our `main()` function, which in turn finds the tests (labelled 
 
 Hit the `Run` button, and you should see the tests execute. The code is deliberately broken (it returns `0` for all inputs), so the tests fail as expected.
 
-![](/images/teamsForEducation/simple-autograding-java/06-run-test.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/06-run-test.png)
 
 
 
@@ -132,11 +132,11 @@ This means that our setup is working: it's the students' job to fix the function
 
 Before students can see and submit this homework you need to 'publish' it. Do that now by pressing the button in the top right.
 
-![](/images/teamsForEducation/simple-autograding-java/07-publish-project.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/07-publish-project.png)
 
 Now slide the button across to 'published' and your students can access the project. They will also get a notification in Replit that a new project has been published, and you will similarly see a notification once they start and submit.
 
-![](/images/teamsForEducation/simple-autograding-java/08-edit-project-to-published.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/08-edit-project-to-published.png)
 
 ## Submitting your homework as a student
 
@@ -146,11 +146,11 @@ You'll see all of your published projects but no `edit` button. Instead there'll
 
 The student will also get a notification (as soon as you published the project, but not when you created it).
 
-![](/images/teamsForEducation/simple-autograding-java/09-notifications-new-project.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/09-notifications-new-project.png)
 
 The student can now make changes to the code. In this example, they fill out the return statements. Note how `a` and `b` are in the wrong order in the subtract function: the correct answer is `return a - b`. 
 
-![](/images/teamsForEducation/simple-autograding-java/10-submit-assignment.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/10-submit-assignment.png)
 
 Once the student is satisfied, they can press the `submit` button in the top right.
 
@@ -158,15 +158,15 @@ Once the student is satisfied, they can press the `submit` button in the top rig
 
 Back in your teacher account, navigate to the team dashboard and find the relevant project. Press the `View submissions` button.
 
-![](/images/teamsForEducation/simple-autograding-java/11-view-submissions.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/11-view-submissions.png)
 
 You'll be taken to a page where you can see all versions of this assignment. In this example, we only see one (from the test we created above). Once your students start the assignment you'll see more, and each of them will be labeled as "submitted" or "unsubmitted", depending on whether or not the student has pressed the `submit` button.
 
-![](/images/teamsForEducation/simple-autograding-java/12-projects-submisions-page.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/12-projects-submisions-page.png)
 
 Press "View repl" and hit the `Run` button. You'll see that one of the tests passes and the other fails.
 
-![](/images/teamsForEducation/simple-autograding-java/13-test-results.png).
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/simple-autograding-java/13-test-results.png).
 
 Once your students have each created and submitted the project, you can open each of the students' versions and hit `Run` to easily see a summary of how many tests they passed and what mistakes they made. 
 

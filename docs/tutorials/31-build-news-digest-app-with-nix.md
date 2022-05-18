@@ -13,7 +13,7 @@ As this application will require a number of different components, we're going t
 
 To get started, sign in to [Replit](https://replit.com) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a Nix repl.
 
-![Create a nix repl](/images/tutorials/31-news-digest-app/create-nix-repl.png)
+![Create a nix repl](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/create-nix-repl.png)
 
 ## Installing dependencies
 
@@ -60,7 +60,7 @@ run = "sh start.sh"
 
 Next we need to create `start.sh` in the repl's files tab:
 
-<img src="/images/tutorials/31-news-digest-app/new-file.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/new-file.png"
   alt="Start script"
   style="width: 350px !important;"/>
 
@@ -96,7 +96,7 @@ The third section starts Redis. We use the `--bind` flag to listen on the local 
 
 Before we run our repl, we'll need to create our MongoDB data and logging directories, `data` and `log`. Create these directories now in your repl's filepane.
 
-<img src="/images/tutorials/31-news-digest-app/mongodirs.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/mongodirs.png"
   alt="Mongo directories"
   style="width: 350px !important;"/>
 
@@ -105,7 +105,7 @@ Once that's done, you can run your repl, and it will start MongoDB and Redis. Yo
 * [Working with the `mongo` Shell](https://docs.mongodb.com/v4.4/mongo/#working-with-the-mongo-shell)
 * [`redis-cli`, the Redis command line interface](https://redis.io/topics/rediscli)
 
-![Running mongo and redis cli](/images/tutorials/31-news-digest-app/mongo-and-redis-cli.png)
+![Running mongo and redis cli](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/mongo-and-redis-cli.png)
 
 These datastores will be empty for now.
 
@@ -157,7 +157,7 @@ print(get_title("https://news.ycombinator.com/rss"))
 
 Instead of rewriting our `start.sh` script to run this Python file, we can just run `python lib/scraper.py` in our repl's shell tab, as shown below. If it's working correctly, we should see "Hacker News" as the script's output.
 
-<img src="/images/tutorials/31-news-digest-app/script-test.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/script-test.png"
   alt="Scrapper cript test"
   style="width: 400px !important;"/>
 
@@ -217,15 +217,15 @@ Once your account is created and verified, you'll need an API key and domain fro
 
 To find your domain, navigate to **Sending → Domains**. You should see a single domain name, starting with "sandbox". Click on that and copy the full domain name (it looks like: `sandboxlongstringoflettersandnumbers.mailgun.org`).
 
-![Mailgun domain](/images/tutorials/31-news-digest-app/mailgun-domain.gif)
+![Mailgun domain](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/mailgun-domain.gif)
 
 To find your API key, navigate to **Settings → API Keys**. Click on the view icon next to **Private API key** and copy the revealed string somewhere safe.
 
-![Mailgun api key](/images/tutorials/31-news-digest-app/mailgun-apikey.png)
+![Mailgun api key](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/mailgun-apikey.png)
 
 Back in your repl, create two environment variables, `MAILGUN_DOMAIN` and `MAILGUN_APIKEY`, and provide the strings you copied from Mailgun as values for each.
 
-<img src="/images/tutorials/31-news-digest-app/add-env-var.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/add-env-var.png"
   alt="Add environment variable"
   style="width: 400px !important;"/>
 
@@ -258,7 +258,7 @@ To test that Mailgun is working, replace `YOUR-EMAIL-ADDRESS-HERE` with your ema
 
 Without further verification on Mailgun, we can only send up to 100 emails per hour, and a free account limits us to 5,000 emails per month. Additionally, Mailgun's sandbox domains can only be used to send emails to specific, whitelisted addresses. The address you created your account with will work, but if you want to send emails to other addresses, you'll have to add them to the domain's authorized recipients, which can be done from the page you got the full domain name from. Keep these limitations in mind as you build and test this application.
 
-![Recipients](/images/tutorials/31-news-digest-app/recipients.png)
+![Recipients](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/recipients.png)
 
 After you've received your test email, you can delete or comment out the function call in the final line of `lib/tasks.py`.
 
@@ -311,11 +311,11 @@ import random, string
 ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(20))
 ```
 
-![Random string](/images/tutorials/31-news-digest-app/randomstring.png)
+![Random string](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/randomstring.png)
 
 In your repl's "Secrets" tab, add a new key named `SECRET_KEY` and enter the random string you just generated as its value.
 
-![Repl secret key](/images/tutorials/31-news-digest-app/repl-secrets.png)
+![Repl secret key](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/repl-secrets.png)
 
 Next, we will create the `context` helper function. This function will provide the current user's data from our database to our application frontend. Add the following code to the bottom of `main.py`:
 
@@ -467,7 +467,7 @@ python main.py
 
 Once that's done, run your repl. You should see a login form.
 
-<img src="/images/tutorials/31-news-digest-app/login-form.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/login-form.png"
 alt="Start script"
 style="width: 450px !important;"/>
 
@@ -641,11 +641,11 @@ We use `&` to run the worker in the background – this is a part of Bash's synt
 
 Run your repl now, and you should see the worker start up with the rest of our application's components. Once the web application is started, open it in a new tab. Then try logging in with your email address – remember to check your spam box for your login email.
 
-![Open in new window](/images/tutorials/31-news-digest-app/open-new-window.png)
+![Open in new window](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/open-new-window.png)
 
 If everything's working correctly, you should see a page like this after clicking your login link:
 
-![Logged in view](/images/tutorials/31-news-digest-app/logged-in.png)
+![Logged in view](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/logged-in.png)
 
 ## Adding and removing subscriptions
 
@@ -720,7 +720,7 @@ Run your repl, and try subscribing and unsubscribing from some feeds. You can us
 * Hacker News feed: https://news.ycombinator.com/rss
 * /r/replit on Reddit feed: https://www.reddit.com/r/replit.rss
 
-![Subscriptions](/images/tutorials/31-news-digest-app/subscriptions.png)
+![Subscriptions](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/subscriptions.png)
 
 ## Sending digests
 
@@ -803,7 +803,7 @@ After that, we can send the email. Add the following code to the bottom of the f
 
 Run your repl, and click on the **Send digest** button. You should receive an email digest with today's items from each of your subscriptions within a few minutes. Remember to check your spam!
 
-![Digest email](/images/tutorials/31-news-digest-app/digest-email.png)
+![Digest email](https://replit-docs-images.bardia.repl.co/images/tutorials/31-news-digest-app/digest-email.png)
 
 ## Scheduling digests
 

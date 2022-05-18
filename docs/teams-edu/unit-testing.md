@@ -36,25 +36,25 @@ The testing pane can be found in your left-hand sidebar in your repl. It is your
 
 Open the testing pane within a project.
 
-![unit testing pane](/images/unit-testing/unit-testing-pane.png)
+![unit testing pane](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-pane.png)
 
 If prompted, select "Unit tests".
 
-<img src="/images/unit-testing/testing-method.png" style="width: 200px;">
+<img src="https://replit-docs-images.bardia.repl.co/images/unit-testing/testing-method.png" style="width: 200px;">
 
 Write a function within the main file that's easy to test: something which accepts parameters and returns a single result. Our example includes an `add` function which simply returns the result of adding two numbers.
 
 In a Python repl:
 
-![unit testing main py](/images/unit-testing/unit-testing-add-py.png)
+![unit testing main py](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-add-py.png)
 
 In a Node.js repl:
 
-![unit testing index js](/images/unit-testing/unit-testing-add-js.png)
+![unit testing index js](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-add-js.png)
 
 Click "+ Add test".
 
-![unit testing add test](/images/unit-testing/unit-testing-add-test.png)
+![unit testing add test](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-add-test.png)
 
 Providing a test will construct a unit test function for you. Only the body of the function is editable. Configure the test to invoke the `add` function and compare the result to the expected value. **If the actual value does not match the expected value, the assert method with throw an exception and cause the test to fail.** Include a helpful failure message to explain the intent of the test. 
 
@@ -62,21 +62,21 @@ Note: Python exposes its assert methods on the `self` object. This behavior will
 
 In a Python repl:
 
-![unit testing add modal](/images/unit-testing/unit-testing-add-modal.png)
+![unit testing add modal](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-add-modal.png)
 
 In a Node.js repl:
 
-![unit testing add modal js](/images/unit-testing/unit-testing-add-modal-js.png)
+![unit testing add modal js](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-add-modal-js.png)
 
 Note: by default, in a Node.js repl, the exports are available via an `index` variable, e.g. `index.add` here. You can add your own imports too, see the "Importing Libraries" section.
 
 Click "Run tests" to begin executing your test suite. Open the Console tab to monitor execution progress. 
 
-![unit testing running](/images/unit-testing/unit-testing-running.png)
+![unit testing running](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-running.png)
 
 Test results will appear in the Console.
 
-![unit testing results](/images/unit-testing/unit-testing-results.png)
+![unit testing results](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-results.png)
 
 
 ### Importing libraries
@@ -87,21 +87,21 @@ Imports can be configured in the "Setup" for the test suite, which is helpful if
 
 For example, you can import [NumPy](https://numpy.org/) for all tests. Keep in mind that this will affect all test functions within your test suite (you will not need to import more than once):
 
-![unit test setup](/images/unit-testing/unit-testing-import.png)
+![unit test setup](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-import.png)
 
 Here is an example function using NumPy:
 
-![unit test numpy](/images/unit-testing/unit-testing-np-example.png)
+![unit test numpy](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-np-example.png)
 
 Every other test you write can also use NumPy:
 
-![unit test numpy](/images/unit-testing/unit-testing-np-test.png)
+![unit test numpy](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-np-test.png)
 
 ### Importing modules
 
 If you would like to test multiple modules or files within your repl, you must manually import them in the "Setup".
 
-![unit test import module](/images/unit-testing/unit-testing-import-module.png)
+![unit test import module](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-import-module.png)
 
 ## Advanced Setup and Teardown
 
@@ -109,24 +109,24 @@ Sometimes tests require specific setup and teardown steps to configure and destr
 
 Consider a repl that relies on Repl Database and loads specific data by key.
 
-![unit testing database](/images/unit-testing/unit-testing-database.png)
+![unit testing database](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-database.png)
 
 ### Import
 
 Use import to include Repl Database.
 
-![unit testing db import](/images/unit-testing/unit-testing-db-import.png)
+![unit testing db import](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-db-import.png)
 
 ### Setup
 
 Use the setup to add a database key with test data:
 
-![unit testing setup](/images/unit-testing/unit-testing-setup.png)
+![unit testing setup](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-setup.png)
 
 ### Teardown
 Use the teardown to delete the test data:
 
-![unit testing teardown](/images/unit-testing/unit-testing-teardown.png)
+![unit testing teardown](https://replit-docs-images.bardia.repl.co/images/unit-testing/unit-testing-teardown.png)
 
 ## Assertion Documentation
 

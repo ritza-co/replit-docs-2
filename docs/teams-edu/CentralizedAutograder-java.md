@@ -18,7 +18,7 @@ We assume that your students are learning Java. We'll give an example Java assig
 
 The basic workflow is similar to in the previous guide, but this time you won't need to look at each student's submission individually. Instead, students will submit them to a centralised server, and you can view their code there, or just look at the summary report it will generate.
 
-![](/images/teamsForEducation/centralized-autograder-java/01-solution-overview.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/01-solution-overview.png)
 
 After a student starts the assignment, they will be able to write their code, test it on their own, and then submit it when they are satisfied with their answers. 
 
@@ -34,7 +34,7 @@ We'll start by creating the grading server. We don't want to share this code for
 4. Make a note to remind yourself and other admins not to publish this
 5. Press the 'Create' button
 
-![](/images/teamsForEducation/centralized-autograder-java/02-new-projects.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/02-new-projects.png)
 
 Our grading server will consist of a few different components, namely:
 
@@ -54,7 +54,7 @@ Instead of creating each file manually, we've set up a `.zip` project for you to
 language = "bash"
 run = "rm Main.java && wget https://github.com/replit/replit.github.io/raw/master/static/zip-template-repls/replit-autograding-server-java.zip && unzip -o replit-autograding-server-java.zip"
 ```
-![](/images/teamsForEducation/centralized-autograder-java/03-download-zip-bash.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/03-download-zip-bash.png)
 
 This removes the default `Main.java` file, downloads the zip project, and unzips it. It will also overwrite the `.replit` file you just created with one to run the new project instead.
 
@@ -108,7 +108,7 @@ Press the `Run` button and your server should start running and display two butt
 
 Take note of the URL, which is based on your team and project name, as we'll need to add this to the student assignment that we create in the next step.
 
-![](/images/teamsForEducation/centralized-autograder-java/04-java-running-server-and-url.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/04-java-running-server-and-url.png)
 
 
 ## Setting up the assignment 
@@ -119,7 +119,7 @@ Now that we have a server, we need to build the other half: the assignment proje
 
 On your teams page, create a new project. This will be specific to a single assignment for your students so call it something like "Grade 10 Java homework week 1" so you can keep track of different assignments for different classes.
 
-![](/images/teamsForEducation/centralized-autograder-java/05-new-assignment-project.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/05-new-assignment-project.png)
 
 ### Adding the project files
 
@@ -134,7 +134,7 @@ run = "rm Main.java && wget https://github.com/replit/replit.github.io/raw/maste
 
 4. Run your application
 
-![](/images/teamsForEducation/centralized-autograder-java/06-assignment-zip-bash.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/06-assignment-zip-bash.png)
 
 This will download all the files needed for the assignment project. 
 
@@ -213,7 +213,7 @@ Change the URL `https://newURLautograder.username.repl.co` to the one that you c
 
 To make sure that everything works as expected, run the project. It's still in test mode, so it should run the two functions with the example inputs and display the output. Because we only have the starter code, we can see that the functions don't work yet.
 
-![](/images/teamsForEducation/centralized-autograder-java/07-java-running-template-no-result.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/07-java-running-template-no-result.png)
 
 Now fill out the two functions so that they look as follows. Note that we have a deliberate error in the `subtract()` function to make sure that our grading is working as expected.
 
@@ -232,11 +232,11 @@ Now fill out the two functions so that they look as follows. Note that we have a
 
 Hit `Run` again and you should see that the functions return results now.
 
-![](/images/teamsForEducation/centralized-autograder-java/08-java-running-template-completed-errors.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/08-java-running-template-completed-errors.png)
 
 Change the `ReadyForSubmission=NO` line to `ReadyForSubmission=YES` and press `Run` again. This time it should submit the solution to the grader and return a confirmation message.
 
-![](/images/teamsForEducation/centralized-autograder-java/09-java-submission-confirmed.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/09-java-submission-confirmed.png)
 
 Fix the subtract function by swapping `b` and `a` as follows and submit it one more time by pressing the `Run` button. This lets us test that resubmissions are working.
 
@@ -276,13 +276,13 @@ You can also see `report.md` has been generated, with details of the two submiss
 
 If you want to discuss the submitted code with the student, you can navigate to the grading-project submissions page and view the submission in question. From there you can select a piece of code from your student's submission and click on the annotate button to leave a message. This makes it easy to ask for clarification or give advice. You can read more on the annotation feature [here](/teams-edu/reviewing-submissions)
 
-![](/images/teamsForEducation/centralized-autograder-java/10-java-example-report.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/10-java-example-report.png)
 
 ## Publishing the project for students to use
 
 Once you are happy with the assignment, press the "publish project" button in the top right. Students will get a notification that their homework is ready and be able to start the project, modify the code, and submit it to the grading server.
 
-![](/images/teamsForEducation/centralized-autograder-java/11-publish-asignment.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/centralized-autograder-java/11-publish-asignment.png)
 
 Leave the grading server running (don't press the "Stop" button) so that the students can submit when they are ready. You can visit your server URL (that you pasted into the `go.sh` file) to make sure that it stays up (it should display two buttons: "Choose file" and "Submit", if everything is running as expected. If you see an error or the page does not load, navigate back to the unpublished project file and hit the `Run` button again.)
 

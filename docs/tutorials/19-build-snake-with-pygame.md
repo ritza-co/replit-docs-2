@@ -1,12 +1,12 @@
 # Build the Snake Game with Pygame
 
-![](/images/tutorials/19-snake-pygame/snake-game-cover.jpg)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/snake-game-cover.jpg)
 
 Snake was an incredibly popular game, mostly remembered from the 1990s era cell phones. For many people, it was the only game on their phone at that time. In the most basic form, it's a super simple game, but still strangely entertaining. It's also a great game to learn the basics of game making from.
 
 In this tutorial, we'll implement the most basic form of Snake in [pygame](https://www.pygame.org/)
 
-![snake game functionality](/images/tutorials/19-snake-pygame/snake-game.gif)
+![snake game functionality](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/snake-game.gif)
 
 ## Overview and Requirements
 
@@ -29,7 +29,7 @@ That's a lot to think about! Let's get started and create a project in [Replit](
 
 Head over to [Replit](https://replit.com) and create a new repl. Choose **Python** as your language. Now, give this repl a name, like "snake-pygame".
 
-![creating an repl](/images/tutorials/19-snake-pygame/new_repl.png)
+![creating an repl](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/new_repl.png)
 
 After the repl has booted up, you should see a `main.py` file. This is where we'll start coding.
 
@@ -163,7 +163,7 @@ Lastly, we do the final render to the screen by calling `pygame.display.flip()`.
 
 To test that the game loop and drawing is working, run the program by clicking the large "**Run >**" button at the top of the repl. At the top right section of the repl, you should see a black window with a few blocks representing a snake on it.
 
-![test loop and render](/images/tutorials/19-snake-pygame/test-loop.png)
+![test loop and render](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/test-loop.png)
 
 ## Moving the Snake
 
@@ -217,7 +217,7 @@ while run:
 
 Notice that we've added the line `snake.move()`. This will call our `move` method that we added to our snake on every loop. This will create the impression of the snake moving smoothly on the screen. Test it out by clicking the "**Run >**" button at the top center of the repl. The snake should start at the top left of the window and move down the screen, until it disappears out of the window bounds.
 
-![snake moving test](/images/tutorials/19-snake-pygame/snake-move-test.gif)
+![snake moving test](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/snake-move-test.gif)
 
 ## Steering the Snake
 
@@ -255,7 +255,7 @@ Let's add code to our game loop to check if the "Up", "Down", "Left" or "Right" 
 
 Let's test this. Click the "**Run >**" button at the top center of the repl. For Pygame to receive keyboard input, you'll need to click into the game window first quickly, as the game is starting up. You should now be able to use the cursor keys to steer the snake around the screen! We don't have bounds checking yet, so the snake can disappear off the edge of the window. 
 
-![snake steering test](/images/tutorials/19-snake-pygame/snake-steer-test.gif)
+![snake steering test](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/snake-steer-test.gif)
 
 ## Adding Food 
 
@@ -322,7 +322,7 @@ food.draw(pygame, window)
 
 Great! Let's test up to this point by clicking the "**Run >**" button again. You should now see the snake, as well as a green block representing the food. 
 
-![Food drawing test](/images/tutorials/19-snake-pygame/food-draw-test.gif)
+![Food drawing test](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/food-draw-test.gif)
 
 ## Adding Collision Detection for Food
 
@@ -355,7 +355,7 @@ This adds a call to our food collision detection method on each loop of the game
 
 We can test this again, and see if our snake now grows when we eat some food. Click the "**Run >**" button again to test.
 
-![Snake eat test](/images/tutorials/19-snake-pygame/snake-eat-test.gif)
+![Snake eat test](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/snake-eat-test.gif)
 
 ## Tail and Bound Collision Detection
 
@@ -433,7 +433,7 @@ This code calls our bounds check and tail collision methods. If either of them c
 
 Congratulations! The basic Snake game is now complete. Click the "**Run >**" button at the top of the repl to try it out. When the snake crashes into itself, or goes off the edge of the window, the game will end and reset to a new one. 
 
-![game over!](/images/tutorials/19-snake-pygame/game-over.gif)
+![game over!](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/game-over.gif)
 
 ## Things to Try Next
 There are endless features that could be added to this game. Some ideas are: 

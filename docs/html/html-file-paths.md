@@ -7,7 +7,7 @@ The `src` or `href` attribute is required to link any external source to the HTM
 Here are the different examples of specifying file paths in different locations:
 - `<img src="myimage.jpg">` - it specifies that myimage.jpg is located in the same folder as the current HTML page.
 - `<img src="images/myimage.jpg">` - it specifies that myimage.jpg is located in the images folder in the current folder of the HTML page.
-- `<img src="/images/myimage.jpg">` - it specifies that myimage.jpg is located in the images folder at the root of the current HTML page.
+- `<img src="https://replit-docs-images.bardia.repl.co/images/myimage.jpg">` - it specifies that myimage.jpg is located in the images folder at the root of the current HTML page.
 - `<img src="../myimage.jpg">` - specifies that myimage.jpg is located in the folder one level up from the current folder.
 
 
@@ -31,7 +31,7 @@ The relative file path specifies a file that is related to the location of the c
 
 Let's take an example to see how the file path points to a file in the images folder located at the root of the current web.
 >```
-> <img src="/images/myimage.jpg" alt="sample">  
+> <img src="https://replit-docs-images.bardia.repl.co/images/myimage.jpg" alt="sample">  
 >```
 <iframe src="https://replit.com/@PauleenGregana/HTML-File-Path-Sample-2?lite=true"></iframe>
 

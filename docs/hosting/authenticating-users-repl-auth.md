@@ -17,7 +17,7 @@ You'll need a Replit account for this tutorial so if you haven't already, head o
 
 Create a new Python repl and give it a name. 
 
-![Creating a new repl](/images/repls/repl-auth/create-repl.png)
+![Creating a new repl](https://replit-docs-images.bardia.repl.co/images/repls/repl-auth/create-repl.png)
 
 ## Creating the Basic Flask App
 
@@ -59,7 +59,7 @@ Copy the following HTML to the `index.html` file:
 
 That's it for the Flask app. Run the code and you should see the browser window display 'Hello, Replit!'.
 
-![Hello Replit](/images/repls/repl-auth/hello-replit.png)
+![Hello Replit](https://replit-docs-images.bardia.repl.co/images/repls/repl-auth/hello-replit.png)
 
 ## The Authentication Script 
 
@@ -75,11 +75,11 @@ This script can be placed anywhere in the document **body** and will create an i
 
 If we run our application now, we'll see a `Login with Replit` button. 
 
-![Login button](/images/repls/repl-auth/login-button.png)
+![Login button](https://replit-docs-images.bardia.repl.co/images/repls/repl-auth/login-button.png)
 
 If you click the button, an authorization window will pop up with **Let (your site url) know who you are?**, a profile summary and an `Authorize` button. Clicking the button doesn't do anything at this stage; we'll add some functionality next. 
 
-![Replit authentication window](/images/repls/repl-auth/authentication-window.png)
+![Replit authentication window](https://replit-docs-images.bardia.repl.co/images/repls/repl-auth/authentication-window.png)
 
 ## Retrieving Information from the Authenticated Account
 
@@ -124,7 +124,7 @@ Above, we check if the user is already authenticated and display their account d
 
 Run the application and you should see `Hello, <username>! Your user id is <user_id>`
 
-![Hello user_name](/images/repls/repl-auth/hello-username.png)
+![Hello user_name](https://replit-docs-images.bardia.repl.co/images/repls/repl-auth/hello-username.png)
 
 ## Warning 
 

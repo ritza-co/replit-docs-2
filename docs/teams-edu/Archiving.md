@@ -6,7 +6,7 @@ Once you archive a team, members will still be able access repls created in this
 
 You can unarchive your team at any time.
 
-![Mouse cursor hovering over the dropdown menu next to a team, revealing the options to Archive or Delete the team](/images/teamsForEducation/teamarchive.png)
+![Mouse cursor hovering over the dropdown menu next to a team, revealing the options to Archive or Delete the team](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/teamarchive.png)
 
 - Instructors can [copy Team Projects from an archived team to a new team](/teams-edu/copying-projects-other-teams).
 

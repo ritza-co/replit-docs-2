@@ -16,13 +16,13 @@ We'll use Excalidraw to demonstrate the following different kinds of diagrams:
 
 To use Excalidraw, navigate to your Teams Pro [dashboard](https://replit.com/teams). Click on the "Create Team Repl" button to create a new repl. Choose a template language for the repl (any language will do, since we'll create a `.draw` file separately).
 
-![create repl](/images/teamsPro/excalidraw/create-repl.png)
+![create repl](https://replit-docs-images.bardia.repl.co/images/teamsPro/excalidraw/create-repl.png)
 
 This will direct you to the Replit workspace.
 
 In the workspace, click on the "Add file" icon next to "Files". Choose a name for your file and add the `.draw` extension.
 
-![Create draw file](/images/teamsPro/excalidraw/create-draw.png)
+![Create draw file](https://replit-docs-images.bardia.repl.co/images/teamsPro/excalidraw/create-draw.png)
 
 Replit will open the `.draw` file once you save it and you'll see the drawing environment on your editing pane.
 
@@ -50,7 +50,7 @@ Using Excalidraw, we can design a flowchart of this program. We'll use the follo
 * the diamond tool – for decisions; and
 * the arrow tool – to represent the relationships between the different shapes.
 
-![palindrome](/images/teamsPro/excalidraw/palindrome.png)
+![palindrome](https://replit-docs-images.bardia.repl.co/images/teamsPro/excalidraw/palindrome.png)
 
 By following our diagram, we now know what to include in our code when designing our program. This lets us create programs more efficiently because we can follow a clearly defined structure when implementing the code.
 
@@ -68,7 +68,7 @@ Go to the [Excalidraw](https://www.excalidraw.com) homepage and, next to the dra
 
 Once you find the category with the elements you would like to use, click "Add to Excalidraw" to import that library to the site's workspace.
 
-![browse libraries](/images/teamsPro/excalidraw/add-library.png)
+![browse libraries](https://replit-docs-images.bardia.repl.co/images/teamsPro/excalidraw/add-library.png)
 
 You can add any elements you want from these contributed libraries and then copy them across to your repl file using Ctrl+C and Ctrl+V (or Command+C and Command+V on macOS).
 
@@ -76,7 +76,7 @@ Using the "Awesome Icons" library, we have elements to represent the users of th
 
 These elements enhance the diagram and make it more interesting to define the composition of the database system. The resulting diagram would look as follows:
 
-![database](/images/teamsPro/excalidraw/database-diagram.png)
+![database](https://replit-docs-images.bardia.repl.co/images/teamsPro/excalidraw/database-diagram.png)
 
 ## Things to try
 
@@ -84,7 +84,7 @@ There are so many different kinds of diagrams to try with Excalidraw. We can des
 
 Take a look at this portfolio layout design. 
 
-![Website](/images/teamsPro/excalidraw/website.png)
+![Website](https://replit-docs-images.bardia.repl.co/images/teamsPro/excalidraw/website.png)
 
 Using the "Web Kit" library, we added the layout template of a portfolio website. We added icons from other libraries, such as the user icon that represents an image from the "Awesome Icons" library.
 

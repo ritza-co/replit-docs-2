@@ -38,7 +38,7 @@ We'll start with Python Turtle, as it is uses high-level commands like `forward(
 
 We are going to build a simple turtle game with two characters. One (controlled by you) will draw a maze and the other (controlled by your child's code) will attempt to navigate through it.
 
-![](/images/teamsForEducation/teach-your-kid/turtle-example.gif)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/teach-your-kid/turtle-example.gif)
 
 You can draw the maze and explain to your child how you did it and ask them to write the code to allow their turtle to navigate through it.
 
@@ -104,7 +104,7 @@ If your child likes solving these mazes and you get tired of creating them, you 
 
 If you want something almost as simple as Turtle, but with more advanced options, like easy handling of input through your mouse or keyboard, this is a good option to introduce before something more advanced such as PyGame.
 
-![](/images/teamsForEducation/teach-your-kid/python-play-example.gif)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/teach-your-kid/python-play-example.gif)
 
 Fork [this repl](https://replit.com/@ritza/coding-for-kids-python-play) which is a simple game that shows how to process mouse input. 
 
@@ -160,7 +160,7 @@ However, these constructs are also "closer to the metal" and they can help begin
 
 At its simplest, it can be used like Microsoft Paint: to draw pixel by pixel on a canvas, but using code instead of your mouse.
 
-![](/images/teamsForEducation/teach-your-kid/basic-example.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/teach-your-kid/basic-example.png)
 
 Here's a starter example showing how to draw a dog pixel by pixel and then add a line using a `for` loop.
 

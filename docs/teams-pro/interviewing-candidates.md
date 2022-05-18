@@ -21,7 +21,7 @@ To create a repl for an interview, you need to be a team admin. See the document
 
 Navigate to the "Teams" page. Under "Team Repls", click the "Create team repl" button and the following popup window will appear:
 
-<img src="/images/teamsPro/interviewing-candidates-tutorial-images/create_interview_repl.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/create_interview_repl.png"
     alt="Creating a repl"
     style="width: 80% !important;"/>
 
@@ -29,20 +29,20 @@ Choose the template language you will be using for the interview and give you re
 
 Once the repl has been created, you will be able to add the relevant files required for the interview. In this example, we've put the instructions for the candidate to follow during the interview in the `main.py` file.
 
-![interview challenge](/images/teamsPro/interviewing-candidates-tutorial-images/instructions.png)
+![interview challenge](https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/instructions.png)
 
 ## 2. Invite candidates
 
 Once you have written your challenges, invite candidates by clicking on the "Invite" button in the top-right corner of the window.
 
-<img src="/images/teamsPro/interviewing-candidates-tutorial-images/invite_members.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/invite_members.png"
     alt="repl invitation"
     style="width: 90% !important;"/>
 
 You can invite candidates by entering their email address or by generating a join link to share with them. Candidates will get a notification of the invite. They will need to sign up for a Replit account before they can accept the invitation.
 
 
-<img src="/images/teamsPro/interviewing-candidates-tutorial-images/notification.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/notification.png"
     alt="invite notification"
     style="width: 60% !important;"/>
 
@@ -52,17 +52,17 @@ Once candidates join the interview repl, they will be able to access the challen
 
 You can observe the candidates as they complete the challenges. Click on the round icon next to the "Invite" button to observe the candidate's repl and watch them work on their `main.py` file.
 
-![interview window](/images/teamsPro/interviewing-candidates-tutorial-images/interview_screen.gif)
+![interview window](https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/interview_screen.gif)
 
 Candidates can also view your IDE in the same way. This lets them see the changes you want them to make or new intructions you want to add.
 
-![candidate_screen](/images/teamsPro/interviewing-candidates-tutorial-images/candidate_screen.png)
+![candidate_screen](https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/candidate_screen.png)
 
 ## 4. Remove candidate access
 
 To remove candidates from interview repls so they cannot access the interview once it is complete, click on the "Invite" button. In the pop-up window, find the candidate’s name or email.
 
-<img src="/images/teamsPro/interviewing-candidates-tutorial-images/remove-candidates.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/remove-candidates.png"
     alt="remove candidate access"
     style="width: 90% !important;"/>
 

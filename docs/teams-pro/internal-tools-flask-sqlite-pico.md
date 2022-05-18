@@ -12,7 +12,7 @@ In this guide, we'll show you how to build a basic CRUD application using Flask 
 
 The final application will look like this.
 
-![shared task demo](/images/teamsPro/internal-tools-flask-sqlite/shared-task-demo.png)
+![shared task demo](https://replit-docs-images.bardia.repl.co/images/teamsPro/internal-tools-flask-sqlite/shared-task-demo.png)
 
 ## Building the Python backend
 
@@ -282,7 +282,7 @@ Your application should function at this point. Note that login with Replit does
 
 To ensure that your team can always access your internal application, enable "Always On" mode by clicking on your repl's name and toggling the switch.
 
-![enable always on](/images/teamsPro/internal-tools-flask-sqlite/always-on.png)
+![enable always on](https://replit-docs-images.bardia.repl.co/images/teamsPro/internal-tools-flask-sqlite/always-on.png)
 
 ## Where next?
 

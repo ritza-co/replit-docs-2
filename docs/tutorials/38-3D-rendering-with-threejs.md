@@ -8,7 +8,7 @@ Using three.js with Replit requires a little extra setup, but your site will be 
 
 Head over to [Replit](https://replit.com) and create a new repl. Choose **HTML, CSS, JS** as your project type. Give this repl a name, like "3D rendering".
 
-![creating a new replit project](/images/tutorials/38-3drendering-threejs/new-project.png)
+![creating a new replit project](https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/new-project.png)
 
 
 ## Importing three.js to the project
@@ -107,7 +107,7 @@ renderer.render(scene, camera);
 
 Now try running the code, by pushing the `Run` button at the top of the Replit window. You should see your first scene, a green cube and torus:
 
-<img src="/images/tutorials/38-3drendering-threejs/static-scene.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/static-scene.png"
     alt="static-scene"
     style="Width: 60% !important;"/>
 
@@ -140,7 +140,7 @@ To kick off the animation for the first time, we call the `animate()` function o
 
 Press the "Run" button again and you should see the torus and cube rotating in the Replit window:
 
-<img src="/images/tutorials/38-3drendering-threejs/animated-scene.gif"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/animated-scene.gif"
     alt="animated-scene"
     style="Width: 60% !important;"/>
 
@@ -164,7 +164,7 @@ Let's use this [model of soda cans](https://sketchfab.com/3d-models/soda-cans-4e
 
 Add the model to your repl by dragging the folder into the "Files" panel on the left.
 
-<img src="/images/tutorials/38-3drendering-threejs/add-model.gif"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/add-model.gif"
     alt="add-model"
     style="Width: 60% !important;"/>
 
@@ -278,7 +278,7 @@ You'll notice that, along with calls to the new function, we added in an extra l
 
 If you run the code, you'll see that the model is now visible in the scene. However, it's a side-on view and a bit far away. 
 
-<img src="/images/tutorials/38-3drendering-threejs/model-side-view.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/model-side-view.png"
     alt="model-side-view"
     style="Width: 60% !important;"/>
 
@@ -320,7 +320,7 @@ animate();
 
 Save and run the project. Now you can try using the mouse to rotate the model and zoom in and out. 
 
-<img src="/images/tutorials/38-3drendering-threejs/model-orbit-controls.gif"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/38-3drendering-threejs/model-orbit-controls.gif"
     alt="model-orbit-controls"
     style="Width: 90% !important;"/>
 

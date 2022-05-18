@@ -58,7 +58,7 @@ Go to the repl you are linking:
 
 3. Click on the pencil icon next to the URL for your repl:
 
-![screenshot of edit button](/images/repls/edit-custom-domain-icon.png)
+![screenshot of edit button](https://replit-docs-images.bardia.repl.co/images/repls/edit-custom-domain-icon.png)
 
 4. Enter the full domain where you'd like the repl to be accessible from without the `www.` (Example - `replitiscool.tk`)
 

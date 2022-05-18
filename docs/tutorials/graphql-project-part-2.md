@@ -22,7 +22,7 @@ We will do this by completing the following steps:
 
 ## Understanding the App Shell Model
 
-![](/images/tutorials/graphql-project/graphql-project-11.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-11.png)
 
 We'll structure our website based on the [App Shell Model](https://developers.google.com/web/fundamentals/architecture/app-shell). This approach is useful for [single-page applications](https://en.wikipedia.org/wiki/Single-page_application), websites or applications that rely almost exclusively on JavaScript for their logic and routing. By using an app shell pattern, we ensure that users never see a blank screen as they move between different states and pages. [Addy Osmani](https://addyosmani.com/), a well known senior engineer at [Google](http://google.com/), describes an app shell as follows:
 
@@ -180,7 +180,7 @@ With the above functionality set up, we now need some way to trigger the page ch
 
 When running your code, you will see the following:
 
-![](/images/tutorials/graphql-project/graphql-project-12.gif)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-12.gif)
 
 Note how the name of the route is both shown inside the `<main id="app"></main>` element and updated in the URL as a user navigates to a new hash-based route.
 
@@ -304,7 +304,7 @@ We can then apply the following CSS styling to our `style.css` file:
 
 The above should provide us with a nicely designed app shell:
 
-![](/images/tutorials/graphql-project/graphql-project-13.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-13.png)
 
 ### Making our web app responsive
 
@@ -425,7 +425,7 @@ We'll also need to add some additional CSS for the HTML elements we just added. 
 
 By adding the above, our app shell will now work as follows on different screen sizes:
 
-![](/images/tutorials/graphql-project/graphql-project-14.gif)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-14.gif)
 
 We're now controlling our routing exclusively through JavaScript instead of the default browser behaviour of loading a new HTML file. This means we need to toggle the CSS styling that indicates what page you are viewing. We'll do this using JavaScript in our routing function as follows:
 
@@ -487,7 +487,7 @@ The above retrieves all HTML elements with the class of `header__button` and the
 
 ## Creating Reusable Blocks
 
-![](/images/tutorials/graphql-project/graphql-project-15.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-15.png)
 
 Now that we have a working app shell, it's time to create the actual page content. A common approach is to create basic reusable HTML blocks to render your interface. This keeps our code[DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Luckily, BEM already provides us with a mental model to scope areas of HTML and CSS to specific reusable blocks.
 
@@ -555,7 +555,7 @@ We are using `postion: relative` and `z-index: -1` to position the image underne
 
 The above should now look like this.
 
-![](/images/tutorials/graphql-project/graphql-project-16.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-16.png)
 
 However, we want to include another variant of our hero block (to be used on the homepage and on single episode pages). This variant will embed a specific audio file and call to actions as required. To do this, we can modify our hero HTML code from above as follows:
 
@@ -634,7 +634,7 @@ We also need to add the following CSS to our `style.css` file:
 
 By making the above changes, we are able to use the hero as follows as well:
 
-![](/images/tutorials/graphql-project/graphql-project-17.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-17.png)
 
 ### Adding a grid of cards
 
@@ -682,7 +682,7 @@ By adding the following CSS, we can set our grid to alternate between a single c
 
 After adding the above, we should see the following behavior in our HTML:
 
-![](/images/tutorials/graphql-project/graphql-project-18.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-18.png)
 
 However, we still need to populate the columns with card components. We can create a single card with the code below. This element will then be repeated within the grid cells:
 
@@ -763,7 +763,7 @@ Let's add the following styling for our card components:
 
 The above should create a single card element as follows:
 
-![](/images/tutorials/graphql-project/graphql-project-19.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-19.png)
 
 ### Adding some details
 
@@ -821,13 +821,13 @@ We can then add the following HTML in order to test the above approach:
 
 This should render the following within our interface:
 
-![](/images/tutorials/graphql-project/graphql-project-21.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-21.png)
 
 ### Adding a divider to separate sections
 
 Next, we'll add an HTML block that allows us to separate different sections on a page.
 
-![](/images/tutorials/graphql-project/graphql-project-22.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-22.png)
 
 ```js
 <div class="divider">
@@ -896,7 +896,7 @@ Lastly, we'll want to display some type of animated loader to users when data is
 }
 ```
 
-![](/images/tutorials/graphql-project/graphql-project-23.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/graphql-project/graphql-project-23.png)
 
 Up to now, we've been showing users a "Loading..." piece of text. To have our website start off as loading we need to add the loader into our `<main>` element in the HTML. We also want to replace the current app node with a loader when a user changes the current page. You can achieve this with:
 

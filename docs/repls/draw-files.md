@@ -2,7 +2,7 @@
 Draw files are collaborative whiteboards where you can sketch ideas, explain concepts, or just doodle!
 
 <img
-  src="/images/repls/draw-example.png"
+  src="https://replit-docs-images.bardia.repl.co/images/repls/draw-example.png"
 />
 
 
@@ -24,5 +24,5 @@ the excalidraw library provides a wide variety of keyboard shortcuts to speed up
 
 
 <img
-  src="/images/repls/excalidraw-shortcuts.png"
+  src="https://replit-docs-images.bardia.repl.co/images/repls/excalidraw-shortcuts.png"
 />

@@ -8,13 +8,13 @@ We're going to focus on basic animation and movement to create a solid base from
 
 Create a new repl and select "PyGame" from the language dropdown.
 
-![](/images/tutorials/14-2d-platform-game/14-01-new-pygame-repl.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/14-2d-platform-game/14-01-new-pygame-repl.png)
 
 You'll see "Python3 with PyGame" displayed in the default console and a separate pane in the Replit IDE where you will be able to see and interact with the game you will create.
 
 Before we start writing code, we're going to need a few sprites, which we've made available [here](/tutorial-files/2d-platform-game/2d-platform-game-sprites.zip). Extract this ZIP file and add the files inside to your repl using the `upload file` function. You can select multiple files to upload at once. Your repl's file pane should now look like this:
 
-<img src="/images/tutorials/14-2d-platform-game/14-02-repl-files.png" style="width:60%; height:60%">
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/14-2d-platform-game/14-02-repl-files.png" style="width:60%; height:60%">
 
 In this tutorial, we will be gradually building up the `main.py` file, adding code in different parts of the file as we go along. Each code snippets will contain some existing code to give you an idea of where in the file the new additions should be placed. The line `# ...` will be used to represent existing code that has been left out for brevity.
 
@@ -164,7 +164,7 @@ In contrast to `update`, we need all our sprites to draw themselves. After drawi
 
 Our game loop is now set up to update and draw every sprite in the game in each cycle of the game loop. If you run the game now, you should see both the player and the line of boxes on the screen.
 
-![](/images/tutorials/14-2d-platform-game/14-03-platform-game-1.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/14-2d-platform-game/14-03-platform-game-1.png)
 
 Next, we're going to add some user interaction.
 
@@ -572,7 +572,7 @@ def main():
     boxes.add(Box(100,70))
 ```
 
-![](/images/tutorials/14-2d-platform-game/14-04-platform-game-2.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/14-2d-platform-game/14-04-platform-game-2.png)
 
 Another issue that you may have already noticed is that the player sinks into the ground after some jumps – this results from the imprecision of our collision detection.
 
@@ -667,7 +667,7 @@ Now do the same for `dx`. As we've already figured out the appropriate `dy` for 
 
 Run the game. The player should now stop when he runs into a wall or jumps into a ceiling.
 	
-![](/images/tutorials/14-2d-platform-game/14-05-platform-game-final.png)
+![](https://replit-docs-images.bardia.repl.co/images/tutorials/14-2d-platform-game/14-05-platform-game-final.png)
 
 ## Where Next?
 

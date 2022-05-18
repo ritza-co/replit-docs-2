@@ -11,7 +11,7 @@ Once you have forked a template, there are 2 config files that you can use to cu
 
 To edit these files and customize the environment, ensure that the repl's config files are showing: 
 
-<img src="/images/tutorials/30-build-with-nix/show-hidden-files.png"
+<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/show-hidden-files.png"
     alt="Show configuration"
     style="width: 350px !important;"/>
 

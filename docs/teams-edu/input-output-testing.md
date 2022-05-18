@@ -15,9 +15,9 @@ If you are new to projects, you can find more info on creating a project [here](
 
 ## Input/Output Tests
 
-Once your project is created, you'll find the "Input/Output Tests" window by clicking <img src="/images/teamsForEducation/input-output-tests/in-out-icon.png" style="width: 38px; margin: 0; display: inline-block; vertical-align: middle;"> in the left side bar.
+Once your project is created, you'll find the "Input/Output Tests" window by clicking <img src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/in-out-icon.png" style="width: 38px; margin: 0; display: inline-block; vertical-align: middle;"> in the left side bar.
 
-![Image showing in/out tests location](/images/teamsForEducation/input-output-tests/in-out-testing-location.png)
+![Image showing in/out tests location](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/in-out-testing-location.png)
 
 ## Creating a Project with Input/Output Tests
 
@@ -38,21 +38,21 @@ Let's say we have a test on string formatting in Python.
 
 We have created a README.md file with the student's instructions.
 
-![Image showing match README.md](/images/teamsForEducation/input-output-tests/match-readme.png)
+![Image showing match README.md](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-readme.png)
 
 We have created some skeleton code for the student to start from.
 
-![Image showing match main.py](/images/teamsForEducation/input-output-tests/match-skeleton-code.png)
+![Image showing match main.py](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-skeleton-code.png)
 
 Now we can create the test.
 
 Open the "Input/Output Tests" pane from the left sidebar and click on "+ Create test".
 
-![Image showing Create test button](/images/teamsForEducation/input-output-tests/create-test.png)
+![Image showing Create test button](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/create-test.png)
 
 A modal window will pop up where you can configure the input and output of the test. 
 
-![Image showing match test config](/images/teamsForEducation/input-output-tests/match-config.png)
+![Image showing match test config](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-config.png)
 
 Above, we create the test with the following steps:
 
@@ -65,15 +65,15 @@ We are selecting "match" for this test because we don't want an exact match. Stu
 
 Once the test is created, it'll be listed under "Input/Output Tests" and you can delete or modify it from there. To edit the test, click on the pencil icon next to the test name.
 
-![Image showing match test created](/images/teamsForEducation/input-output-tests/match-test-created.png)
+![Image showing match test created](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-test-created.png)
 
 We now have a complete project for students to work on. Let's publish the project and look at the testing from the student's perspective.
 
-![Image showing the publishing button](/images/teamsForEducation/input-output-tests/publish-unpublished.gif)
+![Image showing the publishing button](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/publish-unpublished.gif)
 
 Once published, the students will get a notification that a new project has been published. Clicking on the notification opens the team's projects page where they can find the new project. They will click on "Start project" to open it.
 
-![Student Notification](/images/teamsForEducation/input-output-tests/student-notification.png)
+![Student Notification](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/student-notification.png)
 
 The student will be greeted with the project instructions `README.md file` added earlier. 
 
@@ -81,19 +81,19 @@ The `main.py` file has the skeleton code we added, and they can start working fr
 
 Let's open the input/output tests and run the String-Formatting test as a student. It will fail now, because we haven't added any code.
 
-![Image showing student running the test- fail](/images/teamsForEducation/input-output-tests/match-test-failing.png)
+![Image showing student running the test- fail](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-test-failing.png)
 
 The student can check the results to see what the expected output should be.
 
-![Image showing failed results match](/images/teamsForEducation/input-output-tests/match-test-fail-results.png)
+![Image showing failed results match](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-test-fail-results.png)
 
 Let's add some code to make the test pass. We'll change the code to print the full name and then run the test again.
 
-![Image showing string-code](/images/teamsForEducation/input-output-tests/match-test-passed.png)
+![Image showing string-code](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-test-passed.png)
 
 Checking the "passed" results now, you'll see that the expected output only has the full name "John Smith", whereas the actual output has a string with some other words in it. With match tests, this will pass because the expected output is present within the actual output. If the name was incorrectly printed ie. "Smith John", then this test would fail. If you want an exact match, you can use "exact" for the input/output test type.
 
-![Image showing the passed results](/images/teamsForEducation/input-output-tests/match-passed-results.png)
+![Image showing the passed results](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/match-passed-results.png)
 
 ## Exact Tests 
 
@@ -105,7 +105,7 @@ As an example, we'll create an assignment where students have to write the formu
 
 We have already created the skeleton code and README.md file, so now we'll create the test.
 
-![Image showing the exact test config](/images/teamsForEducation/input-output-tests/exact-test-config.png)
+![Image showing the exact test config](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/exact-test-config.png)
 
 Above, we create an exact test that will check for exactly the areas specified within the expected output. Follow the below steps to create an exact test.
 
@@ -125,19 +125,19 @@ The student can then add their code to the main.py file with the skeleton code a
 
 Below we have code that uses the incorrect representation of `pi` and because we are using exact tests, the test is failing. 
 
-![Image showing incorrect pi test fail](/images/teamsForEducation/input-output-tests/exact-failed-pi-results.png)
+![Image showing incorrect pi test fail](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/exact-failed-pi-results.png)
 
 Then, when we import the math module and use `math.pi`, we get the correct answer that matches exactly with the expected output, so our test passes, and it is safe for the student to submit their code.
 
-![Image showing exact test passing ](/images/teamsForEducation/input-output-tests/exact-test-pass.png)
+![Image showing exact test passing ](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/exact-test-pass.png)
 
 When a student submits a project without running the tests first, they will get a notification asking them to run tests first or submit anyway. This is a reminder for students to test their work before submitting as it will give them a good indication whether the work they did is correct.
 
-![Image showing submit without running test](/images/teamsForEducation/input-output-tests/submit-without-testing.png)
+![Image showing submit without running test](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/submit-without-testing.png)
 
 When a student tries to submit a project while tests are failing, they will also get a notification making them aware of the fact, with an option to "View tests" or "Submit anyway".
 
-![Image showing submission with failing tests](/images/teamsForEducation/input-output-tests/submit-with-failing-tests.png)
+![Image showing submission with failing tests](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/submit-with-failing-tests.png)
 
 ## Regex Tests
 
@@ -149,7 +149,7 @@ As an example, we have a project where the student has to write code that will c
 
 For the test, we'll set up a regex test to check that the student's email address matches the required email format.
 
-![Image showing regex test config](/images/teamsForEducation/input-output-tests/regex-test-config.png)
+![Image showing regex test config](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/regex-test-config.png)
 
 To create the test seen above:
 
@@ -161,7 +161,7 @@ To create the test seen above:
 
 When we add the code to compile the email address and run the test, we get the following results.
 
-![Image showing regex passed results](/images/teamsForEducation/input-output-tests/regex-pass-results.png)
+![Image showing regex passed results](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/input-output-tests/regex-pass-results.png)
 
 If you don't want to be lenient of an extra newline and prefer to have a truly exact match with the expected output and actual output, you can use the `regex` with a `^` at the start and `$` at the end. Keep in mind though, that you'll have to escape the other regex characters.
 

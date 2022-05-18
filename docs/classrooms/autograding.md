@@ -4,7 +4,7 @@ In [Replit Classroom](https://replit.com/classrooms) you can automatically corre
 and grade your student's assignment submissions by implementing
 **Unit tests** or **Input/output matching tests**.
 
-![](https://replit.github.io/media/autograding/correction.png)
+![](https://replit-docs-images.bardia.repl.co/images/media/autograding/correction.png)
 
 ## Input/Output Matching
 
@@ -45,7 +45,7 @@ matching feature comes in.
 After you've selected it as your preferred correction method, you can then click
 'create test case' to open the test creation form:
 
-![](https://replit.github.io/media/autograding/create_test.png)
+![](https://replit-docs-images.bardia.repl.co/images/media/autograding/create_test.png)
 
 * Name: you want to give your test a descriptive name, something that would hint
   at what went wrong if the student fails this test. In this case, we're
@@ -67,20 +67,20 @@ In this case, we went with regexp to check
 against the expected number output (6 in this case) because we don't really care what other
 things the program is printing.
 
-![](https://replit.github.io/media/autograding/tests.png)
+![](https://replit-docs-images.bardia.repl.co/images/media/autograding/tests.png)
 
 After creating a couple of tests (`2 * 3 = 6` and `-5 * 3 = -15`) we're going to
 test this on the student end (using the "student preview" button) to see how the
 experience looks like:
 
-![](https://replit.github.io/media/autograding/test_failed.png)
+![](https://replit-docs-images.bardia.repl.co/images/media/autograding/test_failed.png)
 
 You'll see here that the user failed the test because they added instead of
 multiplying (resulting in 2 + 3 = 5).
 
 And after fixing to correctly multiply we'll pass all the tests:
 
-![](https://replit.github.io/media/autograding/tests_passed.png)
+![](https://replit-docs-images.bardia.repl.co/images/media/autograding/tests_passed.png)
 
 ## Unit Tests
 

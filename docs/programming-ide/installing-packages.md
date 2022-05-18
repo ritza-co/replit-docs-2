@@ -6,7 +6,7 @@ With Replit, you can use most packages available in Python and JavaScript. Repli
 
 On a Python or JavaScript repl, you can search for a package to install by clicking on the
 <img
-  src="https://replit.github.io/media/misc/libraries_hover.png"
+  src="https://replit-docs-images.bardia.repl.co/images/media/misc/libraries_hover.png"
   style="height: 24px; vertical-align:text-bottom; width: 21px; margin: 0 3px; display: inline-block;"
 />
 icon on the sidebar in the workspace. Simply search for the package you want, and select it to install the package or to view its documentation. Clicking on the "Add Package" icon will put it in a spec file and a lock file. If no such file exists, it will be created for you.

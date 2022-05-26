@@ -1,3 +1,7 @@
+---
+title: Snake game with PyGame
+---
+
 # Creative coding with Replit
 
 If you're into creating graphics, 3D worlds, games, sounds, and other more creative things, Replit has a number of tools and environments to help you. One of the benefits of coding with Replit is that you can switch between different programming paradigms and try them out without having to set it all up yourself.

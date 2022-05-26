@@ -1,5 +1,4 @@
-<!-- omit in toc -->
-# Pinboard project: part 2
+# Pinboard project Part 2: JavaScript
 
 [Part 1](./PinboardProjectPart1) of this project showed us how to create the basic structure and styling of our pinboard, but static HTML and CSS can only get us so far. The last step in creating a fully functional pinboard is to add interactivity with JavaScript. Here is what we will cover now:
 

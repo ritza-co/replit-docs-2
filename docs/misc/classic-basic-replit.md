@@ -1,4 +1,4 @@
-# Classic Basic on Replit (in beta)
+# Classic Basic on Replit
 
 - Simple syntax based on Classic Basic
 - A 50x50 pixel display for graphics and games

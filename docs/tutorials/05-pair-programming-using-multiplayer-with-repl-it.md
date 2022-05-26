@@ -1,3 +1,7 @@
+---
+title: Multiplayer
+---
+
 # Multiplayer: Pair programming with Replit
 
 Software developers have a reputation for being loners, but they don't always code by themselves. [Pair programming](https://en.wikipedia.org/wiki/Pair_programming) is used by many programmers to

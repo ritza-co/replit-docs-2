@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Enabling Always-on
 
 Repls typically go to sleep after a period of inactivity. To make sure that your repl is restarted, you can use our Always-on functionality.

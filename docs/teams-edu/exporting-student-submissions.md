@@ -1,3 +1,7 @@
+---
+sidebar_position: 24
+---
+
 # Exporting student submissions
 
 Students may export their project submissions into their personal Replit accounts to maintain access when they are removed from a Team or a Team is archived.

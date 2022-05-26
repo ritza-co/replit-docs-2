@@ -1,3 +1,7 @@
+---
+sidebar_position: 28
+---
+
 # Teams for Edu Support
 
 Need some extra help with Teams for Edu? 

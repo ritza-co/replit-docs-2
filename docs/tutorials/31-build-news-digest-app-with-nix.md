@@ -1,3 +1,7 @@
+---
+title: Email news digest app with Nix & Python
+---
+
 # Build an email news digest app with Nix, Python and Celery
 
 In this tutorial, we'll build an application that sends regular emails to its users. Users will be able to subscribe to [RSS](https://en.wikipedia.org/wiki/RSS) and [Atom](https://en.wikipedia.org/wiki/Atom_(Web_standard)) feeds, and will receive a daily email with links to the newest stories in each one, at a specified time.

@@ -1,3 +1,7 @@
+---
+title: Static site generator
+---
+
 # Create a static site generator with Python and Replit
 
 A static site generator (SSG) is a tool for building informational websites such as blogs and documentation repositories. SSGs allow technical users to build websites that are faster and more secure than ones running on dynamic platforms such as Wordpress, without having to write each HTML page.

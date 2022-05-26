@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # FAQ
 
 This page should answer some general queries you may have, but if you need more information or are still confused, please email contact@replit.com. 

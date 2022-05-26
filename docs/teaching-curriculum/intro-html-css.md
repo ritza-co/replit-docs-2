@@ -1,4 +1,9 @@
-# Intro HTML and CSS curriculum
+---
+sidebar_position: 3
+title: Intro to HTML/CSS
+---
+
+# Intro to HTML & CSS curriculum
 
 Welcome to our web design course. We are providing you with a free set of pick up and play materials that include: course timeline, course outline, a high quality set of teaching slides, teacher notes and engaging activities with premade Replit templates and teacher solutions. 
 

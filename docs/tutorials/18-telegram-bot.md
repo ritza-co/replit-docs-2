@@ -1,3 +1,7 @@
+---
+title: Telegram bot
+---
+
 # Quick-start Telegram Bot
 
 If you've ever used an online forum, you may have seen that there are sometimes ways to post messages other than doing it straight on the forum, like posting by email.

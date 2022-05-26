@@ -1310,6 +1310,21 @@
     "@types/react-router-dom" "*"
     react-helmet-async "*"
 
+"@docusaurus/plugin-client-redirects@^2.0.0-beta.20":
+  version "2.0.0-beta.20"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-beta.20.tgz#f4bbe5958bbcc7915968c23d99dcfcbfe82df8d2"
+  integrity sha512-YgIDFpr2EDpLwYUtq1t6VD7EOsD3YqA6biXkQmgts1gjFZ1pqVte6Q+tXVzwvL/xR7NdnekevygmS98/IPNePQ==
+  dependencies:
+    "@docusaurus/core" "2.0.0-beta.20"
+    "@docusaurus/logger" "2.0.0-beta.20"
+    "@docusaurus/utils" "2.0.0-beta.20"
+    "@docusaurus/utils-common" "2.0.0-beta.20"
+    "@docusaurus/utils-validation" "2.0.0-beta.20"
+    eta "^1.12.3"
+    fs-extra "^10.1.0"
+    lodash "^4.17.21"
+    tslib "^2.4.0"
+
 "@docusaurus/plugin-content-blog@2.0.0-beta.20":
   version "2.0.0-beta.20"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-blog/-/plugin-content-blog-2.0.0-beta.20.tgz#7c0d413ac8df9a422a0b3ddd90b77ec491bbda15"
@@ -1664,6 +1679,11 @@
   version "1.0.0-next.21"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
+
+"@rottitime/react-hook-message-event@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@rottitime/react-hook-message-event/-/react-hook-message-event-1.0.8.tgz#b8b314e662b645aa7cbfe95a634fad2a6934d1cc"
+  integrity sha512-Fn7ZCCwGHgOzak4fyOjqs1dwTBOb+1MEUNkt8cVnRw7mAkABOg8PNH0PKAlow3TZRLlaGZaJI0KwYYe/UzdxoQ==
 
 "@sideway/address@^4.1.3":
   version "4.1.4"

@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Git commands reference guide
 
 You can keep track of changes to your repls using Git. Here are some basic and advanced Git commands you might find useful. Note that these are not intended as a replacement for the [Git reference docs](https://git-scm.com/docs), but rather a simpler version of the most commonly used commands.

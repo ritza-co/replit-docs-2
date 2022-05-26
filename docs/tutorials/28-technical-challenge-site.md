@@ -1,3 +1,7 @@
+---
+title: Technical challenge site with replit.web
+---
+
 # Build a team technical challenge website with `replit.web`
 
 Code competitions and hackathons are a fun way to expand your programming skills, get exposed to new ideas, and work together to solve difficult problems. The time-limited, competitive nature of these competitions provides an additional challenge.

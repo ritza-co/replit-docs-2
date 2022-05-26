@@ -1,3 +1,7 @@
+---
+title: Managing dependencies and using NLP
+---
+
 # Managing dependencies using Replit
 
 Nearly all useful programs rely to some extent on pre-existing code in various forms. The existing code that your code relies on is known as a _dependency_. You have already come across some dependencies in previous tutorials: you used the `math` module to calculate quadratic equations in the first tutorial and you used the `requests` module to fetch weather data in the second tutorial.

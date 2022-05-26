@@ -1,3 +1,7 @@
+---
+sidebar_position: 16
+---
+
 # Example homework assignments
 
 If you need some inspiration to set homework assignments or enrichment projects for your students, we've put together some guides and full projects that you can use.

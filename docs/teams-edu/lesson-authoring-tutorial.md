@@ -1,3 +1,7 @@
+---
+sidebar_position: 11
+---
+
 # How to Create a Lesson with Replit
 
 _You can find some more information about lesson authoring [here](/teams-edu/lesson-authoring)._

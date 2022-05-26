@@ -1,3 +1,7 @@
+---
+sidebar_position: 25
+---
+
 # Curriculum Hub
 
 With the [Curriculum Hub](https://replit.com/curriculum), admins on Teams for Education accounts can access pre-built projects, lesson plans, instructions, and tests to import and utilize in their own teams. Curriculum Hub materials are designed to work as full units or as stand-alone projects.

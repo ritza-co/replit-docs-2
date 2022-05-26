@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # How to manage and copy repls for interviewing
 
 If you're using Replit for technical interviews, you'll probably want to use one or more template repls. For each candidate, you can create a copy of the template repl for that role. This lets you keep a record of each candidate's work.

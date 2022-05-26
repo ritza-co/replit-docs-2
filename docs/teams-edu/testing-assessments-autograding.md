@@ -1,3 +1,7 @@
+---
+sidebar_position: 18
+---
+
 # Testing, assessments, and autograding
 
 Replit has a number of features related to helping teachers automatically grade students' assignments.

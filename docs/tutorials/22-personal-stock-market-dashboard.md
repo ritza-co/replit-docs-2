@@ -1,3 +1,7 @@
+---
+title: Stock market dashboard
+---
+
 # How to Build a Personal Stock Market Dashboard
 
 In this tutorial, we will be building a single-page web dashboard for tracking a real or imaginary stock portfolio. This dashboard will:

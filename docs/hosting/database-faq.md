@@ -1,5 +1,8 @@
-# Database FAQ
+---
+sidebar_position: 10
+---
 
+# Database FAQ
 
 Replit Database is a simple, user-friendly key-value store inside of every repl. No configuration is required; you can get started right away!
 

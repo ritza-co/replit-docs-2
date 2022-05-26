@@ -1,3 +1,7 @@
+---
+sidebar_position: 23
+---
+
 # Archiving Teams
 
 Teams that are no longer in use may be archived by visiting your Teams dashboard, expanding the menu next to the team you wish to archive, and selecting "Archive".

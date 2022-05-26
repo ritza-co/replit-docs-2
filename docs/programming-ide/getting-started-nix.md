@@ -1,4 +1,8 @@
-# Nix: Getting started with Nix
+---
+sidebar_position: 5
+---
+
+# Getting started with Nix
 
 Replit supports all programming languages through our integration with Nix. Our tutorial [Building with Nix on Replit](https://docs.replit.com/tutorials/30-build-with-nix) will give you a good understanding of Nix, the different configuration files and options available for your Nix repl, and some ideas for what can be built on Replit by leveraging the power of Nix.
 

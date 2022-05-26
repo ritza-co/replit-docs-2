@@ -1,3 +1,7 @@
+---
+sidebar_position: 22
+---
+
 # Google Classrooms Integration 
 
 With Replit's Google Classroom integration, teachers can quickly add every student in their Google Classroom to a Team and easily share Replit projects as Google Classroom assignments.

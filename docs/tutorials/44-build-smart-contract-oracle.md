@@ -1,3 +1,7 @@
+---
+title: Smart contract oracle with Solidity
+---
+
 # Build a smart contract oracle with Solidity, Node.js, and Replit
 
 Oracles are bridges between smart contract protocols running on the blockchain and real-world data feeds. In previous Solidity tutorials, we've designed a [simple Ethereum escrow protocol](https://docs.replit.com/tutorials/33-escrow-contract-with-solidity) and a composable robot NFT ([Part 1](https://docs.replit.com/tutorials/42-build-a-robot-nft), [Part 2](https://docs.replit.com/tutorials/43-build-a-robot-nft-p2)). These were both self-contained systems. In this tutorial, we'll learn about how to pull external data (such as exchange rates or random numbers) into our smart contracts by building an oracle, as well as how to combine different contract protocols.

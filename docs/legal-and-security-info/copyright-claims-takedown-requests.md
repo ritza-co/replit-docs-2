@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Copyright claims and takedown requests
 
 It is against our [Terms and Conditions](https://replit.com/site/terms) for users to publish any content that violates privacy rights, publicity rights, copyrights, or contract rights. We will immediately remove a repl at your request in the case of either of the following:

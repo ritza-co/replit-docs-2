@@ -1,3 +1,7 @@
+---
+title: Data science
+---
+
 # Data science with Replit: Plots and graphs
 
 So far, all the programs we have looked at have been entirely **text based**. They have taken text input and produced text output, on the console or saved to files.

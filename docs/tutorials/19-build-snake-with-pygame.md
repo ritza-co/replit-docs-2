@@ -1,3 +1,7 @@
+---
+title: Snake game with PyGame
+---
+
 # Build the Snake Game with Pygame
 
 ![](https://replit-docs-images.bardia.repl.co/images/tutorials/19-snake-pygame/snake-game-cover.jpg)

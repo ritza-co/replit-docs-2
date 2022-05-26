@@ -1,3 +1,8 @@
+---
+title: Switch themes
+sidebar_position: 14
+---
+
 # Switch between dark mode and light mode 
 
 To change the theme of the Replit Workspace, navigate to the main menu by pressing the hamburger menu in the top left corner of your Workspace.

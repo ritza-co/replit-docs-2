@@ -1,4 +1,9 @@
-# Intro C++ curriculum
+---
+sidebar_position: 2
+title: intro to C++
+---
+
+# Intro to C++ curriculum
 
 This course is designed for students with some programming experience but not with C++.  It covers the proper use of core programming concepts, like ifs, loops, and functions, in C++ and introduces some more advanced concepts like pointers and data structures.
 

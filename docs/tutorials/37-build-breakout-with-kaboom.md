@@ -1,3 +1,7 @@
+---
+title: Breakout with Kaboom.js
+---
+
 # Building a block-breaking game with Kaboom.js
 
 In this tutorial, we'll use the Kaboom framework to develop a simple block-breaking game, similar to classics like Atari's *Breakout* and Taito's *Arkanoid*.

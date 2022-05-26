@@ -1,3 +1,7 @@
+---
+title: "Steganography: hiding messages in images"
+---
+
 # Hiding messages in images: steganography with Python and Replit
  
 In this tutorial, we'll build a steganography tool in Python. Steganography is the practice of hiding information within other data. Unlike encryption, where the goal is to secure *the contents* of communication between two parties, steganography aims to obscure the fact that the parties are communicating at all.

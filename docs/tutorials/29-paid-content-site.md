@@ -1,3 +1,7 @@
+---
+title: Paid content site with replit.web & Stripe
+---
+
 # Build a paid content site with `replit.web` and Stripe
 
 In this tutorial, we'll combine `replit.web` and Stripe to build a digital content storefront. Anyone with a Replit account will be able to log into our website and purchase premium PDFs. Our site will also keep track of what each user has purchased, so they can build up a library.

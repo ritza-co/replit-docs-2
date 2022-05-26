@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Managing public and private repls
 
 When you create a repl, it can either be public or private. 

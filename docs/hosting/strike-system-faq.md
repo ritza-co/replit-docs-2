@@ -1,7 +1,10 @@
-# Strike system FAQ 
+---
+sidebar_position: 8
+---
+
+# Strike system FAQ
 
 Hey there! If you're on this page, that probably means you received a notification from one of our hard-working mods on Apps. 
-
 
 ### **Q: I got a warning. What is that about?** 
 

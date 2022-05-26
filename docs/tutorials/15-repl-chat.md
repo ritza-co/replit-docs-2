@@ -1,3 +1,7 @@
+---
+title: Chat app using Node.js
+---
+
 # Building a Replit to Replit Chat App Using Node.js
 
 In this tutorial, we'll make a chat app with a difference. Instead of the usual web client to server chat architecture, we'll have a chat app directly running from your repl's console window in Replit.

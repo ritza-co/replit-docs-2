@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Creating files
 
 When starting a new repl, we create a "main" file for you so you can start coding quickly. However, if you want to split your project into multiple files, you can add new files from the "Files" sidebar.

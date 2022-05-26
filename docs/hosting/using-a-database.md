@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # Using databases in Replit
 You can use databases in repls to make programs that can both manage and store data. This guide will walk you through the basic operations for interacting with data in databases on Replit. These are CRUD operations, which involve creating, reading, updating, and deleting data. We'll also show you how to access databases and handy methods for managing your data.
 ## Table of contents

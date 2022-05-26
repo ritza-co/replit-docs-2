@@ -1,3 +1,8 @@
+---
+sidebar_position: 6
+title: Conducting effective technical interviews with Replit
+---
+
 # How to effectively conduct technical interviews with Replit
 
 Every company has a different way of conducting technical interviews. As a hiring manager, you want to make sure that the interviews you conduct best assess the candidate's problem-solving capabilities. 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 20
+---
+
 # Unit testing
 
 Repl unit testing allows a repl author to create code-driven tests that compare actual function output with expected output. 

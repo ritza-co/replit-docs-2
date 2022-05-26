@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Creating projects and assignments
 
 **Team Projects** are projects and assignments that teachers can set up with starter code, instructions, and materials for their students. When starting a Team Project, students duplicate their own, private versions of the Team Projects to edit and customize freely.

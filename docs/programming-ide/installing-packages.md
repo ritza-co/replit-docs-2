@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Installing packages
 
 With Replit, you can use most packages available in Python and JavaScript. Replit will install many packages on the fly just by importing them in code. You can read more about how we do this using [a universal package manager](https://blog.replit.com/upm).

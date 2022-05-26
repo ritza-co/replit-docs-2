@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+slug: /
+---
+
 # Introduction to Replit
 
 Replit is a coding platform that lets you write code and host apps. It also has many educational features built-in, making it great for teachers and learners too.
@@ -17,11 +22,13 @@ We know that's a lot to take in, so we've broken down some of the key features b
 
 Watch these two videos for a general introduction and some tips and tricks, or read on below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZAC0TQEU5gI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-youtube">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZAC0TQEU5gI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="embed-youtube">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VGiCFnyTRRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VGiCFnyTRRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<a name="developers"></a>
 ## Writing Code: Replit for Software Developers
 
 For software developers, Replit can be your cloud-based IDE (Integrated Development Environment.) Having a cloud IDE offers several advantages. There's no setup – you can access your environment from any device, including your phone or tablet, and everything will _just work_. You can manage things like dependencies, build scripts, and environment variables in a single place and always be in sync. It's also easy to get help from others – every repl is multiplayer by default, so you can work with other developers in a Google Docs-like environment in real-time from anywhere on the globe.
@@ -30,63 +37,61 @@ Each repl is its own Docker container running in a VM, so you can run shell comm
 
 If you already know how to code and are interested in seeing how you can use Replit, go through the following pages:
 
-#### [Introduction to the IDE](/tutorials/01-introduction-to-the-repl-it-ide)
+### [Introduction to the IDE](/tutorials/01-introduction-to-the-repl-it-ide)
 This guide shows you how the IDE works.
 
-#### [Working with Files](/tutorials/02-managing-files-using-repl-it)
+### [Working with Files](/tutorials/02-managing-files-using-repl-it)
 Each repl has a built-in file system, so you can upload existing files or create new ones, manually or programmatically.
 
-#### [Storing Secrets](/repls/secrets-environment-variables)
+### [Storing Secrets](/repls/secrets-environment-variables)
 You can easily add environment variables to keep others from viewing sensitive data such as API credentials.
 
-#### [Configuring the Run Button](/repls/dot-replit)
+### [Configuring the Run Button](/repls/dot-replit)
 In many cases, Replit will figure out how to run your project for you, but you can also customize exactly what you want to happen when you press the run button.
 
-#### [Integrating with GitHub](/tutorials/06-github-and-run-button)
+### [Integrating with GitHub](/tutorials/06-github-and-run-button)
 You can also link Replit to your GitHub to push changes up or bring in new changes that were made externally.
 
-#### [Using History](/repls/history)
+### [Using History](/repls/history)
 We also have time-travel features built-in so you can view previous versions of your code.
 
-#### [Pair Programming](/tutorials/05-pair-programming-using-multiplayer-with-repl-it)
+### [Pair Programming](/tutorials/05-pair-programming-using-multiplayer-with-repl-it)
 You can invite your friends or colleagues to help you with problems or hack on stuff together.
 
-<a name="hosting"></a>
 ## Hosting Code: Replit for Startups and Indiehackers
+
 You can host anything on Replit, from your basic personal website to a full web application for your startup. Any project you create can be deployed instantly to a temporary domain so you can share with friends or colleagues and get feedback, or permanently to an 'Always On' repl with a custom domain for a production environment.
 
 We also offer a full Key-Value store database, built-in authentication, and templates for many common web frameworks like Django or Ruby on Rails so you can ship your MVP in days instead of months.
 
 If you want to host your project on Replit, take a look at the following articles:
 
-#### [Web Hosting](/repls/web-hosting)
+### [Web Hosting](/repls/web-hosting)
 See how to host a front-end website for your homepage, landing page or portfolio.
 
-#### [Deploying HTTP servers](/repls/http-servers)
+### [Deploying HTTP servers](/repls/http-servers)
 Deploy a full-blown web application written in nearly any back-end language or framework.
 
-#### [Always On Repls](/repls/always-on)
+### [Always On Repls](/repls/always-on)
 Keep your repl alive 24/7.
 
-#### [The Replit Database](/misc/database)
+### [The Replit Database](/misc/database)
 Store data persistently between Replit runs in a simple Key-Value store that feels like using a local dictionary or hashset.
 
-<a name="teachers"></a>
 ## Teaching Code: Replit for Teachers
 If you're a teacher or professor who spends significant time teaching coding either in a classroom or a one-on-one environment, we have features to help you give feedback to students, set up and automatically grade homework assignments, and comply with your local privacy laws.
 
 Take a look at the following:
 
-#### [Threads and Feedback](/teams-edu/reviewing-submissions#leaving-feedback-on-projects-using-annotations)
+### [Threads and Feedback](/teams-edu/reviewing-submissions#leaving-feedback-on-projects-using-annotations)
 Leave comments on your students' code, or let them peer review each other, using in-line discussion threads.
 
-#### [Automatic Testing and Grading](/teams-edu/testing-assessments-autograding)
+### [Automatic Testing and Grading](/teams-edu/testing-assessments-autograding)
 Imagine if you had a robot to grade your students' homework. You can set up simple or advanced automated tests for your students' assignments and homework.
 
-#### [Comply with Local Privacy Regulations](/teams-edu/privacy-faq)
+### [Comply with Local Privacy Regulations](/teams-edu/privacy-faq)
 We will help you keep your students and their work safe online, while complying with various privacy laws and regulations such as FERPA, COPPA, GDPR, CCPA, and many others.
 
-<a name="learners"></a>
 ## Learning Code: Replit for Students
 
 If you're learning to code, whether as a self-taught programmer or as part of another course, you'll find our learning resources useful.

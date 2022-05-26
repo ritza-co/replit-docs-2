@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Using Git with Replit
 
 There are a few ways to use Git and Replit together, using either the GUI controls built into the Replit IDE or the Replit shell.

@@ -1,3 +1,7 @@
+---
+sidebar_position: 15
+---
+
 # Duplicating personal repls into Team Projects 
 
 Teams for Education admins may duplicate repls from their personal accounts into a Team for Education as a Team Project.

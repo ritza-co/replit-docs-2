@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # Project Solutions
 
 Teachers may create project solutions to reference and provide students with solution code once they have completed the project or the project due date has passed. 

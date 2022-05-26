@@ -1,3 +1,7 @@
+---
+title: "Robot NFT Part 2: Frontend"
+---
+
 # Build a robot NFT on the Ethereum blockchain with Solidity and Replit (part 2)
 
 In the [first part of this tutorial](https://docs.replit.com/tutorials/42-build-a-robot-nft), we wrote an Ethereum smart contract for an NFT project called ReplBots – robot profile pictures with randomly generated colors and accessories. This contract allowed users to create ReplBot NFTs on the blockchain and forms the logic portion of our decentralized NFT application. In this second part of the tutorial, we'll create a web frontend for our smart contract, giving users a way to view their NFTs.

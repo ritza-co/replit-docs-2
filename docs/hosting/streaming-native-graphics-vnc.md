@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Streaming native graphics using VNC 
 
 Replit offers virtual network computing (VNC) functionality. VNC is a mature virtual desktop protocol that allows your repl to stream a native desktop to your web browser. By using this protocol, native applications (developed in Python, Java, C++, etc) can open desktop windows as they would on any physical computer. 

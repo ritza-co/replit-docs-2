@@ -1,4 +1,8 @@
-# FAQs
+---
+sidebar_position: 2
+---
+
+# FAQ
 
 ##### How do I get started with Teams for Education?
 

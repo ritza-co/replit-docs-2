@@ -1,3 +1,7 @@
+---
+title: Predictive text engine
+---
+
 # Building a Predictive Text Engine with Node.js
 
 Have you ever wondered how your phone knows what to suggest in the autocomplete box when you are texting? Or how Gmail suggests phrases to you in the middle of typing an email? Predictive text can be a helpful tool for typing quickly. 

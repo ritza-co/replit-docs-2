@@ -1,3 +1,6 @@
+---
+title: Online store checkout with Stripe
+---
 # Build Your Online Store's Checkout Process with Stripe on Replit
 
 Are you looking for an integrated solution for your site’s checkout process, without having to resort to plugins? Here’s a step-by-step approach to integrating Stripe with [Replit](https://replit.com)!

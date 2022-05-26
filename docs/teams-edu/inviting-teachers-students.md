@@ -1,5 +1,8 @@
-# Inviting teachers and students
+---
+sidebar_position: 4
+---
 
+# Inviting teachers and students
 
 To invite people with their Replit username or email address, follow the steps during [team creation](/teams-edu/intro-teams-education). 
 

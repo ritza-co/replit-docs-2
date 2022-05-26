@@ -1,3 +1,8 @@
+---
+sidebar_position: 8
+title: Abstract Data Types
+---
+
 # Abstract Data Types curriculum
 
 ## Course Overview

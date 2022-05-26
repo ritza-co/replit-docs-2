@@ -1,6 +1,6 @@
 # Spotify API tutorials
 
-The folk over at [Data Designs](https://www.datadesigns.co.uk/contact) have created some interactive Replit tutorials based around building projects on the Spotify API. You can find them below.
+The folks over at [Data Designs](https://www.datadesigns.co.uk/contact) have created some interactive Replit tutorials based around building projects on the Spotify API. You can find them below.
 
 ## [Spotify API project 1: Simple online mixtape](https://mixtape-tutorial.datadesigns.repl.co/)
 

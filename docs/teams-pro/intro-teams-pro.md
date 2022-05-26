@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introduction to Teams Pro
 
 Teams Pro is a new and revolutionary approach to working, collaborating, and building. It's a shared repo for your entire team (and potential new team members), making it easier for you to work together.

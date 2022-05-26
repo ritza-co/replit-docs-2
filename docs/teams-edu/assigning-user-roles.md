@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Assigning user roles
 
 You can assign different members of your team different roles.

@@ -5,7 +5,11 @@
  */
 
 /* You can override the default Infima variables here. */
+
+
 :root {
+  --ifm-font-family-base: 'IBM Plex Sans',sans-serif;
+  --ifm-font-family-monospace: 'IBM Plex Mono',monospace;
   --ifm-color-scheme: light;
   --ifm-dark-value: 10%;
   --ifm-darker-value: 15%;
@@ -35,10 +39,64 @@
   --ifm-color-secondary-darker: #c8c9cc;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+/*   --ifm-navbar-background-color: var(--ifm-background-color); */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-IconExternalLink-styles-module {
+  display: none;
+}
+
+.DocSearch-Input {
+  font-size: 1em !important;
+}
+
+.DocSearch-Form {
+  border-radius: 8px !important;
+}
+
+.DocSearch {
+  --docsearch-searchbox-height: 36px !important;
+}
+
+.DocSearch-Logo {
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+}
+
+[data-theme='dark'] .DocSearch {
+    --docsearch-text-color: var(--ifm-font-color-base);
+    --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+    --docsearch-container-background: rgba(47, 55, 69, 0.7);
+    --docsearch-modal-background: var(--ifm-background-color);
+    --docsearch-searchbox-background: var(--ifm-background-color);
+    --docsearch-searchbox-focus-background: var(--ifm-background-surface-color) !important;
+    --docsearch-hit-color: var(--ifm-font-color-base);
+    --docsearch-hit-active-color: var(--ifm-color-white);
+    --docsearch-hit-background: var(--ifm-color-emphasis-100);
+    --docsearch-footer-background: var(--ifm-background-surface-color);
+    --docsearch-key-gradient: linear-gradient( -26.5deg, var(--ifm-color-emphasis-200) 0%, var(--ifm-color-emphasis-100) 100% );
+}
+
+:root[data-theme='dark'] {
+  --ifm-background-color: #0E1525;
+  --ifm-background-surface-color: #1C2333;
+  --ifm-color-scheme: light;
+  --ifm-dark-value: 10%;
+  --ifm-darker-value: 15%;
+  --ifm-darkest-value: 30%;
+  --ifm-light-value: 15%;
+  --ifm-lighter-value: 30%;
+  --ifm-lightest-value: 50%;
+  --ifm-contrast-background-value: 90%;
+  --ifm-contrast-foreground-value: 70%;
+  --ifm-contrast-background-dark-value: 70%;
+  --ifm-contrast-foreground-dark-value: 90%;
+  --ifm-color-secondary: #ebedf0;
+  --ifm-color-success: #009118;
+  --ifm-color-info: #57ABFF;
+  --ifm-color-warning: #AD5700;
+  --ifm-color-danger: #E52222;
   --ifm-color-primary: #0079F2;
   --ifm-color-primary-dark: #0053A6;
   --ifm-color-primary-darker: #004182;
@@ -46,5 +104,345 @@
   --ifm-color-primary-light: #57ABFF;
   --ifm-color-primary-lighter: #B2D9FF;
   --ifm-color-primary-lightest: #B2D9FF;
+  --ifm-color-primary-contrast-background: #0E1525;
+  --ifm-color-primary-contrast-foreground: #F5F9FC;
+  --ifm-color-secondary-dark: #d4d5d8;
+  --ifm-color-secondary-darker: #c8c9cc;
+  --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+html[data-theme='dark'] {
+  --ifm-background-color: #0E1525;
+  --ifm-background-surface-color: #1C2333;
+  --ifm-color-scheme: light;
+  --ifm-dark-value: 10%;
+  --ifm-darker-value: 15%;
+  --ifm-darkest-value: 30%;
+  --ifm-light-value: 15%;
+  --ifm-lighter-value: 30%;
+  --ifm-lightest-value: 50%;
+  --ifm-contrast-background-value: 90%;
+  --ifm-contrast-foreground-value: 70%;
+  --ifm-contrast-background-dark-value: 70%;
+  --ifm-contrast-foreground-dark-value: 90%;
+  --ifm-color-secondary: #ebedf0;
+  --ifm-color-success: #009118;
+  --ifm-color-info: #57ABFF;
+  --ifm-color-warning: #AD5700;
+  --ifm-color-danger: #E52222;
+  --ifm-color-primary: #0079F2;
+  --ifm-color-primary-dark: #0053A6;
+  --ifm-color-primary-darker: #004182;
+  --ifm-color-primary-darkest: #004182;
+  --ifm-color-primary-light: #57ABFF;
+  --ifm-color-primary-lighter: #B2D9FF;
+  --ifm-color-primary-lightest: #B2D9FF;
+  --ifm-color-primary-contrast-background: #0E1525;
+  --ifm-color-primary-contrast-foreground: #F5F9FC;
+  --ifm-color-secondary-dark: #d4d5d8;
+  --ifm-color-secondary-darker: #c8c9cc;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+    /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+    /* padding-bottom: 75%; - 4:3 aspect ratio */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+
+@media (min-width: 997px) {
+  .DocSearch-Button {
+    border-radius: 8px !important;
+  }
+}
+
+[data-theme='light'] .navbar-sidebar {
+  background-color: var(--ifm-color-gray-0);
+}
+
+.navbar-sidebar__brand {
+  height: 40px !important;
+}
+
+.navbar-sidebar__close svg {
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.navbar-sidebar__logo {
+  height: 1.5rem !important;
+}
+  
+@media (max-width: 996px) {
+  .DocSearch-Button-Keys {
+      display: none !important;
+  }
+  .DocSearch-Button-Placeholder {
+    display: none !important;
+  }
+  
+  .DocSearch-Button {
+    height: 22px !important;
+    width: 22px! important;
+    border-radius: 4px !important;
+    padding: 0 4px !important;
+  }
+  
+  .DocSearch-Search-Icon {
+    height: 14px !important;
+    width: 14px !important;
+  }
+  
+  .navbar {
+    height: 40px !important;
+  }
+  
+  .navbar__toggle svg {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  
+  .navbar__logo {
+    height: 1.5rem !important;
+  }
+  
+  header h1 {
+    --ifm-h1-font-size: 2rem !important;
+  }
+  
+  .padding--lg {
+    padding: 1rem !important;
+  }
+
+}
+
+.markdown h1 {
+  --ifm-h1-font-size: 2rem !important;
+}
+
+.markdown h2 {
+  --ifm-h2-font-size: 1.5rem !important;
+}
+
+.markdown h3 {
+  --ifm-h3-font-size: 1.25rem !important;  
+}
+
+.markdown h4 {
+  --ifm-h4-font-size: 1rem !important;
+}
+
+.markdown h5 {
+  --ifm-h5-font-size: 0.875rem !important;
+}
+
+.markdown h6 {
+  --ifm-h6-font-size: 0.85rem !important;  
+}
+
+body[data-theme='dark'] {
+    --background-root: #0E1525;
+    --background-default: #1C2333;
+    --background-higher: #2B3245;
+    --background-highest: #3C445C;
+    --background-overlay: #0e1525A0;
+    --foreground-default: #F5F9FC;
+    --foreground-dimmer: #C2C8CC;
+    --foreground-dimmest: #9DA2A6;
+    --outline-strongest: #9195A1;
+    --outline-stronger: #828899;
+    --outline-default: #70788C;
+    --outline-dimmer: #5F677A;
+    --outline-dimmest: #4E5569;
+    -webkit---accent-primary-dimmest: #004182;
+    --accent-primary-dimmest: #004182;
+    --accent-primary-dimmer: #0053A6;
+    -webkit---accent-primary-default: #0079F2;
+    --accent-primary-default: #0079F2;
+    --accent-primary-stronger: #57ABFF;
+    --accent-primary-strongest: #B2D9FF;
+    --accent-positive-dimmest: #044A10;
+    -webkit---accent-positive-dimmer: #046113;
+    --accent-positive-dimmer: #046113;
+    --accent-positive-default: #009118;
+    --accent-positive-stronger: #6CD97E;
+    --accent-positive-strongest: #BFFFCA;
+    --accent-negative-dimmest: #660000;
+    -webkit---accent-negative-dimmer: #A60808;
+    --accent-negative-dimmer: #A60808;
+    --accent-negative-default: #E52222;
+    --accent-negative-stronger: #FF6666;
+    --accent-negative-strongest: #FFCFCF;
+    --accent-red-dimmest: #660000;
+    --accent-red-dimmer: #A60808;
+    --accent-red-default: #E52222;
+    --accent-red-stronger: #FF6666;
+    --accent-red-strongest: #FFCFCF;
+    --accent-orange-dimmest: #542A00;
+    --accent-orange-dimmer: #703800;
+    --accent-orange-default: #AD5700;
+    -webkit---accent-orange-stronger: #D4781C;
+    --accent-orange-stronger: #D4781C;
+    --accent-orange-strongest: #FFBD7A;
+    --accent-yellow-dimmest: #4D4000;
+    --accent-yellow-dimmer: #635300;
+    --accent-yellow-default: #967D00;
+    -webkit---accent-yellow-stronger: #BFA730;
+    --accent-yellow-stronger: #BFA730;
+    --accent-yellow-strongest: #F2E088;
+    --accent-lime-dimmest: #314A00;
+    --accent-lime-dimmer: #3D5C00;
+    --accent-lime-default: #5A8700;
+    --accent-lime-stronger: #87B825;
+    --accent-lime-strongest: #C4E581;
+    --accent-green-dimmest: #044A10;
+    --accent-green-dimmer: #046113;
+    --accent-green-default: #009118;
+    --accent-green-stronger: #6CD97E;
+    -webkit---accent-green-strongest: #7AEB8D;
+    --accent-green-strongest: #7AEB8D;
+    --accent-teal-dimmest: #004452;
+    --accent-teal-dimmer: #006073;
+    --accent-teal-default: #0093B0;
+    --accent-teal-stronger: #27B9D6;
+    --accent-teal-strongest: #69D9F0;
+    --accent-blue-dimmest: #004182;
+    --accent-blue-dimmer: #0053A6;
+    --accent-blue-default: #0079F2;
+    --accent-blue-stronger: #57ABFF;
+    --accent-blue-strongest: #B2D9FF;
+    -webkit---accent-blurple-dimmest: #39298A;
+    --accent-blurple-dimmest: #39298A;
+    --accent-blurple-dimmer: #5239CC;
+    -webkit---accent-blurple-default: #795EFF;
+    --accent-blurple-default: #795EFF;
+    --accent-blurple-stronger: #A694FF;
+    --accent-blurple-strongest: #CEC4FF;
+    --accent-purple-dimmest: #582987;
+    --accent-purple-dimmer: #7633B8;
+    --accent-purple-default: #A64DFF;
+    -webkit---accent-purple-stronger: #C78FFF;
+    --accent-purple-stronger: #C78FFF;
+    --accent-purple-strongest: #E2C4FF;
+    -webkit---accent-magenta-dimmest: #6B1A6B;
+    --accent-magenta-dimmest: #6B1A6B;
+    --accent-magenta-dimmer: #8A218A;
+    -webkit---accent-magenta-default: #C73AC7;
+    --accent-magenta-default: #C73AC7;
+    --accent-magenta-stronger: #F562F5;
+    --accent-magenta-strongest: #FFBFFF;
+    --accent-pink-dimmest: #6E1B52;
+    --accent-pink-dimmer: #8F226B;
+    --accent-pink-default: #D4359F;
+    --accent-pink-stronger: #FF70CF;
+    --accent-pink-strongest: #FFBAE8;
+    --accent-grey-dimmest: #404040;
+    --accent-grey-dimmer: #545454;
+    --accent-grey-default: #808080;
+    --accent-grey-stronger: #A6A6A6;
+    --accent-grey-strongest: #D4D4D4;
+    --accent-brown-dimmest: #594031;
+    --accent-brown-dimmer: #75503B;
+    --accent-brown-default: #A3765C;
+    --accent-brown-stronger: #D49877;
+    -webkit---accent-brown-strongest: #FFC8A8;
+    --accent-brown-strongest: #FFC8A8;
+}
+
+.profile_pic {
+  width: 400px !important;
+}
+
+.sign-up-button {
+  background-color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  color: #FCFCFC;
+  transition: 0.1 all ease-in-out;
+  font-weight: 500;
+  width: auto;
+  line-height: 14px;
+  white-space: nowrap;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+  outline: 0;
+  
+}
+
+.sign-up-button:hover {
+  background-color: var(--ifm-color-primary-light);
+  border: 1px solid var(--ifm-color-primary-light);
+  text-decoration: none;
+  color: #FCFCFC;
+}
+
+.sign-up-button:focus {
+  outline-offset: 2px;
+  -webkit-box-shadow: 0 0 0 3px var(--ifm-color-primary-lighter);
+  -moz-box-shadow: 0 0 0 3px var(--ifm-color-primary-ligher);
+  box-shadow: 0 0 0 3px var(--ifm-color-primary-lighter);
+} 

@@ -1,3 +1,7 @@
+---
+title: "Databases: build a phonebook"
+---
+
 # Using the Replit database
 
 ![](https://replit-docs-images.bardia.repl.co/images/tutorials/11-database/11-01-db-heading.png)

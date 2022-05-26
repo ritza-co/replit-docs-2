@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Replit libraries
 
 While you can use nearly any package or library on Replit, we have also built several of our own. You can read more about these here.

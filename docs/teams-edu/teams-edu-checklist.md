@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Checklist: Getting Started with Teams for Education
 
 ### For Organization Admins:

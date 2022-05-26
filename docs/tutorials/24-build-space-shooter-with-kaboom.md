@@ -1,3 +1,7 @@
+---
+title: Space Shooter with Kaboom.js
+---
+
 # Build a Space Shooter with Kaboom.js
 
 In this tutorial, we'll build a space shooter game with a platformer feel. We'll use [Kaboom.js](https://kaboomjs.com) for the game engine, and we'll code it using [Replit](https://replit.com) online IDE (Integrated Development Environment).

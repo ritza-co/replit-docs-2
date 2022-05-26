@@ -1,3 +1,7 @@
+---
+title: Working with files
+---
+
 # Working with Files using Replit
 
 In this lesson, you'll gain experience with using and manipulating files using Replit. In the previous lesson you saw how to add new files to a project, but there's a lot more you can do. 

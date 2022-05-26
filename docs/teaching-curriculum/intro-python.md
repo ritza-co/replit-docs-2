@@ -1,4 +1,9 @@
-# Intro Python curriculum
+---
+sidebar_position: 5
+title: Intro to Python
+---
+
+# Intro to Python curriculum
 
 This course is designed for students with little or no experience of programming and/or the Python language. It introduces core programming concepts and techniques used in the vast majority of programming languages.
 

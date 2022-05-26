@@ -1,3 +1,7 @@
+---
+sidebar_position: 13
+---
+
 # Using repl history
 To help ensure you never lose work, Replit auto-saves your code as you write. If you ever lose an edit to your code that you'd like to recover, repl history is there to help.
 

@@ -1,3 +1,7 @@
+---
+title: Wordle with Python & Rich
+---
+
 # Building a two player *Wordle* clone with Python and Rich on Replit
 
 In this guide, we'll build a version of the popular game *Wordle*. Instead of the computer providing a word that the player has to guess, our version will work with two players. Player 1 will enter the word, and then player 2 will try to guess the word entered, similar to the popular game *Hangman*.

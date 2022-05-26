@@ -1,4 +1,9 @@
-## Individual, Group, and Self-Grouping Projects
+---
+sidebar_position: 12
+title: Individual & group projects
+---
+
+# Individual, Group, and Self-Grouping Projects
 
 *View a video explainer on Group Assignments [here](https://www.loom.com/share/6e59d7e609b7485b8bf21efa8468a610).*
 

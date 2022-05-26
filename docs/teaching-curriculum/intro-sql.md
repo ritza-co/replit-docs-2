@@ -1,3 +1,8 @@
+---
+sidebar_position: 6
+title: Intro to SQL
+---
+
 # Intro to SQL curriculum
 
 Welcome to our SQL course. Our free set of pick up and play materials include: course timeline, course outline, a high quality set of teaching slides, teacher notes and engaging activities with premade Replit tasks and teacher solutions. 

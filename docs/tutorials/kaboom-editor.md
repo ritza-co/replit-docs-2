@@ -1,3 +1,7 @@
+---
+title: Kaboom editor
+---
+
 # Kaboom editor
 
 [Kaboom.js](https://kaboomjs.com) is a game development library that makes it fun and easy to build games! 

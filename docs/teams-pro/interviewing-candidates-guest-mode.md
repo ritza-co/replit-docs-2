@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Interviewing candidates with guest mode
 
 The Teams Pro guest feature is the best way to interview candidates, giving them access to a repl from which to demonstrate their skills. The amount of guests you have will not impact your seats, because guests are limited to only the repls they are invited to. Guests cannot access anything else in the broader team.

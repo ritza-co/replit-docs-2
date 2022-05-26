@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # Lesson Authoring
 
 _You can find a step-by-step guide to creating a new lesson [here](/teams-edu/lesson-authoring-tutorial)._

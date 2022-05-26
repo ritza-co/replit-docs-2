@@ -1,4 +1,8 @@
-# Code With Replit
+---
+sidebar_position: 1
+---
+
+# Code with Replit
 
 Our [tutorials](/tutorials/00-overview) are also available as a book which you can download as a .pdf, .epub, or .mobi for offline reading.
 

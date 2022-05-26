@@ -1,3 +1,7 @@
+---
+title: Keeping secrets
+---
+
 # Staying safe: Keeping your passwords and other secrets secure
 
 While developing software fully in public has many benefits, it also means that we need to be extra careful about leaking sensitive information. Because all of our repls are public by default, we shouldn't store passwords, access keys, personal information, or anything else sensitive in them.

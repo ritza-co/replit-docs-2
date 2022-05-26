@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Embedding repls
 
 In this guide, we'll show you how to embed a repl on another platform using an `<iframe>`. We'll provide you with a set of query parameters you can use to render different previews of the same repl, and give you information on editing an embedded repl.

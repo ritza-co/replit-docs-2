@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Make Javascript Games
 
 [Make Javascript Games](https://makejsgames.com) is our free introduction to game development using Kaboom.js. The website is available as a book which you can download as a .pdf, .epub, or .mobi for offline reading.

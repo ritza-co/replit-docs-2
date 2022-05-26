@@ -1,3 +1,7 @@
+---
+title: PDF report generator from spreadsheet
+---
+
 # Generate PDF reports from spreadsheet data
 
 In this tutorial, we'll be building a simple web application that will take in data from spreadsheets and use it to create slick PDF reports. We'll cover the following topics:

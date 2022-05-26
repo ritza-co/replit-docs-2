@@ -1,3 +1,6 @@
+---
+title: Juggling with PyGame
+---
 # Building a game with PyGame and Replit
 
 ![](https://replit-docs-images.bardia.repl.co/images/tutorials/07-pygame/07-01-heading.png)

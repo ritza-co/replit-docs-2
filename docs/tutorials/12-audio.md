@@ -1,3 +1,7 @@
+---
+title: "Audio: create a media player"
+---
+
 # Replit Audio
 
 ![](https://replit-docs-images.bardia.repl.co/images/tutorials/12-audio/12-01-audio-heading.png)

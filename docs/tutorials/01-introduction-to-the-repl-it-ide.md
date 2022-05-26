@@ -1,3 +1,7 @@
+---
+title: Introduction to the IDE
+---
+
 # Understanding the Replit IDE: a practical guide to building your first project with Replit
 
 This tutorial is also available [as a video](https://www.youtube.com/watch?v=SDlrhS8O3kI).

@@ -1,3 +1,7 @@
+---
+title: 3D rendering with three.js
+---
+
 # Rendering 3D scenes with three.js
 
 Three.js is a JavaScript library for rendering 3D worlds in web browsers. With three.js you can make a website using 3D elements and advanced animation, or even complex 3D games in JavaScript. To get a feeling for the kind of renders three.js is capable of, have a look at their [examples page](https://threejs.org/examples). 

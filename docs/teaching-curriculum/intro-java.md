@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Intro Java curriculum
 
 Welcome to this intro curriculum for learning to code with Java using the Replit platform. On this page, you can find links to the three units of the curriculum and find other resources to support the use of the guides.
@@ -5,15 +9,23 @@ Welcome to this intro curriculum for learning to code with Java using the Replit
 ## The Full Curriculum
 
 ### Unit 1
-[Access unit 1.](https://docs.replit.com/teaching-curriculum/intro-java-unit-1)
 
 Course contents:
 - Displaying values
 - Storing values using variables
 - Storing and displaying messages using values and variables
 
+[Access the full course on Coda](https://coda.io/d/duke-1_dC_pdnoekO1/read-me-first_suj9j?utm_campaign=embed&utm_medium=web&utm_source=C_pdnoekO1#_lu_jE) or you can view it in the frame below.
+
+<iframe
+  src="https://coda.io/embed/C_pdnoekO1/_suj9j?viewMode=embedplay"
+  width="100%"
+  height="100%"
+  style={{ maxWidth: "100%" }}
+  allow="fullscreen"
+/>
+
 ### Unit 2
-[Access unit 2.](https://docs.replit.com/teaching-curriculum/intro-java-unit-2)
 
 Course contents:
 - Using a keyboard to enter data 
@@ -21,15 +33,33 @@ Course contents:
 - Calculating results by evaluating expressions
 - Some challenges using IPO program plan
 
-### Unit 3
-[Access unit 3.](https://docs.replit.com/teaching-curriculum/intro-java-unit-3)
+[Access the full course on Coda](https://coda.io/d/duke-2_dM8qF5mIGzV/read-me-first_suj9j?utm_campaign=embed&utm_medium=web&utm_source=M8qF5mIGzV#_lu_jE) or you can view it in the frame below.
 
+<iframe
+  src="https://coda.io/embed/M8qF5mIGzV/_suj9j?viewMode=embedplay"
+  width="100%"
+  height="100%"
+  style={{ maxWidth: "100%" }}
+  allow="fullscreen"
+/>
+
+### Unit 3
 Course contents:
 - Thinking about sequence and introducing control structures
 - Using conditional code (if)
 - Using loops in code
 - Storing lists using arrays
 - Using built-in functions
+
+[Access the full course on Coda](https://coda.io/d/duke-3_dPgK6TRXYJe/read-me-first_suj9j?utm_campaign=embed&utm_medium=web&utm_source=PgK6TRXYJe#_lu_jE) or you can view it in the frame below.
+
+<iframe
+  src="https://coda.io/embed/PgK6TRXYJe/_suj9j?viewMode=embedplay"
+  width="100%"
+  height="100%"
+  style={{ maxWidth: "100%" }}
+  allow="fullscreen"
+/>
 
 ## Our Awesome Creator
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Working with shortcuts
 
 Be more productive with Replit by learning the code editor’s powerful shortcuts for editing, writing, and inspecting code.

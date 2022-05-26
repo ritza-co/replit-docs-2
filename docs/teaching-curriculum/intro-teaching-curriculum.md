@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+tile: Introduction to Teaching Curriculum
+---
+
 # Free Curricula for Educators
 
 At Replit, our mission is to make programming more accessible to all. We aim to do this by partnering with the incredibly talented educators in our community. Thanks to these partnerships, we can provide free curricula that educators are encouraged to use, modify, and share when they are teaching computer science and programming.

@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Building internals tools on Replit with Flask, SQLite, and Pico.css
 
 Whether you're a small startup without a dedicated internal tools team, or a team within a large company that struggles to get time from engineering, it's often useful to be able to whip up quick-and-dirty internal tools like dashboards, report generators, CRMs, or whatever else you need.

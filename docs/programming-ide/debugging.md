@@ -1,3 +1,7 @@
+---
+sidebar_position: 11
+---
+
 # Debugging
 
 Repls that are written in the following languages can use a built-in, multiplayer debugger:

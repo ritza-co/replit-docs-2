@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Authenticating users with Repl Auth
 
 *This tutorial is an expansion of [this one](https://replit.com/talk/learn/Authenticating-users-with-Replit-Auth/23460) written by [Mat](https://replit.com/@mat1)*

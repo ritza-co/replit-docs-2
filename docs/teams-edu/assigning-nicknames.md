@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Assigning nicknames
 
 Team nicknames allow teachers, and other admins, the ability to assign nicknames to their students. 

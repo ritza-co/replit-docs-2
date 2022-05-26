@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Managing teams
 
 To create a team, click the "Teams" tab in the sidebar. From the Teams dashboard, click "+ Create a team" and follow the steps. You can invite people using their Replit username or their email address, or by sharing a link through the "Generate a team invite link" button (the link does not expire).

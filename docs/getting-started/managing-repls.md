@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Managing your repls
 
 To manage and keep track of all your repls, head to your Repls Dashboard. You can find it on your account by clicking on the 'My Repls' tab on the left-hand side.

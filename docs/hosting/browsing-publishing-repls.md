@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Browsing and publishing repls
 Apps is a brand new part of Replit where you can easily browse and publish repls for others to run, comment, and fork.
 

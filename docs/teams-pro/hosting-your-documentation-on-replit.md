@@ -1,3 +1,8 @@
+---
+sidebar_position: 8
+title: How to host your docs on Replit
+---
+
 # How to write and host your technical documentation using Replit
 
 In this guide, you'll learn how to build a professional technical documentation site. You'll write your docs as simple Markdown files, and use MkDocs as a static site generator to create fast-loading HTML pages.

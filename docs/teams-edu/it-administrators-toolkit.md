@@ -1,3 +1,7 @@
+---
+sidebar_position: 27
+---
+
 # IT administrators toolkit
 
 *If your school previously blocked `repl.co` to filter all internet content, you can now unblock it to allow unrestricted access to all of Replit. All objectionable and NSFW content will be blocked by default. You can read more about this update [on our blog](https://blog.replit.com/family-friendly-dns).*

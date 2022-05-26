@@ -1,3 +1,7 @@
+---
+sidebar_position: 13
+---
+
 # Organizing Projects 
 
 Once Team Projects are created, you may organize them into units.

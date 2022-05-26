@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Running GitHub repositories on Replit
 
 GitHub repositories can be run automatically on Replit. Head to https://replit.com/github to import a repository. Any public repository under 500 MB can be cloned, and subscribing to our [hacker plan](https://replit.com/pricing) unlocks private repos after authenticating with GitHub.

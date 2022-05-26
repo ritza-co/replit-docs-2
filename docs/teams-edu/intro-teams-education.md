@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introduction to Teams for Education
 
 [Teams for Education](https://replit.com/teams-for-education) adds key workflows for students and teachers on top of all the core Replit features. In this article, you'll:

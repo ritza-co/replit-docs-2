@@ -1,3 +1,7 @@
+---
+sidebar_position: 21
+---
+
 # Embedding projects
 
 To embed a project, follow the simple steps below or follow along with our [video walkthrough](https://www.loom.com/share/788fb7ade7154c83baf0df6ecf1fe102):

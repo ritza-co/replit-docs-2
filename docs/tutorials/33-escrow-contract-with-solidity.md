@@ -1,3 +1,7 @@
+---
+title: Escrow contract with Solidity
+---
+
 # Build an escrow contract on the Ethereum blockchain with Solidity and Replit
 
 Since Satoshi Nakamoto released the first version of Bitcoin in early 2009, digital currencies and blockchain technology have been the site of frenzied innovation, excitement and speculation. In addition to Bitcoin itself, hundreds of competing and complementary blockchains and currencies have come and gone. In this tutorial, we will be looking at Ethereum, the second most popular and widely used cryptocurrency after Bitcoin.

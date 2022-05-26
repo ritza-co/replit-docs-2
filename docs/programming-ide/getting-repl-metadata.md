@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # Getting repl metadata
 
 In some cases, it's useful to automatically retrieve metadata about a repl from within that repl.

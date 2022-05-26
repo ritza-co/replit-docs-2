@@ -1,3 +1,7 @@
+---
+sidebar_position: 26
+---
+
 # Privacy FAQ
 
 Naturally, we expect the [Teams for Education](https://replit.com/teams-for-education) platform to be used by students of all ages. We are aware that there are implications for having users who are under 18 years old, especially when it comes to privacy. We have put together some handy FAQs to give you peace of mind that your students' personal information remains secure and confidential. But before we get there, our **Key Privacy and Data Security Assurances** might be able to answer your immediate concerns:

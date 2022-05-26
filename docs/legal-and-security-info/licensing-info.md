@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Licensing information
 
 Our users' privacy is of utmost importance to us. Here, you will find information about how your repls are licensed.

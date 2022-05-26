@@ -1,3 +1,8 @@
+---
+sidebar_position: 7
+title: Intermediate Python
+---
+
 # Intermediate Python curriculum
 
 ## How To Use This Course

@@ -1,3 +1,7 @@
+---
+sidebar_position: 9
+---
+
 # How to use Excalidraw with Replit
 
 Excalidraw is an open-source tool, similar to a digital whiteboard, that allows you to sketch diagrams with a hand-drawn feel to them. You can check out https://excalidraw.com/ to learn more about it. 

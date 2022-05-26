@@ -1,3 +1,7 @@
+---
+title: "Robot NFT Part 1: on Ethereum blockchain"
+---
+
 # Build a robot NFT on the Ethereum blockchain with Solidity and Replit (part 1)
 
 Non-fungible tokens (NFTs) have been a source of much news and speculation over the past few years. Their most widely known use case has been the sale of digital art assets, commonly used as profile pictures. The most famous examples are [CryptoPunks](https://www.larvalabs.com/cryptopunks) and [Bored Apes](https://boredapeyachtclub.com/#/).

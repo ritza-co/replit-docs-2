@@ -37,10 +37,10 @@ Each repl is its own Docker container running in a VM, so you can run shell comm
 
 If you already know how to code and are interested in seeing how you can use Replit, go through the following pages:
 
-### [Introduction to the IDE](/tutorials/01-introduction-to-the-repl-it-ide)
+### [Introduction to the IDE](/tutorials/introduction-to-the-repl-it-ide)
 This guide shows you how the IDE works.
 
-### [Working with Files](/tutorials/02-managing-files-using-repl-it)
+### [Working with Files](/tutorials/managing-files-using-repl-it)
 Each repl has a built-in file system, so you can upload existing files or create new ones, manually or programmatically.
 
 ### [Storing Secrets](/repls/secrets-environment-variables)
@@ -49,13 +49,13 @@ You can easily add environment variables to keep others from viewing sensitive d
 ### [Configuring the Run Button](/repls/dot-replit)
 In many cases, Replit will figure out how to run your project for you, but you can also customize exactly what you want to happen when you press the run button.
 
-### [Integrating with GitHub](/tutorials/06-github-and-run-button)
+### [Integrating with GitHub](/tutorials/github-and-run-button)
 You can also link Replit to your GitHub to push changes up or bring in new changes that were made externally.
 
 ### [Using History](/repls/history)
 We also have time-travel features built-in so you can view previous versions of your code.
 
-### [Pair Programming](/tutorials/05-pair-programming-using-multiplayer-with-repl-it)
+### [Pair Programming](/tutorials/pair-programming-using-multiplayer-with-repl-it)
 You can invite your friends or colleagues to help you with problems or hack on stuff together.
 
 ## Hosting Code: Replit for Startups and Indiehackers
@@ -96,7 +96,7 @@ We will help you keep your students and their work safe online, while complying 
 
 If you're learning to code, whether as a self-taught programmer or as part of another course, you'll find our learning resources useful.
 
-You can work through our [project-based tutorials](/tutorials/00-overview) to learn how to code, or download them all as [an ebook](https://codewithrepl.it).
+You can work through our [project-based tutorials](/tutorials/overview) to learn how to code, or download them all as [an ebook](https://codewithrepl.it).
 
 If you're learning a specific language, we probably cover it in one of our teacher-contributed [open curricula](/curriculum/Intro).
 

@@ -219,18 +219,6 @@ const config = {
           { from: '/tutorials/kaboom',
               to: '/tutorials/kaboom-editor'
           },
-          { from: '/repls/secret-keys',
-              to: '/archive/secret-keys'
-          },
-          { from: '/classrooms/exports',
-              to: '/archive/exports'
-          },
-          { from: '/repls/quick-start',
-              to: '/archive/quick-start'
-          },
-          { from: '/misc/quick-start',
-              to: '/archive/quick-start'
-          },
           { from: '/programming-ide/configuring-run-button',
               to: '/programming-ide/configuring-repl'
           },

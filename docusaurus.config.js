@@ -12,7 +12,7 @@ const editUrlFn = ({docPath}) => {
 const config = {
   title: 'Replit Docs',
   tagline: 'Learn how to use Replit',
-  url: '',
+  url: 'https://docs.replit.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -30,8 +30,8 @@ const config = {
           { from: '/misc/General-FAQ',
               to: '/getting-started/faq'
           },
-          { from: '/repls/intro',
-              to: '/getting-started/intro-replit'
+          { from: ['/repls/intro', '/getting-started/intro-replit'],
+              to: '/'
           },
           { from: '/repls/dashboard',
               to: '/getting-started/managing-repls'
@@ -109,13 +109,10 @@ const config = {
               to: '/programming-ide/getting-repl-metadata'
           },
           { from: '/repls/dot-replit',
-              to: '/programming-ide/configuring-run-button'
+              to: '/programming-ide/configuring-repl'
           },
           { from: '/misc/change-username',
               to: '/settings/changing-username'
-          },
-          { from: '/misc/favorite-languages',
-              to: '/settings/selecting-favorite-languages'
           },
           { from: '/curriculum/Intro',
               to: '/teaching-curriculum/intro-teaching-curriculum'
@@ -186,9 +183,6 @@ const config = {
           { from: '/Teams/IT_Toolkit',
               to: '/teams-edu/it-administrators-toolkit'
           },
-          { from: '/Teams/US_Student_DPA',
-              to: '/teams-edu/us-student-dpa'
-          },
           { from: '/pro/intro',
               to: '/teams-pro/intro-teams-pro'
           },
@@ -218,18 +212,6 @@ const config = {
           },
           { from: '/tutorials/kaboom',
               to: '/tutorials/kaboom-editor'
-          },
-          { from: '/repls/secret-keys',
-              to: '/archive/secret-keys'
-          },
-          { from: '/classrooms/exports',
-              to: '/archive/exports'
-          },
-          { from: '/repls/quick-start',
-              to: '/archive/quick-start'
-          },
-          { from: '/misc/quick-start',
-              to: '/archive/quick-start'
           },
           { from: '/programming-ide/configuring-run-button',
               to: '/programming-ide/configuring-repl'
@@ -261,7 +243,7 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         sitemap: {
-          changefreq: 'weekly',
+          changefreq: 'daily',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
         },

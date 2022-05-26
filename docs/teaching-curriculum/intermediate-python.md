@@ -18,7 +18,7 @@ This course is designed for students who already have experience of the followin
 
 These techniques are referred to, built upon and used in the lessons and tasks. It is not essential that students have direct experience with the Python language as the syntax is fairly straightforward and simple to pick up.
 
-If you’re not sure that your students are ready to start this course, you might want to check out our [Intro To Python](/curriculum/introPython) course instead.
+If you’re not sure that your students are ready to start this course, you might want to check out our [Intro To Python](/teaching-curriculum/intro-python) course instead.
 
 Feel free to use the curriculum as is, or modify it to fit your needs. If you share these materials (as is or with modifications), please provide attribution to Replit and Andy Colley, who created the curriculum.
 

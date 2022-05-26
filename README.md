@@ -1,6 +1,6 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Replit Docs website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
@@ -24,18 +24,17 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
-
-Using SSH:
+### Serve
 
 ```
-$ USE_SSH=true yarn deploy
+$ yarn serve
 ```
 
-Not using SSH:
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+### Contributing
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+If you'd like to contribute please [fork this repl](https://docs.replit.com/__repl), then share your fork in an issue on the [github repo](https://github.com/replit/replit.github.io/). Alternatively, you can submit a pull request to the same github repo.
+
+When adding new pages, the markdown file should be placed in the appropriate folder inside  (`programming-ide`/`teams-edu`/`misc`).
+
+You can add React JSX components to markdown files as well since Docusaurus supports MDX which supports JSX.

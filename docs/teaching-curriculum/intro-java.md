@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Intro Java curriculum
+# Intro to Java curriculum
 
 Welcome to this intro curriculum for learning to code with Java using the Replit platform. On this page, you can find links to the three units of the curriculum and find other resources to support the use of the guides.
 

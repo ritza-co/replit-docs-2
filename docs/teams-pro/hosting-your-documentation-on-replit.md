@@ -206,7 +206,7 @@ You could also set up two separate repls: a Python repl, as we did in this guide
 
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/) has many customizations, such as tags, add-ons, integration with analytics, and much more.
 
-The [Replit docs]() are built and hosted completely on Replit itself, so if you want help with anything or have any feedback, just email us at pro@replit.com.
+The [Replit docs](https://docs.replit.com) are built and hosted completely on Replit itself, so if you want help with anything or have any feedback, just email us at pro@replit.com.
 
 <iframe height="400px" width="100%" src="https://replit.com/@ritza/docs-site?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 

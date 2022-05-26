@@ -4,7 +4,7 @@ title: Smart contract oracle with Solidity
 
 # Build a smart contract oracle with Solidity, Node.js, and Replit
 
-Oracles are bridges between smart contract protocols running on the blockchain and real-world data feeds. In previous Solidity tutorials, we've designed a [simple Ethereum escrow protocol](https://docs.replit.com/tutorials/33-escrow-contract-with-solidity) and a composable robot NFT ([Part 1](https://docs.replit.com/tutorials/42-build-a-robot-nft), [Part 2](https://docs.replit.com/tutorials/43-build-a-robot-nft-p2)). These were both self-contained systems. In this tutorial, we'll learn about how to pull external data (such as exchange rates or random numbers) into our smart contracts by building an oracle, as well as how to combine different contract protocols.
+Oracles are bridges between smart contract protocols running on the blockchain and real-world data feeds. In previous Solidity tutorials, we've designed a [simple Ethereum escrow protocol](/tutorials/escrow-contract-with-solidity) and a composable robot NFT ([Part 1](/tutorials/build-a-robot-nft), [Part 2](/tutorials/build-a-robot-nft-p2)). These were both self-contained systems. In this tutorial, we'll learn about how to pull external data (such as exchange rates or random numbers) into our smart contracts by building an oracle, as well as how to combine different contract protocols.
 
 By the end of this tutorial, you will have:
 
@@ -49,7 +49,7 @@ An oracle is a hybrid system, made up of both contracts and traditional web serv
 
 Users interact with different smart contract protocols, such as decentralized exchanges or NFT markets. These protocols can source data from an oracle smart contract, which receives its data from off-chain data providers (these are usually some form of API).
 
-In this tutorial, we will be building an oracle for random number generation, using the [RANDOM.ORG API](https://www.random.org/clients/http/api/). If you've completed our [ReplBot NFT tutorial](https://docs.replit.com/tutorials/42-build-a-robot-nft), you'll know that true randomness is pretty much impossible to come by on the blockchain, and so an oracle is really the only solution for code that requires random numbers.
+In this tutorial, we will be building an oracle for random number generation, using the [RANDOM.ORG API](https://www.random.org/clients/http/api/). If you've completed our [ReplBot NFT tutorial](/tutorials/build-a-robot-nft), you'll know that true randomness is pretty much impossible to come by on the blockchain, and so an oracle is really the only solution for code that requires random numbers.
 
 In much discussion and documentation of Ethereum oracles, the word "oracle" is used interchangeably to refer to three different things:
 
@@ -891,7 +891,7 @@ In this tutorial, we've built a simplified version of [Chainlink's Verifiable Ra
 Some next steps you might want to try:
 
 * Create a few new repls containing just the data provider code and give each one its own wallet. Add the addresses as data providers to `RandOracle`, increase the providers threshold, and see how the contract works with more than one provider.
-* Build something more sophisticated on top of `Client`. For example, you could adapt the [ReplBot NFT contracts](https://docs.replit.com/tutorials/42-build-a-robot-nft) to use this oracle as a source of randomness. Or you could write something like a lottery contract.
+* Build something more sophisticated on top of `Client`. For example, you could adapt the [ReplBot NFT contracts](/tutorials/build-a-robot-nft) to use this oracle as a source of randomness. Or you could write something like a lottery contract.
 * Experiment with different data sources. An oracle can be a source for any data you can think of, from stock prices to the weather.
 
 You can find our repl below:

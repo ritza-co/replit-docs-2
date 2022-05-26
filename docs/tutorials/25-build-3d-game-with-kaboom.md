@@ -6,9 +6,9 @@ title: 3D game with Kaboom.js
 
 Three-dimensional games became popular in the late 80's and early 90's with games like the early Flight Simulator and Wolfenstein 3D. But these early games were really [2.5D, or pseudo-3D](https://en.wikipedia.org/wiki/2.5D): the action takes place in 2 dimensions, and the world only appears to be 3D.
 
-[Kaboom.js](https://kaboomjs.com) is a 2D game engine, but we can use some of those early game designers' techniques to create a pseudo-3D game. This game is roughly based on our [2D space shooter game tutorial](https://docs.replit.com/tutorials/24-build-space-shooter-with-kaboom), but we'll use a view from the cockpit of the spaceship instead of the side-scrolling view.
+[Kaboom.js](https://kaboomjs.com) is a 2D game engine, but we can use some of those early game designers' techniques to create a pseudo-3D game. This game is roughly based on our [2D space shooter game tutorial](/tutorials/build-space-shooter-with-kaboom), but we'll use a view from the cockpit of the spaceship instead of the side-scrolling view.
 
-![Game functionality](https://replit-docs-images.bardia.repl.co/images/tutorials/25-3d-game-kaboom/gameplay.gif)
+![Game functionality](https://replit-docs-images.bardia.repl.co/images/tutorials/3d-game-kaboom/gameplay.gif)
 
 You can download this [zip file](/tutorial-files/3d-game-kaboom/3d-game-resources.zip) with all the sprites and sounds you'll need for this tutorial.
 
@@ -31,7 +31,7 @@ After the repl has booted up, you should see a `main.js` file under the "Code" s
 
 ## Setting up the Kaboom environment
 
-The Kaboom interface on Replit is specialised for game-making. Besides the Space Invader icon, you'll notice a few special folders in the file try, like "Code", '"Sprites", and "Sounds". These special folders take care of loading up assets, and all the necessary code to start scenes and direct the game. You can read up more about the Kaboom interface [here](https://docs.replit.com/tutorials/kaboom).
+The Kaboom interface on Replit is specialised for game-making. Besides the Space Invader icon, you'll notice a few special folders in the file try, like "Code", '"Sprites", and "Sounds". These special folders take care of loading up assets, and all the necessary code to start scenes and direct the game. You can read up more about the Kaboom interface [here](/tutorials/kaboom).
 
 If you haven't already, download this [zip file](/tutorial-files/3d-game-kaboom/3d-game-resources.zip) containing all the sprites and sounds for the game. Extract the file on your computer, then add the sprites to the "Sprites" folder, and the sounds to the "Sounds" folder.
 
@@ -89,7 +89,7 @@ The `obj` layer is set as the default layer and that's where the game action wil
 
 ## Creating alien bugs
 
-As in the [2D version of this game](https://docs.replit.com/tutorials/24-build-space-shooter-with-kaboom), the point of our game is to avoid and shoot down exploding alien bugs. This time, instead of the bugs coming from the left and right of the screen, we'll make it appear as though they are coming toward the player from "inside" the screen.
+As in the [2D version of this game](/tutorials/build-space-shooter-with-kaboom), the point of our game is to avoid and shoot down exploding alien bugs. This time, instead of the bugs coming from the left and right of the screen, we'll make it appear as though they are coming toward the player from "inside" the screen.
 
 To create this effect, we'll start by making the alien bugs small and spread out over the screen, and have them get bigger and loom toward the center of the screen as they get closer.
 
@@ -510,7 +510,7 @@ onCollide("alien","bullet", (alien, bullet) =>{
 
 We make use of the Kaboom event [`onCollide`](https://kaboomjs.com/doc#onCollide) which is fired when 2 game objects are overlapping or touching each other. We pass in the tags for the aliens and bullets, so we know when they collide.
 
-We want to limit bullet hits to only be around the target area, so that the 3D perspective is kept. But because they could collide at any point along the path the bullet takes, we check if the collision has taken place at around the cross hairs area. Then, if is in the target zone, we remove both the bullet and the alien from the scene, and call a function to create an explosion effect. This is the same code used in the [2D Space Shooter tutorial](https://docs.replit.com/tutorials/24-build-space-shooter-with-kaboom).
+We want to limit bullet hits to only be around the target area, so that the 3D perspective is kept. But because they could collide at any point along the path the bullet takes, we check if the collision has taken place at around the cross hairs area. Then, if is in the target zone, we remove both the bullet and the alien from the scene, and call a function to create an explosion effect. This is the same code used in the [2D Space Shooter tutorial](/tutorials/build-space-shooter-with-kaboom).
 
 ```js
 function makeExplosion(p, n, rad, size) {
@@ -553,7 +553,7 @@ function grow(rate) {
 }
 
 ```
-We won't explain this code here, but if you'd like to know how it works, visit the [2D Space Shooter tutorial](https://docs.replit.com/tutorials/24-build-space-shooter-with-kaboom) to learn more.
+We won't explain this code here, but if you'd like to know how it works, visit the [2D Space Shooter tutorial](/tutorials/build-space-shooter-with-kaboom) to learn more.
 
 Run this now, and you should be able to shoot the alien bugs down.
 
@@ -596,7 +596,7 @@ If the alien is close enough, and within our strike zone, we use the [`shake`](h
 
 ## Finishing up the game
 
-Congratulations, we've got all the main elements of flying and shooting and damage in the game. The next thing to do would be to add a scoring system, and a way to reduce the spaceship's health or shield when it gets hit. You can look at the [tutorial for the 2D version of this game](https://docs.replit.com/tutorials/24-build-space-shooter-with-kaboom), and copy the scoring and health code from there into this game. You can also copy the code for background music and more sound effects.
+Congratulations, we've got all the main elements of flying and shooting and damage in the game. The next thing to do would be to add a scoring system, and a way to reduce the spaceship's health or shield when it gets hit. You can look at the [tutorial for the 2D version of this game](/tutorials/build-space-shooter-with-kaboom), and copy the scoring and health code from there into this game. You can also copy the code for background music and more sound effects.
 
 Happy coding and have fun!
 

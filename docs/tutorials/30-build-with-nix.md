@@ -263,7 +263,7 @@ In NGINX, `server` blocks are what you use to set up websites on individual doma
     server_name  localhost;
 ```
 
-Here we've set NGINX up to run our server on TCP port 8080, as per [Replit's hosting guidelines](https://docs.replit.com/hosting/deploying-http-servers). Within our `server` block, we can have one or more `location` blocks. These tell NGINX what content to host at different URLs. We can use the `proxy_pass` directive to serve the contents of another webserver running in our repl, or the `root` directive to serve static files. You can learn more about configuring NGINX in the official [NGINX Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html).
+Here we've set NGINX up to run our server on TCP port 8080, as per [Replit's hosting guidelines](/hosting/deploying-http-servers). Within our `server` block, we can have one or more `location` blocks. These tell NGINX what content to host at different URLs. We can use the `proxy_pass` directive to serve the contents of another webserver running in our repl, or the `root` directive to serve static files. You can learn more about configuring NGINX in the official [NGINX Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html).
 
 The last thing we do in `start.sh` is start up our Python Flask server:
 
@@ -305,7 +305,7 @@ If you run the repl now, you'll see a page showing version information about our
 
 From this base, you can build and configure a production-ready web application. Try the following ideas:
 
-* Implement the code from one of our previous Flask-based tutorials, such as [this PDF report generator](https://docs.replit.com/tutorials/26-pdf-report-generator-from-spreadsheet), [this technical competition site](https://docs.replit.com/tutorials/28-technical-challenge-site), or [this PDF store](https://docs.replit.com/tutorials/29-paid-content-site). See if you can adapt the content to use Postgres rather than the Replit Database.
+* Implement the code from one of our previous Flask-based tutorials, such as [this PDF report generator](/tutorials/pdf-report-generator-from-spreadsheet), [this technical competition site](/tutorials/technical-challenge-site), or [this PDF store](/tutorials/paid-content-site). See if you can adapt the content to use Postgres rather than the Replit Database.
 * Implement your own Flask web application, using Postgres as a database.
 * Add a second application listening on a different loopback port and available from a different URL. This could be your own Python or Node.js project, or a deployment of open-source software such as Ghost or Wordpress.
 
@@ -371,6 +371,6 @@ As we've seen above, Nix allows us to use repls for more than just writing and t
 * You can view files and directories that aren't visible in your repl's filepane from the shell, using standard Unix commands like `ls`, `cd` and `cat`. This includes files and directories in the Nix store, at `/nix/store`. This will often be useful for debugging.
 * You can view a list of running processes with the shell command `ps aux`, and terminate them with `pkill <process-name>`.
 * Loading the Nix environment will sometimes take a long time, especially if you have custom derivations.
-* If you're setting up a web server, refer to [our guidance on deploying HTTP servers](https://docs.replit.com/hosting/deploying-http-servers).
+* If you're setting up a web server, refer to [our guidance on deploying HTTP servers](/hosting/deploying-http-servers).
 
 As a final reminder, make sure to abide by Replit's [Terms of Service](https://replit.com/site/terms) when using Nix repls, and avoid installing packages that use excessive system resources (such as cryptocurrency miners) or are intentionally malicious.

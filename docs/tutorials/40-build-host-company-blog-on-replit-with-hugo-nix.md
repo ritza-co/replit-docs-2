@@ -41,7 +41,7 @@ Most kinds of repls are intended for working in a specific programming language 
 }
 ```
 
-This will install Hugo the next time we run our repl. If you'd like to understand more about what this code is actually doing, check out the tutorial on [building with Nix on Replit](https://docs.replit.com/tutorials/30-build-with-nix).
+This will install Hugo the next time we run our repl. If you'd like to understand more about what this code is actually doing, check out the tutorial on [building with Nix on Replit](/tutorials/build-with-nix).
 
 Run your repl now. Once you see the ASCII cow in the repl console, type the following command:
 
@@ -74,7 +74,7 @@ This will use Git to download the theme into our site's `themes` directory. To i
 theme = 'hugo-theme-terminal'
 ```
 
-We must now configure our repl to host our static site so that we can see the results of our work. If you're familiar with static site generators (perhaps from a [previous tutorial](https://docs.replit.com/tutorials/16-static-site-generator)), you'll know that this is a two-step process:
+We must now configure our repl to host our static site so that we can see the results of our work. If you're familiar with static site generators (perhaps from a [previous tutorial](/tutorials/static-site-generator)), you'll know that this is a two-step process:
 
 1. Render content in markdown and insert it into theme templates to create HTML pages.
 2. Host those HTML pages on a web server.
@@ -88,7 +88,7 @@ run = "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --port 443 --baseU
 In this command:
 
 * `--buildDrafts` and `--buildFuture` will ensure that all site content is rendered, even if it's marked as a draft or scheduled for publishing in the future.
-* `--bind` `--port` and `--baseURL` are all used to [ensure that our repl will host our site correctly](https://docs.replit.com/hosting/deploying-http-servers). Make sure to modify the argument for `--baseURL` as indicated (i.e. replacing the placeholders `YOUR-REPL-NAME-HERE` and `YOUR-USERNAME-HERE` with your own values).
+* `--bind` `--port` and `--baseURL` are all used to [ensure that our repl will host our site correctly](/hosting/deploying-http-servers). Make sure to modify the argument for `--baseURL` as indicated (i.e. replacing the placeholders `YOUR-REPL-NAME-HERE` and `YOUR-USERNAME-HERE` with your own values).
 
 Run your repl. You should see an empty site homepage.
 
@@ -221,7 +221,7 @@ else # production
 fi
 ```
 
-Here we've used a couple of [repl metadata environment variables](https://docs.replit.com/programming-ide/getting-repl-metadata) to trigger different behavior when our code is run in different repls.
+Here we've used a couple of [repl metadata environment variables](/programming-ide/getting-repl-metadata) to trigger different behavior when our code is run in different repls.
 
 Return to your repl's version control tab and commit and push your changes. We are now ready to create the production repl.
 
@@ -265,9 +265,9 @@ Let's test out our publishing flow.
 
 This will be your workflow for publishing posts. Undraft, commit and push on development, then pull and rerun on production.
 
-If you have a paid Replit plan, you should set your production repl as [Always-on](https://docs.replit.com/hosting/enabling-always-on), so that people will always be able to reach your website.
+If you have a paid Replit plan, you should set your production repl as [Always-on](/hosting/enabling-always-on), so that people will always be able to reach your website.
 
-You will probably also want to use a custom domain name, instead of `blog.your-name.repl.co`. Instructions for setting this up are provided [here](https://docs.replit.com/hosting/hosting-web-pages#custom-domains). As a bonus, following this process will also put your site behind [Cloudflare](https://www.cloudflare.com/)'s content delivery network (CDN), improving its performance and reachability across the global internet. Cloudflare is [free for personal and hobby projects](https://www.cloudflare.com/plans/#overview).
+You will probably also want to use a custom domain name, instead of `blog.your-name.repl.co`. Instructions for setting this up are provided [here](/hosting/hosting-web-pages#custom-domains). As a bonus, following this process will also put your site behind [Cloudflare](https://www.cloudflare.com/)'s content delivery network (CDN), improving its performance and reachability across the global internet. Cloudflare is [free for personal and hobby projects](https://www.cloudflare.com/plans/#overview).
 
 ## Writing posts
 

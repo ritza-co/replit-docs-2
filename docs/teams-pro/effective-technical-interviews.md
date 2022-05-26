@@ -34,7 +34,7 @@ Technical interviews typically have three stages:
 
 Technical interviews can be quite a lengthy process, but each stage gives you a clearer idea of the candidate's personality and capabilities.
 
-Replit [Teams Pro](https://docs.replit.com/teams-pro/intro-teams-pro) can be used to conduct effective interviews following a successful first stage. It is an ideal platform for conducting remote coding interviews because of the following features:
+Replit [Teams Pro](/teams-pro/intro-teams-pro) can be used to conduct effective interviews following a successful first stage. It is an ideal platform for conducting remote coding interviews because of the following features:
 
 * In-built support for multiple programming languages and frameworks
 
@@ -48,9 +48,9 @@ Replit [Teams Pro](https://docs.replit.com/teams-pro/intro-teams-pro) can be use
 
 ![Multiplayer](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/multiplayer.png)
 
-For more information on getting started with conducting interviews using Teams Pro, take a look at our [Introduction to Teams Pro](https://docs.replit.com/teams-pro/intro-teams-pro).
+For more information on getting started with conducting interviews using Teams Pro, take a look at our [Introduction to Teams Pro](/teams-pro/intro-teams-pro).
 
-Regardless of the type of interview you want to conduct, the first step to follow is to create a team repl. Our [Interviewing candidates in guest mode guide](https://docs.replit.com/teams-pro/interviewing-candidates) will show you how.
+Regardless of the type of interview you want to conduct, the first step to follow is to create a team repl. Our [Interviewing candidates in guest mode guide](/teams-pro/interviewing-candidates) will show you how.
 
 Now we'll look at the different stages of a technical interview process and see where Replit can be used. 
 
@@ -76,7 +76,7 @@ Automated tests include the use of automation frameworks and other software tool
 
 Due to how restrictive this process is, companies could potentially miss out on a lot of talented candidates. Furthermore, monitoring candidates during tests is often difficult, so for some developers, it may be easy to plagiarize code solutions. For candidates that do not honor this system, it results in a misrepresentation of their speed and skill.
 
-Automated tests can be created by setting up unit testing. Unit testing allows you to create code-driven tests that compare actual function output with expected output. Repl [Unit Testing](https://docs.replit.com/teams-edu/unit-testing) allows a repl author to write full unit tests in Java (JUnit), Python (unittest), or JavaScript (Jest). 
+Automated tests can be created by setting up unit testing. Unit testing allows you to create code-driven tests that compare actual function output with expected output. Repl [Unit Testing](/teams-edu/unit-testing) allows a repl author to write full unit tests in Java (JUnit), Python (unittest), or JavaScript (Jest). 
 
 ![Unit Testing](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/unit_testing.png)
 
@@ -86,9 +86,9 @@ These types of tests are project-based assignments with a deadline that the comp
 
 While they remove most of the pressure that comes with other interview types, they are also somewhat controversial. Often, they are seen as discriminating against candidates with work, family, or other strict obligations that may hinder them from completing assessments in time. Additionally, since these are not monitored, candidates may often seek help from friends when completing tasks, or simply plagiarize. Follow-ups can help assess the candidate's level of understanding, but this can be time-consuming.
 
-Replit's [Teams For Education](https://docs.replit.com/teams-edu/intro-teams-education) platform can be used for take-home assessments. Teams for Education adds key workflows for teachers and students, but it can be leveraged by hiring managers to create a collaborative workspace for interviews.
+Replit's [Teams For Education](/teams-edu/intro-teams-education) platform can be used for take-home assessments. Teams for Education adds key workflows for teachers and students, but it can be leveraged by hiring managers to create a collaborative workspace for interviews.
 
-On top of the core Replit features, hiring managers can create a curriculum that consists of a number of [projects](https://docs.replit.com/teams-edu/creating-projects-assignments) that candidates must complete and [submit](https://docs.replit.com/teams-edu/reviewing-submissions). These projects can be reviewed and candidates can be given feedback.
+On top of the core Replit features, hiring managers can create a curriculum that consists of a number of [projects](/teams-edu/creating-projects-assignments) that candidates must complete and [submit](/teams-edu/reviewing-submissions). These projects can be reviewed and candidates can be given feedback.
 
 #### *Live coding tests*
 
@@ -110,7 +110,7 @@ Live coding tests are ideal for conducting remote code interviews for a number o
 
 The Replit multiplayer feature is ideal for live coding tests, because it allows you to observe candidates as they implement their code and candidates get immediate feedback on their solutions or if there are any changes you want to make to their challenges.
 
-With this feature, companies can have several interviewers monitoring the same repl at a time. These interview repls can also be reused for different candidates applying for the same role. Take a look at this article on how to [manage and copy repls for interviewing](https://docs.replit.com/teams-pro/copying-repls-for-interviewing).
+With this feature, companies can have several interviewers monitoring the same repl at a time. These interview repls can also be reused for different candidates applying for the same role. Take a look at this article on how to [manage and copy repls for interviewing](/teams-pro/copying-repls-for-interviewing).
 
 
 ### Onsite interviews
@@ -121,9 +121,9 @@ Spending more time with the candidate may be worth the time. The onsite intervie
 
 Onsite interviews usually consist of different types of tasks, from pair-programming to live-coding tests and whiteboard challenges.
 
-[Pair-programming with Replit](https://docs.replit.com/tutorials/05-pair-programming-using-multiplayer-with-repl-it) allows you to invite members into a repl and code with them. There can be multiple programmers in a single repl, as long as they join via the invite link. This allows interviewers to monitor pairs as they work together on code challenges and assess their ability to work in a team.
+[Pair-programming with Replit](/tutorials/pair-programming-using-multiplayer-with-repl-it) allows you to invite members into a repl and code with them. There can be multiple programmers in a single repl, as long as they join via the invite link. This allows interviewers to monitor pairs as they work together on code challenges and assess their ability to work in a team.
 
-[Excalidraw](https://docs.replit.com/teams-pro/excalidraw-with-replit) is a cool feature on Teams Pro that is ideal for whiteboard challenges. If you are observing many candidates at once, Excalidraw can be a great tool for monitoring them through interview repls.
+[Excalidraw](/teams-pro/excalidraw-with-replit) is a cool feature on Teams Pro that is ideal for whiteboard challenges. If you are observing many candidates at once, Excalidraw can be a great tool for monitoring them through interview repls.
 
 ![Excalidraw](https://replit-docs-images.bardia.repl.co/images/teamsPro/effective-technical-interviews/excalidraw.png)
 

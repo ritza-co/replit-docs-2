@@ -25,7 +25,7 @@ Log into your [Replit](https://replit.com/login) account and create a new repl. 
 
 ![Create a new repl](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/create-repl.png)
 
-Kaboom repls are quite different from other kinds of repls you may have seen before: instead of dealing directly with files in folders, you'll be dealing with code, sounds and sprites, the latter of which you can draw directly in Replit's [image editor](https://docs.replit.com/tutorials/kaboom-editor).
+Kaboom repls are quite different from other kinds of repls you may have seen before: instead of dealing directly with files in folders, you'll be dealing with code, sounds and sprites, the latter of which you can draw directly in Replit's [image editor](/tutorials/kaboom-editor).
 
 Before we start coding, we need to upload our sprites and sounds. Download [this ZIP file](/tutorial-files/breakout-kaboom/breakout-resources.zip) and extract it on your computer. Click the "Files" icon on the sidebar and upload everything in the extracted file's Sounds folder to the "sounds" section of your repl, and everything in the Sprites folder to the "sprites" section of your repl.
 

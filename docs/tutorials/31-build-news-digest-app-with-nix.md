@@ -96,7 +96,7 @@ The second section of the script starts MongoDB with the following configuration
 
 * `--fork`: This runs MongoDB in a background process, allowing the script to continue executing without shutting it down.
 * `--bind_ip="127.0.0.1"`: Listen on the local loopback address only, preventing external access to our database.
-* `--dbpath=./data` and `--logpath=./log/mongod.log`: Use local directories for storage. This is important for getting programs to work in Nix repls, as we discussed in [our previous tutorial on building with Nix](https://docs.replit.com/tutorials/30-build-with-nix).
+* `--dbpath=./data` and `--logpath=./log/mongod.log`: Use local directories for storage. This is important for getting programs to work in Nix repls, as we discussed in [our previous tutorial on building with Nix](/tutorials/build-with-nix).
 
 The third section starts Redis. We use the `--bind` flag to listen on the local loopback address only, similar to how we used it for MongoDB, and `--daemonize yes` runs it as a background process (similar to MongoDB's `--fork`).
 
@@ -929,7 +929,7 @@ Now that our code is in place, we can add a new Celery beat process to `start.sh
 celery -A lib.tasks.celery beat -S redisbeat.RedisScheduler --loglevel=debug &
 ```
 
-Now run your repl. You can test this functionality out now by scheduling your digest about ten minutes in the future. If you want to receive regular digests, you will need to enable [Always-on](https://docs.replit.com/hosting/enabling-always-on) in your repl. Also, remember that all times must be specified in the UTC timezone.
+Now run your repl. You can test this functionality out now by scheduling your digest about ten minutes in the future. If you want to receive regular digests, you will need to enable [Always-on](/hosting/enabling-always-on) in your repl. Also, remember that all times must be specified in the UTC timezone.
 
 ## Where next?
 
@@ -941,7 +941,7 @@ We've built a useful multi-component application, but its functionality is fairl
 * Multiple digests per user. Users could configure different digests with different contents at different times.
 * Allow users to schedule digests in their local timezones.
 * Styling of both website and email content with CSS.
-* A production WSGI and web server to improve the web application's performance, like we used in our [previous tutorial on building with Nix](https://docs.replit.com/tutorials/30-build-with-nix).
+* A production WSGI and web server to improve the web application's performance, like we used in our [previous tutorial on building with Nix](/tutorials/build-with-nix).
 
 You can find our repl below:
 

@@ -17,7 +17,7 @@ The main components for this tutorial are:
 
 ## Setup
 
-You'll need a Replit account for this tutorial so if you haven't already, head over to the [signup page](https://replit.com/signup) to create an account. If this is your first time using Replit, check out the [Quick Start Guide](https://docs.replit.com/repls/quick-start) before continuing with this tutorial.
+You'll need a Replit account for this tutorial so if you haven't already, head over to the [signup page](https://replit.com/signup) to create an account. If this is your first time using Replit, check out the [Quick Start Guide](/repls/quick-start) before continuing with this tutorial.
 
 Create a new Python repl and give it a name. 
 

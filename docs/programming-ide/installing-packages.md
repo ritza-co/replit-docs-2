@@ -50,7 +50,7 @@ When you add a package by importing, we attempt to guess what package you want b
 import twitter #upm package(python-twitter)
 ```
 
-You can configure additional options for package guessing by reading about the [.replit](https://docs.replit.com/repls/dot-replit) file.
+You can configure additional options for package guessing by reading about the [.replit](/repls/dot-replit) file.
 
 ## Spec Files
 

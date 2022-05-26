@@ -32,7 +32,7 @@ You will be redirected to the workspace of the copied repl where you can modify 
 
 ## Adding a naming convention
 
-You can invite a candidate and interview them using the forked repl in order to keep your template clean. For more details on how to invite candidates to interviews, you can follow this tutorial: [Interviewing candidates with Guest Mode](https://docs.replit.com/teams-pro/interviewing-candidates).
+You can invite a candidate and interview them using the forked repl in order to keep your template clean. For more details on how to invite candidates to interviews, you can follow this tutorial: [Interviewing candidates with Guest Mode](/teams-pro/interviewing-candidates).
 
 When the interview is over, save the repl with the candidate's name or some other identifier on it. For example, you could use a naming convention like `backend-dev-python-2022-01-21-jane-doe` to make it easier to find if there have been numerous candidates for the same type of interview.
 

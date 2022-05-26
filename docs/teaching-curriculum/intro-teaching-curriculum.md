@@ -9,13 +9,13 @@ At Replit, our mission is to make programming more accessible to all. We aim to 
 
 ## Curricula
 
-- [Intro to C++](https://docs.replit.com/teaching-curriculum/intro-cpp)
-- [Intro to HTML/CSS](https://docs.replit.com/teaching-curriculum/intro-html-css)
-- [Intro to Java](https://docs.replit.com/teaching-curriculum/intro-java)
-- [Intro to Python](https://docs.replit.com/teaching-curriculum/intro-python)
-- [Intro to SQL](https://docs.replit.com/teaching-curriculum/intro-sql)
-- [Intermediate Python](https://docs.replit.com/teaching-curriculum/intermediate-python)
-- [Abstract Data Types](https://docs.replit.com/teaching-curriculum/abstract-data-types)
+- [Intro to C++](/teaching-curriculum/intro-cpp)
+- [Intro to HTML/CSS](/teaching-curriculum/intro-html-css)
+- [Intro to Java](/teaching-curriculum/intro-java)
+- [Intro to Python](/teaching-curriculum/intro-python)
+- [Intro to SQL](/teaching-curriculum/intro-sql)
+- [Intermediate Python](/teaching-curriculum/intermediate-python)
+- [Abstract Data Types](/teaching-curriculum/abstract-data-types)
 
 - More to come!
 
@@ -35,13 +35,13 @@ Click on one of our curricula in the left sidebar (or below) and you're on your 
 Happy teaching and happy coding!
 
 ## Curricula
-- [Intro to Java](https://docs.replit.com/curriculum/introJava)
-- [Intro to Python](https://docs.replit.com/curriculum/introPython)
-- [Intermediate Python](https://docs.replit.com/curriculum/intermediatePython)
-- [Intro to HTML/CSS](https://docs.replit.com/curriculum/introHTMLCSS)
-- [Intro to SQL](https://docs.replit.com/curriculum/introSQL)
-- [Abstract Data Types](https://docs.replit.com/curriculum/abstractData)
-- [Intro to C++](https://docs.replit.com/curriculum/introCpp)
+- [Intro to Java](/curriculum/introJava)
+- [Intro to Python](/curriculum/introPython)
+- [Intermediate Python](/curriculum/intermediatePython)
+- [Intro to HTML/CSS](/curriculum/introHTMLCSS)
+- [Intro to SQL](/curriculum/introSQL)
+- [Abstract Data Types](/curriculum/abstractData)
+- [Intro to C++](/curriculum/introCpp)
 - More to come! 
 
 ## Additional Resources

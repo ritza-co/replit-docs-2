@@ -36,7 +36,7 @@ After the repl has booted up, you should see a `main.js` file under the "Code" s
 
 [Kaboom.js](https://kaboomjs.com) is a JavaScript library that contains a lot of useful features for making simple browser games. It has functionality to draw shapes and sprites (the images of characters and game elements) to the screen, get user input, play sounds, and more. We'll use some of these features in our game to explore how Kaboom works.
 
-The Replit Kaboom interface is specialised for game-making. Besides the Space Invader icon, you'll notice a few special folders in the file tray, like "Code", "Sprites", and "Sounds". These special folders take care of loading up assets, and all the necessary code to start scenes and direct the game. You can read up more about this interface [here](https://docs.replit.com/tutorials/kaboom).
+The Replit Kaboom interface is specialised for game-making. Besides the Space Invader icon, you'll notice a few special folders in the file tray, like "Code", "Sprites", and "Sounds". These special folders take care of loading up assets, and all the necessary code to start scenes and direct the game. You can read up more about this interface [here](/tutorials/kaboom).
 
 If you haven't already, download this [zip file](/tutorial-files/space-shooter-kaboom/space-shooter-resources.zip) which contains all the sprites and sounds for the game. Extract the file on your computer, then add the sprites to the "Sprites" section in the Replit editor, and the sounds to the "Sounds" section.
 

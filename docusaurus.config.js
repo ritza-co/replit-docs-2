@@ -12,12 +12,12 @@ const editUrlFn = ({docPath}) => {
 const config = {
   title: 'Replit Docs',
   tagline: 'Learn how to use Replit',
-  url: 'https://docs-wip.bardia.repl.co',
+  url: '',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'replit',
-  projectName: 'replit-docs-wip',
+  projectName: 'replit-docs-2',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],

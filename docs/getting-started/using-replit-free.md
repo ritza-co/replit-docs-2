@@ -23,15 +23,15 @@ Create a new repl by clicking the blue "+" button in the top-right of your scree
 
 Select the owner of the repl, and then click "Create repl". You will notice that repls belonging to free accounts are public.
 
-Learn more about [managing your repls here](https://docs.replit.com/repls/dashboard). 
+Learn more about [managing your repls here](/repls/dashboard). 
 
-For a practical intro to using repls, follow [this tutorial](https://docs.replit.com/tutorials/01-introduction-to-the-repl-it-ide).
+For a practical intro to using repls, follow [this tutorial](/tutorials/introduction-to-the-repl-it-ide).
 
 ## Multiplayer
 
 Replit is the first fully multiplayer programming environment, meaning you can invite other people to code and collaborate with you. You can use this function to pair program with others, teach your classroom, create collaborative projects for your students, or simply present your work to others. 
 
-For a practical intro to using the multiplayer feature, follow [this tutorial](https://docs.replit.com/tutorials/05-pair-programming-using-multiplayer-with-repl-it).
+For a practical intro to using the multiplayer feature, follow [this tutorial](/tutorials/pair-programming-using-multiplayer-with-repl-it).
 
 ## Teams
 

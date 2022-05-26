@@ -10,7 +10,7 @@ This streaming technology allows you to work with legacy applications in your br
 
 <img
   style={{ width: 600 }}
-  src="https://docs.replit.com/images/vnc/tetris.png"
+  src="/images/vnc/tetris.png"
 />
 
 <a href="https://replit.com/@demcrepl/Tetris-in-Pygame" target="_blank">Tetris (powered by PyGame)</a>
@@ -24,7 +24,7 @@ Any repl – in any language – can use a virtual desktop. No changes are neede
 
 By default, your VNC connection does not have a password, and can only be accessed from https://replit.com, since the connection relies on the same authentication used for the WebSocket. If you need to access your repl via the external [noVNC](https://novnc.com) client, you can set a VNC password.
 
-Set a password in your repl [secrets](https://docs.replit.com/repls/secrets-environment-variables) configuration.  `Secrets` is a secure place to store passwords without the fear of other users accessing your passwords. Setting `VNC_PASSWORD` will add enhanced security when connecting remotely.
+Set a password in your repl [secrets](/repls/secrets-environment-variables) configuration.  `Secrets` is a secure place to store passwords without the fear of other users accessing your passwords. Setting `VNC_PASSWORD` will add enhanced security when connecting remotely.
 
 ## How Can I Use Fullscreen VNC?
 
@@ -32,7 +32,7 @@ You must have secured your repl as instructed above, to proceed with these steps
 
 1. Execute the following command in your "Shell" tab: `echo $REPL_ID`
 
-   <img style={{ width: 600 }} src="https://docs.replit.com/images/vnc/replid.png"/>
+   <img style={{ width: 600 }} src="/images/vnc/replid.png"/>
 
 2. Construct your connection URL by replacing `REPL_ID` in with the output from above: `<REPL_ID>.id.repl.co`
 
@@ -40,15 +40,15 @@ You must have secured your repl as instructed above, to proceed with these steps
 
 4. Open connection settings.
 
-   <img style={{ width: 50 }} src="https://docs.replit.com/images/vnc/settings.png"/>
+   <img style={{ width: 50 }} src="/images/vnc/settings.png"/>
 
 5. Expand the WebSockets field. Enter your connection URL (`<REPL_ID>.id.repl.co`) in the `host` field, and leave the `path` field empty.
 
-   <img style={{ width: 200 }} src="https://docs.replit.com/images/vnc/host.png"/>
+   <img style={{ width: 200 }} src="/images/vnc/host.png"/>
 
 6. Change the `Scaling Mode` to `Remote Resizing`:
    
-   <img style={{ width: 200 }} src="https://docs.replit.com/images/vnc/scaling.png"/>
+   <img style={{ width: 200 }} src="/images/vnc/scaling.png"/>
 
 7. Use the `runner` username and the password configured above when asked for credentials.
 

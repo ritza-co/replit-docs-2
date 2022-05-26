@@ -4,9 +4,9 @@ sidebar_position: 5
 
 # Getting started with Nix
 
-Replit supports all programming languages through our integration with Nix. Our tutorial [Building with Nix on Replit](https://docs.replit.com/tutorials/30-build-with-nix) will give you a good understanding of Nix, the different configuration files and options available for your Nix repl, and some ideas for what can be built on Replit by leveraging the power of Nix.
+Replit supports all programming languages through our integration with Nix. Our tutorial [Building with Nix on Replit](/tutorials/build-with-nix) will give you a good understanding of Nix, the different configuration files and options available for your Nix repl, and some ideas for what can be built on Replit by leveraging the power of Nix.
 
-To get started with Nix on Replit, just fork just about any of our [official templates](https://replit.com/templates), they're almost all Nix-based now. Or if you want a blank Nix repl, we have a [template](https://docs.replit.com/programming-ide/getting-started-nix) for that too.
+To get started with Nix on Replit, just fork just about any of our [official templates](https://replit.com/templates), they're almost all Nix-based now. Or if you want a blank Nix repl, we have a [template](/programming-ide/getting-started-nix) for that too.
 
 Once you have forked a template, there are 2 config files that you can use to customize the environment: 
 
@@ -39,7 +39,7 @@ The `shell.nix` file allows for greater customization of the shell environment t
 
 The `default.nix` file will use `nix-env` to construct an environment where the derivation in `default.nix` is built and added to the shell.
 
-Now let's take a look at the `.replit` file. This file defines what command will get executed when we click the "Run" button, and [much more](https://docs.replit.com/programming-ide/configuring-repl). The run command in this file should look something like the example below. You can use any binary made available by your `replit.nix` file in this run command.
+Now let's take a look at the `.replit` file. This file defines what command will get executed when we click the "Run" button, and [much more](/programming-ide/configuring-repl). The run command in this file should look something like the example below. You can use any binary made available by your `replit.nix` file in this run command.
 
 ```bash
 run = "cowsay Welcome to nix on Replit!"

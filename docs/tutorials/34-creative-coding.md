@@ -207,9 +207,9 @@ while True:
 This code initializes a new `pygame` instance and creates a window to display the output in. Then it has a main game loop, which listens for keyboard arrow key presses, and moves a small block around the screen based on the keys pressed.
 
 Check out some of our tutorials for Pygame :
-- [A 2D platform game](https://docs.replit.com/tutorials/14-2d-platform-game)
-- [A Juggling game](https://docs.replit.com/tutorials/07-building-a-game-with-pygame)
-- [Snake](https://docs.replit.com/tutorials/19-build-snake-with-pygame)
+- [A 2D platform game](/tutorials/2d-platform-game)
+- [A Juggling game](/tutorials/building-a-game-with-pygame)
+- [Snake](/tutorials/build-snake-with-pygame)
 
 ### Pyxel
 

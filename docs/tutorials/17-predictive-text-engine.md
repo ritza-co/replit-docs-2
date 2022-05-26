@@ -504,7 +504,7 @@ Other things that can be modelled quite well with Markov chains include games li
 There are some ways to improve this engine: 
 - If it hasn't seen a particular initial phrase, the code will crash. It would be good to add a check to see if the phrase doesn't exist. It could then return an error code or an empty suggestion, rather than crashing.
 - It could be cool to make the engine interactive. Try adding a console interface like [readline module](https://nodejs.org/api/readline.html) to prompt for a phrase/input and show the output, allowing you to try multiple phrases in one session. 
-- Try save the populated map to a data store, so it doesn't have to be re-trained every time you run the program. This would allow you to continually add new books and language examples, making the engine even better. There is a [Replit database](https://docs.replit.com/misc/database) you can use for this. 
+- Try save the populated map to a data store, so it doesn't have to be re-trained every time you run the program. This would allow you to continually add new books and language examples, making the engine even better. There is a [Replit database](/misc/database) you can use for this. 
 
 
 <iframe height="400px" width="100%" src="https://replit.com/@ritza/text-autocomplete?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

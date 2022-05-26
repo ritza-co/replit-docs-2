@@ -10,7 +10,7 @@ GitHub repositories can be run automatically on Replit. Head to https://replit.c
 
 When you clone a repository without a `.replit` file, we automatically show the visual `.replit` editor:
 
-![visual config editor](https://docs.replit.com/images/config_plugin.png)
+![visual config editor](/images/config_plugin.png)
 
 This will automatically create the `.replit` file and make it possible to customize how the repl will run. 
 
@@ -20,7 +20,7 @@ Clicking "done" will finalize the repl's configuration and close the visual edit
 
 It's always possible to make changes later by visiting the `.replit` file from the filetree. Adding `.replit` to a repository makes cloning fast with no configuration necessary.
 
-For more information on how to configure your repl, see the [.replit documentation](https://docs.replit.com/repls/dot-replit).
+For more information on how to configure your repl, see the [.replit documentation](/repls/dot-replit).
 
 
 ## Adding a "Run on Replit" Badge

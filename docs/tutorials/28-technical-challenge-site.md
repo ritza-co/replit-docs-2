@@ -81,7 +81,7 @@ def db_init():
         db["competition_started"] = False 
 ```
 
-[Replit's Database](https://docs.replit.com/hosting/database-faq) can be thought of and used as one big Python dictionary that we can access with [`db`](https://replit-py.readthedocs.io/en/latest/api.html#module-replit.database). Any values we store in `db` will persist between repl restarts.
+[Replit's Database](/hosting/database-faq) can be thought of and used as one big Python dictionary that we can access with [`db`](https://replit-py.readthedocs.io/en/latest/api.html#module-replit.database). Any values we store in `db` will persist between repl restarts.
 
 To import this file in `main.py`, we can use an `import` statement in much the same way as we would for a module. Add this line in `main.py`, below your other imports:
 

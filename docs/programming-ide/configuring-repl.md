@@ -34,7 +34,7 @@ If you'd like to learn more about Nix, here are some great resources:
 
 #### Written Guides
 - [Getting started with Nix](/programming-ide/getting-started-nix) — Our own getting started guide
-- [Building with Nix on Replit](https://docs.replit.com/tutorials/30-build-with-nix) — Deploy a production web stack on Replit with Nix
+- [Building with Nix on Replit](/tutorials/build-with-nix) — Deploy a production web stack on Replit with Nix
 - [Nix Pills](https://nixos.org/guides/nix-pills/) — Guided introduction to Nix
 - [Nix Package Manager Guide](https://nixos.org/manual/nix/stable/) — A comprehensive guide of the Nix Package Manager
 - [A tour of Nix](https://nixcloud.io/tour) — Learn the nix language itself
@@ -156,7 +156,7 @@ The shell command to compile the repl before the `run` command. Only for compile
 
 **Type:** `boolean`
 
-Enables [system-wide audio](https://docs.replit.com/misc/playing-audio-replit) for the repl when configured to `true`.
+Enables [system-wide audio](/misc/playing-audio-replit) for the repl when configured to `true`.
 
 ---
 
@@ -213,7 +213,7 @@ The language you want the unit tests to run. Supported strings: `java`, `python`
 
 #### `[packager]`
 
-**Description:** Package management configuration. Learn more about installing packages [here](https://docs.replit.com/repls/packages/#DirectImports).
+**Description:** Package management configuration. Learn more about installing packages [here](/repls/packages/#DirectImports).
 
 ##### `afterInstall`
 

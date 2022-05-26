@@ -922,7 +922,7 @@ First, we `freeze` Mario so the player can't control him anymore. Then we [`add`
 
 There are few things left to do to complete the game:
 
-- Add in some scoring. You can check out a previous Kaboom tutorial, like [Space Shooter](https://docs.replit.com/tutorials/24-build-space-shooter-with-kaboom), to see how scoring works.
+- Add in some scoring. You can check out a previous Kaboom tutorial, like [Space Shooter](/tutorials/build-space-shooter-with-kaboom), to see how scoring works.
 - Add in sounds and music. If you get your own copy of the *Mario* soundtrack and effects, you can use the [`play`](https://kaboomjs.com/#play) sound function in Kaboom to get those classic tunes blasting as you play.
 - Add in some more levels. This is the really fun part, where you get to create *Mario* levels you wish existed.
 - You can also add in some more of the *Mario World* game characters.

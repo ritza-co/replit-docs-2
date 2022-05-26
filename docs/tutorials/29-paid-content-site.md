@@ -26,7 +26,7 @@ Our application will have the following functionality:
 * Users can view free PDFs and PDFs that they've previously purchased.
 * Administrators can upload new PDFs.
 
-We've covered both `replit.web` and Stripe in previous tutorials, so some aspects of the following may be familiar if you've built [a brick shop](https://docs.replit.com/tutorials/20-online-store-checkout-process) or [a technical challenge website](https://docs.replit.com/tutorials/28-technical-challenge-site).
+We've covered both `replit.web` and Stripe in previous tutorials, so some aspects of the following may be familiar if you've built [a brick shop](/tutorials/online-store-checkout-process) or [a technical challenge website](/tutorials/technical-challenge-site).
 
 We'll start our app off with the following import statements in `main.py`:
 
@@ -103,7 +103,7 @@ def db_init():
 db_init()
 ```
 
-[Replit's Database](https://docs.replit.com/hosting/database-faq) can be thought of and used as one big Python dictionary that we can access with `db`. Any values we store in `db` will persist between repl restarts.
+[Replit's Database](/hosting/database-faq) can be thought of and used as one big Python dictionary that we can access with `db`. Any values we store in `db` will persist between repl restarts.
 
 We've written a function to initialize the database as we may want to do it again if we need to refresh our data during testing. Whenever we initialize our database, we will also create the `content` and `static` directories, which will contain user-uploaded files.
 

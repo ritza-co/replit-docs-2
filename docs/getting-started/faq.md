@@ -34,7 +34,7 @@ Have you tried:
 3. Forking the repl.
 4. Running 'kill 1' in the shell.
 5. Checking for any memory leaks within your code.
-6. Installing all the necessary package managers via the [packager tab.](https://docs.replit.com/programming-ide/installing-packages)
+6. Installing all the necessary package managers via the [packager tab.](/programming-ide/installing-packages)
 
 
 
@@ -74,16 +74,16 @@ Note that this function is currently only available on our [Hacker plan](https:/
 
 ##### How do I use the Replit Database?
 
-You can learn more about the Replit Database [here.](https://docs.replit.com/hosting/database-faq)
+You can learn more about the Replit Database [here.](/hosting/database-faq)
 
 
 ## Custom Domains
 
 ##### How do I create a custom domain?
 
-You can link any repl you create to a domain that you own. (This includes [HTTP Servers](https://docs.replit.com/hosting/deploying-http-servers)).
+You can link any repl you create to a domain that you own. (This includes [HTTP Servers](/hosting/deploying-http-servers)).
 
-You can learn more about custom domains [here.](https://docs.replit.com/hosting/hosting-web-pages#custom-domains)
+You can learn more about custom domains [here.](/hosting/hosting-web-pages#custom-domains)
 
 ## Account
 
@@ -106,4 +106,4 @@ Not specifically, but there are two ways to work around this:
 
 ##### I received a notification from one of the mods. What does this mean?
 
-Learn more about our strike system [here.](https://docs.replit.com/hosting/strike-system-faq)
+Learn more about our strike system [here.](/hosting/strike-system-faq)

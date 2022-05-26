@@ -46,7 +46,7 @@ If you're already using MetaMask, we recommend creating a new account for testin
 
 ## Introduction to smart contract development
 
-Feel free to skip this section if you've written Solidity contracts before or completed [our escrow tutorial](https://docs.replit.com/tutorials/33-escrow-contract-with-solidity).
+Feel free to skip this section if you've written Solidity contracts before or completed [our escrow tutorial](/tutorials/escrow-contract-with-solidity).
 
 Now that we've got our repl and wallet set up, we can start developing. We will be writing contracts, which are the basic building blocks of Ethereum programs. An individual contract can have state variables and functions and can inherit from multiple other contracts. Contracts in Solidity are equivalent to classes in a language like Python or Java.
 

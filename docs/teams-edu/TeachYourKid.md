@@ -2,10 +2,11 @@
 
 If you're a parent who wants to teach your child how to code from scratch, this guide is for you. We've put together some examples that are easy to get started with, don't require any setup, and are fun from the start.
 
-<hr>
+<hr/>
 
 **A note on privacy:** Especially if your child is young, you're probably worried about privacy and data protection. In many countries, storing and processing personal data of minors is treated differently. In the USA, there are regulations concerning anyone under the age of 13. You can use our Teams for Education package from [Replit teams](https://replit.com/teams) which includes an anonymous invite feature. This allows you to invite your child to create a fully anonymous account. You can find more information on invitations and the privacy invite links [here](/teams-edu/inviting-teachers-students).
-<hr>
+
+<hr/>
 
 ## The benefits of teaching children to code
 
@@ -38,7 +39,7 @@ We'll start with Python Turtle, as it is uses high-level commands like `forward(
 
 We are going to build a simple turtle game with two characters. One (controlled by you) will draw a maze and the other (controlled by your child's code) will attempt to navigate through it.
 
-![](/images/teamsForEducation/teach-your-kid/turtle-example.gif)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/teach-your-kid/turtle-example.gif)
 
 You can draw the maze and explain to your child how you did it and ask them to write the code to allow their turtle to navigate through it.
 
@@ -104,7 +105,7 @@ If your child likes solving these mazes and you get tired of creating them, you 
 
 If you want something almost as simple as Turtle, but with more advanced options, like easy handling of input through your mouse or keyboard, this is a good option to introduce before something more advanced such as PyGame.
 
-![](/images/teamsForEducation/teach-your-kid/python-play-example.gif)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/teach-your-kid/python-play-example.gif)
 
 Fork [this repl](https://replit.com/@ritza/coding-for-kids-python-play) which is a simple game that shows how to process mouse input. 
 
@@ -148,7 +149,7 @@ Once you're both comfortable with the Python Play syntax that makes up this game
 
 PyGame is more complicated than Python Play, but it also has a larger community and many [pre-built examples](https://www.pygame.org/docs/ref/examples.html) that you can use as a starting point.
 
-It's likely that your child will benefit from starting out with some easier libraries and moving up to Python Play over time. But if you want to jump in the deep end, we also have a [detailed tutorial](/tutorials/07-building-a-game-with-pygame) on how to build a juggling game in PyGame.
+It's likely that your child will benefit from starting out with some easier libraries and moving up to Python Play over time. But if you want to jump in the deep end, we also have a [detailed tutorial](/tutorials/building-a-game-with-pygame) on how to build a juggling game in PyGame.
 
 ## Drawing on a blank canvas with Basic
 
@@ -160,7 +161,7 @@ However, these constructs are also "closer to the metal" and they can help begin
 
 At its simplest, it can be used like Microsoft Paint: to draw pixel by pixel on a canvas, but using code instead of your mouse.
 
-![](/images/teamsForEducation/teach-your-kid/basic-example.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/teach-your-kid/basic-example.png)
 
 Here's a starter example showing how to draw a dog pixel by pixel and then add a line using a `for` loop.
 
@@ -170,7 +171,7 @@ Basic is definitely not limited to only drawing static pictures. For more inspir
 
 ## Where next?
 
-Once your child understands the basics of programming they can move on to work through [our tutorials](/tutorials/00-overview). 
+Once your child understands the basics of programming they can move on to work through [our tutorials](/tutorials/overview). 
 
 While games are often a good way to get children hooked on programming, many children also prefer building non-game programs. See whether they are most interested in games, web application development or even something like data visualisation and then double down on finding more examples that match their interests.
 

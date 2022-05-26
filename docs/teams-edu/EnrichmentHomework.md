@@ -38,7 +38,7 @@ To set this project as a homework assignment, you should give the student enough
 
 We've created an example starter Repl that you can fork (and adapt if necessary before giving to your students) [here](https://replit.com/@ritza/memory-game-starter-project). It demonstrates how to lay out the cards using random colours, and how to detect which card a user clicked on.
 
-![](/images/teamsForEducation/enrichment/memory-starter.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/enrichment/memory-starter.png)
 
 ## Example instructions for a student
 
@@ -96,13 +96,13 @@ Apart from checking that the basic and optional features that your students have
 
 It is likely that your students will be able to find similar projects online, so as always plagiarism is likely to be a problem. A good example of this game with all of the features implemented is at [InventWithPython's memory game](https://inventwithpython.com/pygame/chapter3.html) which you can run on Replit from [this repl](https://replit.com/@ritza/memorypuzzle-iwp).
 
-![](/images/teamsForEducation/enrichment/iwp-advancedsolution.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/enrichment/iwp-advancedsolution.png)
 
 It should be easy to spot if your students borrowed too heavily from that example without understanding what they were doing, as it is significantly different from the starter code provided here. If you are concerned about plagiarism, copying a few 10-40 character snippets of your students' code into Google in double quotation marks usually brings up their source fairly quickly.
 
 For example, the Google search shown below shows many sources that use exactly the same code:
 
-![](/images/teamsForEducation/enrichment/plagiarism.png)
+![](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/enrichment/plagiarism.png)
 ### Reusable code
 
 Games like this one are a great example to introduce your students to the idea of DRY (don't repeat yourself) in software engineering. Because the entire screen has to be completely redrawn even when only one card is changed, it's likely that your students will be tempted to copy-paste the same code into different places (for example, to set up the board, and to update it after a click).
@@ -119,7 +119,7 @@ Games are also a good way to introduce concepts from User Experience (UX) to you
 
 We went through an enrichment example using PyGame in this guide. PyGame is a great library for beginners as it gives them enough features to easily build advanced features (e.g. an easy way to draw a UI and track user events), but it is still low level enough for the student to have to understand fundamental concepts like the game loop and drawing objects based on pixel coordinates.
 
-For more PyGame inspiration, take a look at our basic [Juggling Game](https://docs.replit.com/tutorials/07-building-a-game-with-pygame) which includes an example of how to animate objects too.
+For more PyGame inspiration, take a look at our basic [Juggling Game](/tutorials/building-a-game-with-pygame) which includes an example of how to animate objects too.
 
 As we mentioned, data science and web application development are also good topics to set for enrichment homework. Take a look at our collection of [Python projects for beginners](https://www.codewithrepl.it/python-projects-for-beginners.html) for more ideas.
 

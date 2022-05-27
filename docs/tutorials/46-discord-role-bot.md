@@ -1,8 +1,8 @@
 ---
-title: Discord role-assignment bot with Python
+title: Discord role assignment bot with Python
 ---
 
-# Creating a Discord role-assignment bot with Python
+# Creating a Discord role assignment bot with Python
 
 [Discord](https://discord.com/) is a free-to-use chat server application that was initially developed for gamers but is becoming increasingly widely used by many different communities. Anyone can use it to create a chat server for discussion over text as well as voice and video. In addition to hosting human members, these servers can also host special automated users, called bots, which are capable of a variety of fun and useful tasks: everything from playing music to helping human moderators.
 
@@ -16,7 +16,7 @@ In this tutorial, we'll create a welcome bot for our programming discussion Disc
 
 Sign in to [Replit](https://replit.com) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a Python repl.
 
-![](images/create-repl.png)
+![Creating a new repl](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/create-repl.png)
 
 ## Creating a Discord application
 
@@ -24,7 +24,7 @@ Open another browser tab and visit the [Discord Developer Portal](http://discord
 
 Once you're logged in, create a new application. Give it a name like "Welcomer".
 
-![](images/discord-create-app.png)
+![Creating a new Discord application](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/discord-create-app.png)
 
 Discord applications can interact with Discord in several different ways, not all of which require bots, so creating one is optional. That said, we'll need one for this project. Let's create a bot.
 
@@ -34,11 +34,16 @@ Discord applications can interact with Discord in several different ways, not al
 4. Click **Reset Token** and then **Yes, do it!**.
 4. Copy the token that appears just under your bot's username.
 
-![](images/discord-create-bot.png)
+![Creating a Discord bot](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/discord-create-bot.png)
 
 The token you just copied is required for the code in our repl to interface with Discord's API. Return to your repl and open the Secrets tab in the left sidebar. Create a new secret with `DISCORD_TOKEN` as its key and the token you copied as its value.
 
-![](images/secret-token.png)
+<img
+  src="https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/secret-token.png"
+  alt="Secret token"
+  style={{ height: "40% !important" }}
+/>
+
 
 Once, you've done that, return to the Discord developer panel. We need to finish setting up our bot.
 
@@ -48,29 +53,31 @@ Second, we need to configure access to privileged [Gateway Intents](https://disc
 
 For this bot to work, we'll need to be able to see when users join our server, and we'll need to see the contents of their messages. For the former, we'll need the Server Members Intent and for the latter, we'll need the Message Content Intent. Toggle both of these to the on position. Save changes when prompted.
 
-![](images/bot-intents.png)
+![Bot intents](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/bot-intents.png)
 
-Now that we've created our application and its bot, we need to add it to a server. We'll walk you through creating a test server for this tutorial, but you can also any server you've created in the past, as long as the other members won't get too annoyed about it becoming a bot testing ground. You can't use a server that you're just a normal user on, as adding bots requires special privileges.
+Now that we've created our application and its bot, we need to add it to a server. We'll walk you through creating a test server for this tutorial, but you can also use any server you've created in the past, as long as the other members won't get too annoyed about it becoming a bot testing ground. You can't use a server that you're just a normal user on, as adding bots requires special privileges.
 
 Open [Discord.com](http://discord.com) in your browser. You should already be logged in. Then click on the **+** icon in the leftmost panel to create a new server. Alternatively, open an existing server you own.
 
-![](images/discord-create-server.png)
+![New server](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/new-server.png)
 
 In a separate tab, return to the [Discord Dev Portal](https://discord.com/developers/applications) and open your application. Then follow these steps to add your bot to your server:
 
 1. Click on **OAuth2** in the left sidebar.
 2. In the menu that appears under **OAuth2**, select **URL Generator**.
-4. Under **Scopes**, mark the checkbox labelled *bot*.
-5. Under **Bot Permissions**, mark the checkbox labelled *Administrator*.
-    ![](images/bot-permissions.png)
+3. Under **Scopes**, mark the checkbox labelled *bot*.
+4. Under **Bot Permissions**, mark the checkbox labelled *Administrator*.
+    ![Bot permissions](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/bot-permissions.png)
 
 5. Scroll down and copy the URL under **Generated URL**.
+    ![Generated url](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/generated-url.png)
+
 6. Paste the URL in your browser's navigation bar and hit Enter.
 7. On the page that appears, select your server from the drop-down box and click **Continue**.
 8. When prompted about permissions, click **Authorize**, and complete the CAPTCHA.
-    ![](images/bot-connect.png)
+    ![Bot connect](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/bot-connect.png)
 
-8. Return to your Discord server. You should see that your bot has just joined.
+9. Return to your Discord server. You should see that your bot has just joined.
 
 
 Now that we've done the preparatory work, it's time to write some code. Return to your repl for the next section.
@@ -102,7 +109,7 @@ Note that we've prepended `async` to the function definition – this makes our 
 
 The final line in our file starts the bot, providing `DISCORD_TOKEN` to authenticate it. Run your repl now to see it in action. Once it's started, return to your Discord server. You should see that your bot user is now online.
 
-![](images/online-bot.png)
+![Online bot](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/online-bot.png)
 
 ## Creating server roles
 
@@ -113,13 +120,15 @@ You can add roles by doing the following:
 1. Right-click on your server's icon in the leftmost panel.
 2. From the menu that appears, select **Server Settings** and then **Roles**.
 3. Click **Create Role**.
+    ![Create role](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/create-role.png)
+
 4. Enter a role name (e.g. "python") and choose a color.
 5. Click **Back**.
 6. Repeat steps 3–5 until all the roles are created.
 
 Your role list should now look something like this:
 
-![](images/roles-list.png)
+![Roles list](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/roles-list.png)
 
 The order in which roles are listed is the [role hierarchy](https://support.discord.com/hc/en-us/articles/214836687-Role-Management-101). Users who have permission to manage roles will only be able to manage roles lower than their highest role on this list. Ensure that the WelcomeBot role is at the top, or it won't be able to assign users to any of the other roles, even with Administrator privileges.
 
@@ -133,6 +142,8 @@ To add private channels for your server's roles, do the following:
 4. Click **Create Channel**.
 5. Select the role that matches your channel's name.
 6. Repeat for all roles.
+
+![Create channel](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/create-channel.gif)
 
 As the server owner, you'll be able to see these channels regardless of your assigned roles, but normal members will not.
 
@@ -193,9 +204,9 @@ async def on_message(message):
 
 First, we print a message to the repl console to note that we've seen a message. We then check if the message's author is the bot itself. If it is, we terminate the function, to avoid infinite loops. Following that, we check if the message's content starts with `!roles`, and if so we invoke `dm_amount_roles()`, passing in the message's author.
 
-Stop and rerun your repl now. If you receive a CloudFlare error, type `kill 1` in your repl's shell and try again. Once your repl's running, return to your Discord server and type "!command" into the general chat. You should receive a DM from your bot.
+Stop and rerun your repl now. If you receive a CloudFlare error, type `kill 1` in your repl's shell and try again. Once your repl's running, return to your Discord server and type "!roles" into the general chat. You should receive a DM from your bot.
 
-![](images/bot-dm.png)
+![Bot direct message](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/bot-dm.png)
 
 ## Assigning roles from replies
 
@@ -296,7 +307,7 @@ We then use a [list comprehension](https://realpython.com/list-comprehension-pyt
 
 Finally, we retrieve the `Member` object corresponding to the user who sent us the message and our server.
 
-We now have everything we need to assign roles. Add the following code to the bottom of the `if` statement:
+We now have everything we need to assign roles. Add the following code to the bottom of the `if` statement, within the body of the `if` statement:
 
 ```python
         try:
@@ -308,7 +319,7 @@ We now have everything we need to assign roles. Add the following code to the bo
             await message.channel.send(f"""You've been assigned the following role{"s" if len(languages) > 1 else ""} on {server.name}: { ', '.join(languages) }.""")
 ```
 
-The `Member` object's [`add_roles()`] method takes an arbitrary number of `Role` objects as positional arguments. We [unpack](https://docs.python.org/3/tutorial/controlflow.html#unpacking-argument-lists) our `languages` set into separate arguments using the `*` operator, and provide a string for the named argument `reason`.
+The `Member` object's `add_roles()` method takes an arbitrary number of `Role` objects as positional arguments. We [unpack](https://docs.python.org/3/tutorial/controlflow.html#unpacking-argument-lists) our `languages` set into separate arguments using the `*` operator, and provide a string for the named argument `reason`.
 
 
 Our operation is wrapped in a [try-except-else](https://realpython.com/python-exceptions/#the-try-and-except-block-handling-exceptions) block. If adding roles fails, we'll print the resulting error to our repl's console and send a generic error message to the user. If it succeeds, we'll send a message to the user informing them of their new roles, making extensive use of [string interpolation](https://peps.python.org/pep-0498/).
@@ -322,6 +333,8 @@ Finally, we need to deal with the case where no languages were found in the user
 
 Rerun your repl and return to your Discord server. Open the DM channel with your bot and try sending it one or more language names or emojis. You should receive the expected roles. You can check this by clicking on your name in the right-hand panel on your Discord server – your roles will be listed in the box that appears.
 
+![Assigned roles](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/roles.png)
+
 ## Removing roles
 
 Our code currently does not allow users to remove roles from themselves. While we could do this manually as the server owner, we've built this bot to avoid having to do that sort of thing, so let's expand our code to allow for role removal.
@@ -333,8 +346,9 @@ Let's make some changes. Find the `if languages:` block in your `assign_roles()`
 ```python
     if languages:
         server = bot.get_guild(SERVER_ID)
-
-        new_roles = set([discord.utils.get(server.roles, name=language) for language.lower() in languages]) # <-- RENAMED VARIABLE + LIST CHANGED TO SET
+        
+        # <-- RENAMED VARIABLE + LIST CHANGED TO SET
+        new_roles = set([discord.utils.get(server.roles, name=language.lower()) for language in languages]) 
 
         member = await server.fetch_member(message.author.id)
 
@@ -396,11 +410,12 @@ Reply with the name or emoji of a language you're currently using and want to st
 ```
 Rerun your repl and test it out. You should be able to add and remove roles from yourself. Try inviting some of your friends to your Discord server, and have them use the bot as well. They should receive DMs as soon as they join.
 
-![](images/bot-role-message.png)
+![Welcome message](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/welcome.png)
+![Bot role message](https://replit-docs-images.bardia.repl.co/images/tutorials/46-discord-role-bot/bot-role-message.png)
 
 ## Where next?
 
-We've created a simple Discord server welcome bot. There's a lot of scope for additional functionality. Here are some ideas for expansions:
+We've created a simple Discord server welcome bot. There's a lot of scope for additional functionality. Here are some ideas for expansion:
 
 * Include more complex logic for role assignment. For example, you could have some roles that require users to have been members of the server for a certain amount of time.
 * Have your bot automatically assign additional user roles based on behavior. For example, you could give a role to users who react to messages with the most emojis.
@@ -410,4 +425,4 @@ Discord bot code can be hosted on Replit permanently, but you'll need to use an 
 
 You can find our repl below:
 
-!!!repl embed
+<iframe height="400px" width="100%" src="https://replit.com/@ritza/DiscordWelcomeBot?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

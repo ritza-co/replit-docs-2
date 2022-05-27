@@ -6,7 +6,7 @@ sidebar_position: 27
 
 If you are new to Teams for Education, this page will help ensure Replit runs smoothly for you and your team. You may want to send this page to your technology team or IT department.
 
-Read more about [our commitment to user safety](https://docs.google.com/document/d/1rGjlPhRIFDYVkLkP_nO0Db6o1_9EmGvSnLt9cHacE5M/edit).
+Read more about [our commitment to user safety](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/Our%20Commitment%20to%20User%20Safety.pdf).
 
 
 ## Recommended option: full Replit experience
@@ -17,6 +17,7 @@ To make sure Replit works for you and your students on your school network, you 
 * `*.repl.co` (where web applications built on Replit are hosted)
 * `*.repl.it` (old domain, not actively used)
 * `*.replitusercontent.com` (old domain, not actively used)
+* `*.cdn.replit.com`
 * `*.replitcdn.com`
 
 Clients must be able to access all subdomains of the above domains. The specific hosts that clients communicate with under the above names are subject to change without notice.
@@ -37,6 +38,7 @@ To use this alternative option, please ensure that the following domains are whi
 
 * `*.firewalledreplit.com`
 * `*.firewalledreplit.co`
+* `*.cdn.replit.com`
 * `*.replitcdn.com`
 
 Clients must be able to access all subdomains of the above domains. The specific hosts that clients communicate with under the above names are subject to change without notice.

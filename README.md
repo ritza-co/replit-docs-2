@@ -30,7 +30,6 @@ This command generates static content into the `build` directory and can be serv
 $ yarn serve
 ```
 
-
 ### Contributing
 
 1. Create a new repl

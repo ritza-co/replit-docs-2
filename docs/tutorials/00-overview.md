@@ -6,11 +6,11 @@ title: Overview
 
 In this series of tutorials, you'll go from beginner to expert in coding with Replit. While these lessons are designed to be taken in order, they each make sense on their own too, so feel free to jump in wherever looks the most interesting to you.
 
-### [Part 1 - beginner tutorials - Replit features](#part1)
+### [Part 1 - beginner tutorials - Replit features](#part-1-beginner-tutorials-replit-features)
 
 The first part of the series teaches you to use specific Replit features. You'll learn how to use Replit for everything from solving basic maths problems to building production grade software, integrating with other tools like GitHub.
 
-### [Part 2 - intermediate tutorials - building fun and useful projects](#part2)
+### [Part 2 - intermediate tutorials - building fun and useful projects](#part-2-build-your-own-projects)
 
 In the second part of the series, you'll work through a set of projects, including chatbots, games, and more. We are constantly expanding these, so feel free to let us know if there are any topics you want to see included.
 
@@ -20,7 +20,6 @@ If you prefer video, here's a quick start walkthrough, or read the text tutorial
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZAC0TQEU5gI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<a name="part1"></a>
 ## Part 1: beginner tutorials - Replit features
 
 In this section of the course, you'll learn the basic of Replit. But that doesn't mean you won't build some fun stuff along the way.

@@ -103,7 +103,7 @@ The first thing we need to implement to get this page functional is the share pu
 
 We can allow users to "buy" stock by entering the [ticker symbol](https://en.wikipedia.org/wiki/Ticker_symbol), the number of shares purchased, and the price per share. While it would also make sense to record the purchase time, we will leave that out for the sake of simplicity (but you can add it later on your own).
 
-We will record these purchases by adding them to the [Replit database](/misc/database). This is a simple key-value store that you can think of as a big Python dictionary which retains its state between runs of a repl. Using this database will save us from having to re-enter all of our stock information every time we restart our dashboard.
+We will record these purchases by adding them to the [Replit database](/hosting/database-faq). This is a simple key-value store that you can think of as a big Python dictionary which retains its state between runs of a repl. Using this database will save us from having to re-enter all of our stock information every time we restart our dashboard.
 
 To use the Replit Database, all we have to do is add the following import statement at the top of `main.py`:
 

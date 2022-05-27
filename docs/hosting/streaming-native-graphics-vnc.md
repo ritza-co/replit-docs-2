@@ -24,7 +24,7 @@ Any repl – in any language – can use a virtual desktop. No changes are neede
 
 By default, your VNC connection does not have a password, and can only be accessed from https://replit.com, since the connection relies on the same authentication used for the WebSocket. If you need to access your repl via the external [noVNC](https://novnc.com) client, you can set a VNC password.
 
-Set a password in your repl [secrets](/repls/secrets-environment-variables) configuration.  `Secrets` is a secure place to store passwords without the fear of other users accessing your passwords. Setting `VNC_PASSWORD` will add enhanced security when connecting remotely.
+Set a password in your repl [secrets](/programming-ide/storing-sensitive-information-environment-variables) configuration.  `Secrets` is a secure place to store passwords without the fear of other users accessing your passwords. Setting `VNC_PASSWORD` will add enhanced security when connecting remotely.
 
 ## How Can I Use Fullscreen VNC?
 

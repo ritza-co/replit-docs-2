@@ -16,7 +16,7 @@ In the sidebar, the icon with a padlock will take you to a pane where you can se
 
 You can set any variable to an arbitrary value, and this is often how you will store secrets such as API keys, database credentials, or configuration information for your projects.
 
-You can read more about how Replit integrates with environment variables [here](/repls/secrets-environment-variables).
+You can read more about how Replit integrates with environment variables [here](/programming-ide/storing-sensitive-information-environment-variables).
 
 ## Refactoring our weather project to keep our API key secure
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: intro to C++
+title: Intro to C++
 ---
 
 # Intro to C++ curriculum

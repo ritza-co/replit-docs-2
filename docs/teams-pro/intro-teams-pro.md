@@ -10,7 +10,7 @@ The platform it is built around four cornerstones which we used to inform its fe
 
 ## 1. Build
   - You can program and dogfood anything from a small script to building out a full MVP.
-  - You can interview candidates easily and efficiently, thanks to [guest mode](/pro/guests).
+  - You can interview candidates easily and efficiently, thanks to [guest mode](/teams-pro/interviewing-candidates).
  - You can connect to GitHub, to push or pull all your code.
  - Your team can focus purely on programming, without worrying about the rest.
 

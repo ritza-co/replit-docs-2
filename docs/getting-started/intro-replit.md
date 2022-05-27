@@ -18,7 +18,7 @@ You can use Replit in different ways. It can replace some or all of your:
 
 Every repl you create is a fully functional development and production environment. "[Hosting from your editor](https://amasad.me/hosting)" makes it easy to iterate quickly on your work, collaborate with others, and get feedback.
 
-We know that's a lot to take in, so we've broken down some of the key features below for [developers](#developers), [startups](#hosting), [teachers](#teachers) and [learners](#learners). Choose your own path, or go through all of them to become an expert in all things Replit.
+We know that's a lot to take in, so we've broken down some of the key features below for [developers](#writing-code-replit-for-software-developers), [startups](#hosting-code-replit-for-startups-and-indiehackers), [teachers](#teaching-code-replit-for-teachers) and [learners](#learning-code-replit-for-students). Choose your own path, or go through all of them to become an expert in all things Replit.
 
 Watch these two videos for a general introduction and some tips and tricks, or read on below.
 
@@ -43,16 +43,16 @@ This guide shows you how the IDE works.
 ### [Working with Files](/tutorials/managing-files-using-repl-it)
 Each repl has a built-in file system, so you can upload existing files or create new ones, manually or programmatically.
 
-### [Storing Secrets](/repls/secrets-environment-variables)
+### [Storing Secrets](/programming-ide/storing-sensitive-information-environment-variables)
 You can easily add environment variables to keep others from viewing sensitive data such as API credentials.
 
-### [Configuring the Run Button](/repls/dot-replit)
+### [Configuring the Run Button](/programming-ide/configuring-repl)
 In many cases, Replit will figure out how to run your project for you, but you can also customize exactly what you want to happen when you press the run button.
 
 ### [Integrating with GitHub](/tutorials/github-and-run-button)
 You can also link Replit to your GitHub to push changes up or bring in new changes that were made externally.
 
-### [Using History](/repls/history)
+### [Using History](/programming-ide/using-repl-history)
 We also have time-travel features built-in so you can view previous versions of your code.
 
 ### [Pair Programming](/tutorials/pair-programming-using-multiplayer-with-repl-it)
@@ -66,16 +66,16 @@ We also offer a full Key-Value store database, built-in authentication, and temp
 
 If you want to host your project on Replit, take a look at the following articles:
 
-### [Web Hosting](/repls/web-hosting)
+### [Web Hosting](/hosting/hosting-web-pages)
 See how to host a front-end website for your homepage, landing page or portfolio.
 
-### [Deploying HTTP servers](/repls/http-servers)
+### [Deploying HTTP servers](/hosting/deploying-http-servers)
 Deploy a full-blown web application written in nearly any back-end language or framework.
 
-### [Always On Repls](/repls/always-on)
+### [Always On Repls](/hosting/enabling-always-on)
 Keep your repl alive 24/7.
 
-### [The Replit Database](/misc/database)
+### [The Replit Database](/hosting/database-faq)
 Store data persistently between Replit runs in a simple Key-Value store that feels like using a local dictionary or hashset.
 
 ## Teaching Code: Replit for Teachers
@@ -98,6 +98,6 @@ If you're learning to code, whether as a self-taught programmer or as part of an
 
 You can work through our [project-based tutorials](/tutorials/overview) to learn how to code, or download them all as [an ebook](https://codewithrepl.it).
 
-If you're learning a specific language, we probably cover it in one of our teacher-contributed [open curricula](/curriculum/Intro).
+If you're learning a specific language, we probably cover it in one of our teacher-contributed [open curricula](/teaching-curriculum/intro-teaching-curriculum).
 
 We also have a beginner-friendly [Discord server](https://replit.com/discord) where you can get (and give) help on nearly anything.

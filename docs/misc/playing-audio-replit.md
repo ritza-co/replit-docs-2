@@ -14,8 +14,8 @@ There are two ways to enable audio:
 audio = true
 ```
 
-to the [`.replit` file](/programming-ide/configuring-run-button) and restart your repl by running `kill 1` on the shell. The previous solution of 
-creating [a secret](/repls/secrets-environment-variables) called `VNC_ENABLE_EXPERIMENTAL_AUDIO` with a value of `1` is still supported. Once that's done, a checkbox with headphones will appear in the lower right corner of the VNC output window:
+to the [`.replit` file](/programming-ide/configuring-repl) and restart your repl by running `kill 1` on the shell. The previous solution of 
+creating [a secret](/programming-ide/storing-sensitive-information-environment-variables) called `VNC_ENABLE_EXPERIMENTAL_AUDIO` with a value of `1` is still supported. Once that's done, a checkbox with headphones will appear in the lower right corner of the VNC output window:
 
 ![look for the headphones](https://blog.replit.com/images/system-audio/system-audio.png "look for the headphones")
 

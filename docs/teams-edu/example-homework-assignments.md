@@ -10,9 +10,9 @@ If you need some inspiration to set homework assignments or enrichment projects 
 
 These are higher level guides and walkthrough tutorials that you can use as-is or adapt to your own needs.
 
-### [Create a Pinboard Project](/tutorials/PinboardProjectPart1)
+### [Create a Pinboard Project](/tutorials/pinboard-project-part-1)
 
-This is a full tutorial on how to build a pinboard project with Replit. It focuses on front-end coding and uses examples targetted to be more inclusive towards girls when compared to traditional beginner coding project examples, which tend to skew towards appealing more to boys. This is a two part tutorial where [Part 1](../tutorials/PinboardProjectPart1) covers HTML and CSS then [Part 2](../tutorials/PinboardProjectPart2) introduces JavaScript.
+This is a full tutorial on how to build a pinboard project with Replit. It focuses on front-end coding and uses examples targetted to be more inclusive towards girls when compared to traditional beginner coding project examples, which tend to skew towards appealing more to boys. This is a two part tutorial where [Part 1](../tutorials/pinboard-project-part-1) covers HTML and CSS then [Part 2](../tutorials/pinboard-project-part-2) introduces JavaScript.
 
 ### [How to create a good enrichment coding assignment using Replit](tutorials/EnrichmentHomework)
 

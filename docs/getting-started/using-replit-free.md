@@ -23,7 +23,7 @@ Create a new repl by clicking the blue "+" button in the top-right of your scree
 
 Select the owner of the repl, and then click "Create repl". You will notice that repls belonging to free accounts are public.
 
-Learn more about [managing your repls here](/repls/dashboard). 
+Learn more about [managing your repls here](/getting-started/managing-repls). 
 
 For a practical intro to using repls, follow [this tutorial](/tutorials/introduction-to-the-repl-it-ide).
 

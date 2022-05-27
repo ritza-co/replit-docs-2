@@ -1,5 +1,6 @@
 ---
 title: 2D Platform Game with PyGame
+slug: /tutorials/2d-platform-game
 ---
 
 # Build a 2D Platform Game with PyGame and Replit

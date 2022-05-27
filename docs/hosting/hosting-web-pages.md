@@ -34,7 +34,7 @@ Note that a repl's public link will persist, even after the repl has been delete
 
 Part 1: Find your domain
 
-Any hosted repl can be linked to a domain that you own. This includes both [static sites](#hosting-a-web-site) and [HTTP servers](/repls/http-servers). To get started, you'll need a domain to link with your repl. If you don't already have a domain, [Dotcomboom](https://replit.com/@dotcomboom) has created a [great tutorial on getting a free domain from Freenom](https://replit.com/talk/learn/How-to-use-a-custom-domain/8834). [CoolcoderSJ](https://replit.com/@CoolCoderSJ) also has a helpful [step-by-step tutuorial.](https://replit.com/talk/learn/Link-Domains-with-Replit/124838) on acuqiring your domain for free.
+Any hosted repl can be linked to a domain that you own. This includes both [static sites](#hosting-a-web-site) and [HTTP servers](/hosting/deploying-http-servers). To get started, you'll need a domain to link with your repl. If you don't already have a domain, [Dotcomboom](https://replit.com/@dotcomboom) has created a [great tutorial on getting a free domain from Freenom](https://replit.com/talk/learn/How-to-use-a-custom-domain/8834). [CoolcoderSJ](https://replit.com/@CoolCoderSJ) also has a helpful [step-by-step tutuorial.](https://replit.com/talk/learn/Link-Domains-with-Replit/124838) on acuqiring your domain for free.
 
 Part 2: Setting it up with Cloudflare
 

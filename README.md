@@ -33,7 +33,16 @@ $ yarn serve
 
 ### Contributing
 
-If you'd like to contribute please [fork this repl](https://docs.replit.com/__repl), then share your fork in an issue on the [github repo](https://github.com/replit/replit.github.io/). Alternatively, you can submit a pull request to the same github repo.
+1. Create a new repl
+2. Fork the [GitHub repo](https://github.com/replit/replit-docs-2)
+3. Pull the fork into the repl you just made
+4. Make your changes
+5. Preview the changes using a local dev server by running `yarn start`  in the repl console
+6. Once you're happy with your changes, run `yarn build` in the repl console
+7. Once it builds succesffuly, run `yarn serve` in the repl console
+8. Test your changes to make sure they're good in production
+9.  Submit a PR to this [repo](https://github.com/replit/replit-docs-2)
+10. Request @Bardia95 for review
 
 When adding new pages, the markdown file should be placed in the appropriate folder inside  (`programming-ide`/`teams-edu`/`misc`).
 

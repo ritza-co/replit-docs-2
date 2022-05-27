@@ -20,7 +20,7 @@ Clicking "done" will finalize the repl's configuration and close the visual edit
 
 It's always possible to make changes later by visiting the `.replit` file from the filetree. Adding `.replit` to a repository makes cloning fast with no configuration necessary.
 
-For more information on how to configure your repl, see the [.replit documentation](/repls/dot-replit).
+For more information on how to configure your repl, see the [.replit documentation](/programming-ide/configuring-repl).
 
 
 ## Adding a "Run on Replit" Badge

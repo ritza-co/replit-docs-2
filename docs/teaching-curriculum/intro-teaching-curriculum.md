@@ -35,13 +35,13 @@ Click on one of our curricula in the left sidebar (or below) and you're on your 
 Happy teaching and happy coding!
 
 ## Curricula
-- [Intro to Java](/curriculum/introJava)
-- [Intro to Python](/curriculum/introPython)
-- [Intermediate Python](/curriculum/intermediatePython)
-- [Intro to HTML/CSS](/curriculum/introHTMLCSS)
-- [Intro to SQL](/curriculum/introSQL)
-- [Abstract Data Types](/curriculum/abstractData)
-- [Intro to C++](/curriculum/introCpp)
+- [Intro to Java](/teaching-curriculum/intro-java)
+- [Intro to Python](/teaching-curriculum/intro-python)
+- [Intermediate Python](/teaching-curriculum/intermediate-python)
+- [Intro to HTML/CSS](/teaching-curriculum/intro-html-css)
+- [Intro to SQL](/teaching-curriculum/intro-sql)
+- [Abstract Data Types](/teaching-curriculum/abstract-data-types)
+- [Intro to C++](/teaching-curriculum/intro-cpp)
 - More to come! 
 
 ## Additional Resources

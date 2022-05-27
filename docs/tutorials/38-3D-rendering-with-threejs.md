@@ -1,5 +1,6 @@
 ---
 title: 3D rendering with three.js
+slug: /tutorials/3D-rendering-with-threejs
 ---
 
 # Rendering 3D scenes with three.js

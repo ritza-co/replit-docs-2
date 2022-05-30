@@ -1,100 +1,85 @@
----
-sidebar_position: 2
----
-
 # Working with shortcuts
 
 Be more productive with Replit by learning the code editor’s powerful shortcuts for editing, writing, and inspecting code.
 
-## Command Palette
+The shortcuts we'll show you here are for Windows. If you're using a Mac, use the `cmd` key instead of the `ctrl` key, and the `option` key instead of the `alt` key.
 
-The command palette allows you to view all available commands based on your current context. 
+When you use a shortcut, be sure that your repl window has been clicked, or these shortcuts may access the browser's keyboard shortcuts.
 
-To access the command palette, press `F1` or `Ctrl+Shift+P` (`cmd+shift+P` on a Mac). **Note:** If you are using Firefox, `Ctrl+Shift+P` will open an incognito window, so use the `F1` option instead.
+## Command palette
+
+The command palette allows you to view all available commands based on your current context.
+
+To access the command palette, press `F1` or `Ctrl+Shift+P`.
+
+**Note:** If you are using Firefox, `Ctrl+Shift+P` will open an incognito window, so use the `F1` option instead.
 
 ![command palette](https://replit-docs-images.bardia.repl.co/images/repls/editor/command_palette.gif)
 
-## Frequently Used Keyboard Shortcuts
+## Frequently used keyboard shortcuts
 
 The following keyboard shortcuts can be used in a variety of ways. If you forget a keyboard shortcut, check the command palette.
 
-### Moving the Current Line
+### Moving the current line
 
-On a Mac, press `option+up` or `option+down` to move the current line up or down. 
+Press `alt+up` or `alt+down` to move the current line up or down.
 
-On other computers, press `alt+up` or `alt+down`.
 
 ![move line](https://replit-docs-images.bardia.repl.co/images/repls/editor/move_line.gif)
 
-### Clone the Current Line
+### Clone the current line
 
-On a Mac, press `shift+option+up` or `shift+option+down` to clone the current line above or below.
+Press `shift+alt+up` or `shift+alt+down` to clone the current line above or below.
 
-On other computers, press `shift+alt+up` or `shift+alt+down`.
 
 ![clone line](https://replit-docs-images.bardia.repl.co/images/repls/editor/clone_line.gif)
 
-### Selecting Lines
+### Selecting lines
 
-On a Mac, press `cmd+I` to select a line. 
+Press `ctrl+L` to select a line.
 
-On other computers, press `ctrl+I`.
 
 ![select line](https://replit-docs-images.bardia.repl.co/images/repls/editor/select_line.gif)
 
-### Deleting Lines
+### Deleting lines
 
-On a Mac, press `shift+cmd+K` to delete a line.
+Press `ctrl+shift+K` to delete a line.
 
-On other computers, press `ctrl+shift+K`.
 
 ![delete line](https://replit-docs-images.bardia.repl.co/images/repls/editor/delete_line.gif)
 
-### Inserting Lines
+### Inserting lines
 
-On a Mac, press `shift+cmd+enter` to insert a line above.
+Press `ctrl+shift+enter` to insert a line above.
 
-On other computers, press `ctrl+shift+enter`.
 
 ![insert line](https://replit-docs-images.bardia.repl.co/images/repls/editor/insert_line.gif)
 
-### Adding Cursors
+### Adding cursors
 
-On a Mac, press `cmd+option+up` or `cmd+option+down` to add cursors above or below your current line. 
+Press `ctrl+alt+left click` or `ctrl+alt` and then click with the mouse to add more cursors.
 
-On other computers, press `ctrl+alt+up` or `ctrl+alt+down`.
 
 ![adding cursors](https://replit-docs-images.bardia.repl.co/images/repls/editor/adding_cursors.gif)
 
 ### Find
 
-On a Mac, press `cmd+F` to find.
+Press `ctrl+F` to find.
 
-On other computers, press `ctrl+F`.
 
 ![find](https://replit-docs-images.bardia.repl.co/images/repls/editor/find.gif)
 
 ### Replace
 
-On a Mac, press `option+cmd+F` to replace.
+Press `ctrl+H` to replace.
 
-On other computers, press `ctrl+H`.
 
 ![replace](https://replit-docs-images.bardia.repl.co/images/repls/editor/replace.gif)
 
-### Find Next/Previous
+### Adding selections to next find match
 
-On a Mac, press `cmd+G` to find next or `shift+cmd+G` to find previous.
+Press `ctrl+D` to select and then `ctrl+F` to add a selection to the next find match.
 
-On other computers, press `F3` to find next or `shift+F3` to find previous.
-
-![find next](https://replit-docs-images.bardia.repl.co/images/repls/editor/find_next.gif)
-
-### Adding Selections to Next Find Match
-
-On a Mac, press `cmd+D` to add a selection to the next find match.
-
-On other computers, press `ctrl+D`.
 
 ![adding selections](https://replit-docs-images.bardia.repl.co/images/repls/editor/adding_selections.gif)
 
@@ -102,19 +87,16 @@ On other computers, press `ctrl+D`.
 
 Use the following shortcuts to navigate the editor.
 
-### Open Files
+### Open files
 
-On a Mac, press `cmd+P` to quickly open files.
+Press `ctrl+P` to quickly open files.
 
-On other computers, press `ctrl+P`.
 
 ![Open files](https://replit-docs-images.bardia.repl.co/images/repls/editor/open_files.gif)
 
-### Go to Line
+### Go to line
 
-On a Mac, press `cmd+G` to go to a specified line.
+Press `ctrl+G` to go to a specified line.
 
-On other computers, press `ctrl+G`.
 
 ![go to line](https://replit-docs-images.bardia.repl.co/images/repls/editor/go_to_line.gif)
-

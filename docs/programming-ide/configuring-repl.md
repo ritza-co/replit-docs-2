@@ -52,13 +52,13 @@ The `.replit` file allows you to configure many options for your repl, most basi
 
 Check out how the repl below is using `.replit` to print "hello world" instead of running the code:
 
-<iframe width="100%" src="https://replit.com/@turbio/dotreplit-example?lite=true" scrolling="no" frameBorder="no" allowTransparency="true" allowFullScreen="true"   style={{ marginBottom: 10 }} sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" />
+<iframe width="100%" height="500px" src="https://replit.com/@turbio/dotreplit-example?lite=true" scrolling="no" frameBorder="no" allowTransparency="true" allowFullScreen="true"   style={{ marginBottom: 10 }} sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" />
 
 And here's a video on how to use the `.replit` file to configure a repl to enable [Clojure](https://clojure.org):
 
 <iframe
-  width={640}
-  height={400}
+  width="100%"
+  height="400px"
   style={{ marginBottom: 10 }}
   src="https://www.loom.com/embed/cbe1f74399c546c38e0c1871893816c5"
   frameBorder={0}
@@ -113,22 +113,22 @@ Since repls are fully configurable, you're not limited to just one language. For
 
 
 
-### `.replit` reference
+## `.replit` reference
 
 
 A `Command` can either be a string or a list of strings. If the `Command` is a string (`"node index.js"`), it will be executed via `sh -c "<Command>"`. If the Command is a list of strings (`["node", "index.js"]`), it will be directly executed with the list of strings passed as arguments. When possible, it is preferred to pass a list of strings.
 
 ---
 
-#### `run`
+### `run`
 
 **Type:** `Command`
 
-The command to run the repl.
+The command to run the repl. It has lower precedence than the `[interpreter] command` (i.e. if `[interpreter] command` is set, it will run instead of the `run` command).
 
 ---
 
-#### `entrypoint`
+### `entrypoint`
 
 **Type:**  `string`
 
@@ -136,7 +136,7 @@ The name of the main file including the extension. This is the file that will be
 
 ---
 
-#### `onBoot`
+### `onBoot`
 
 **Type:** `Command`
 
@@ -144,7 +144,7 @@ The command that executes after your repl has booted.
 
 ---
 
-#### `compile`
+### `compile`
 
 **Type:** `Command`
 
@@ -152,7 +152,7 @@ The shell command to compile the repl before the `run` command. Only for compile
 
 ---
 
-#### `audio`
+### `audio`
 
 **Type:** `boolean`
 
@@ -160,7 +160,7 @@ Enables [system-wide audio](/misc/playing-audio-replit) for the repl when config
 
 ---
 
-#### `language`
+### `language`
 
 **Type:**  `string`
 
@@ -168,7 +168,7 @@ During a GitHub import, this tells the workspace which language should be used w
 
 ---
 
-#### `[env]`
+### `[env]`
 
 Set environment variables. Don't put secrets here—use the Secrets tab in the left sidebar.
 
@@ -181,17 +181,17 @@ PYTHONPATH="${VIRTUAL_ENV}/lib/python3.8/site-packages"
 ```
 ---
 
-#### `interpreter`
+### `interpreter`
 
 Specifies the interpreter, which should be a compliant [prybar binary](https://github.com/replit/prybar).
 
-##### `command`
+#### `command`
 
 **Type:** `[string]`
 
 This is the command that will be run to start the interpreter. It has higher precedence than the `run` command (i.e. `interpreter` command will run instead of the `run` command).
 
-##### `prompt`
+#### `prompt`
 
 **Type:** `[byte]`
 
@@ -199,11 +199,11 @@ This is the prompt used to detect running state, if unspecified it defaults to `
 
 ---
 
-#### `[unitTest]`
+### `[unitTest]`
 
 Enables unit testing to the repl.
 
-##### `language`
+#### `language`
 
 **Type:** `string`
         
@@ -211,40 +211,39 @@ The language you want the unit tests to run. Supported strings: `java`, `python`
 
 ---
 
-#### `[packager]`
+### `[packager]`
 
 **Description:** Package management configuration. Learn more about installing packages [here](/repls/packages/#DirectImports).
 
-##### `afterInstall`
+#### `afterInstall`
 
 **Type:** `Command`
 
 The command that is executed after a new package is installed.
 
-##### `ignoredPaths`
+#### `ignoredPaths`
 
 **Type:** `[string]`
 
  List of paths to ignore while attempting to guess packages.
 
-##### `ignoredPackages`
+#### `ignoredPackages`
 
 **Type:** `[string]`
 
 List of modules to never attempt to guess a package for, when installing packages.
 
-
-##### `language`
+#### `language`
 
 **Type:** `string`
 
 Specifies the language to use for package operations. See available languages in the [Universal Package Manager](https://github.com/replit/upm) repository.
 
-##### `[packager.features]`
+#### `[packager.features]`
 
 UPM features that are supported by the specified languages.
 
-###### `packageSearch`
+##### `packageSearch`
 
 **Type:** Boolean
 
@@ -259,27 +258,27 @@ When set to `true`, UPM will attempt to guess which packages need to be installe
 
 ---
 
-#### `[languages.<language name>]`
+### `[languages.<language name>]`
 
 Per-language configuration. The language name has no special meaning other than to allow multiple languages to be configured at once.
 
-##### `pattern`
+#### `pattern`
 
 **Type:** `string`
 
 A [glob](https://en.wikipedia.org/wiki/Glob_(programming)) used to identify which files belong to this language configuration (`**/*.js`)
 
-##### `syntax`
+#### `syntax`
 
 **Type:** `string`
 
 The language to use for syntax highlighting.
 
-##### `[languages.<language name>.languageServer]`
+#### `[languages.<language name>.languageServer]`
 
 Configuration for setting up [LSP](https://microsoft.github.io/language-server-protocol/) for this language. This allows for code intelligence (autocomplete, underlined errors, etc...).
 
-###### `start`
+##### `start`
 
 **Type:** `Command`
 
@@ -287,11 +286,11 @@ The command used to start the LSP server for the specified language.
 
 ---
 
-#### `[nix]`
+### `[nix]`
 
 Where you specify a [Nix channel](https://nixos.wiki/wiki/Nix_channels).
 
-##### `channel`
+#### `channel`
 
 **Type:** `string`
 
@@ -299,15 +298,15 @@ A nix channel id.
 
 ---
 
-#### `[debugger]`
+### `[debugger]`
 
 Advanced users only. See field types & docstrings [here](https://gist.github.com/Bardia95/98987c69c6970b1bb0698b863e2a84de#file-dot-replit-debugger-config-go), and reference configs in the advanced examples below.
 
-### Examples
+## Examples
 
-#### Beginner
+### Beginner
 
-##### [LaTeX](https://replit.com/@ZachAtReplit/LaTeX?v=1#.replit)
+#### [LaTeX](https://replit.com/@ZachAtReplit/LaTeX?v=1#.replit)
 ```toml
 compile = ["pdflatex", "-halt-on-error", "main.tex"]
 run = ["sh", "runner.sh"]
@@ -324,7 +323,7 @@ start = "texlab"
 channel = "stable-21_11"
 ```
 
-##### [Clojure](https://replit.com/@replit/Clojure?v=1#.replit)
+#### [Clojure](https://replit.com/@replit/Clojure?v=1#.replit)
 ```toml
 run = "clojure -M main.clj"
 
@@ -339,7 +338,7 @@ pattern = "**/*.clj"
 [languages.clojure.languageServer]
 start = ["clojure-lsp"]
 ```
-#### Advanced
+### Advanced
 
 ##### [Python](https://replit.com/@replit/Python?v=1)
 ```toml
@@ -636,7 +635,7 @@ pattern = "**/{*.less,*.scss,*.css}"
 
 ```
 
-##### [Java](https://replit.com/@replit/Java-Beta?v=1#.replit)
+#### [Java](https://replit.com/@replit/Java-Beta?v=1#.replit)
 ```toml
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
 run = ["java", "-classpath", ".:target/dependency/*", "Main"]
@@ -700,7 +699,7 @@ classPaths = ["."]
 mainClass = "Main"
 ```
 
-##### [Node.js](https://replit.com/@replit/Nodejs?v=1#.replit)
+#### [Node.js](https://replit.com/@replit/Nodejs?v=1#.replit)
 ```toml
 entrypoint = "index.js"
 
@@ -778,7 +777,7 @@ support = true
 
 ```
 
-##### [C++](https://replit.com/@replit/CPlusPlus?v=1)
+#### [C++](https://replit.com/@replit/CPlusPlus?v=1)
 ```toml
 compile = ["make", "-s"]
 run = "./main"

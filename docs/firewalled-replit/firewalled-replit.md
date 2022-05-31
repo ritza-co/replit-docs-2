@@ -9,7 +9,7 @@ Replit offers an alternative domain, [firewalledreplit.com](https://firewalledre
 * A firewall is used to prevent repls from accessing the Internet (apart from a small number of software package repositories).
 * Replit’s community and search features are hidden.
 
-No registration is needed to use firewalledreplit.com, and there is no need to migrate your user account or repls to the new domain. Users are free to switch between using [firewalledreplit.com](https://firewalledreplit.com) and our original domain [replit.com](replit.com) at any time.
+No registration is needed to use firewalledreplit.com, and there is no need to migrate your user account or repls to the new domain. Users are free to switch between using [firewalledreplit.com](https://firewalledreplit.com) and our original domain [replit.com](https://replit.com) at any time.
 
 Most repls will function normally on firewalledreplit.com, but those that depend on being able to access the external internet might not function as expected.
 

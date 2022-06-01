@@ -400,7 +400,7 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      favicon: 'image/favicon.ico',
+      favicon: '/image/favicon.ico',
       navbar: {
         hideOnScroll: true,
         items: [

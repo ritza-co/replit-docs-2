@@ -94,7 +94,7 @@ language = "python"
 entrypoint = "hello.py"
 ```
 
-The `run` key is the only required key `.replit` files. The `run` key tells Replit what command to run when the run button is pressed.
+The `run` key is the only required key in `.replit` files. The `run` key tells Replit what command to run when the run button is pressed.
 
 ```toml
 run = ["python", "hello.py"]
@@ -108,7 +108,7 @@ The `compile` key tells Replit what command to run before `run`. This is optiona
 compile = ["echo", "it compiled"]
 ```
 
-The `language` key is a reserved key that normally does nothing, but tells Replit what language to chose when importing a Git repo.
+The `language` key is a reserved key that normally does nothing, but tells Replit what language to choose when importing a Git repo.
 
 ```toml
 language = "python"
@@ -154,7 +154,7 @@ You'll need to tell Replit which files are in which language. For example, for T
 # This glob lets replit know what files the LSP should be active on
 # The format is usually **/*.ext
 pattern = "**/*.ts"
-# This lets replit know what langauge the file is
+# This lets replit know what language the file is
 syntax = "typescript"
 ```
 

@@ -71,7 +71,10 @@ const redirects = [
       to: '/misc/clui-graphical-cli'
   }, {
       from: '/repls/nix',
-      to: '/programming-ide/getting-started-nix'
+      to: '/programming-ide/nix-on-replit'
+  }, {
+      from: '/programming-ide/getting-started-nix',
+      to: '/programming-ide/nix-on-replit'
   }, {
       from: '/repls/history',
       to: '/programming-ide/using-repl-history'
@@ -144,7 +147,8 @@ const redirects = [
   }, {
       from: '/Teams/Notes',
       to: '/teams-edu/keeping-notes-repls'
-  }, {
+  },
+  {
       from: '/Teams/HomeworkAssignments',
       to: '/teams-edu/example-homework-assignments'
   }, {

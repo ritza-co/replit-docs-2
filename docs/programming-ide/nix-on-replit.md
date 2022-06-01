@@ -1,3 +1,8 @@
+---
+title: Using Nix with Replit
+sidebar_position: 5
+---
+
 # Using Nix with Replit
 
 Replit supports all programming languages through our integration with [Nix](https://nixos.org/). Nix is a tool for managing software packages and system configurations. It's like Python's virtualenv and pip, but instead of focusing on one programming language, it can handle all of them, and the system configuration and environment. Nix is declarative: instead of listing a series of steps to take, you describe the end result instead. Nix will know what to do to make it happen. Nix is reproducible: given the same instructions (and inputs: i.e. the same Nix package set), it will give you the exact same result, regardless of when or where you run it.

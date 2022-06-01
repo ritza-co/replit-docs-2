@@ -89,7 +89,10 @@ const config = {
               to: '/misc/clui-graphical-cli'
           }, {
               from: '/repls/nix',
-              to: '/programming-ide/getting-started-nix'
+              to: '/programming-ide/nix-on-replit'
+          }, {
+              from: '/programming-ide/getting-started-nix',
+              to: '/programming-ide/nix-on-replit'
           }, {
               from: '/repls/history',
               to: '/programming-ide/using-repl-history'

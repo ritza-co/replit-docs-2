@@ -21,7 +21,7 @@ You can override the Nix package set to add new expressions for software that ha
 
 For a deeper dive into how Replit and Nix work together, have a look at the [building with Nix on Replit](https://docs.replit.com/tutorials/30-build-with-nix) tutorial.
 
-Let's start by forking an [official template](https://replit.com/templates) (or a start with a [blank Nix repl](https://docs.replit.com/programming-ide/getting-started-nix)).
+Let's start by forking an [official template](https://replit.com/templates). Pick your favorite programming language, or a start with a [blank repl](https://replit.com/@replit/Blank-Repl)). Almost all the official templates are now powered by Nix.
 
 ## Configuration
 

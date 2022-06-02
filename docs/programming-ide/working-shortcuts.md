@@ -61,7 +61,7 @@ Press `ctrl+shift+enter` to insert a line above.
 
 ### Adding cursors
 
-Press `ctrl+alt+left click` or `ctrl+alt` and then click with the mouse to add more cursors.
+Press `alt+left click` to add more cursors.
 
 
 ![adding cursors](https://replit-docs-images.bardia.repl.co/images/repls/editor/adding_cursors.gif)

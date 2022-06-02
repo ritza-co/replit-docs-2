@@ -14,7 +14,7 @@ Similarly to learning to touch type, there is often a steep *learning curve* whe
 
 ## Using the global command palette
 
-If you hit `Ctrl+.` (additionally `Cmd+K` on MacOS) you'll see the following modal pop up, which lets you navigate through different parts of Replit at lightning speed using only your keyboard.
+If you hit `Ctrl+.` (or `Cmd+K` on MacOS) you'll see the following modal pop up, which lets you navigate through different parts of Replit at lightning speed using only your keyboard.
 
 ![**Image 1:** *Using the global command palette.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-01-global-cmd-palette.png)
 

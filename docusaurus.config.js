@@ -351,6 +351,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'replit',
   projectName: 'replit-docs-2',
+  favicon: 'image/favicon.ico',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -400,7 +401,6 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      favicon: '/image/favicon.ico',
       navbar: {
         hideOnScroll: true,
         items: [
@@ -438,7 +438,7 @@ const config = {
         appId: '33H1G1RMZJ',
         apiKey: '17617634403a792c4cf6f749c49ae0aa',
         indexName: 'replit-docs',
-        contextualSearch: false
+        contextualSearch: true
       },
     },
 };

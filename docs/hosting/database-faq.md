@@ -11,6 +11,7 @@ Read on for answers to Database FAQs, or jump right in and follow [this basic ph
 Here's a short video on how to use the Replit database, or read the text explanation below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Vx5Ci77K-ss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
  
 ## FAQs
 

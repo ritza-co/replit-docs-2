@@ -1,41 +1,42 @@
-# Create a 3D game with three.js
+---
+title: 3D obstacle avoiding game with three.js
+---
 
-Three.js is a general purpose 3D library for browsers. You can create 3D objects, animations and games. Take a look at their [examples page](https://threejs.org/examples) in the documentation to see what kinds of things you can create. In this tutorial, you will learn the basics of three.js and creating games by making a simple obstacle avoiding 3D game. In the game, you will control a box that moves through a 3D course. The goal of the game is to avoid the obstacles and get to the end of the course.
+# Building a 3D obstacle avoiding game with three.js
 
-We will create the game in Replit, which is an online integrated development environment (IDE). This means that you can do this tutorial in the browser and it will be easy to share your game online.  
+[Three.js](https://threejs.org/) is a general purpose 3D library for browsers. You can create 3D objects, animations and games. Take a look at their [examples page](https://threejs.org/examples) in the documentation to see what kind of things you can create. In this tutorial, you will learn the basics of three.js and its game creation capabilities by making a simple obstacle avoiding 3D game. In the game, you will control a box that moves through a 3D course. The goal of the game is to avoid the obstacles and get to the end of the course.
 
+![Game play](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/gameplay.gif)
+
+We will create the game in Replit, which is an online integrated development environment (IDE). This means that you can do this tutorial in the browser, and it will be easy to share your game online.  
 
 
 ## Creating a new project in Replit
 
 Head over to [Replit](https://replit.com/) and create a new repl. Choose **HTML, CSS, JS** as your project type. Give this repl a name, like "3D obstacle avoiding game".
 
-![creating a new Replit project](/images/10/create-new-replit-project.png)
-
+![creating a new Replit project](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/new_repl.png)
 
 
 ## Importing three.js to the project
 
 Open the `script.js` file in your repl. We'll import three.js by referencing it from a content distribution network (CDN), to get us up and running quickly. Add the following line to the  `script.js` file to import three.js from the Skypack CDN:
 
-```
+```javascript
 import * as THREE from 'https://cdn.skypack.dev/three@0.140.2';
 ```
 
 
+The [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) keyword is used to import a [JavaScript `module`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). It will not work as is, we need to indicate that this script file is a module. To make this work, we need to change the default `script` tag in the `index.html` file to the following:
 
-The [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) keyword is used to import a [JavaScript `module`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) package. It will not work as is, we need to indicate that this script file is a module. To make this work, we need to change the default `script` tag in the `index.html` file to the following:
-
-```
+```html
 <script type="module" src="script.js"></script>
 ```
-
 
 
 The `type=module` attribute allows us to use module features in our script.
 
 Now we are ready to use three.js in our project.
-
 
 
 ## Creating a scene with the player box 
@@ -55,34 +56,29 @@ const camera = new THREE.PerspectiveCamera(
 ```
 
 
-
 This creates a scene. The scene determines what will be rendered and where it will be rendered. We will add objects, a camera and lights to our scene.
 
 We are using a perspective camera, which is the most commonly used camera type for 3D scenes.  Perspective cameras use [perspective projection](https://en.wikipedia.org/wiki/Perspective_(graphical)), which mimics the way that human eyes see. The further away objects are from the camera, the smaller they appear. 
 
 The four parameters of the `PerspectiveCamera` constructor function define the camera's viewing frustum, which is the field of view of our camera in the 3D world. The parameters are:
 
-1. fov - Field of view, the camera frustum vertical field of view, in degrees
-2. aspect - Camera frustum aspect ratio
-3. near - Camera frustum near plane, in world units
-4. far - Camera frustum far plane, in world units
+1. **fov** - Field of view, the camera frustum vertical field of view, in degrees
+2. **aspect** - Camera frustum aspect ratio
+3. **near** - Camera frustum near plane, in world units
+4. **far** - Camera frustum far plane, in world units
 
-![creating a new Replit project](/images/10/perspective-camera-frustum.png)
-
+![creating a new Replit project](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/perspective-camera-frustum.png)
 
 
 The above image shows the camera's viewing frustum. The viewable objects are between the near and far plane. There are two objects in the frustum, a purple stick and an orange stick. They are the same size. The dotted lines show how the sticks are projected onto the near plane, which shows how they will be seen. Their size on the near plane is different. The orange stick, which is further away from the camera, appears smaller. The units used are world units, it can be mapped to any defined unit but it is usually in meters.
 
 
-
-Next, we will position our camera in the 3D world and make it look at a specific point. The parameters are the x, y and z points in the 3D world.  Add the following lines of code:
+Next, we will position our camera in the 3D world and make it look at a specific point. The parameters are the x, y and z points in the 3D world.  Add the following lines of code to the `script.js` file:
 
 ```javascript
 camera.position.set(4, 4, -4);
 camera.lookAt(0, 0, 2);
 ```
-
-
 
 Let's add a renderer so that we can display the scene. We will attach it to a DOM element on our web page. Add the following lines of code:
 
@@ -94,9 +90,7 @@ document.body.appendChild(renderer.domElement);
 ```
 
 
-
-This creates a new renderer that will display our scene using [WebGL](https://developer.mozilla.org/en-US/docs/Glossary/WebGL). WebGL (Web Graphics Library) is used for rendering complex graphics, such as 3D scenes, on the web. It does this by accessing the graphics card on the user's device.  The `antialias` property is used to determine if anti-aliasing will be used, which is a method that smooths jagged edges on objects. This make our 3D world look better. The size of the renderer is set to the browser width and height using the `setSize` method so that our scene will take up the entire browser window. We then call the renderer's `render` method to tell the renderer to draw the scene using our created scene and camera. We then add the renderer DOM element, which is a `<canvas>` element, to the HTML document. The renderer uses the `<canvas>` element to display the scene.
-
+This creates a new renderer that will display our scene using [WebGL](https://developer.mozilla.org/en-US/docs/Glossary/WebGL). WebGL (Web Graphics Library) is used for rendering complex graphics, such as 3D scenes, on the web. It does this by accessing the graphics card on the user's device.  The `antialias` property is used to determine if anti-aliasing will be used, which is a method that smooths jagged edges on objects. This makes our 3D world look better. The size of the renderer is set to the browser width and height using the `setSize` method so that our scene will take up the entire browser window. We then call the renderer's `render` method to tell the renderer to draw the scene using our created scene and camera. We then add the renderer DOM element, which is a `<canvas>` element, to the HTML document. The renderer uses the `<canvas>` element to display the scene.
 
 
 Now let's create our first 3D object, the player box. This will be the box that we move around in the game. In three.js, we need 3 things to create an object:
@@ -107,16 +101,14 @@ Now let's create our first 3D object, the player box. This will be the box that 
 
 3. Mesh - Geometry + material. This is what we will add to our scene.
 
-   
 
-Add the following lines above the `renderer`:
+Add the following lines above the `renderer` declaration:
 
 ```javascript
 const geometry = new THREE.BoxGeometry(1,1,1);
 const material = new THREE.MeshBasicMaterial({ color: 0xe56956 });
 const mesh = new THREE.Mesh(geometry, material);
 ```
-
 
 
 The `0x` in front of the color property value means that it is a hexadecimal value. Most materials require a light source to bounce off of them so that they can be seen. The `MeshBasicMaterial` does not.
@@ -127,12 +119,9 @@ Now let's add the mesh to the scene:
 scene.add(mesh);
 ```
 
-
-
 Now try running the code, by pushing the `Run` button at the top of the Replit window. You should see your first scene, an orange cube:
 
-![creating a new Replit project](/images/10/creating-a-scene-with-the-player-box_no-light.png)
-
+![creating a new Replit project](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/player_box.png)
 
 
 The `MeshBasicMaterial` does not look 3D, it would be better to have a material that light can interact with so that we can get some depth to our player box. Replace your material with the following material:
@@ -142,12 +131,10 @@ const material = new THREE.MeshLambertMaterial({ color: 0xe56956 });
 ```
 
 
-
 The `MeshLambertMaterial` is a relatively simple material that can reflect light. Your player box will not be visible now, we need to add a light source. We will add an ambient light and a directional light.
 
 
-
-  Add the following lines to the `script.js` file, above the `renderer`:
+Add the following lines to the `script.js` file, above the `renderer`:
 
 ```javascript
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
@@ -157,13 +144,7 @@ scene.add(ambientLight, directionalLight);
 ```
 
 
-
-We added a white directional light that is set along the x, y and z axis so that it shines on the top and side of the box. The ambient light allows us to see the box better from all angles. The first parameter for the light constructor functions is the color, the second parameter is the light intensity, which ranges from 0 to 1. You should be able to see your player box now, it will look more 3D as the each side has different lighting.
-
-
-
-> Tip: if you have any issues in Replit, open your browser dev tools and check the console for more information.
-
+We added a white directional light that is set along the x, y and z axis so that it shines on the top and side of the box. The ambient light allows us to see the box better from all angles. The first parameter for the light constructor functions is the color, the second parameter is the light intensity, which ranges from 0 to 1. You should be able to see your player box now, it will look more 3D as each side has different lighting. Your can use your browser dev tools and check the console logs if you encounter any errors.
 
 
 Let's also get rid of the window scrollbars. Add the following to the `style.css` file in the `body` selector:
@@ -173,12 +154,10 @@ overflow: hidden;
 margin: 0;
 ```
 
-  
 
 Your player box should now look like this:
 
-<img src="/images/10/creating-a-scene-with-the-player-box_with-light.png" alt="creating a new Replit project"/>
-
+![Player box with light](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/player_box_light.png)
 
 
 Try changing the material color, light intensity and camera position to see what happens. 
@@ -193,8 +172,7 @@ init();
 ```
 
 
-
-The `camera`, `scene` and `renderer` variables are global variables so that they are available throughout our script. They will be defined inside of functions that we will create. Remove the `const` keyword in front of their declarations that we already added. We will also initialize a `player` variable for our created box. The `boxSideLength` variable is for the x, y and z lengths of our box, most of our boxes will be squares. Now, let's define the called `init` function. This function will be used to initialize the game, by rendering and setting up the scene and creating our objects. Define an `init` function and move the camera, light and renderer code inside of it:
+The `camera`, `scene` and `renderer` variables are global variables so that they are available throughout our script. They will be defined inside of functions that we will create. Remove the `const` keyword in front of their declarations that we already added. We will also initialize a `player` variable for our created box. The `boxSideLength` variable is for the x, y and z lengths of our box, most of our boxes will be squares. Now, let's define the function called `init`. This function will be used to initialize the game, by rendering and setting up the scene and creating our objects. Define an `init` function and move the camera, light and renderer code inside of it:
 
 ```javascript
 function init() {
@@ -224,7 +202,6 @@ function init() {
 ```
 
 
-
 We also call the `initializeBoxes` function, which we will soon define. 
 
 Now let's make a `createBox` function. We will use this function to create our player box, and later to create obstacles.  Define the `createBox` function and move the code for creating your player box inside of it:
@@ -244,8 +221,7 @@ function createBox(x, y, z) {
 ```
 
 
-
-The `geometry` definition now uses the `boxSideLength` variable to set the lengths of the sides. There is one extra line of code here, the `mesh.position.set` method. This will set the position of the created box in the 3D world based on the passed in function arguments. This will be useful when we create randomly positioned obstacles.
+The `geometry` definition now uses the `boxSideLength` variable to set the lengths of the sides. There is one extra line of code here, the call to the `mesh.position.set` function. This will set the position of the created box in the 3D world based on the arguments passed to the function. This will be useful when we create randomly positioned obstacles.
 
 Now let's create an `initializeBoxes` function that will be used to create all of the boxes at the start of the game. Add the following lines of code:
 
@@ -255,10 +231,8 @@ function initializeBoxes() {
 }
 ```
 
- 
 
 So far, all that this function will do is create a player box that is positioned in the center of our 3D world. Its x, y and z positions will be 0. If you run your repl code, you should still be able to see your box.
-
 
 
 ## Animating the player box
@@ -274,7 +248,6 @@ function animate() {
   requestAnimationFrame(animate);
 }
 ```
-
   
 
 The `animate` function will be called on every frame by using the `requestAnimationFrame` function, which is a web API that is used to create animations. It will call the `animate` function before each repaint of the screen by the browser. The number of function calls is usually 60 per second.   
@@ -285,7 +258,6 @@ For each `animate` function call, we move the player box and the camera by chang
 let speed = 0.10;
 ```
 
- 
 
 To access the player box's `mesh` property, let's return the `mesh` property from the `createBox` function. Add the following to the end of the `createBox` function:
 
@@ -296,13 +268,11 @@ To access the player box's `mesh` property, let's return the `mesh` property fro
 ```
 
 
-
 We also need to call our `animate` function initially to get it started. In the `init` function, add the following line below `renderer.render(scene, camera)`:
 
 ```javascript
 animate();
 ```
-
 
 
 Our player box will now be moving, but we won't be able to see the movement. We are going to add a [`GridHelper`](https://threejs.org/docs/index.html?q=grid#api/en/helpers/GridHelper) so that we can see the movement. It is an object that defines a grid, which is a two-dimensional array of lines along the x and y-axis. It will give our 3D world a 2D grid surface. In the `init` function, add the following lines below `initializeBoxes()`:
@@ -313,17 +283,15 @@ Our player box will now be moving, but we won't be able to see the movement. We 
 ```
 
 
-
 You will now be able to see your player box move through the 3D world, if you wait long enough, the box will move off of the grid. This is fine as we will restrict the movement of the box so that it can't move off of the grid.
 
-![Animated player box](/images/10/animating-the-player-box.gif)
+![Animated player box](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/animating-the-player-box.gif)
 
 
 
 ## Creating a game course
 
 The first thing that we will do to prevent the player box from moving off of the grid will be to add another box, the finishing line box. It will be added at the boundary of the grid. Our game course will be from the center of the grid to the end of the grid along the z-axis. Later we will add collision detection to check if our player box has hit the finishing line box so that we can end the game before the player box leaves the grid.
-
 
 
 We are going to create a new global variable called `courseLength` that will define the distance to the edge of the grid. Our player box starts moving from the center of the grid (x = 0, y = 0, z = 0) so our square grid's length should be double the course length. We will also restrict the movement of the box along the x and y-axis. Add the following global variables to the top of the `script.js` file:
@@ -338,9 +306,7 @@ const yBoundary = xBoundary / 4;
 ```
 
 
-
- We set the `courseLength` to 100 world units. The `gridHelperSize` will be used to define the length of our square grid along the x and z-axis. The `xBoundary` and `yBoundary` variables will be used to limit the movement of our player box along the x and y-axis. 
-
+We set the `courseLength` to 100 world units. The `gridHelperSize` will be used to define the length of our square grid along the x and z-axis. The `xBoundary` and `yBoundary` variables will be used to limit the movement of our player box along the x and y-axis. 
 
 
 Let's update the `gridHelper` to use the `gridHelperSize` variable for its size and number of divisions parameters:
@@ -348,7 +314,6 @@ Let's update the `gridHelper` to use the `gridHelperSize` variable for its size 
 ```javascript
   const gridHelper = new THREE.GridHelper(gridHelperSize, gridHelperSize);
 ```
-
 
 
 Now we will add the finish line box. Add the following to the `initializeBoxes` function:
@@ -367,13 +332,11 @@ Now we will add the finish line box. Add the following to the `initializeBoxes` 
 ```
 
 
-
-This creates a green box that is positioned at the end of the grid. It marks the end of the game course. It's positioned at the end of the course where the z-axis value is equal to the course length. The size of the box along its x and y axis marks the x and y boundary. We will restrict the player box's movement so that it can't move past the finish line box. Its size along the x and y axis is double the boundary length because it needs to mark the negative and positive axis boundaries. 
+This creates a green box that is positioned at the end of the grid. It marks the end of the game course. It's positioned at the end of the course where the z-axis value is equal to the course length. The size of the box along its x and y-axis marks the x and y boundary. We will restrict the player box's movement so that it can't move past the finish line box. Its size along the x and y-axis is double the boundary length because it needs to mark the negative and positive axis boundaries. 
 
 You will now be able to see the finish line box at the end of the grid. To reach the end of the grid quicker, you can change the `speed` variable.
 
-![Game course finish line box](/images/10/creating-a-game-course.png)
-
+![Game course finish line box](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/creating-a-game-course.png)
 
 
 ## Controlling the player box 
@@ -400,8 +363,7 @@ window.addEventListener("keydown", (e) => {
 ```
 
 
-
-This creates an event listener that listens for a key press event. The player box's mesh (geometry + material) position is increased or decreased along the x or y-axis, depending on which arrow button is pressed. Try run your repl now, you should be able to move your player box with the arrow keys. You will notice that you can move off the screen and when you reach the edge of the grid, you can avoid hitting the finish line box. Let's restrict the movement of the player box so that it always hits the finish line box. Replace the event listener that you just added with the following code:
+This creates an event listener that listens for a key press event. The player box's mesh (geometry + material) position is increased or decreased along the x or y-axis, depending on which arrow button is pressed. Try running your repl now, you should be able to move your player box with the arrow keys. You will notice that you can move off the screen and when you reach the edge of the grid, you can avoid hitting the finish line box. Let's restrict the movement of the player box so that it always hits the finish line box. Replace the event listener that you just added with the following code:
 
 ```javascript
 window.addEventListener("keydown", (e) => {
@@ -428,11 +390,9 @@ window.addEventListener("keydown", (e) => {
 ```
 
 
-
 We added some extra lines of code to restrict the movement of the player box along the x and y-axis by getting the current x and y position of the player box and then preventing movement if the position exceeds the current boundary values that we set using our global variables `xBoundary` and `yBoundary`.  
 
 Note that if you increased the speed variable to reach the end of the course quicker, you may need to increase the width and height of the finish line box to ensure that the player box always hits it as the player box will be able to move a bit more along the x and y-axis.
-
 
 
 ## Detecting collisions
@@ -446,9 +406,7 @@ var obstaclesBoundingBoxes = [];
 ```
 
 
-
-The `gameOver` flag variable will be used to determine when the game is over. This will occur once the finish line is reached or the player box has collided with an obstacle, which we will add later. The number of obstacles is currently zero. The `obstaclesBoundingBoxes` will store a set of x, y and z positions of a bounding box that describe the position of all of our objects, excluding the player box. We will use these bounding boxes to detect collisions.
-
+The `gameOver` flag variable will be used to determine when the game is over. This will occur once the finish line is reached or the player box has collided with an obstacle, which we will add later. The number of obstacles is currently zero. The `obstaclesBoundingBoxes` will store a set of x, y and z positions of bounding boxes that describe the positions of all of our objects, excluding the player box. We will use these bounding boxes to detect collisions.
 
 
 In the `initializeBoxes` function, add the following lines at the bottom:
@@ -459,14 +417,12 @@ In the `initializeBoxes` function, add the following lines at the bottom:
 ```
 
 
-
 This will create a bounding box for the finish line box `mesh` object. We add this to the  `obstaclesBoundingBoxes` array. The [`Box3`](https://threejs.org/docs/index.html?q=box3#api/en/math/Box3) object represents a bounding box in 3D space. It describes a set of coordinates, it does not appear in our 3D world. We use the `setFromObject` method to calculate the bounding box of the finish line box, using the finish line box's `mesh`. Within the bounding box object, there is a `max` and `min` property that describes the upper and lower x, y and  z boundaries of the box. For example, the bounding box of the finish line box contains the following `max` and `min` properties: 
 
-```
+```json
 max: {x: 3.75, y: 0.9375, z: 100.25}
 min: {x: -3.75, y: -0.9375, z: 99.75}
 ```
-
 
 
 Now let's create a function to detect collisions. Add the following function below the `createBox` function:
@@ -485,7 +441,6 @@ function detectCollisions() {
   }
 }
 ```
-
 
 
 To detect a collision, we first create a bounding box for the player box by creating a `Box3` object. We then loop through the `obstaclesBoundingBoxes` array and use the `intersectsBox` method to check for an intersection, a collision, between the `playerBox` and each obstacle. We currently don't have any obstacles. we are only checking for a collision with the finish line box. Given that we will always hit the finish line box, we set `gameOver` to true once it is hit. We will use an alert to let the player know that they have won, they reached the end of the course.
@@ -508,17 +463,14 @@ function animate() {
 ```
 
 
-
 The if statement at the start of the `animate` function prevents the function from running if the game is over.
 
 
-
-Let's also add  `  if (gameOver) return;` to the start of the "keydown" `window.addEventListener` callback function to disable the keyboard event if the game is over.
+Let's also add  `if (gameOver) return;` to the start of the "keydown" `window.addEventListener` callback function to disable the keyboard event if the game is over.
 
 You will now get a "You win!" alert message once you reach the finish line box at the end of the grid. 
 
-![Game course finish line box](/images/10/detecting-collisions.png)
-
+![Game course finish line box](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/detecting-collisions.png)
 
 
 ## Creating obstacles
@@ -537,9 +489,7 @@ function createObstacle() {
 ```
 
 
-
 We make use of some math utility functions of the three.js [`MathUtils`](https://threejs.org/docs/index.html?q=MathUtils#api/en/math/MathUtils) object to get random x, y and z points along our course. They will be used to randomly position the obstacles. We get random x and y points using our x and y boundaries. The `randFloatSpread`  function takes in a range parameter and returns a random float in the interval [- range / 2, range / 2]. We get a random z value using the `randFloat`  function. It takes in a low and high parameter and returns a random float in the interval [low, high]. This value is always positive as our course is positioned on the positive side of the z-axis. The low value starts at 10 as we don't want to place obstacles right in front of or on the player box. The high value is the `courseLength` so that the obstacles can be positioned all along our course. We subtract the `boxSideLength`  to prevent the obstacles from being placed on the finish line box. We then pass these x, y and z points to the `createBox` function to create an obstacle box. A bounding box is created for each created obstacle and added to the `obstaclesBoundingBoxes` array so that we can detect collisions between our player box and the obstacles.
-
 
 
 We need to call the `createObstacle` function to create the obstacles. In the `initializeBoxes` function, let's add a for loop to create the obstacles:
@@ -558,15 +508,12 @@ function initializeBoxes() {
 ```
 
 
-
 This will create 50 randomly positioned obstacles. Run your repl to see them:
 
-![Creating random obstacles](/images/10/creating-random-obstacles.png)
-
+![Creating random obstacles](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/creating-random-obstacles.png)
 
 
 Each time you reload the page, the obstacles will be randomly positioned. 
-
 
 
 ## Adding win or lose logic
@@ -590,13 +537,10 @@ Try to collide with an obstacle, you will see that the alert message is always "
 ```
 
 
-
 The last object bounding box in the `obstaclesBoundingBoxes` array is the finish line box. Knowing this we can determine when the player box has reached the finish line without hitting an obstacle. If the player box intersects with the last item in the `obstaclesBoundingBoxes` array, you win. If the player box intersects with any other item, you lose.
 
 
-
 The game is now playable. Try make it to the end of the obstacle course.
-
 
 
 ## Adding restart
@@ -613,7 +557,6 @@ Add the following to the `index.html` file inside of the `<body>` tag to create 
       </div>
     </div>
 ```
-
 
 
 Add the following to the `style.css` file:
@@ -642,9 +585,7 @@ Add the following to the `style.css` file:
 ```
 
 
-
 This will create a play button in the middle of the screen.
-
 
 
 Let's make the button work. Add the following global variables to the top of the `script.js` file:
@@ -656,9 +597,7 @@ var allObjs = [];
 ```
 
 
-
 This gets the play button screen (background cover behind the button) and play button element from the DOM and stores them in variables. The `allObjs` array will store all of the created objects. We need this array to clear the scene by removing all of the objects at the start of each game. We do this so that we can place new randomly positioned objects in the scene and not have objects in the scene from previous rounds. 
-
 
 
 Next, add a new click event listener on the `playBtn`. Add the following to the bottom of the `script.js` file:
@@ -676,8 +615,7 @@ playBtn.addEventListener("click", () => {
 ```
 
 
-
-The play button is used to start and also re-start the game. The first thing we do when the play button is clicked is remove all of the objects in the scene using the `scene.remove` method. We then reset the camera position and call the `initializeBoxes` function, which creates and positions all of the objects. We set `gameOver` to false so that our `animate` function and `keydown` event listener will work. We then call the `animate` function to start the animation loop and then hide the play button screen, which hides the play button as well. We need to make a few more changes in our `script.js` file for the play button to work properly:
+The play button is used to start and also re-start the game. The first thing we do when the play button is clicked is to remove all the objects in the scene using the `scene.remove` method. We then reset the camera position and call the `initializeBoxes` function, which creates and positions all of the objects. We set `gameOver` to false so that our `animate` function and `keydown` event listener will work. We then call the `animate` function to start the animation loop and then hide the play button screen, which hides the play button as well. We need to make a few more changes in our `script.js` file for the play button to work properly:
 
 - Delete the `animate()` function call in the `init` function. We now call it when the play button is clicked.
 
@@ -690,7 +628,7 @@ The play button is used to start and also re-start the game. The first thing we 
     playBtn.focus();
   ```
 
-  This will make our play button visible at the end of the game and focus the button so that you can easily restart the game but pressing spacebar or enter.
+  This will make our play button visible at the end of the game and focus the button so that you can easily restart the game by pressing the "spacebar" or "enter" keys.
 
 - Add the following lines at the start of the `initializeBoxes` function:
 
@@ -704,17 +642,15 @@ The play button is used to start and also re-start the game. The first thing we 
 
 - Add `allObjs.push(mesh);` in the `initializeBoxes` function above `scene.add(mesh);`. This adds the finish line box to the `allObjs` array.
 
-  
 
 Our game is almost complete, all we need to do now is make it mobile-friendly.
 
 
-
-## Make it mobile-friendly - adding screen arrow buttons
+## Make game mobile-friendly - adding screen arrow buttons
 
 To make the game mobile friendly, we will add up, down, left and right buttons to the bottom of the screen.
 
-Add the following to the `index.html` file inside of the `<body>` tag, just above the `<script>` tag to create the buttons:
+Add the following to the `index.html` file inside the `<body>` tag, just above the `<script>` tag to create the buttons:
 
 ```html
   <div id="keys">
@@ -750,7 +686,6 @@ Add the following to the `index.html` file inside of the `<body>` tag, just abov
     </div>
   </div>
 ```
-
 
 
 The up, down, left and right icons are created using SVGs. Now let's add some basic styling, add the following to the `style.css` file:
@@ -798,21 +733,17 @@ The up, down, left and right icons are created using SVGs. Now let's add some ba
 ```
 
 
-
 To see the arrows, click the 'Open in a new tab' button in the repl Output tab. This opens the link to the repl in a new tab. You can copy this link to view your repl on your phone or to share it with your friends.
 
-![Replit - open in new tab link](/images/10/replit-open-in-new-tab.png)
+![Replit - open in new tab link](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/open_in_new_tab.png)
 
 
+You should now be able to see the screen arrow buttons.
 
- You should now be able to see the screen arrow buttons.
-
-![Screen arrow buttons](/images/10/screen-arrow-buttons.png)
-
+![Screen arrow buttons](https://replit-docs-images.bardia.repl.co/images/tutorials/47-3dgamethreejs/screen_buttons.png)
 
 
 Try clicking the button before pressing play. You will notice that you can't click them. This is because the play button screen, which covers the whole screen, has a CSS `z-index` property of 1. Once you click play, the play button screen CSS `visibility` property is set to hidden, which allows you to press the arrow buttons. 
-
 
 
 Now let's add some JavaScript click event listeners and some functions to make our arrow buttons work on desktop and mobile. Our code is going to look quite complex because we use some extra functions and `setTimeout` to allow the player box to continuously move when the arrow button is held down. This is a better user experience than having to continuously tap or click the button to move in one direction. Add the following global variable to the top of the `script.js` file:
@@ -822,8 +753,7 @@ const keyBtns = document.querySelectorAll(".keys-container button");
 ```
 
 
-
-This gets all of the key buttons from the DOM and stores them in a variable. 
+This gets all the key buttons from the DOM and stores them in a variable. 
 
 Now add the following to the bottom of the `script.js` file:
 
@@ -905,7 +835,6 @@ keyBtns.forEach((keyBtn) => {
 ```
 
 
-
 For each key button we add "mousedown" and "touchstart" event listeners. When the button is clicked or touched, the `handleKeyDown` function is called. This function determines which button was clicked or touched by checking the id of the events `currentTarget` property. Different functions are called depending on the id of the button. For each function that handles the movement in particular direction, we get the current position of the player box, check if it is within the set boundaries and increase or decrease its position by the `speed` variable value. We then recursively call the function again after 50 ms using [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout) so that the movement is continuous when the button is held down.  
 
 The `setTimeout` function returns a  `timeoutID`  that is a positive integer value. It identifies the timer created by the call to `setTimeout()`. This value is passed to [`clearTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout) to cancel the timeout after each recursive function call so that we don't create unnecessary timeouts. 
@@ -913,38 +842,30 @@ The `setTimeout` function returns a  `timeoutID`  that is a positive integer val
 For each key button we also add "mouseleave", "touchend" and "touchcancel" event listeners. These clear the timeouts when the button is not held down anymore.
 
 
-
 >  A little cheat in the game - if you have a touch screen laptop - pressing the arrow key on your keyboard and on the screen will make it move faster than normal.
-
 
 
 Save and run your project. Our game is complete! 
 
 
-
 ## Next Steps
 
-We learned the basics of three.js and built a simple 3D game. There are many things that you can do to improve the game. Here are some things that you might want to try:
+We learnt the basics of three.js and built a simple 3D game. There are many things that you can do to improve the game. Here are some things that you might want to try:
 
 - Replace the alert with a nicely styled modal.
-
-- Style the objects or import / create 3D models - see [rendering 3D scenes with three.js](https://dev.to/ritza/rendering-3d-scenes-with-threejs-oik) for more information.
-
+- Style the objects or import / create 3D models - see [rendering 3D scenes with three.js](https://docs.replit.com/tutorials/3D-rendering-with-threejs) for more information.
 - Add a nicer surface instead of the grid.
-
 - Add a loading screen while the 3D scene is loading.
-
-- Make the game more challenging - increase the speed, increase the speed as the game progresses, add more obstacles, make the obstacles move.
-
+- Make the game more challenging - increase the speed as the game progresses, add more obstacles, make the obstacles move.
 - Add a points system. Change the game logic so that you have to hit the boxes to get points.
-
   - Store the points in local storage.
 
-- Add physics to the collisions using [cannon-es`](https://github.com/pmndrs/cannon-es).
+- Add physics to the collisions using [cannon-es](https://github.com/pmndrs/cannon-es).
+- More advanced challenge: make a bigger course, try making infinite movement within finite bounds so that you don't use too much of your computer's memory.
 
-- More advanced challenge: make a bigger course, try make infinite movement within finite bounds so that you don't use too much of your computers memory.
 
-  
+You can find our repl below:
 
-You can find our repl [here](https://threejs-3D-obstacle-avoiding-game.mattclarke2.repl.co).
+<iframe height="400px" width="100%" src="https://replit.com/@ritza/3D-obstacle-avoiding-game?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
 

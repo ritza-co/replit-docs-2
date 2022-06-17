@@ -22,23 +22,23 @@ Let's get through these admin steps first and then we can get to the fun part of
 
 Once you have an account, you'll want to create a Discord application. Visit [the Discord developer's page](xyz) and press the "New application" button, as in the image below. 
 
-![**Image: 1** *Creating a new Discord application*](./static/tutorial-files/build-basic-discord-bot-python/1)
+![**Image: 1** *Creating a new Discord application*](/static/tutorial-files/build-basic-discord-bot-python/1)
 
 Fill out a name for your bot and select "Create".
 
 The first thing to do on the next page is to note your Client ID, which you'll need to add the bot to the server. You can come back later and get it from this page, or copy it somewhere where you can easily find it later.
 
-![**Image: 2** *Record your Client ID*](./static/tutorial-files/build-basic-discord-bot-python/2)
+![**Image: 2** *Record your Client ID*](/static/tutorial-files/build-basic-discord-bot-python/2)
 
 You can also rename the application and provide a description for your bot at this point and press "Save Changes".
 
 You have now created a Discord application. The next step is to add a bot to this application, so head over to the "Bot" tab using the menu on the left and press the "Add Bot" button, as indicated below. Click "Yes, do it" when Discord asks if you're sure about bringing a new bot to life.
 
-![**Imgage: 3** *Adding a bot to our Discord Application*](./static/tutorial-files/build-basic-discord-bot-python/3)
+![**Imgage: 3** *Adding a bot to our Discord Application*](/static/tutorial-files/build-basic-discord-bot-python/3)
 
 The last thing we'll need from our bot is a Token. Anyone who has the bot's token can prove that they own the bot, so you'll need to be careful not to share this with anyone. You can get the token by pressing "Reset Token", and then copy it to your clipboard it by pressing "Copy".
 
-![**Image: 4** *Generating a token for our Discord bot*](./static/tutorial-files/build-basic-discord-bot-python/4)
+![**Image: 4** *Generating a token for our Discord bot*](/static/tutorial-files/build-basic-discord-bot-python/4)
 
 Take note of your token or copy it to your clipboard, as we'll need to add it to our code soon.
 
@@ -46,7 +46,7 @@ Take note of your token or copy it to your clipboard, as we'll need to add it to
 ### Creating a Discord server
 If you don't have a Discord server to add your bot to, you can create one by either opening the desktop Discord application that you downloaded earlier or returning to the Discord home page in your browser. Press the "+" icon indicated by the exclamation mark, as shown below, to create a server.
 
-![**Image: 5** *Creating a Discord server*](./static/tutorial-files/build-basic-discord-bot-python/5)
+![**Image: 5** *Creating a Discord server*](/static/tutorial-files/build-basic-discord-bot-python/5)
 
 Press "Create a server" in the screen that follows, and then give your server a name. Once the server is up and running, you can chat with yourself, or invite some friends to chat with you. Soon we'll invite our bot to chat with us as well.
 
@@ -59,7 +59,7 @@ https://discordapp.com/api/oauth2/authorize?scope=bot&client_id=7462691629173310
 
 Visit the URL that you created in your web browser and you'll see a page similar to the following where you can choose which server to add your bot to.
 
-![**Image: 6** *Authorizing our bot to join our server*](./static/tutorial-files/build-basic-discord-bot-python/6)
+![**Image: 6** *Authorizing our bot to join our server*](/static/tutorial-files/build-basic-discord-bot-python/6)
 
 Select the server we created in the step before this and hit the "authorize" button. After completing the captcha, you should get an in-app Discord notification telling you that your bot has joined your server.
 
@@ -71,7 +71,7 @@ The first thing we need to do is create a Python Repl to write the code for our 
 
 We don't need to reinvent the wheel, as there is already a great Python wrapper for the Discord bot API over on [GitHub](https://github.com/Rapptz/discord.py), which makes it a lot faster to get set up with a basic Python discord bot. To use library, we can simply write `import discord` at the top of `main.py`. Replit will handle installing this dependency when you press the "run" button. 
 
-![**Image: 7** *Create Main.py*](./static/tutorial-files/build-basic-discord-bot-python/7)
+![**Image: 7** *Create Main.py*](/static/tutorial-files/build-basic-discord-bot-python/7)
 
 Our bot is nearly ready to go -- but we still need to plug in our secret token. This will authorize our code to control our bot.
 
@@ -80,12 +80,12 @@ By default, Replit code is public. This is great as it encourages collaboration 
 
 To get around the problem of needing to give our *code* access to the token while allowing others to access our code but *not* our token, we'll be using [environment variables](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-a-linux-vps). Replit allows us to set secret environment variables through the "Secrets (Evironment variables)" menu option. 
 
-![**Image: 8** *Open Secrets Menu Option*](./static/tutorial-files/build-basic-discord-bot-python/8)
+![**Image: 8** *Open Secrets Menu Option*](/static/tutorial-files/build-basic-discord-bot-python/8)
 
 Open the "Secrets" menu option, there you will be able to set environment variables for your Repl. Set the key as the name of your environment variable to `DISCORD_BOT_SECRET`. Set the value as your bot's secret token (note that this is the second token that we got while setting up the bot -- different from the Client ID that we used to add our bot to our server). It should look something like:. 
 
 
-![**Image: 9** *Set Secrets Key Value*](./static/tutorial-files/build-basic-discord-bot-python/9)
+![**Image: 9** *Set Secrets Key Value*](/static/tutorial-files/build-basic-discord-bot-python/9)
 
 
 You'll need to:
@@ -131,19 +131,19 @@ The last two lines get our secret token from the environment variables that we s
 
 Press the big green "Run" button again and you should see your bot reporting a successful channel join in the Repl output.
 
-![**Image: 11 ** *Seeing our bot join our server*](./static/tutorial-files/build-basic-discord-bot-python/11)
+![**Image: 11 ** *Seeing our bot join our server*](/static/tutorial-files/build-basic-discord-bot-python/11)
 
 Open Discord, and from within the server we created earlier, select your ReplBotApplication from the pane on the right-hand side of the screen.
 
-![**Image:12** *The Repl bot is active*](./static/tutorial-files/build-basic-discord-bot-python/12).
+![**Image:12** *The Repl bot is active*](/static/tutorial-files/build-basic-discord-bot-python/12).
 
 Once you have selected this, you will be able to send a message (by typing into the box highlighted below) and see your bot respond!
 
-![**Image:13** *Send a message to your bot*](./static/tutorial-files/build-basic-discord-bot-python/13).
+![**Image:13** *Send a message to your bot*](/static/tutorial-files/build-basic-discord-bot-python/13).
 
 The bot responds each time, reversing the text we enter.
 
-![**Image:14** *Our bot can talk!*](./static/tutorial-files/build-basic-discord-bot-python/14).
+![**Image:14** *Our bot can talk!*](/static/tutorial-files/build-basic-discord-bot-python/14).
 
 ## Keeping our bot alive
 Your bot can now respond to messages, but only for as long as your Repl is running. If you close your browser tab or shut down your computer, your bot will stop and no longer respond to messages on Discord.
@@ -187,7 +187,7 @@ keep_alive()
 
 After doing this and hitting the green "Run" button again, you should see some changes to your Repl. For one, you'll see a new pane in the top right which shows the web output from your server. We can see that visiting our Repl now returns a basic web page showing the "I'm alive" string that we told our web server to return by default. In the bottom-right pane, you can also see some additional output from Flask starting up and running continuously, listening for requests.
 
-![**Image:15** *Output from our Flask server*](./static/tutorial-files/build-basic-discord-bot-python/15)
+![**Image:15** *Output from our Flask server*](/static/tutorial-files/build-basic-discord-bot-python/15)
 
 Now your bot will stay alive even after closing your browser or shutting down your development machine. Repl will still clean up your server and kill your bot after about one hour of inactivity, so if you don't use your bot for a while, you'll have to log into Repl and start the bot up again. Alternatively, you can set up a third-party (free!) service like [Uptime Robot](https://uptimerobot.com/). Uptime Robot pings your site every 5 minutes to make sure it's still working -- usually to notify you of unexpected downtime, but in this case, the constant pings have the side effect of keeping our Repl alive as it will never go more than an hour without receiving any activity.
 

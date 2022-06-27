@@ -385,7 +385,7 @@ Run your code again and you should now be able to see our game grid as a square 
 
 ![Game grid](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/game-grid.png)
 
-### Adding the snake
+## Adding the snake
 
 Add the following game variables in the `// game variables` section in the `script.js` file:
 
@@ -512,7 +512,7 @@ The `moveSnake` function changes the snake's direction, depending on which arrow
 
 You will now be able to change the snake's direction using the arrow keys on your keyboard. However, the snake will be able to move through the walls and move through self. You will also get an error in your console if you go outside of the bounds of the grid by hitting the top or bottom wall. We'll fix this by detecting collisions.
 
-### Detecting collisions with the walls and itself
+## Detecting collisions with the walls and itself
 
 In the `gameLoop` function, add the following code below the `cells[currentSnake[0]].innerText = '';` line:
 
@@ -629,7 +629,7 @@ Our snake game is almost complete! The last thing we need to do is make it mobil
 
 ![Snake eating food items](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/snake-eating.gif)
 
-### Making the game mobile-friendly
+## Making the game mobile-friendly
 
 Add the following lines near the bottom of the `script.js` file, just above the existing event listeners.
 

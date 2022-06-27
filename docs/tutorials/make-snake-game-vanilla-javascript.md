@@ -1,10 +1,14 @@
-# Building Snake with vanilla JavaScript
+---
+title: Make Snake with vanilla JavaScript
+---
 
-Snake is a simple game that is great for learning the basics of game development. It can be basic, like the classic Nokia cellphone Snake game, or it can be more complex with added features such as obstacles or making it a 2 player game. 
+# Make Snake with vanilla JavaScript
+
+Snake is a simple game that is great for learning the basics of game development. It can be basic, like the classic Nokia cellphone Snake game, or it can be more complex with added features such as obstacles or making it a two player game. 
 
 In this tutorial, we'll implement a simple version of Snake, using HTML, CSS and JavaScript.
 
-![Snake game](images/snake-game.gif)
+![Snake game](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/snake-game.gif)
 
 ## Getting started
 
@@ -31,7 +35,7 @@ Let's get started and create a new project in [Replit](https://replit.com/).
 
 Head over to [Replit](https://replit.com/) and create a new repl. Choose **HTML, CSS, JS** as your project type.
 
-![Replit - how to create a new project](images/replit-how-to-use.png)
+![Replit - how to create a new project](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/replit-how-to-use.png)
 
 
 
@@ -312,7 +316,7 @@ The `wait` function takes in a time, in milliseconds, as an argument. It returns
 
 Now try running the code, by pushing the `Run` button at the top of the Replit window. You should see the start and arrow buttons:
 
-![Basic code - view in the browser](images/basic-code.png)
+![Basic code - view in the browser](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/basic-code.png)
 
 ## Creating Snake using vanilla JavaScript
 
@@ -346,7 +350,7 @@ The snake is moved using the user's keyboard arrow keys or the arrow keys on the
 - up: -10
 - down: +10
 
-![Vanilla JS snake game logic outline](images/vanilla-js-snake-game-logic-outline.png)
+![Vanilla JS snake game logic outline](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/vanilla-js-snake-game-logic-outline.png)
 
 
 
@@ -391,7 +395,7 @@ We then create the grid cells using a for loop. The number of cells being equal 
 
 You should now be able to see the grid in your browser:
 
-![Game grid](images/game-grid.png)
+![Game grid](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/game-grid.png)
 
 
 
@@ -432,7 +436,7 @@ We loop through the snake segments and give each cell that contains the snake a 
 
 Now press the start button to see the snake on the game grid:
 
-![Adding snake](images/adding-snake.png)
+![Adding snake](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/adding-snake.png)
 
 Each time you press the start button, the snake's color will change. Inspect the snake cells in your browser dev tools. You will see the added `snake` class and the added `background` color.
 
@@ -505,7 +509,7 @@ interval = setInterval(gameLoop, intervalTime);
 
 Now press the start button to see the snake move along the game grid:
 
-![Moving snake](images/moving-snake.gif)
+![Moving snake](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/moving-snake.gif)
 
 The snakes moves from index 0 to 99, incrementing its position by one in each game loop. 
 
@@ -679,7 +683,7 @@ The food item is 'eaten' by checking if the snakes head position cell contains t
 
 The food items increase in size when they are added as we added a scale transform to the `food-item` class in the `style.css` file. The snake game is almost complete! The last thing we need to do is make it mobile-friendly by making the on-screen arrow buttons functional. 
 
-![Snake eating food items](images/snake-eating.gif)
+![Snake eating food items](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/snake-eating.gif)
 
 ### Making the game mobile-friendly
 

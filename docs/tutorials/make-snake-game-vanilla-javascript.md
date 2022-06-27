@@ -4,9 +4,9 @@ title: Make Snake with vanilla JavaScript
 
 # Make Snake with vanilla JavaScript
 
-Snake is a simple game that is great for learning the basics of game development. It can be basic, like the classic Nokia cellphone Snake game, or it can be more complex with added features such as obstacles or making it a two player game. 
+Snake is a simple game that is great for learning the basics of game development. It can be basic, like the classic Nokia cellphone Snake game, or it can be more complex with added features such as obstacles or making it a two-player game. 
 
-In this tutorial, we'll implement a simple version of Snake, using HTML, CSS and JavaScript.
+In this tutorial, we'll implement a simple version of Snake, using HTML, CSS, and JavaScript.
 
 ![Snake game](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/snake-game.gif)
 
@@ -21,7 +21,7 @@ For the Snake game, we'll need to:
 - Control the snake's direction.
 - Randomly place food items.
 - Detect when the snake's head touches the food.
-- Detect when the snake hits the border/wall  of the game grid.
+- Detect when the snake hits the wall of the game grid.
 - Detect when the snake hits itself.
 - Keep track of the score - how many food items are eaten.
 
@@ -31,7 +31,7 @@ Let's get started and create a new project in [Replit](https://replit.com/).
 
 
 
-### Creating a new project in Replit
+## Creating a new project in Replit
 
 Head over to [Replit](https://replit.com/) and create a new repl. Choose **HTML, CSS, JS** as your project type.
 
@@ -39,7 +39,7 @@ Head over to [Replit](https://replit.com/) and create a new repl. Choose **HTML,
 
 
 
-### Folder structure
+## Setting up the folder structure
 
 Our main JavaScript module will be the `script.js` file. We'll have a utility module, `utils.js` for some utility functions. A utility function is a generic function that performs a task that we could reuse in another project. We'll create two utility functions: A wait function that pauses an async function for a defined amount of time and a function to get a random element from an array.
 
@@ -56,7 +56,7 @@ Create a `utils.js` file so that you have the following files in your project:
 
 
 
-### HTML 
+## Adding the HTML
 
 Let's add the HTML needed for the Snake game. Replace the code in your `index.html` file with the following code:
 
@@ -109,11 +109,11 @@ Let's add the HTML needed for the Snake game. Replace the code in your `index.ht
 </html>
 ```
 
-The `type=module` attribute on the `<script>` tag for the `script.js` file allows us to use [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) features in our script. The `<div>` with a `class` of `grid` is the game grid. We'll create the cells of the game grid using JavaScript. The `<div>` with an `id` of `keys` contains the up, down, left and right buttons that we'll use to change the snakes direction on a mobile device. The icons for the keys are created using SVGs. 
+The `type=module` attribute on the `<script>` tag for the `script.js` file allows us to use [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) features in our script. The `<div>` with a `class` of `grid` is the game grid. We'll create the cells of the game grid using JavaScript. The `<div>` with an `id` of `keys` contains the up, down, left, and right buttons that we'll use to change the snake's direction on a mobile device. The icons for the keys are created using SVGs. 
 
 
 
-### CSS
+## Adding the CSS
 
 Now let's add some basic styling. Replace the code in your `style.css` file with the following code:
 
@@ -265,9 +265,9 @@ We use [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CS
 
 
 
-### JavaScript
+## Setting up the JavaScript structure
 
-Replace the code in your `script.css` file with the following code:
+Replace the code in your `script.js` file with the following code:
 
 ```javascript
 import { randomElementFromArray, wait } from './utils.js';
@@ -294,8 +294,7 @@ const foodItemsArray = [
 We import the utility functions that we'll soon create. The `foodItemsArray` variable contains the food items that will be randomly selected and added to the game grid. You can change the food item emojis if you want to. 
 
 
-
-#### Adding utility functions
+## Adding utility functions
 
 Add the following lines to the `utils.js` file:
 
@@ -311,39 +310,34 @@ export function randomElementFromArray(arr) {
 ```
 
 
-
 The `wait` function takes in a time, in milliseconds, as an argument. It returns a promise that resolves after the time passed in has elapsed. We'll use it to pause an async function that will be used in the game. The `randomElementFromArray` function takes in an array as an argument and returns a randomly selected element from the array. We'll use it to randomly select a food item from the `foodItemsArray` variable.
 
 Now try running the code, by pushing the `Run` button at the top of the Replit window. You should see the start and arrow buttons:
 
 ![Basic code - view in the browser](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/basic-code.png)
 
-## Creating Snake using vanilla JavaScript
+## Building the game logic
 
-Before we start coding the game logic, let's get an overview of how we'll create the game.
+Before we start coding the game logic, let's look at an overview of how we'll design the game.
 
+## Game overview
 
-
-### Game overview
-
-There are four main functions required to make the game:
+There are four main functions we'll use to make the game:
 
 - `startGame`
 - `gameLoop`
 - `createFood`
 - `moveSnake`
 
-The `startGame` function is run when the start button is clicked. In this function, the game grid cells are cleared, the snake and a randomly positioned food item are added to the game grid and the game loop function is run. The game loop is run every x milliseconds by using [`setInterval`](https://developer.mozilla.org/en-US/docs/Web/API/setInterval). The snake moves one cell in each game loop.
+We'll run the `startGame` function when the user clicks start button. In this function, the game grid cells are cleared, the snake and a randomly positioned food item are added to the game grid, and the `gameLoop` function is run. We run `gameLoop` every x milliseconds by using [`setInterval`](https://developer.mozilla.org/en-US/docs/Web/API/setInterval). The snake moves one cell in each game loop.
 
-In the game loop function, we check for collisions with the wall/border of the game grid or the snake itself. We also check if the snake head is in the same cell as a food item. If it is, we remove the food item and create a new randomly positioned food item using the `createFood` function. The snake length is increased by adding a new tail index to the `currentSnake` array. We also increase the score.
+In the `gameLoop` function, we check for collisions with the wall of the game grid or the snake itself. We also check if the snake head is in the same cell as a food item. If it is, we remove the food item and create a new randomly positioned food item using the `createFood` function. The snake length is increased by adding a new tail index to the `currentSnake` array. We also increase the score.
 
 The snake's body, stored in the `currentSnake` variable, is represented as an array indicating the cell indexes of the snake. The first element in the array is the snake's head, and the last element in the array is the snake's tail. The game grid cells containing the snake are given a `class` of `snake` so that we can detect collisions. We use the cell index positions to style the snake: giving the snake cells a background color and giving the snake head two eyes. 
 
-The game grid cell containing the food item is given a `class` of `food-item` so that we can detect collisions. The cell index of the food item is stored so that we can find the food item cell and place the food item emoji in it. When the game grid is cleared at the start of the game, these added classes are removed from each cell and the cells inner text content is cleared.
+The game grid cell containing the food item is given a `class` of `food-item` so that we can detect when the snake collides with this (and eats the food). The cell index of the food item is stored so that we can find the food item cell and place the food item emoji in it. When the game grid is cleared at the start of the game, these added classes are removed from each cell and the cell's inner text content is cleared.
 
-
-
-The snake is moved using the user's keyboard arrow keys or the arrow keys on the screen. We listen for the "keydown", "mousedown" or "touchstart" events on the arrow keys and use the `moveSnake` function to change the direction of the snake. These events change the `direction` variable value. This variable determines which direction the snake moves. In each game loop, the `direction` value will be added to the cell index position of the snake's head to give the snake a new head position. The snake's tail will be removed. The `direction` value indicates the change in index position required for the snake's head to move one cell in the current direction, The `direction` values are as follows:
+The user can move the snake using the keyboard arrow keys or by clicking the arrow keys on the screen. We listen for the "keydown", "mousedown" or "touchstart" events on the arrow keys and use the `moveSnake` function to change the direction of the snake. These events change the `direction` variable value. This variable determines which direction the snake moves. In each game loop, the `direction` value will be added to the cell index position of the snake's head to give the snake a new head position. The snake's tail will be removed. The `direction` value indicates the change in index position required for the snake's head to move one cell in the current direction, The `direction` values are as follows:
 
 -  right: +1
 - left: -1
@@ -353,12 +347,10 @@ The snake is moved using the user's keyboard arrow keys or the arrow keys on the
 ![Vanilla JS snake game logic outline](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/vanilla-js-snake-game-logic-outline.png)
 
 
-
 Now let's create the game. 
 
 
-
-### Creating the game grid
+## Creating the game grid
 
 Add the following lines to the `script.js` file:
 
@@ -385,19 +377,13 @@ for (let i = 0; i < width * width; i++) {
 const cells = document.querySelectorAll('.grid div');
 ```
 
-
-
 We first get the game display HTML elements from the DOM. We'll only use the `grid` element now. We then create some of the game variables that we'll need. We set the `width` to 10 cells and set the game grid's width and height based on the `width` variable. The square grid is 200 px wide.
 
-We then create the grid cells using a for loop. The number of cells being equal to the `width` squared.  We create each cell using the `createElement` method. Each square cell is 20 px wide. We then append each cell to the grid. The grid is a flex container and the cells, which are flex items, wrap after each row, which is 10 cells long. We then select the cells using the `querySelectorAll` method for later use.
+We then create the grid cells using a for loop. The number of cells is equal to the `width` squared.  We create each cell using the `createElement` method. Each square cell is 20 px wide. We then append each cell to the grid. The grid is a flex container and the cells, which are flex items, wrap after each row, which is 10 cells long. We then select the cells using the `querySelectorAll` method for later use.
 
-
-
-You should now be able to see the grid in your browser:
+Run your code again and you should now be able to see our game grid as a square below the "Start" button.
 
 ![Game grid](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/game-grid.png)
-
-
 
 ### Adding the snake
 
@@ -408,8 +394,6 @@ let currentSnake = [2, 1, 0];
 let snakeColor = Math.floor(Math.random() * 360);
 let snakeColorIncrement = 10;
 ```
-
-
 
 Now add the following function and event listener to the bottom of the `script.js` file:
 
@@ -426,23 +410,17 @@ function startGame() {
 startBtn.addEventListener('click', startGame);
 ```
 
-
-
 We define the snake's position on the game grid as an array called `currentSnake`. This indicates the index position of the snake's head [2], body [1] and tail [0] in the game grid. All of the middle elements are the snake's body. At the start of the game, the snake only has one body segment. We also style the snake's body segments using [`hsla()`functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsla). This is done to give our snake a "rainbow" color that changes as it moves. We create a random color value for the hue called `snakeColor`. This has a value between 0 degrees to 360 degrees. It represents an angle of the color circle: Red = 0 degrees = 360 degrees,  green = 120 degrees, blue = 240 degrees, etc. 
 
 We loop through the snake segments and give each cell that contains the snake a color. The color changes for each segment as the `snakeColor` increases in each loop. We also add the `class` of `snake` to the game grid cells containing the snake.  
 
-
-
-Now press the start button to see the snake on the game grid:
+Now run the code again and then press the "Start" button in the game UI to see the snake on the game grid:
 
 ![Adding snake](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/adding-snake.png)
 
-Each time you press the start button, the snake's color will change. Inspect the snake cells in your browser dev tools. You will see the added `snake` class and the added `background` color.
+Each time you press the "Start" button, the snake's color will change. Inspect the snake cells in your browser dev tools. You will see the added `snake` class and the added `background` color.
 
-
-
-### Moving the snake
+## Moving the snake
 
 Let's get the snake moving by adding the `gameLoop` function. Add the following game variables in the `// game variables` section in the `script.js` file:
 
@@ -452,11 +430,7 @@ let intervalTime = 200; // determines speed - frequency of game loop calls
 let interval = 0;
 ```
 
-
-
 We set the initial `direction` to one. In each game loop, the snake's index position in the game grid will increase by one, so the snake will move to the right. The game loop will run five times per second as the interval time is set to 200 ms. The `interval` variable will be the returned `intervalID` from the [`setInterval`](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) function that we'll use to run the game loop continuously. The `interval` variable will be used to cancel the interval so that the game loop is stopped when there is a collision. 
-
-
 
 Add the following code inside the `startGame` function, at the top:
 
@@ -470,11 +444,7 @@ Add the following code inside the `startGame` function, at the top:
   direction = 1;
 ```
 
-
-
 At the start of a game, we remove the snake from the game grid cells. We clear the interval to remove any previous interval and set the direction to it's initial value.
-
-
 
 Now add the `gameLoop` function below the `startGame` function:
 
@@ -493,11 +463,7 @@ function gameLoop() {
 }
 ```
 
-
-
 We first clear the `innerText` of the current snake head to remove the emoji eyes from the current snake head. We then remove the tail and add a new head. To get the index of the new head position in the game grid, we add a new head that has an index of the current snake head plus the current direction. We then style the new head by giving it emoji eyes and a background color.
-
-
 
 We also need to call the game loop at the start of the game. Add the following to the `startGame` function, at the bottom:
 
@@ -505,17 +471,13 @@ We also need to call the game loop at the start of the game. Add the following t
 interval = setInterval(gameLoop, intervalTime);
 ```
 
-
-
 Now press the start button to see the snake move along the game grid:
 
 ![Moving snake](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/moving-snake.gif)
 
-The snakes moves from index 0 to 99, incrementing its position by one in each game loop. 
+The snake moves from index 0 to 99, incrementing its position by one in each game loop. 
 
-
-
-### Controlling the snake
+## Controlling the snake
 
 We'll add a "keydown" event listener and an event handler function to control the snake movement with our keyboard arrow keys. Add the following code below the `gameLoop` function:
 
@@ -544,15 +506,11 @@ function handleKeyMove(e) {
 document.addEventListener('keydown', handleKeyMove);
 ```
 
-
-
 We added a "keydown" event listener that is handled by the `handleKeyMove` function. The `handleKeyMove` function calls the `moveSnake` function if one of the arrow keys is pressed down. 
 
-The `moveSnake` function changes the snakes direction, depending on which arrow key was pressed.
+The `moveSnake` function changes the snake's direction, depending on which arrow key was pressed.
 
-You will now be able to change the snakes direction using the arrow keys on your keyboard. However, the snake will be able to move through the walls and move through self. You will also get an error in your console if you go outside of the bounds of the grid by hitting the top or bottom wall. We'll fix this by detecting collisions.
-
-
+You will now be able to change the snake's direction using the arrow keys on your keyboard. However, the snake will be able to move through the walls and move through self. You will also get an error in your console if you go outside of the bounds of the grid by hitting the top or bottom wall. We'll fix this by detecting collisions.
 
 ### Detecting collisions with the walls and itself
 
@@ -572,17 +530,13 @@ if (
   }
 ```
 
+This if statement checks if the current snake index is outside the bounds of the game grid. It also checks if the snake hit itself by checking if the next cell that the snake head will move to has the `snake` class. If there is a collision, the game loop is stopped by clearing the interval and a shake animation is added by adding the `shake` class to the game grid. This will make the game grid shake when there is a collision. This uses the shake keyframe animation that defined earlier in our `style.css` file.
 
-
-This if statement checks if the current snake index is outside the bounds of the game grid. It also checks if the snake hit itself by checking if the next cell that the snake head will move to has the `snake` class. If there is a collision, the game loop is stopped by clearing the interval and a shake animation is added by adding the `shake` class to the game grid. This will make the game grid shake when there is a collision. This uses the shake keyframe animation defined in our `style.css` file.
-
-For the shake animation to work each time we restart a game, we need to remove the `shake` class from the game grid at the start of each game. We do this by adding the following line inside of the `startGame()` function, at the top:
+For the shake animation to work each time we restart a game, we need to remove the `shake` class from the game grid at the start of each game. Do this by adding the following line inside of the `startGame()` function, at the top:
 
 ```javascript
 grid.classList.remove('shake');
 ```
-
-
 
 Now, if your snake hits the wall or itself, it will stop the game loop and the game grid will shake. There are two bugs with the snake direction changes. If you are moving in one direction, then press the arrow key to move in the opposite direction, the snake will hit itself. Also, if your snake is going in one direction and then you make two quick 90-degree turns so that the snake moves in the opposite direction, the snake will hit itself. Let's change the `moveSnake` function to fix these issues. Replace your `moveSnake` function with the following:
 
@@ -612,13 +566,9 @@ function moveSnake(moveDirection) {
 }
 ```
 
+For each direction change, we now check that the direction change is not the opposite of the current direction. We also check that the direction change does not cause the snake's head to hit the first segment of its body.
 
-
-For each direction change, we now check that the direction change is not the opposite of the current direction. We also check that the direction change does not cause the snake head to hit the first segment of its body.
-
-
-
-### Adding and eating food
+## Adding and eating food
 
 Let's add food items to the game grid. When the snake eats a food item,  the score will be increased by one and a new food item will be created. Add the following game variables in the `// game variables` section:
 
@@ -626,8 +576,6 @@ Let's add food items to the game grid. When the snake eats a food item,  the sco
 let foodItemIndex = 0; // first cell
 let score = 0;
 ```
-
-
 
 The `foodItemIndex` is the cell index in the game grid that the food item will be added to. We'll randomly position it. 
 
@@ -646,9 +594,7 @@ async function createFood() {
 }
 ```
 
-In this recursive async function, we create a random food item index position and add the food item to the game grid. This function is recursive to prevent the food item being added on the snake. If the random index is on the snake, the `createFood` function is called again to get another random index position. Our `wait` utility function prevents the recursive function being called too often by pausing the function for 100 ms before each recursive function call. 
-
-
+In this recursive async function, we create a random food item index position and add the food item to the game grid. This function is recursive to prevent the food item from being added in a position occupied by the snake. If the random index is on the snake, the `createFood` function is called again to get another random index position. Our `wait` utility function prevents the recursive function from being called too often by pausing the function for 100 ms before each recursive function call. 
 
 Let's modify our `startGame` function so that the food items are cleared at the start of the game, the score is reset and a food item is created. Add the following lines to the `startGame` function, above the `interval = setInterval(gameLoop, intervalTime);` line:
 
@@ -659,8 +605,6 @@ Let's modify our `startGame` function so that the food items are cleared at the 
   score = 0;
   scoreDisplay.innerHTML = score;
 ```
-
-
 
 Now we need to detect if the food item is eaten and if so, add a new food item to the game grid. Add the following lines to the `gameLoop` function, above the `cells[currentSnake[0]].classList.add('snake');` line:
 
@@ -677,17 +621,17 @@ Now we need to detect if the food item is eaten and if so, add a new food item t
   }
 ```
 
+The food item is 'eaten' by checking if the snakes head position cell contains the food item. If it does, we remove the 'food-item' class to remove the food item. We increase the snake's length by adding a new segment to the tail end of the snake. Then we increase the score, and create a new randomly positioned food item. 
 
+The food items increase in size when they are added as we added a scale transform to the `food-item` class in the `style.css` file.
 
-The food item is 'eaten' by checking if the snakes head position cell contains the food item. If it does, we remove the 'food-item' class to remove the food item. We increase the snakes length by adding a new segment to the tail end of the snake, increase the score and create a new randomly positioned food item. 
-
-The food items increase in size when they are added as we added a scale transform to the `food-item` class in the `style.css` file. The snake game is almost complete! The last thing we need to do is make it mobile-friendly by making the on-screen arrow buttons functional. 
+Our snake game is almost complete! The last thing we need to do is make it mobile-friendly by making the on-screen arrow buttons functional. 
 
 ![Snake eating food items](https://replit-docs-images.bardia.repl.co/images/tutorials/make-snake-game-vanilla-javascript/snake-eating.gif)
 
 ### Making the game mobile-friendly
 
-Add the following lines to the bottom of the `script.js` file:
+Add the following lines near the bottom of the `script.js` file, just above the existing event listeners.
 
 ```javascript
 function handleButtonKeyMove(e) {
@@ -700,17 +644,17 @@ keyBtns.forEach(keyBtn => {
 });
 ```
 
-
-
 For each key button, we add two event listeners: "mousedown" and "touchstart". We use the `handleButtonKeyMove` function to handle these events. We get the `id` attributes of the on-screen buttons from the HTML `id` attributes that we added in the `index.html` file. These `id` attributes match the corresponding event key strings of the arrow keys on a keyboard. This makes it easy to pass the id string to the `moveSnake` function to handle the direction change. 
 
-Save and run your project. Our game is now complete!
-
-
+Run your project. Our game is now complete. See how high you can get your score using either your keyboard or the on-screen buttons.
 
 ## Next steps
 
-Now that you have built a simple snake game with some basic styling, you might want to improve it or add extra features. Here are some suggestions:
+Now that you have built a simple snake game with some basic styling, you might want to improve it or add extra features.
+
+You can build your own by copying the code above, or by forking our example repl at [replit.com/@ritza/snake-game-vanilla-javascript](https://replit.com/@ritza/snake-game-vanilla-javascript).
+
+ Here are some suggestions:
 
 - Make the snake transition from cell to cell a smooth animation.
 - Persist the top five highest scores by storing them in local storage. Create a pop dialog menu to view these high scores.
@@ -719,4 +663,4 @@ Now that you have built a simple snake game with some basic styling, you might w
 - Add sound effects.
 - Make different food items have different points.
 
-You can also learn how to make snake using [Kaboom.js](https://kaboomjs.com/), which is a JavaScript game programming library that makes creating games and adding extra features to games easy. Here is a tutorial on [Building Snake in Kaboom.js](https://docs.replit.com/tutorials/build-snake-with-kaboom#things-to-try). 
+You can also [learn how to make Snake with Kaboom](https://docs.replit.com/tutorials/build-snake-with-kaboom). [Kaboom.js](https://kaboomjs.com/) is a JavaScript game programming library that makes creating games like this easy. 

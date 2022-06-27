@@ -100,6 +100,9 @@ const redirects = [
       from: '/misc/change-username',
       to: '/settings/changing-username'
   }, {
+    from: "/misc/rails",
+    to: "/misc/rails-on-replit",
+  }, {
       from: '/curriculum/Intro',
       to: '/teaching-curriculum/intro-teaching-curriculum'
   }, {

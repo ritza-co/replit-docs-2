@@ -3,7 +3,7 @@ sidebar_position: 47
 title: Discord meme maker bot with Python
 ---
 
-# Creating a Discord meme maker bot with Python
+# Creating a Discord meme-maker bot with Python
 
 In this tutorial, we'll create a [Discord](https://discord.com) bot that adds captions to images, allowing server members to create memes. Users will call the bot using a command and supply it with an image file and a caption. The bot will reply with a new image file that includes the caption.
 
@@ -23,7 +23,7 @@ Sign in to [Replit](https://replit.com) or [create an account](https://replit.co
 
 Open another browser tab and visit the [Discord Developer Portal](http://discordapp.com/developers/applications). Log in with your Discord account, or create one if you haven't already. Keep your repl open – we'll return to it soon.
 
-Once you're logged in, create a new application. Give it a name like "ImageCaptioner".
+Once you're logged in, create a new application. Give it a name, like "ImageCaptioner".
 
 ![Discord creating an app](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-meme-maker-bot/discord-create-app.png)
 
@@ -33,7 +33,7 @@ Discord applications can interact with Discord in several different ways, not al
 2. Click **Add Bot**.
 3. Give your bot a username (such as "ImageCaptionBot").
 4. Click **Reset Token** and then **Yes, do it!**.
-4. Copy the token that appears just under your bot's username.
+5. Copy the token that appears just under your bot's username.
 
 ![Creating a discord bot](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-meme-maker-bot/discord-create-bot.png)
 
@@ -62,7 +62,7 @@ In a separate tab, return to the [Discord Developer Portal](https://discord.com/
 1. Click on **OAuth2** in the left sidebar.
 2. In the menu that appears under **OAuth2**, select **URL Generator**.
 4. Under **Scopes**, mark the checkbox labelled *bot*.
-5. Under **Bot Permissions**, mark the checkboxes labelled *Read Messages/View Channels*, *Send Messages* and *Attach Files*.
+5. Under **Bot Permissions**, mark the checkboxes labelled *Read Messages/View Channels*, *Send Messages*, and *Attach Files*.
     ![Bot permissions](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-meme-maker-bot/bot-permissions.png)
 
 5. Scroll down and copy the URL under **Generated URL**.
@@ -96,9 +96,9 @@ bot.run(DISCORD_TOKEN)
 
 First, we import some Python libraries we'll need, including Discord.py and its [commands extension](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html). We then retrieve the value of the `DISCORD_TOKEN` environment variable, which we set in our repl's secrets tab above. Following that, we instantiate a [`Bot` object](https://discordpy.readthedocs.io/en/stable/ext/commands/api.html#discord.ext.commands.Bot). We'll use this object to listen for Discord events and respond to them. For the most part, we'll be responding to *commands* - messages from users which start with `!` (the `command_prefix` we specified when creating our `Bot` object).
 
-However, the first event we're interested in is not a command. The [`on_ready()`](https://discordpy.readthedocs.io/en/stable/api.html#discord.on_ready) event will trigger when our bot logs onto Discord (the `@bot.event` [decorator](https://realpython.com/primer-on-python-decorators/) ensures this). All this event will do is print a message to our repl's console, telling us that the bot has connected.
+However, the first event we're interested in is not a command. The [`on_ready()`](https://discordpy.readthedocs.io/en/stable/api.html#discord.on_ready) event will trigger when our bot logs on to Discord (the `@bot.event` [decorator](https://realpython.com/primer-on-python-decorators/) ensures this). All this event will do is print a message to our repl's console, telling us that the bot has connected.
 
-Note that we've prepended `async` to the function definition – this makes our `on_ready()` function into a [coroutine](https://docs.python.org/3/library/asyncio-task.html). Co-routines are largely similar to functions, but may not execute immediately, and must be invoked with the `await` keyword. Using co-routines makes our program [asynchronous](https://realpython.com/async-io-python/#the-10000-foot-view-of-async-io), which means it can continue executing code while waiting for the results of a long-running function, usually one that depends on input or output. If you've used JavaScript before, you'll recognize this style of programming.
+Note that we've prepended `async` to the function definition – this makes our `on_ready()` function into a [coroutine](https://docs.python.org/3/library/asyncio-task.html). Coroutines are largely similar to functions, but may not execute immediately, and must be invoked with the `await` keyword. Using coroutines makes our program [asynchronous](https://realpython.com/async-io-python/#the-10000-foot-view-of-async-io), which means it can continue executing code while waiting for the results of a long-running function, usually one that depends on input or output. If you've used JavaScript before, you'll recognize this style of programming.
 
 The final line in our file starts the bot, providing `DISCORD_TOKEN` to authenticate it. Run your repl now to see it in action. Once it's started, return to your Discord server. You should see that your bot user is now online.
 
@@ -121,12 +121,12 @@ async def caption(ctx, caption_text):
 
 The `@bot.command` decorator will ensure that our function is invoked when a user types a message starting with `!caption`. We also use it to define some help text – the commands extension provides a default `!help` command, and each command we define can have two types of explanatory text:
 
-* `brief`: a short description of the command that will show alongside other defined commands when the user types `!help`.
-* `help`: a longer description of the command that will show when the user types `!help name_of_command`. 
+* `brief`: A short description of the command that will show alongside other defined commands when the user types `!help`.
+* `help`: A longer description of the command that will show when the user types `!help name_of_command`. 
 
 Our `caption` function takes two parameters:
 
-* `ctx`: This is the *invocation context*, a special object containing information such as the user who called the command, the server it was called in and the files attached to the calling message if any. All commands must take this parameter.
+* `ctx`: This is the *invocation context*, a special object containing information such as the user who called the command, the server it was called in, and the files attached to the calling message, if any. All commands must take this parameter.
 * `caption_text`: This will be a string containing the caption the user wants to add to their image.
 
 We'll start the body of the function with some user-friendly error handling. Replace `pass` with the function body shown below:
@@ -160,13 +160,13 @@ Next, we need to check whether the attached file is an image. We'll do this by d
 import mimetypes
 ```
 
-We now need to specify which MIME types we'll support. According to our help text, images for captioning should be PNGs, JPEGs or WebPs. These are the most common non-animating image types on the web, so we shouldn't need to support any more for the moment. Add the following code below the definition of `DISCORD_TOKEN`:
+We now need to specify which MIME types we'll support. According to our help text, images for captioning should be PNGs, JPEGs, or WebPs. These are the most common non-animating image types on the web, so we shouldn't need to support any more for the moment. Add the following code below the definition of `DISCORD_TOKEN`:
 
 ```python
 SUPPORTED_MIMETYPES = ["image/jpeg", "image/png", "image/webp"]
 ```
 
-Return to the `caption()` function. Add the following code below the block of code that checks whether a file is attached to the user's message.
+Return to the `caption()` function. Add the following code below the block of code that checks whether a file is attached to the user's message:
 
 ```python
     # File must be an image
@@ -175,7 +175,7 @@ Return to the `caption()` function. Add the following code below the block of co
         return
 ```
 
-[`mimetypes.guess_type`](https://docs.python.org/3/library/mimetypes.html#mimetypes.guess_type) will determine what kind of file we're dealing with from its URL. If we don't find its filetype in our list of supported types, we'll send an error message to the user and cease execution.
+The [`mimetypes.guess_type`](https://docs.python.org/3/library/mimetypes.html#mimetypes.guess_type) function will determine what kind of file we're dealing with from its URL. If we don't find its filetype in our list of supported types, we'll send an error message to the user and cease execution.
 
 Now that we've dealt with the most likely error cases, it's time to handle a correctly formatted `!caption` command. First, we need to fetch the image file – we have a URL for it, so we can use Python's [requests](https://pypi.org/project/requests/) library for this. Add the following line to the top of your `main.py` file:
 
@@ -209,7 +209,7 @@ Return to the bottom of the `caption` function and add the following:
 
 [`BytesIO`](https://docs.python.org/3/library/io.html#io.BytesIO) will convert the image from HTTP response content into a binary stream, which is similar to the file object returned by [`open()`](https://docs.python.org/3/library/functions.html#open). This allows us to work with the image as though it were a file without ever saving it to disk.
 
-`caption_image()` is a function we'll write in the next section. It takes an image and a caption and returns an image with the caption applied. Once we've got that implemented, we'll return to this function and send the finished image back to the user.
+We'll write the `caption_image()` function in the next section. It takes an image and a caption and returns an image with the caption applied. Once we've got that implemented, we'll return to this function and send the finished image back to the user.
 
 ## Captioning images
 
@@ -257,7 +257,7 @@ Next, we need to load our font:
     font = ImageFont.truetype("impact.ttf", font_size)
 ```
 
-[`ImageFont.truetype()`](https://pillow.readthedocs.io/en/stable/reference/ImageFont.html#PIL.ImageFont.truetype) loads a TrueType font from a file. We specify the font size in the second argument. Users will be able to upload different-sized images, so rather than hardcoding a specific font size, we've expressed the size in terms of the image's width, allowing it to scale appropriately. Feel free to experiment with this value.
+We use [`ImageFont.truetype()`](https://pillow.readthedocs.io/en/stable/reference/ImageFont.html#PIL.ImageFont.truetype) to load a TrueType font from a file. We specify the font size in the second argument. Users will be able to upload different-sized images, so rather than hardcoding a specific font size, we've expressed the size in terms of the image's width, allowing it to scale appropriately. Feel free to experiment with this value.
 
 Now that we've got our image and font, we can start drawing. Extend your function as follows:
 
@@ -272,11 +272,11 @@ Now that we've got our image and font, we can start drawing. Extend your functio
               stroke_fill=(0,0,0)) # text outline color
 ```
 
-[`ImageDraw.textsize()`](https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html#PIL.ImageDraw.ImageDraw.textsize) returns the height and width of a given string in a given font. We need this information to place our caption in the upper center of the image.
+The [`ImageDraw.textsize()`](https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html#PIL.ImageDraw.ImageDraw.textsize) method returns the height and width of a given string in a given font. We need this information to place our caption in the upper center of the image.
 
-[`ImageDraw.text()`](https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html#PIL.ImageDraw.ImageDraw.text) actually draws our text. We provide it with our text and the necessary positioning and coloring information. To avoid situations where text blends in with the background, we make our text white with a black outline. Again, feel free to experiment with different colors, outlines and positions. 
+The [`ImageDraw.text()`](https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html#PIL.ImageDraw.ImageDraw.text) method actually draws our text. We provide it with our text and the necessary positioning and coloring information. To avoid situations where text blends in with the background, we make our text white with a black outline. Again, feel free to experiment with different colors, outlines and positions. 
 
-Our work here is done, and all that remains is to return the image. But before we do that, let's test this code out on its own. Add the following line to the bottom of your function to [save the image to a file](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.save).
+Our work here is done, and all that remains is to return the image. But before we do that, let's test this code out on its own. Add the following line to the bottom of your function to [save the image to a file](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.save):
 
 ```python
     img.save("output.png")
@@ -323,7 +323,7 @@ Return to the bottom of the `caption()` function definition. Add the following c
 
 This code will reply to the user with a message containing the image we created above.
 
-Stop and run your repl and then switch to your Discord server. Enter a message such as `!caption "Hello world!"` and attach an image to it. You should receive a reply something like this:
+Stop and run your repl, and then switch to your Discord server. Enter a message such as `!caption "Hello world!"` and attach an image to it. You should receive a reply something like this:
 
 ![Image caption in discord](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-meme-maker-bot/caption-in-discord.png)
 
@@ -359,7 +359,7 @@ Then add the new line shown below to the `caption_image()` function.
               stroke_fill=(0,0,0)) # text outline color
 ```
 
-[`textwrap.fill()`](https://docs.python.org/3/library/textwrap.html#textwrap.fill) will return a new version of our caption string with newline characters (`\n`) inserted in appropriate places to ensure that each line of the text contains no more than `width` characters. It will do this without splitting words over multiple lines.
+Here, [`textwrap.fill()`](https://docs.python.org/3/library/textwrap.html#textwrap.fill) will return a new version of our caption string with newline characters (`\n`) inserted in appropriate places to ensure that each line of the text contains no more than `width` characters. It will do this without splitting words over multiple lines.
 
 We use the following calculation to get `width`:
 

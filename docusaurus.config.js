@@ -417,7 +417,7 @@ const config = {
            href: 'https://blog.replit.com',
            target: '_blank'},
           {label: 'Jam',
-           href: 'https://replit.com/site/kajam',
+           href: 'https://kajam.replit.com',
            target: '_blank'},
           {type: 'search',
           position: 'right'},

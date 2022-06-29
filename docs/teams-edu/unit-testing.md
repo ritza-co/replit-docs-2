@@ -147,16 +147,16 @@ Read about the supported assert function for each unit testing library:
 ## Tips for Writing Good Tests
 
 1. Only test one expected output at a time.
-1. Avoid relying on external libraries when possible.
-1. Avoid testing functions that rely on the entire app running (e.g. databases, network connections, rendering user-interfaces).
-1. Avoid testing functions that are not crucial portions of the program.
-1. Avoid testing functions that are part of external libraries. 
+2. Avoid relying on external libraries when possible.
+3. Avoid testing functions that rely on the entire app running (e.g. databases, network connections, rendering user-interfaces).
+4. Avoid testing functions that are not crucial portions of the program.
+5. Avoid testing functions that are part of external libraries. 
 
 ## Tips for Writing "Testable" Functions
 
 1. Decompose your program into discrete functions.
-1. Keep functions concise and descriptive. 
-1. Design predictable inputs (parameters) and outputs (return).
+2. Keep functions concise and descriptive. 
+3. Design predictable inputs (parameters) and outputs (return).
 
 ## Teams for Education
 

@@ -9,7 +9,11 @@ const editUrlFn = ({docPath}) => {
 }
 
 const redirects = [
-     {
+  {
+    from: '/repls/repl-run',
+    to: '/misc/repl-run'
+  },
+  {
       from: '/misc/General-FAQ',
       to: '/getting-started/faq'
   }, {
@@ -99,6 +103,9 @@ const redirects = [
   }, {
       from: '/misc/change-username',
       to: '/settings/changing-username'
+  }, {
+    from: "/misc/rails",
+    to: "/misc/rails-on-replit",
   }, {
       from: '/curriculum/Intro',
       to: '/teaching-curriculum/intro-teaching-curriculum'
@@ -351,6 +358,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'replit',
   projectName: 'replit-docs-2',
+  favicon: 'image/favicon.ico',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -400,7 +408,6 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      favicon: '/image/favicon.ico',
       navbar: {
         hideOnScroll: true,
         items: [
@@ -414,7 +421,7 @@ const config = {
            href: 'https://blog.replit.com',
            target: '_blank'},
           {label: 'Jam',
-           href: 'https://replit.com/site/kajam',
+           href: 'https://kajam.replit.com',
            target: '_blank'},
           {type: 'search',
           position: 'right'},
@@ -438,7 +445,7 @@ const config = {
         appId: '33H1G1RMZJ',
         apiKey: '17617634403a792c4cf6f749c49ae0aa',
         indexName: 'replit-docs',
-        contextualSearch: false
+        contextualSearch: true
       },
     },
 };

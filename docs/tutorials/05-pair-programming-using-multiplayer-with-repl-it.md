@@ -67,7 +67,7 @@ sns.scatterplot(
 changes to
 
 ```python
-ax = sns.scatterplot(`
+ax = sns.scatterplot(
     "gdpPercap", "lifeExp", df, hue="continent"
 )
 ax.set(xlabel="GDP per capita", ylabel="Life expectancy")

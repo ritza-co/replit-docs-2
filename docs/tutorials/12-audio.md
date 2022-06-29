@@ -4,7 +4,7 @@ title: "Audio: create a media player"
 
 # Replit Audio
 
-![](https://replit-docs-images.bardia.repl.co/images/tutorials/12-audio/12-01-audio-heading.png)
+![](https://replit-docs-images.util.repl.co/images/tutorials/12-audio/12-01-audio-heading.png)
 
 Most people control their music players manually, pressing the pause button to pause a track or hitting a volume up control to raise the volume. With Replit, you can automate your media experience using code.
 
@@ -26,7 +26,7 @@ Let's grab the URL of a file we want so that we can use code to download it to o
 
 Search for a song that you like, right-click on the download link and press "copy link location", as shown below.
 
-![**Image 2:** *Downloading an audio track*](https://replit-docs-images.bardia.repl.co/images/tutorials/12-audio/12-02-FMA-get-link.png)
+![**Image 2:** *Downloading an audio track*](https://replit-docs-images.util.repl.co/images/tutorials/12-audio/12-02-FMA-get-link.png)
 
 ## Downloading audio files to our project
 
@@ -48,7 +48,7 @@ Change the URL to the one you chose and `o_fortuna.mp3` to something more approp
 
 This downloads the song, opens up a binary file, and writes the contents of the download to the file. You should see the new file pop up in the files tab on the left after you run this code.
 
-![**Image 3:** *Viewing the downloaded audio file in your files tab.*](https://replit-docs-images.bardia.repl.co/images/tutorials/12-audio/12-03-download-song.png)
+![**Image 3:** *Viewing the downloaded audio file in your files tab.*](https://replit-docs-images.util.repl.co/images/tutorials/12-audio/12-03-download-song.png)
 
 Instead of downloading the audio file using `requests` as shown above, you can also press the `add file` button in your repl and upload an audio file from your local machine.
 
@@ -165,7 +165,7 @@ Once again, you should replace the "o_fortuna" string if you downloaded or uploa
 
 If you run the repl now you should hear you track play and you can control it by inputting the various commands.
 
-![**Image 4:** *A preview of our audio status dashboard.*](https://replit-docs-images.bardia.repl.co/images/tutorials/12-audio/12-04-play-song.png)
+![**Image 4:** *A preview of our audio status dashboard.*](https://replit-docs-images.util.repl.co/images/tutorials/12-audio/12-04-play-song.png)
 
 ## Playing individual tones
 

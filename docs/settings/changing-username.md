@@ -2,4 +2,4 @@
 
 You can **only** change your username **1 time**, by [clicking here]( https://replit.com/~/cli/account/change-username?run=1). If the option is not available to you, then you have already changed it.
 
-![account change-username](https://replit-docs-images.bardia.repl.co/images/misc/account-change-username.png)
+![account change-username](https://replit-docs-images.util.repl.co/images/misc/account-change-username.png)

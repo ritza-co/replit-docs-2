@@ -13,7 +13,7 @@ By the end of this tutorial, you'll be able to:
 
 Our finished game will look like this:
 
-![The finished game](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/gameplay.gif)
+![The finished game](https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/gameplay.gif)
 
 We will be using [this set of sprites](https://opengameart.org/content/breakout-set) by [Michele Bucelli](https://opengameart.org/users/buch) and sound effects from [this pack](https://opengameart.org/content/100-plus-game-sound-effects-wavoggm4a) by [Jaymin Covy](https://opengameart.org/users/damaged-panda). We'll also use [music](https://soundimage.org/chiptunes-4/) by [Eric Matyas](https://soundimage.org/chiptunes-4/) of Soundimage.org.
 
@@ -23,14 +23,14 @@ We've created a single ZIP file with the sprites and sounds you will need for th
 
 Log into your [Replit](https://replit.com/login) account and create a new repl. Choose **Kaboom** as your project type. Give this repl a name, like "blockbreaker".
 
-![Create a new repl](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/create-repl.png)
+![Create a new repl](https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/create-repl.png)
 
 Kaboom repls are quite different from other kinds of repls you may have seen before: instead of dealing directly with files in folders, you'll be dealing with code, sounds and sprites, the latter of which you can draw directly in Replit's [image editor](/tutorials/kaboom-editor).
 
 Before we start coding, we need to upload our sprites and sounds. Download [this ZIP file](/tutorial-files/breakout-kaboom/breakout-resources.zip) and extract it on your computer. Click the "Files" icon on the sidebar and upload everything in the extracted file's Sounds folder to the "sounds" section of your repl, and everything in the Sprites folder to the "sprites" section of your repl.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/upload-assets.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/upload-assets.gif"
   alt="Uploading assets"
   style={{ width: "50% !important" }}
 />
@@ -148,7 +148,7 @@ loadFont("breakout", "sprites/breakout_font.png", 6, 8,  { chars: "ABCDEFGHIJKLM
 We've used Kaboom's [`loadFont()`](https://kaboomjs.com/#loadFont) function, specifying the name of the font, the image file to source it from, the width and height of individual characters, and the characters it contains. Take a look at the layout of `breakout_font.png` to see the format Kaboom expects. Also note that we will not be able to use any characters outside of the ones represented here – this includes lowercase letters.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/breakout_font.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/breakout_font.png"
   alt="Breakout font"
   style={{ width: "30% !important" }}
 />
@@ -377,7 +377,7 @@ start();
 
 Run your repl now. You should see our first level, with its colorful blocks, paddle and ball, frozen in amber. In the next section, we'll add some motion.
 
-![First level](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/firstlevel.png)
+![First level](https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/firstlevel.png)
 
 ## Moving the paddle
 
@@ -410,7 +410,7 @@ Note the use of `worldArea()`. This method, provided by the `area()` component, 
 
 Rerun your repl now and try out the controls. If you have a touch screen on your device, you can also move the paddle by tapping or dragging your finger.
 
-![Moving the paddle](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/move-paddle.gif)
+![Moving the paddle](https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/move-paddle.gif)
 
 ## Moving the ball
 
@@ -443,7 +443,7 @@ You'll recall that we set the ball's `hspeed` and `vspeed` in its object definit
 
 If the ball goes off the left or right edges of the screen, we reverse its horizontal direction, and if it goes off the top or bottom of the screen, we reverse its vertical direction. Run your repl now to see this effect in action.
 
-![Moving the ball](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/move-ball.gif)
+![Moving the ball](https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/move-ball.gif)
 
 ## Collisions
 
@@ -518,7 +518,7 @@ We've added an [`onDraw()`](https://kaboomjs.com/#onDraw) callback, which will r
 
 Run your repl now, and you should be able to hit the ball with your paddle, destroy blocks, and get points. Our core gameplay is implemented.
 
-![Game play](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/basicgameplay.png)
+![Game play](https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/basicgameplay.png)
 
 ## Winning and losing
 
@@ -638,7 +638,7 @@ These scenes are quite similar to each other: each one displays some text, inclu
 
 Run your repl now. You should now be able to play through both levels of our block-breaking game (or lose and reach the game over screen).
 
-![Game over screen](https://replit-docs-images.bardia.repl.co/images/tutorials/37-breakout-kaboom/gameover.png)
+![Game over screen](https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/gameover.png)
 
 ## Powerups
 

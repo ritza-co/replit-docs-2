@@ -5,7 +5,7 @@ sidebar_position: 9
 # GitHub Authentication Errors in Replit
 
 While interacting with our Git plugin and GitHub integration, you may run into error messages that look like this.
-![An error modal reading 'unable to connect to this GitHub repository'](https://replit-docs-images.bardia.repl.co/images/programming-ide/github-auth-errors/generic-autherror-modal.png)
+![An error modal reading 'unable to connect to this GitHub repository'](https://replit-docs-images.util.repl.co/images/programming-ide/github-auth-errors/generic-autherror-modal.png)
 
 This is usually the result of permission issues with the GitHub integration. Try clicking the 'Connect Replit to your GitHub Account' button first, and logging in through GitHub.
 

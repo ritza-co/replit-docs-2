@@ -8,7 +8,7 @@ In this guide, we'll build a version of the popular game *Wordle*. Instead of th
 
 Once you're done, you'll be able to play a command-line-based game with a friend (with both of you sitting at the same machine), as shown below.
 
-<video width="800" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/twordledemo.mp4" type="video/mp4">
+<video width="800" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/twordledemo.mp4" type="video/mp4">
 </video>
 
 
@@ -18,7 +18,7 @@ We'll be using Python, and to do the green and yellow colors we'll use [Rich](ht
 
 To get started, create a **Python** repl.
 
-![New repl](https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/new-repl.png)
+![New repl](https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/new-repl.png)
 
 
 ## Installing Rich
@@ -33,7 +33,7 @@ python3 -m poetry add rich
 This will create a `pyproject.toml` file to define Rich as a dependency, and Replit will automatically install it for us next time we run our app.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/shell.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/shell.png"
   alt="Running commands in shell"
   style={{ width: "75% !important" }}
 />
@@ -84,7 +84,7 @@ Run this code, and you'll see a Wordle-styled welcome message, demonstrating all
 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/welcometowordle.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/welcometowordle.png"
   alt="Wordle welcome message"
   style={{ width: "80% !important" }}
 />
@@ -141,7 +141,7 @@ If you run this, you'll be prompted (as player 1) to enter a word. The entered w
 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/gameloop.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/gameloop.png"
   alt="Game loop"
   style={{ width: "80% !important" }}
 />
@@ -186,7 +186,7 @@ Call this function from inside the `while` loop in `main()` by adding the `conso
 Now player 2 has something to work on from each guess, and it should be a lot easier to guess the correct word by incrementally finding more correct letters, as shown in the example below.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/feedback.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/feedback.png"
   alt="Feedback"
   style={{ width: "80% !important" }}
 />
@@ -247,7 +247,7 @@ To use this in the main function, replace the code for the `while` loop with the
 If you run again, the game will work as before, but now you'll see the emoji representation printed after the game ends. This can be copy-pasted to share and help our game go viral. You can see what it looks like in the image below.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/withemoji.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/withemoji.png"
   alt="EmojiS"
   style={{ width: "85% !important" }}
 />
@@ -280,7 +280,7 @@ Replace the `while` loop in the `main()` function with the following code:
 This clears the console completely after each guess by player 2, and then prints out each of the (styled) guesses. The output looks neater now, as shown below.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/clearedinputs.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/clearedinputs.png"
   alt="Cleared inputs"
   style={{ width: "85% !important" }}
 />

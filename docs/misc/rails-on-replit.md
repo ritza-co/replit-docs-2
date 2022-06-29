@@ -39,7 +39,7 @@ First, you will have to allow `*.repl.co` hosts by adding the following line to 
 config.hosts << /.*\.repl.co/
 ```
 
-![allow replit hosts](https://replit-docs-images.bardia.repl.co/images/misc/rails-env-dev-host.png)
+![allow replit hosts](https://replit-docs-images.util.repl.co/images/misc/rails-env-dev-host.png)
 
 Then, allow the app to be iframed on `replit.com` by adding the following lines to `config/application.rb`.
 
@@ -50,11 +50,11 @@ config.action_dispatch.default_headers = {
 }
 ```
 
-![allow app to be iframed on replit.com](https://replit-docs-images.bardia.repl.co/images/misc/rails-config-app.png)
+![allow app to be iframed on replit.com](https://replit-docs-images.util.repl.co/images/misc/rails-config-app.png)
 
 Now, when you run your app, a window should pop up displaying your application.
 
-![rails popup window](https://replit-docs-images.bardia.repl.co/images/misc/rails-window.png)
+![rails popup window](https://replit-docs-images.util.repl.co/images/misc/rails-window.png)
 
 ## Running Commands
 

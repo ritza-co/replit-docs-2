@@ -30,7 +30,7 @@ In addition, you can find the following:
 
 ## Our Awesome Creator
 
-<img class="profile_pic" src="https://replit-docs-images.bardia.repl.co/images/curriculumImg/tbach.png" width="100px"/>
+<img class="profile_pic" src="https://replit-docs-images.util.repl.co/images/curriculumImg/tbach.png" width="100px"/>
 
 This course was created by **Thomas Bach**.
 

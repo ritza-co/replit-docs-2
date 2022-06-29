@@ -87,35 +87,35 @@ To access the command palette, press `F1` or `Ctrl+Shift+P`.
 
 **Note:** If you are using Firefox, `Ctrl+Shift+P` will open an incognito window, so use the `F1` option instead.
 
-![command palette](https://replit-docs-images.bardia.repl.co/images/repls/editor/command_palette.gif)
+![command palette](https://replit-docs-images.util.repl.co/images/repls/editor/command_palette.gif)
 
 ### Moving the current line
 
 Press `Alt+Up` or `Alt+Down` to move the current line up or down.
 
 
-![move line](https://replit-docs-images.bardia.repl.co/images/repls/editor/move_line.gif)
+![move line](https://replit-docs-images.util.repl.co/images/repls/editor/move_line.gif)
 
 ### Clone the current line
 
 Press `Shift+Alt+Up` or `Shift+Alt+Down` to clone the current line above or below.
 
 
-![clone line](https://replit-docs-images.bardia.repl.co/images/repls/editor/clone_line.gif)
+![clone line](https://replit-docs-images.util.repl.co/images/repls/editor/clone_line.gif)
 
 ### Selecting lines
 
 Press `Ctrl+L` to select a line.
 
 
-![select line](https://replit-docs-images.bardia.repl.co/images/repls/editor/select_line.gif)
+![select line](https://replit-docs-images.util.repl.co/images/repls/editor/select_line.gif)
 
 ### Deleting lines
 
 Press `Ctrl+Shift+K` to delete a line.
 
 
-![delete line](https://replit-docs-images.bardia.repl.co/images/repls/editor/delete_line.gif)
+![delete line](https://replit-docs-images.util.repl.co/images/repls/editor/delete_line.gif)
 
 
 ### Adding cursors
@@ -123,28 +123,28 @@ Press `Ctrl+Shift+K` to delete a line.
 Press `Alt+Left Click` to add more cursors.
 
 
-![adding cursors](https://replit-docs-images.bardia.repl.co/images/repls/editor/adding_cursors.gif)
+![adding cursors](https://replit-docs-images.util.repl.co/images/repls/editor/adding_cursors.gif)
 
 ### Find
 
 Press `Ctrl+F` to find.
 
 
-![find](https://replit-docs-images.bardia.repl.co/images/repls/editor/find.gif)
+![find](https://replit-docs-images.util.repl.co/images/repls/editor/find.gif)
 
 ### Replace
 
 Press `Ctrl+H` to replace.
 
 
-![replace](https://replit-docs-images.bardia.repl.co/images/repls/editor/replace.gif)
+![replace](https://replit-docs-images.util.repl.co/images/repls/editor/replace.gif)
 
 ### Adding selections to next find match
 
 Press `Ctrl+D` to select and then `Ctrl+F` to add a selection to the next find match.
 
 
-![adding selections](https://replit-docs-images.bardia.repl.co/images/repls/editor/adding_selections.gif)
+![adding selections](https://replit-docs-images.util.repl.co/images/repls/editor/adding_selections.gif)
 
 ## Navigation
 
@@ -155,11 +155,11 @@ Use the following shortcuts to navigate the editor.
 Press `Ctrl+P` to quickly open files.
 
 
-![Open files](https://replit-docs-images.bardia.repl.co/images/repls/editor/open_files.gif)
+![Open files](https://replit-docs-images.util.repl.co/images/repls/editor/open_files.gif)
 
 ### Go to line
 
 Press `Ctrl+G` to go to a specified line.
 
 
-![go to line](https://replit-docs-images.bardia.repl.co/images/repls/editor/go_to_line.gif)
+![go to line](https://replit-docs-images.util.repl.co/images/repls/editor/go_to_line.gif)

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Firewalled Replit FAQ
 
-_Read more about this change at [our blog post](https://blog.replit.com/computing-superpower-at-school). Also, see our [commitment to user safety.](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/Our%20Commitment%20to%20User%20Safety.pdf)_
+_Read more about this change at [our blog post](https://blog.replit.com/computing-superpower-at-school). Also, see our [commitment to user safety.](https://replit-docs-images.util.repl.co/images/teamsForEducation/Our%20Commitment%20to%20User%20Safety.pdf)_
 
 **What is different about firewalledreplit.com?**
 

@@ -18,7 +18,7 @@ We'll use a basic Flask `hello world` app for the demonstrations. You can use th
 
 We'll use the [Flask](https://flask.palletsprojects.com/en/1.1.x/) application available at [https://github.com/ritza-co/flask-hello-world](https://github.com/ritza-co/flask-hello-world) for demonstration purposes. To import it into Replit, press the `+ new repl` button, switch to the "Import From GitHub" tab, and paste in the GitHub URL, as shown below.
 
-![**Image 1:** *Importing a repository from GitHub to Replit.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-01-github-import.png)
+![**Image 1:** *Importing a repository from GitHub to Replit.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-01-github-import.png)
 
 Press the `Import from GitHub` button, and you'll see Replit clone the repository and turn it into a repl. In all of our previous projects, we used the `main.py` file that Replit automatically creates for all new Python projects, and which it runs automatically when you press the `run` button. Note how in this GitHub project, we have no `main.py` file, and our code is instead in `mydemoapp.py`. Therefore, Replit will need some help from you to define how to run the project. This is configured through another special file named `.replit`. If the configuration panel doesn't pop up automatically, you can manually create a file called `.replit` and add the configuration given below otherwise select the language (Python) from the first dropdown and type `python mydemoapp.py` in the "configure the run button" input.
  
@@ -28,11 +28,11 @@ language = "python3"
 run = "python mydemoapp.py"
 ```
 
-![Run button config](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/run-config.gif)
+![Run button config](https://replit-docs-images.util.repl.co/images/tutorials/06-github/run-config.gif)
 
 If you hit the `run` button, you should see the app start. Every time you press the `run` button, Replit will execute the command specified in the `.replit` file. This web application is very basic: all it can do is display a welcome message.
 
-![**Image 3:** *Running the Flask application on Replit.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-03-mydemoapp-run.png)
+![**Image 3:** *Running the Flask application on Replit.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-03-mydemoapp-run.png)
 
 Some GitHub projects are very large and complicated, and you might not be able to run everything you need directly on Replit, but in many cases it just works. Open-source projects can be read and run by anyone, but still have restrictions on who can push changes to them. Next we'll improve this project and request that the owner merges our changes into the original.
 
@@ -40,13 +40,13 @@ Some GitHub projects are very large and complicated, and you might not be able t
 
 Replit includes a version control tab which shows you information about the GitHub repository and in some cases allows you to push your changes made in Replit back to GitHub.
 
-![**Image 4:** *Viewing details about the repository in the version control tab.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-04-version-control.png)
+![**Image 4:** *Viewing details about the repository in the version control tab.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-04-version-control.png)
 
 If you select this version control tab from the menu on the left, you'll see a summary of the linked repository. Note that it's already figured out what changes we've made, and it shows that the `.replit` file is new. It would be nice for other people who use this repository with GitHub to have the file automatically, so we might want to push the changes we made back to GitHub.
 
 Note that the owner of the repository is `ritza-co` though, so you won't have write permissions for this repository. If you press the `commit & push` button, you'll see an error as shown below.
 
-![**Image 5:** *You need permission to push to repositories on GitHub.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-05-unable-to-connect.png)
+![**Image 5:** *You need permission to push to repositories on GitHub.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-05-unable-to-connect.png)
 
 ## Forking the project to your own GitHub account
 
@@ -54,7 +54,7 @@ Usually when contributing to open-source projects, you'll first create a "fork" 
 
 Create an account on [GitHub](https://github.com) or log in to your existing one and navigate back to the original project (https://github.com/ritza-co/flask-hello-world). In the top right corner, press the `Fork` button to create a copy of the project in your own GitHub account.
 
-![**Image 6:** *Forking a repository in GitHub.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-06-fork-github.png)
+![**Image 6:** *Forking a repository in GitHub.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-06-fork-github.png)
 
 You should be taken to a new page in GitHub that looks very similar to the old one but which is owned by your own GitHub username. My GitHub username is `sixhobbits` so the new URL for me is https://github.com/sixhobbits/flask-hello-world (but yours will be different).
 
@@ -66,17 +66,17 @@ You'll see the error again and be presented with the option to connect your Repl
 
 You can give Replit access to all of your repositories (useful if you want to use this integration a lot), but by default it will only get permission for the specific repository that we're working with.
 
-![**Image 7:** *Giving Replit permission to access your GitHub data.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-07-repository-access.png)
+![**Image 7:** *Giving Replit permission to access your GitHub data.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-07-repository-access.png)
 
 Press the green `approve` button and you'll be directed back to Replit. Press the `commit & push` button again on Replit and this time everything should work without any errors.
 
 Navigate back to your fork of the GitHub project, and you should see that the changes are reflected in GitHub too.
 
-![**Image 8:** *Seeing our changes reflected in our GitHub fork.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-08-github-updated.png)
+![**Image 8:** *Seeing our changes reflected in our GitHub fork.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-08-github-updated.png)
 
 As you can see, the new `.replit` file is visible and GitHub prompts you to make a pull request back into the original repository. Press `Pull request`, `create pull request`, add a comment explaining why your changes should be merged into the original repository, and click `Create pull request` again.
 
-![**Image 9:** *Creating a pull request from GitHub to merge our changes back into the original repository.*](https://replit-docs-images.bardia.repl.co/images/tutorials/06-github/06-09-open-pull-request.png)
+![**Image 9:** *Creating a pull request from GitHub to merge our changes back into the original repository.*](https://replit-docs-images.util.repl.co/images/tutorials/06-github/06-09-open-pull-request.png)
 
 The owner of the repository will get a notification about your proposal and can choose to add your changes or reject them (in this case, don't be too hopeful about your changes being accepted as the `.replit` file being missing is important to follow along the earlier steps of this tutorial 😉.) 
 

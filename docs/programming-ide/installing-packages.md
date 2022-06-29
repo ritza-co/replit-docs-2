@@ -10,7 +10,7 @@ With Replit, you can use most packages available in Python and JavaScript. Repli
 
 On a Python or JavaScript repl, you can search for a package to install by clicking on the
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/media/misc/libraries_hover.png"
+  src="https://replit-docs-images.util.repl.co/images/media/misc/libraries_hover.png"
   style={{
     height: 24,
     verticalAlign: "text-bottom",

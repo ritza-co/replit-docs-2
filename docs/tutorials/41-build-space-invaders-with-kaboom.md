@@ -10,7 +10,7 @@ Later, Atari released a clone of *Space Invaders* on the Atari 2600 home system.
 
 Of course, *Space Invaders* was such a popular game, there were many clones and variations. Let's make our own version using [Kaboom](https://kaboomjs.com) and [Replit](https://replit.com).
 
-<video width="80%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/gameplay.mp4" type="video/mp4">
+<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/gameplay.mp4" type="video/mp4">
 </video>
 
 ## Game mechanics
@@ -26,13 +26,13 @@ When the aliens reach the bottom of the screen, the game is immediately over, as
 
 Head over to [Replit](https://replit.com/) and create a new repl, using "Kaboom" as the template. Name it something like "Space Invaders", and click "Create Repl". 
 
-![Creating a new repl](https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/newrepl.png)
+![Creating a new repl](https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/newrepl.png)
 
 After the repl has booted up, you should see a `main.js` file under the "Scenes" section. This is where we'll start coding. It already has some code in it, but we'll replace that. 
 
 Download [this archive of sprites and asset files](/tutorial-files/space-invaders-kaboom/space-invaders-resources.zip) we'll need for the game, and unzip them on your computer. In the Kaboom editor, click the "Files" icon in the sidebar. Now drag and drop all the sprite files (image files) into the "sprites" folder. Once they have uploaded, you can click on the "Kaboom" icon in the sidebar, and return to the "main" code file.
 
-<video width="50%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/uploadassets.mp4" type="video/mp4">
+<video width="50%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/uploadassets.mp4" type="video/mp4">
 </video>
 
 ## Setting up Kaboom
@@ -64,12 +64,12 @@ Similarly, we'll use a sprite sheet for the player's ship, so that we can animat
 This is what the two sprite sheets look like, for the aliens and the player:
 
 <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/alien-sprite.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/alien-sprite.png"
     alt="Alien sprite sheet"
     style={{ width: "30% !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/player-sprite.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/player-sprite.png"
     alt="Player sprite sheet"
     style={{ width: "30% !important" }}
   />
@@ -133,7 +133,7 @@ Then we load the sprite sheets. The first argument is the path to the sprite she
 For this tutorial, we'll omit the intro scene, since we already know what *Space Invaders* is and how to play it. You might like to add your own intro scene in later!
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/game-scenes.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/game-scenes.png"
   alt="game scenes"
   style={{ width: "350px !important", height: "40% !important" }}
 />
@@ -196,7 +196,7 @@ We can also add a `tag` to the game objects. This is not too useful on the playe
 
 In *Space Invaders*, the aliens operate as a unit in a tightly formed grid. They all move in sync with each other. This is what that looks like: 
 
-![alien grid](https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/alien-grid.png)
+![alien grid](https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/alien-grid.png)
 
 To create this grid, we could add each alien one at a time, but that would be a lot of code. Instead, we can use a [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) loop to cut down on the amount of code we need to write. We just need to decide how many rows and columns of aliens we want.
 
@@ -273,7 +273,7 @@ Then we call the `spawnAliens` function to add the aliens to the scene.
 
 If you run the game, you should see a block of animated aliens and the blue player block at the bottom of the screen, like this:
 
-<video width="80%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/added-characters.mp4" type="video/mp4">
+<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/added-characters.mp4" type="video/mp4">
 </video>
 
 
@@ -313,7 +313,7 @@ You'll also notice that we have a `pause` variable. We'll use this later on to p
 
 If you run the game now, you'll be able to move the player left and right on the screen. 
 
-<video width="80%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/moving.mp4" type="video/mp4">
+<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/moving.mp4" type="video/mp4">
 </video>
 
 ## Moving the aliens
@@ -440,7 +440,7 @@ const BULLET_SPEED = 300;
 If you run the game now, you should be able to shoot bullets. They won't kill the aliens yet. We'll add that next. 
 
 
-<video width="80%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/shooting.mp4" type="video/mp4">
+<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/shooting.mp4" type="video/mp4">
 </video>
 
 ## Bullet collisions with aliens
@@ -493,7 +493,7 @@ First we add a text label for the score. We use the Kaboom [`text`](https://kabo
 If you run the game now, you should be able to shoot at an alien, destroy it, and see your points increase. 
 
 
-<video width="80%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/destroy-alien.mp4" type="video/mp4">
+<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/destroy-alien.mp4" type="video/mp4">
 </video>
 
 ## The aliens fight back
@@ -539,7 +539,7 @@ This way, there is no pattern that the player can learn to outsmart the aliens.
 If you run the game now, you should see a random alien shoot at the player every second.
 
 
-<video width="80%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/41-space-invaders-kaboom/aliens-shooting.mp4" type="video/mp4">
+<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/41-space-invaders-kaboom/aliens-shooting.mp4" type="video/mp4">
 </video>
 
 ## Bullet collisions with the player

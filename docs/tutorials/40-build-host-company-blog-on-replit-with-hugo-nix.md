@@ -6,7 +6,7 @@ title: Static blog with Nix
 
 In this tutorial, we will detail how you can use Replit to write and publish a blog or website. This can be a solo endeavour or a group or company blog. We'll build on the versatile Nix repl, using a static site generator called [Hugo](https://gohugo.io/) to ensure our site is fast, secure and flexible. We'll also use some repl tricks which will allow us to develop and host our blog without ever leaving Replit.
 
-<video width="800" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/blogdemo.mp4" type="video/mp4">
+<video width="800" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/blogdemo.mp4" type="video/mp4">
 </video>
 
 After this tutorial, you will:
@@ -28,7 +28,7 @@ If you have a premium Replit plan, you might want to make these repls private, t
 
 Log into your [Replit account](https://replit.com/login) and create a new repl. Choose Nix as your project type. Give this repl a name, like "blog-dev".
 
-![Creating the development repl](https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/dev-repl.png)
+![Creating the development repl](https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/dev-repl.png)
 
 Most kinds of repls are intended for working in a specific programming language or framework, such as Python or Kaboom.js. Nix repls are different: you can think of them as a blank slate for running anything you want. So the first thing we need to do in our repl is define what we're going to run – in this case it will be Hugo. Open `replit.nix` and append `pkgs.hugo` to the `deps` list. Your file should look like this:
 
@@ -54,7 +54,7 @@ This will create a new Hugo site in our repl. The `--force` flag is necessary be
 You should now see a number of new directories and files in your repl's file pane. This is the skeleton of your Hugo site. Don't worry about what each of these files and directories is for – you only need to know about a few of them to start blogging, and we'll explain them as we go.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/hugo-files.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/hugo-files.png"
   alt="hugo files"
   style={{ width: "40% !important" }}
 />
@@ -92,7 +92,7 @@ In this command:
 
 Run your repl. You should see an empty site homepage.
 
-![Empty home page](https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/empty-site.png)
+![Empty home page](https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/empty-site.png)
 
 To create your first post, run the command below in the repl shell. Press Y when prompted to run Hugo from Nix:
 
@@ -102,7 +102,7 @@ hugo new posts/first-post.md
 
 Your site will automatically reload and should now look like this:
 
-![First post](https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/first-post.png)
+![First post](https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/first-post.png)
 
 You should see a file named `first-post.md` in the `content/posts` directory with contents resembling the following:
 
@@ -142,7 +142,7 @@ readingTime = false
 This *is* **my** `first` post!
 ```
 
-![Post content](https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/post-content.png)
+![Post content](https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/post-content.png)
 
 ## Preparing for production
 
@@ -179,7 +179,7 @@ This post and all subsequent new posts will be marked as drafts, and will thus o
 Select the version control tab in your repl's side pane and click on **Create a Git Repo**. This will create a local repository to track your code changes. From here, you can create snapshots of your code (called commits), which can you can revert to if needed.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/create-repo.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/create-repo.png"
   alt="Creating a GitHub repo"
   style={{ width: "40% !important" }}
 />
@@ -188,7 +188,7 @@ Select the version control tab in your repl's side pane and click on **Create a 
 To push our repl to a repository on GitHub, we'll need a GitHub account. [Create one](https://github.com/signup) if you haven't before. Once you've created an account or logged into your existing one, return to your repl and click on **Connect to GitHub**. Accept the Oauth confirmation message that appears.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/connect-github.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/connect-github.png"
   alt="Connect to GitHub"
   style={{ width: "40% !important" }}
 />
@@ -196,7 +196,7 @@ To push our repl to a repository on GitHub, we'll need a GitHub account. [Create
 
 Replit will then prompt you to specify a repository name, optional description and privacy setting. You can call your repository "blog". If you have a paid Replit plan, you can make it private, otherwise it will have to be public. Once you've created the GitHub repository, you'll be able to view it on your GitHub account.
 
-![GitHub repo](https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/github-repo.png)
+![GitHub repo](https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/github-repo.png)
 
 Now that your repl is connected to a GitHub repository, any time you make changes, those will be reflected in the version control tab. To commit those changes and push them to your GitHub repository, you can click on **Commit and push** in your repl's version control tab. You will be required to specify a commit message describing the changes you've made.
 
@@ -226,7 +226,7 @@ Here we've used a couple of [repl metadata environment variables](/programming-i
 Return to your repl's version control tab and commit and push your changes. We are now ready to create the production repl.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/commitpush.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/commitpush.png"
   alt="Commit and push to GitHub"
   style={{ width: "40% !important" }}
 />
@@ -237,7 +237,7 @@ Return to your repl's version control tab and commit and push your changes. We a
 Fork your development repl. Give the new repl a different name, such as "blog".
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/fork-repl.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/fork-repl.png"
   alt="Fork repl"
   style={{ width: "60% !important" }}
 />
@@ -255,7 +255,7 @@ Let's test out our publishing flow.
 4. In your **production** repl, navigate to the version control tab and click on the "← Pull" link. This will pull the changes we just pushed from development.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/pull.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/pull.png"
   alt="Pull from GitHub"
   style={{ width: "40% !important" }}
 />
@@ -275,7 +275,7 @@ Now that we have a publishing platform in place, let's take a more detailed look
 
 The basis of all Hugo blogs is [Markdown](https://daringfireball.net/projects/markdown/), a simple mark-up language for the web, originally created in 2004 by John Gruber. Markdown provides a simple, limited syntax, focused on the common needs of bloggers and other web-based writers. Basic Markdown elements are limited to headings, **bold**, *italic* and `code-style` text, blockquotes, lists, code blocks, horizontal rules, links and images. Markdown has been extended over the years to provide more advanced formatting, such as tables and footnotes. A cheat sheet covering both basic and extended syntax can be found [here](https://www.markdownguide.org/cheat-sheet/) (Hugo supports both basic and extended Markdown).
 
-To include images in your posts, upload them to the `static` directory. All files and subdirectories in `static` will be rendered as-is from your website's root URL. For example, if you create a file named `static/images/pic.png`, you will be able to include it in your posts by writing `![](https://replit-docs-images.bardia.repl.co/images/pic.png)`. You can put anything you want in `static`, including documents, audio files, or even videos.
+To include images in your posts, upload them to the `static` directory. All files and subdirectories in `static` will be rendered as-is from your website's root URL. For example, if you create a file named `static/images/pic.png`, you will be able to include it in your posts by writing `![](https://replit-docs-images.util.repl.co/images/pic.png)`. You can put anything you want in `static`, including documents, audio files, or even videos.
 
 If you want formatting that isn't included in Markdown, such as colored text, you can add HTML and CSS to your posts directly, but first you must configure Hugo's Markdown parser (Goldmark) to accept unsafe input. Add the following lines to `config.toml`:
 
@@ -290,12 +290,12 @@ Hugo also provides functionality called [shortcodes](https://gohugo.io/content-m
 
 Replit's multiplayer editing features aren't only good for collaborative programming, but can also be used for collaborative blogging. Multiple users can work in the same file in real time, and you can use [inline code threads](https://blog.replit.com/threads) to leave each other feedback and discuss individual words and sentences.
 
-![Collaboration chat](https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/thread.png)
+![Collaboration chat](https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/thread.png)
 
 If you need to include diagrams in your blog posts, you can draw them using your repl's [built-in Excalidraw](https://blog.replit.com/draw). Just create a new file with a `.draw` extension and start diagramming. When you're done, select your diagram, right-click and chose "Copy to clipboard as SVG". Then paste into the post you want to include the diagram in. Note that Goldmark must be configured in the manner shown above for this to work, as SVG images are part of HTML.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/40-multiuser-blog-nix/diagram.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/diagram.png"
   alt="Drawing on Replit"
   style={{ width: "60% !important" }}
 />

@@ -18,7 +18,7 @@ Teams for Education admins may duplicate repls from their personal accounts into
 Open the CLUI tool from the top left drop down menu or by navigating to [replit.com/~/cli](https://replit.com/~/cli).
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/CLUI.png"
+  src="https://replit-docs-images.util.repl.co/images/teamsForEducation/CLUI.png"
   alt="Opening the CLUI tool"
   style={{ width: "350px !important" }}
 />
@@ -27,22 +27,22 @@ Open the CLUI tool from the top left drop down menu or by navigating to [replit.
 
 Type or search `Team` > `fork-repl-to-project`
 
-![CLUI view of transfer repls into Team Projects tool](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/fork-repl-to-teamproject.gif)
+![CLUI view of transfer repls into Team Projects tool](https://replit-docs-images.util.repl.co/images/teamsForEducation/fork-repl-to-teamproject.gif)
 
 Open the repl you'd like to duplicate in a new tab. Copy and paste the repl slug or URL into the first form field. 
 
-![Where to find a repl URL](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/repl-url.png)
+![Where to find a repl URL](https://replit-docs-images.util.repl.co/images/teamsForEducation/repl-url.png)
 
 Copy and paste the *username* of the destination team into the second form field.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/team-username.png"
+  src="https://replit-docs-images.util.repl.co/images/teamsForEducation/team-username.png"
   alt="Where to find a team username"
   style={{ width: "350px !important" }}
 />
 
 If you would like this to be a group project, check off the box next to `isGroupProject`.
 
-![Filling in the form](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/formfill.gif)
+![Filling in the form](https://replit-docs-images.util.repl.co/images/teamsForEducation/formfill.gif)
 
 Click `Submit` and find the new project in your destination Team! 

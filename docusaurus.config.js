@@ -104,6 +104,9 @@ const redirects = [
       from: '/misc/change-username',
       to: '/settings/changing-username'
   }, {
+    from: "/misc/rails",
+    to: "/misc/rails-on-replit",
+  }, {
       from: '/curriculum/Intro',
       to: '/teaching-curriculum/intro-teaching-curriculum'
   }, {
@@ -418,7 +421,7 @@ const config = {
            href: 'https://blog.replit.com',
            target: '_blank'},
           {label: 'Jam',
-           href: 'https://replit.com/site/kajam',
+           href: 'https://kajam.replit.com',
            target: '_blank'},
           {type: 'search',
           position: 'right'},

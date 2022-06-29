@@ -5,7 +5,7 @@ Here are some tables with information on the permissions each role in a Replit O
 ## Organization Roles and Permissions
 |                          | Org Owner              | Org Admin | Team Owner |
 |--------------------------|------------------------|-----------|------------|
-| Add & Remove Seats         | ✅                      |           |            |
+| Add & Remove Seats       | ✅                      |           |            |
 | Change payment method    | ✅                      |           |            |
 | Cancel plan              | ✅                      |           |            |
 | Leave Org                | If joined Organization | ✅         |            |
@@ -22,26 +22,25 @@ Here are some tables with information on the permissions each role in a Replit O
 ## Team roles and permissions
 |                                 | Team Owner | Team Admin | Team Member (Pro, Edu, Friends) | Guest |
 |---------------------------------|------------|------------|---------------------------------|-------|
-| Add & remove Team Members       | ✅          | ✅          |                                 |       |
-| Add & remove Team Admins      | ✅          |            |                                 |       |
-| Change Team Member role  | ✅          |            |                                 |       |
-| Leave Team                      |            | ✅          | ✅                               |       |
+| Add & remove Team Members       | ✅          | ✅          |                              |       |
+| Add & remove Team Admins        | ✅          |             |                               |       |
+| Change Team Member role         | ✅          |             |                               |       |
+| Leave Team                      |             | ✅          | ✅                            |       |
 
 
 ## Team Roles and Permissions (Pro & Friends)
 |                                   | Team Owner | Team Admin | Team Member  | Guest |
 |-----------------------------------|------------|------------|-------------------|-------|
 | Create & delete Repls & Projects  | ✅          | ✅          | ✅                 |       |      
-| Edit Repls                        | ✅          | ✅          | ✅                 | ✅     |       
-| Invite others as guests to a Repl | ✅          | ✅          | ✅                 | ✅     |       
+| Edit Repls                        | ✅          | ✅          | ✅                 | ✅    |            
 | Add & remove guests to Repls      | ✅          | ✅          | ✅                 |       |       
 
 ## Team Roles and Permissions (Edu)
-|                                    | Team Owner | Teacher (Team Admin) | Student (Team Member) | Guest |
-|------------------------------------|------------|------------|---------------------------|-------|
-| Add others as Teachers   | ✅          |            |                           |       |
-| Add others as Students   | ✅          | ✅          |                           |       |
-| Remove Students         | ✅          | ✅          |                           |       |
-| Create/ Publish/Unpublish projects | ✅          | ✅          |                           |       |
-| Open/Submit Projects    |            |            | ✅                         |       |      
+|                                    | Team Owner | Teacher (Team Admin) | Student (Team Member) |
+|------------------------------------|------------|------------|---------------------------|
+| Add others as Teachers   | ✅          |             |                           |       
+| Add others as Students   | ✅          | ✅          |                           |       
+| Remove Students          | ✅          | ✅          |                           |       
+| Create/ Publish/Unpublish projects     | ✅          | ✅                        |                                  
+| Open/Submit Projects    |              |             | ✅                        |             
 

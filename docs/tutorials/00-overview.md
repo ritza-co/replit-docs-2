@@ -6,11 +6,11 @@ title: Overview
 
 In this series of tutorials, you'll go from beginner to expert in coding with Replit. While these lessons are designed to be taken in order, they each make sense on their own too, so feel free to jump in wherever looks the most interesting to you.
 
-### [Part 1 - beginner tutorials - Replit features](#part-1-beginner-tutorials-replit-features)
+### Part 1 - beginner tutorials - Replit features
 
-The first part of the series teaches you to use specific Replit features. You'll learn how to use Replit for everything from solving basic maths problems to building production grade software, integrating with other tools like GitHub.
+The first part of the series teaches you to use specific Replit features. You'll learn how to use Replit for everything from solving basic maths problems to building production-grade software, integrating with other tools like GitHub.
 
-### [Part 2 - intermediate tutorials - building fun and useful projects](#part-2-build-your-own-projects)
+### Part 2 - intermediate tutorials - building fun and useful projects
 
 In the second part of the series, you'll work through a set of projects, including chatbots, games, and more. We are constantly expanding these, so feel free to let us know if there are any topics you want to see included.
 
@@ -22,7 +22,7 @@ If you prefer video, here's a quick start walkthrough, or read the text tutorial
 
 ## Part 1: beginner tutorials - Replit features
 
-In this section of the course, you'll learn the basic of Replit. But that doesn't mean you won't build some fun stuff along the way.
+In this section of the course, you'll learn the basics of Replit. But that doesn't mean you won't build some fun stuff along the way.
 
 #### [Lesson 1: Introduction to Replit and using the IDE](/tutorials/introduction-to-the-repl-it-ide)
 
@@ -38,7 +38,7 @@ No one is an island, and if you build software you'll build it on top of existin
 
 #### [Lesson 4: Data science: plotting and graphing](/tutorials/data-science-and-visualisation-with-repl-it)
 
-Data is only useful if it can be easily understood. Plots, charts, and graphs are the easiest way to know what's happening in the world around you. And did you know that data science is [the sexiest job of the 21st century](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century). Follow along to plot every city in the USA and find out if richer people live longer.
+Data is only useful if it can be easily understood. Plots, charts, and graphs are the easiest way to know what's happening in the world around you. And did you know that data science is [the sexiest job of the 21st century](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century)? Follow along to plot every city in the USA and find out if richer people live longer.
 
 #### [Lesson 5: Pair programming and using multiplayer](/tutorials/pair-programming-using-multiplayer-with-repl-it)
 
@@ -46,17 +46,17 @@ Did we mention that no one is an island? Coders don't have to work alone. You ca
 
 #### [Lesson 6: Running projects from GitHub](/tutorials/github-and-run-button)
 
-Most open source software lives on GitHub and it's easy to take advantage of all of this free software by pulling code from GitHub to Replit and running it with one click. Some software needs to be configured in specific ways so you'll also learn how to modify what happens when you press that big green "run" button.
+Most open-source software lives on GitHub and it's easy to take advantage of all of this free software by pulling code from GitHub to Replit and running it with one click. Some software needs to be configured in specific ways so you'll also learn how to modify what happens when you press that big green "run" button.
 
 #### [Lesson 7: Building a game with PyGame](/tutorials/building-a-game-with-pygame)
 
-Do you want to develop games? Of course, you can do that with Replit to. We'll build a 2D juggling game using PyGame in this lesson and you'll learn more about graphics programming at the same time: sprites, physics, and more.
+Do you want to develop games? Of course, you can do that with Replit too. We'll build a 2D juggling game using PyGame in this lesson and you'll learn more about graphics programming at the same time: sprites, physics, and more.
 
 #### [Lesson 8: Can you keep a secret? What about from time travellers?](/tutorials/storing-secrets-and-history)
 
 Have you been hacked? It's only a matter of time if you haven't. Learn how to keep your secrets safe, even when coding in public spaces. Pro tip: if you accidentally paste a password into your code and then remove it, others might still find it in your history, so you'll learn how to navigate that too.
 
-#### [Lesson 9: Creating a name splitting application using test driven development](/tutorials/test-driven-development)
+#### [Lesson 9: Creating a name-splitting application using test driven development](/tutorials/test-driven-development)
 
 Build a system to split users' names into first name and last name. We'll follow test-driven-development best-practices along the way so you can be sure your code does what you think it does.
 
@@ -83,11 +83,11 @@ Share secret messages with your friends by hiding them inside images with stegan
 
 #### [Lesson 14: 2D platform game with PyGame and Replit](/tutorials/2d-platform-game)
 
-Build a fun 2D platform game while learning all about Python game development. It's is easily expandable with endless possibilities so let your imagination run wild!
+Build a fun 2D platform game while learning all about Python game development. It's easily expandable with endless possibilities so let your imagination run wild!
 
 #### [Lesson 15: Building a Chat App with Node.js and Replit](/tutorials/repl-chat)
 
-Build a Replit-to-Replit chat app - one server will coordinate between multiple clients so you can chat oldschool style (in the terminal) with your friends.
+Build a Replit-to-Replit chat app - one server will coordinate between multiple clients so you can chat old-school style (in the terminal) with your friends.
 
 #### [Lesson 16: Build a static site generator in Python](/tutorials/static-site-generator)
 
@@ -135,7 +135,7 @@ Build a web application that takes in data from spreadsheets and use it to creat
 
 #### [Lesson 27: Building tic-tac-toe with WebSocket and Kaboom.js](/tutorials/build-tictactoe-with-websockets-kaboom)
 
-Build a 2-player online tic-tac-toe game using a [Node.js](https://nodejs.org/en/) server, [Socket.IO](https://socket.io) for realtime gameplay across the internet and Kaboom.js as the game engine.
+Build a 2-player online tic-tac-toe game using a [Node.js](https://nodejs.org/en/) server, [Socket.IO](https://socket.io) for real time gameplay across the internet and Kaboom.js as the game engine.
 
 #### [Lesson 28: Build a team technical challenge website with `replit.web`](/tutorials/technical-challenge-site)
 
@@ -175,11 +175,47 @@ Explore the advanced usage of the Kaboom game development framework by building 
 
 #### [Lesson 37: Build a block-breaking game with Kaboom](/tutorials/build-breakout-with-kaboom)
 
-Revisit the Kaboom game engine on Replit by building a block breaking game similar to classics like Atari's *Breakout* and Taito's *Arkanoid*.
+Revisit the Kaboom game engine on Replit by building a block-breaking game similar to classics like Atari's *Breakout* and Taito's *Arkanoid*.
 
 #### [Lesson 38: Rendering 3D scenes with three.js](/tutorials/3D-rendering-with-threejs)
 
 Learn how to render 3D scenes with three.js to make websites using 3D elements and advanced animations, or even complex 3D games.
+
+#### [Lesson 39: Two-Player Wordle Clone Python Rich](/tutorials/39-two-player-wordle-clone-python-rich.md)
+
+Build a command line variant of the popular Wordle game for two players, similar to hangman.
+
+#### [Lesson 40: Host Your Startup's Blog On Replit With Hugo and Nix](/tutorials/40-build-host-company-blog-on-replit-with-hugo-nix.md)
+
+See how to host a basic Blog on Replit, using Hugo as a static site generator.
+
+#### [Lesson 41: Build Space Invaders With Kaboom](/tutorials/41-build-space-invaders-with-kaboom.md)
+
+Build the classic game Space Invaders, using Kaboom.
+
+#### [Lesson 42: Build A Robot Nft](/tutorials/42-build-a-robot-nft.md)
+
+Create your first artwork NFTs on the Replit test net.
+
+#### [Lesson 43: Build A Robot Nft P2](/tutorials/43-build-a-robot-nft-p2.md)
+
+Deploy the NFTs that you created in part 1.
+
+#### [Lesson 44: Build Smart Contract Oracle](/tutorials/44-build-smart-contract-oracle.md)
+
+Learn about advanced smart-contract features like oracles and build your own on the Replit test net.
+
+#### [Lesson 45: Game Of Life Kaboom](/tutorials/45-game-of-life-kaboom.md)
+
+Build Game of Life with Kaboom - a 'game' that shows off how powerful simple procedural programming can be.
+
+#### [Lesson 46: Discord Role Bot](/tutorials/46-discord-role-bot.md)
+
+Build an advanced Discord bot that can assign roles to people in your community.
+
+#### [Lesson 47: 3D Obstacle Avoiding Game With Three.js](/tutorials/47-3D-game-with-three.js.md)
+
+Build a 3D game with ThreeJS where you have to avoid the oncoming obstacles.
 
 ## Other tutorials
 
@@ -207,7 +243,7 @@ Learn more about what web scraping is, how websites are built, and how to automa
 Extending the beginner's web scraping tutorial, you'll build a more advanced scraper that extracts the plain text from news articles, stripping away the 'boilerplate' content, such as text in sidebars.
 
 #### [Building a Discord Bot with Python and Replit](https://ritza.co/showcase/repl.it/building-a-discord-bot-with-python-and-repl-it)
-Build an echo bot using the Discord API. Your bot will always respond with exactly what you send it, but you can customize it afterwards to do something more useful.
+Build an echo bot using the Discord API. Your bot will always respond with exactly what you send it, but you can customize it afterward to do something more useful.
 
 #### [Building a Discord bot with Node.js and Replit](https://ritza.co/showcase/repl.it/building-a-discord-bot-with-node-and-repl-it)
 A NodeJS version of the Discord bot tutorial above. Even if you prefer Python, it's good to go through this one too to get experience with other languages.

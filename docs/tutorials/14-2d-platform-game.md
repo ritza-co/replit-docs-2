@@ -5,7 +5,7 @@ slug: /tutorials/2d-platform-game
 
 # Build a 2D Platform Game with PyGame and Replit
 
-In a [previous tutorial](./07-building-a-game-with-pygame) we introduced graphical game development with PyGame, covering how to develop a 2D game with animated sprites and user interaction. In this tutorial, we'll go a step further and create a 2D platformer, where you can have an alien walk and jump around a room full of boxes. The previous PyGame tutorial is not a prerequisite for trying this one.
+In a [previous tutorial](/tutorials/07-building-a-game-with-pygame) we introduced graphical game development with PyGame, covering how to develop a 2D game with animated sprites and user interaction. In this tutorial, we'll go a step further and create a 2D platformer, where you can have an alien walk and jump around a room full of boxes. The previous PyGame tutorial is not a prerequisite for trying this one.
 
 We're going to focus on basic animation and movement to create a solid base from which you can continue on to build an entire platform game, complete with enemies, power-ups and multiple levels.
 

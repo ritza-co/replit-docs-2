@@ -19,7 +19,6 @@ Where `REPL-NAME` is the name of the repl and `USERNAME` is the owner's username
 If you create a repl with a title that matches your username (i.e. repl.it/@username/username), it will be hosted at:
 * `https://USERNAME.repl.co`
 
-
 If an anonymous repl is created, the username used in the URL will be `five-nine`.
 
 Note that if your username contains underscores `_`, they will be converted to dashes in the URL.
@@ -50,7 +49,6 @@ Part 2: Setting it up with Cloudflare
 
 6. Click `continue.` Wait for it to scan existing DNS records, it should find none.
 
-
 Part 3: 
 Option 1: Root and WWW
 
@@ -65,7 +63,6 @@ Go to the repl you are linking:
 ![screenshot of edit button](https://replit-docs-images.bardia.repl.co/images/repls/edit-custom-domain-icon.png)
 
 4. Enter the full domain where you'd like the repl to be accessible from without the `www.` (Example - `replitiscool.tk`)
-
 
 5. Click the `COPY` button. Now head back to cloudflare and enter the copied url into the target box. Click `Save,` then add another record. Select `CNAME` from the dropwdown, name the record as `www,` and paste the text into the target.
 
@@ -87,14 +84,11 @@ Click `Save.`
 
 7. Go back to Replit and click `next.` After some time, a LINK DOMAIN button should appear. Click it and you have successfully linked your domain.
 
-
 *Edit: On your first try, you may get a `525 SSL Handshake` error. If you do, be patient, wait a bit, and reload. It takes a bit to update.*
-
 
 *Note: Make sure the CNAME record is not proxied and is set to "DNS only" (the cloud icon should **not** be orange)*
 
 It may take some time for the DNS record to be updated. Once connected, click the big green button to finish and your domain should be linked!
-
 
 ## Example
 

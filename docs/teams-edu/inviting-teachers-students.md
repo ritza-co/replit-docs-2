@@ -14,10 +14,10 @@ To invite people with their Replit username or email address, follow the steps d
 * To add a new Org Admin or Owner, find your Organization and click on the settings gear.
 * Click "Add Org Admin or Owner"
 * Invite an Org Admin or Owner using their username or email. They'll receive a notification to join your team with their new role! 
-![Adding Team Admins](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/inviting-users/add_org_admin.gif)
+![Adding Team Admins](https://replit-docs-images.util.repl.co/images/teamsForEducation/inviting-users/add_org_admin.gif)
 
 * Once they've accepted the invitation, you can go back to edit their role or remove them.
-![Editing org admins](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/inviting-users/edit_org_admin.gif)
+![Editing org admins](https://replit-docs-images.util.repl.co/images/teamsForEducation/inviting-users/edit_org_admin.gif)
 
 ----
 
@@ -26,7 +26,7 @@ To invite people with their Replit username or email address, follow the steps d
 
 * To add someone as a Team Admin, first add them to your team as you would a student.
 * Once they've accepted the invite, go to the "Manage Team Members" modal and change their role to "Admin"
-![Changing a user role to team admin](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/inviting-users/add_team_admin.gif)
+![Changing a user role to team admin](https://replit-docs-images.util.repl.co/images/teamsForEducation/inviting-users/add_team_admin.gif)
 
 ---
 ## Invite Team Members (Students)
@@ -35,7 +35,7 @@ If you've already created a team, navigate to your [team dashboard](https://repl
 
 <img
   style={{ width: 300 }}
-  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/manageTeamMembers.png"
+  src="https://replit-docs-images.util.repl.co/images/teamsForEducation/manageTeamMembers.png"
 />
 
 ### You may add team members by:
@@ -52,7 +52,7 @@ To protect the privacy of students and remain compliant with privacy regulations
 1. Go to your team, click "Add more" and click "Generate a team invite link".
 2. Check the box next to "Do not collect names/emails".
 
-<img src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/privacy-invite.png" />
+<img src="https://replit-docs-images.util.repl.co/images/teamsForEducation/privacy-invite.png" />
 
 You can share this link with your students. When signing up from this link, they will not be required to enter an email address. Once they have signed up, they will automatically be added to your team.
 

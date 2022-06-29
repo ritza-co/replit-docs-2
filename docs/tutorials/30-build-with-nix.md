@@ -55,7 +55,7 @@ The first thing we'll build with Nix is a production web stack with the followin
 
 If you've built anything with Python and Flask, such as one of our previous tutorials, you will have used Flask's development server to interact with your application. While this server is great for development and debugging, it's optimised for a single user and gets quite slow if more than one person tries to use it.
 
-![Flask development server](https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/dev-server.png)
+![Flask development server](https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/dev-server.png)
 
 We can improve the speed of our Flask apps by using a production-grade [WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface) server in place of Flask's default, such as [Gunicorn](https://gunicorn.org/) or [Waitress](https://pypi.org/project/waitress/).
 
@@ -76,7 +76,7 @@ We've made a Nix repl containing the production web stack available here: [https
 Open it now, or fork it to your profile, and we'll go over how it works. Ensure that the repl's config files are showing. 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/
+  src="https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/
   show-hidden-files.png"
   alt="Show configuration"
   style={{ width: "350px !important" }}
@@ -94,7 +94,7 @@ The first file we'll look at is `replit.nix`. This is the base Nix file that tel
 ```
 The first line, `{ pkgs }:`, defines an anonymous function that takes a single argument, `pkgs`. When we run our repl, this function will be called and its contents executed. In this case, its contents is a list of packages to install, one item long. Therefore, all this function does is install `cowsay`, a program that prints an ASCII cow.
 
-![Cowsay](https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/cowsay.png)
+![Cowsay](https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/cowsay.png)
 
 By contrast, the `replit.nix` file in our production web stack repl is more complicated. It looks like this:
 
@@ -326,7 +326,7 @@ Notebooks are web-based interactive development environments that allow you to m
 
 [https://replit.com/@ritza/nix-jupyter](https://replit.com/@ritza/nix-jupyter)
 
-![Jupyter notebook](https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/jupyter-notebook.png)
+![Jupyter notebook](https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/jupyter-notebook.png)
 
 ### VSCode Server
 
@@ -334,7 +334,7 @@ You can run a Visual Studio Code Server, which will allow you to use a personal,
 
 [https://replit.com/@ritza/nix-vscode-server](https://replit.com/@ritza/nix-vscode-server)
 
-![VS Code server](https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/vscode-server.png)
+![VS Code server](https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/vscode-server.png)
 
 ### Alternative web stacks
 
@@ -355,7 +355,7 @@ We can get the popular MS-DOS emulator [DOSBox](https://www.dosbox.com/) working
 
 Here's DOOM in a repl:
 
-![Doom](https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/doom.png)
+![Doom](https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/doom.png)
 
 Other DOS programs you can try:
 

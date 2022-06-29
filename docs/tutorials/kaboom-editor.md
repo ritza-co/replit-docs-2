@@ -32,7 +32,7 @@ There are several ways to add sprites to a Kaboom repl:
 1. Using the upload icon.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/kaboom/upload-icon.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/upload-icon.png"
   alt="Upload icon"
   style={{ width: "40% !important" }}
 />
@@ -40,7 +40,7 @@ There are several ways to add sprites to a Kaboom repl:
 2. Clicking on the files icon and then dragging and dropping the sprites onto the "sprites" folder.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/kaboom/upload-sprites.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/upload-sprites.gif"
   alt="Drag to upload"
   style={{ width: "50% !important" }}
 />
@@ -49,7 +49,7 @@ There are several ways to add sprites to a Kaboom repl:
 3. Choosing a sprite from the Kaboom assets library.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/kaboom/assets-lib.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/assets-lib.png"
   alt="Choose from assets library"
   style={{ width: "40% !important" }}
 />
@@ -57,7 +57,7 @@ There are several ways to add sprites to a Kaboom repl:
 4. Clicking the '+' icon to create a new sprite using the sprite editor.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/kaboom/addsprite.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/addsprite.png"
   alt="Create assets"
   style={{ width: "40% !important" }}
 />
@@ -65,7 +65,7 @@ There are several ways to add sprites to a Kaboom repl:
 
 Once you have created a sprite you can load it into your game by opening your main code file, placing your cursor at the point in your file where you want the sprite to be loaded, and then selecting "Insert load code."
 
-![Insert load code](https://replit-docs-images.bardia.repl.co/images/tutorials/kaboom/insert-load-code.gif)
+![Insert load code](https://replit-docs-images.util.repl.co/images/tutorials/kaboom/insert-load-code.gif)
 
 This should insert a line of code that looks like this:
 
@@ -76,7 +76,7 @@ loadPedit("Sample", "sprites/Sample.pedit");
 Notice the use of `loadPedit` instead of `loadSprite`. With this call in place you should be able to use the component `sprite("Sample")` in your game.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/kaboom/loadpedit.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/loadpedit.png"
   alt="Load created assets"
   style={{ width: "80% !important" }}
 />
@@ -88,7 +88,7 @@ Notice the use of `loadPedit` instead of `loadSprite`. With this call in place y
 Sound manager is currently just a place similar to sprite manager that lists your sounds. You can drag your sound files here or import them from the asset library and then load them into the game with `loadSound`. A built-in sound/music editor is in the works. 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/kaboom/sounds.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/sounds.png"
   alt="Load sounds"
   style={{ width: "40% !important" }}
 />

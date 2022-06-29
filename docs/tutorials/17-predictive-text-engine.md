@@ -8,7 +8,7 @@ Have you ever wondered how your phone knows what to suggest in the autocomplete 
 
 In this tutorial, we'll make a predictive text engine that learns by example. Newer text prediction engines, like [GPT3](https://en.wikipedia.org/wiki/GPT-3), use neural networks, but we'll use more standard coding for this project. 
 
-![Example sentence construction](https://replit-docs-images.bardia.repl.co/images/tutorials/17-predictive-text-engine/test_run.gif)
+![Example sentence construction](https://replit-docs-images.util.repl.co/images/tutorials/17-predictive-text-engine/test_run.gif)
 
 ## Overview and Requirements
 
@@ -70,7 +70,7 @@ Here are the main tasks we'll need to figure out and code:
 2. Create a new repl and choose **Node.js** as your language.
 3. Give this repl a name, like "text-autocomplete". 
 
-![create new node.js repl with name text-autocomplete](https://replit-docs-images.bardia.repl.co/images/tutorials/17-predictive-text-engine/new-repl.png)
+![create new node.js repl with name text-autocomplete](https://replit-docs-images.util.repl.co/images/tutorials/17-predictive-text-engine/new-repl.png)
 
 You should see a new `index.js` file, where we can start adding our code. 
 
@@ -86,7 +86,7 @@ We've downloaded the _plain text_ version of these books, but there is a lot of 
 
 When you're done, copy the text files to your repl by dragging and dropping them onto the file list panel:
 
-![add books to project](https://replit-docs-images.bardia.repl.co/images/tutorials/17-predictive-text-engine/drag-books-repl.gif)
+![add books to project](https://replit-docs-images.util.repl.co/images/tutorials/17-predictive-text-engine/drag-books-repl.gif)
 
 Great, now we have something for our engine to learn from. 
 
@@ -164,7 +164,7 @@ The parameter `tokens` accepts, as an argument, the output of the file parsing f
 
 Now, let's think a bit about the algorithm we'll need to devise to extract the initial phrases, and the words that are likely to follow from our tokens. We need to go through the tokens, at `depth` amount at a time, in a kind of sliding window fashion to extract the initial phrases. You could visualize it like this:
 
-![sliding window over text](https://replit-docs-images.bardia.repl.co/images/tutorials/17-predictive-text-engine/build-map.gif)
+![sliding window over text](https://replit-docs-images.util.repl.co/images/tutorials/17-predictive-text-engine/build-map.gif)
 
 We'll look in our structure to see if that phrase is already there – if not, we'll add it. Next we'll look at the word immediately after the phrase, and check if it is in the list of likely words for that phrase. If it is already there, increment its weight. If it's not already there, add it and set its weight to 1.
 
@@ -252,7 +252,7 @@ We now have the function definition, and we have retrieved the word list for the
 
 One way to think of this is to lay each of the possible choices out on a line, with the space or length of each choice proportional to its weight. 
 
-![weighted choice representation](https://replit-docs-images.bardia.repl.co/images/tutorials/17-predictive-text-engine/weighted-words.png)
+![weighted choice representation](https://replit-docs-images.util.repl.co/images/tutorials/17-predictive-text-engine/weighted-words.png)
 
 Then we can choose a random point on the line. Whatever word block that random choice lands in, is the word we choose. This way, we are more likely to land on a word with a larger weight, because it takes up more of the line. So we can still choose randomly (i.e. not always return the same word), but still respect the word frequency distribution of natural language. 
 
@@ -443,7 +443,7 @@ function readFilesIntoWordArray(filenames){
 
 Run the project by clicking the big **RUN >** button at the top centre of the repl, and see what you get back. Here is an example: 
 
-![example autocomplete](https://replit-docs-images.bardia.repl.co/images/tutorials/17-predictive-text-engine/autocomplete-example.png)
+![example autocomplete](https://replit-docs-images.util.repl.co/images/tutorials/17-predictive-text-engine/autocomplete-example.png)
 
 
 ## Can We Do More?
@@ -487,7 +487,7 @@ console.log(initial_phrase + ': ' + sentence);
 
 This is an example output. 
 
-![sentence generation output](https://replit-docs-images.bardia.repl.co/images/tutorials/17-predictive-text-engine/sentence-example.png)
+![sentence generation output](https://replit-docs-images.util.repl.co/images/tutorials/17-predictive-text-engine/sentence-example.png)
 
 It seems like real language, but it's still completely nonsensical and a fun way to generate random stories. Try with varying parameters – initial phrases, sentence length and parameters. 
 

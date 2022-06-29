@@ -6,7 +6,7 @@ sidebar_position: 27
 
 If you are new to Teams for Education, this page will help ensure Replit runs smoothly for you and your team. You may want to send this page to your technology team or IT department.
 
-Read more about [our commitment to user safety](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/Our%20Commitment%20to%20User%20Safety.pdf).
+Read more about [our commitment to user safety](https://replit-docs-images.util.repl.co/images/teamsForEducation/Our%20Commitment%20to%20User%20Safety.pdf).
 
 
 ## Recommended option: full Replit experience

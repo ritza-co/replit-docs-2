@@ -12,7 +12,7 @@ With Replit, you can add environment variables as key-value pairs, and then read
 
 To access your own private environment variables, navigate to the padlock icon in the sidebar.
 
-![The environment variables panel](https://replit-docs-images.bardia.repl.co/images/repls/env-variables.png)
+![The environment variables panel](https://replit-docs-images.util.repl.co/images/repls/env-variables.png)
 
 ## Adding, Viewing and Editing Environment Variables
 

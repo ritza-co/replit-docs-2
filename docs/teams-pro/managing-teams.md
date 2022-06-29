@@ -7,7 +7,7 @@ sidebar_position: 2
 To create a team, click the "Teams" tab in the sidebar. From the Teams dashboard, click "+ Create a team" and follow the steps. You can invite people using their Replit username or their email address, or by sharing a link through the "Generate a team invite link" button (the link does not expire).
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/teamsPro/manageTeam.png"
+  src="https://replit-docs-images.util.repl.co/images/teamsPro/manageTeam.png"
   alt="Manage Team"
   style={{ width: "70% !important" }}
 />
@@ -16,7 +16,7 @@ If you've already created a team, navigate to the [Teams dashboard](https://repl
 
 <img
   style={{ width: 300 }}
-  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/manageTeamMembers.png"
+  src="https://replit-docs-images.util.repl.co/images/teamsForEducation/manageTeamMembers.png"
 />
 
 You will only be able to invite as many people as seats you paid for. The ability to invite will be locked once you reach your limit.

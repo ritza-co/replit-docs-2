@@ -8,7 +8,7 @@ Flappy Bird was a smash hit game for mobile phones back in 2013-2014. The inspir
 
 Let's take a trip back to 2014 and create our own clone of Flappy Bird using Kaboom! By remaking a game, you can not only learn how to make games, but also extend and change the game in any way you like. 
 
-![Flappy game](https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/game-play.gif)
+![Flappy game](https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/game-play.gif)
 
 This article is based on this [video tutorial](https://www.youtube.com/watch?v=hgReGsh5xVU), with a few small differences. Mainly, the Flappy assets (graphics and sound) are no longer available by default in the Replit Kaboom asset library, but that's OK because we've included them as a download [here](/tutorial-files/flappy-bird-kaboom/flappy-assets.zip), so you can still use them.
 
@@ -18,7 +18,7 @@ This article is based on this [video tutorial](https://www.youtube.com/watch?v=h
 Head over to [Replit](https://replit.com) and create a new repl. Choose **Kaboom** as your project type. Give this repl a name, like "Flappy!".
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/new-repl.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/new-repl.png"
   alt="Creating a new repl"
   style={{ width: "90% !important" }}
 />
@@ -29,7 +29,7 @@ After the repl has booted up, you should see a `main.js` file under the "Code" s
 Download the [sprites and asset files](/tutorial-files/flappy-bird-kaboom/flappy-assets.zip) we need for the game, and unzip them on your computer. In the Kaboom editor, click the "Files" icon in the sidebar. Now drag and drop all the sprites (image files) into the "sprites" folder, and all the sounds (MP3 files) into the "sounds" folder. Once they have uploaded, you can click on the "Kaboom" icon in the sidebar, and return to the "main" code file.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/upload-sprites.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/upload-sprites.gif"
   alt="Uploading sprites"
   style={{ width: "80% !important" }}
 />
@@ -66,7 +66,7 @@ The first argument in each `load` function is the name we want to use to refer t
 - An endgame, or game over scene, which gives the player their score or overall result, and allows them to start again. 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/game-scenes.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/game-scenes.png"
   alt="game scenes"
   style={{ width: "350px !important", height: "40% !important" }}
 />
@@ -113,7 +113,7 @@ Since the background doesn't need to do much, just stay in the back and look pre
 
 If you press the "Run" button at the top of your repl now, you should see the background of the Flappy world come up in the output section of the repl: 
 
-![Flappy background with buildings, trees and building sky line](https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/flappy-background.png)
+![Flappy background with buildings, trees and building sky line](https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/flappy-background.png)
 
 
 Great! Now let's add in the Flappy Bird. Add this code to the `game` scene:
@@ -140,7 +140,7 @@ You'll also notice that the character we are adding here has many more component
 
 Press `command + s` (Mac) or `control + s` (Windows/Linux) to update the game output window. You should see Flappy added and fall out of the sky very quickly:
 
-![flappy falling out of the sky](https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/flappy-falls.gif)
+![flappy falling out of the sky](https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/flappy-falls.gif)
 
 ## Making Flappy fly
 
@@ -157,7 +157,7 @@ In the callback handler, we first [`play`](https://kaboomjs.com/#play) a sound o
 
 Update the game output window, and if you press the spacebar now, you'll be able to keep Flappy in the air! Remember to quickly click in the output window as the game starts, so that it gains focus and can detect player input such as pressing the `space` key.
 
-![flying-flappy](https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/flappy-fly.gif)
+![flying-flappy](https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/flappy-fly.gif)
 
 
 ## Adding in the pipes
@@ -168,7 +168,7 @@ Here is a diagram of the layout of the pipes in the game.
 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/pipe-gap.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/pipe-gap.png"
   alt="pipe layout and gap"
   style={{ width: "75% !important" }}
 />
@@ -247,7 +247,7 @@ This calls our `producePipes()` function every `1.5` seconds. You can adjust thi
 
 Update the game output window now and you should see the pipes being generated and moving across the screen. You can also fly Flappy, although crashing into the pipes does nothing for now.
 
-![moving pipes](https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/moving-pipes.gif)
+![moving pipes](https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/moving-pipes.gif)
 
 Flappy is flapping and the pipes are piling on. The next task is to detect when Flappy flies past a pipe, increasing the player's score.
 
@@ -306,7 +306,7 @@ This checks any pipe that we haven't marked as `passed` (`passed === false`) to 
 
 If you update the game output window now, you should see the score increase as you fly past each pipe.
 
-![Score increasing](https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/score-increase.gif)
+![Score increasing](https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/score-increase.gif)
 
 ## Collision detection
 
@@ -365,7 +365,7 @@ This gives a margin of 30 pixels above or below the window, to take account of F
 
 Update the game output window again and test it out. If you fly into a pipe now, or flap too high, or fall out of the sky, you should be taken to the game over screen: 
 
-![game over screen](https://replit-docs-images.bardia.repl.co/images/tutorials/35-flappy-bird/game-over.gif)
+![game over screen](https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/game-over.gif)
 
 
 ## Next steps

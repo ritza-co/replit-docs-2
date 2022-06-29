@@ -10,7 +10,7 @@ To export their projects from a team, students can go to `https://replit.com/tea
 
 For example, if the team username is @teamsEduDemo, then the link would direct students to log into their accounts, then go to: `https://replit.com/teams/teamsEduDemo/export`
 
-![Where to find your team username](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/team-username.png)
+![Where to find your team username](https://replit-docs-images.util.repl.co/images/teamsForEducation/team-username.png)
 
 
 

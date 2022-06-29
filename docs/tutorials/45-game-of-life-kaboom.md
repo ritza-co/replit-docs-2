@@ -19,14 +19,14 @@ The interesting thing about Game of Life is that, despite its simple rules, it c
 
 In this tutorial, we'll build the Game of Life using JavaScript and Kaboom.
 
-<video width="100%" autoplay loop src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/gameplay.mp4" type="video/mp4" >
+<video width="100%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/gameplay.mp4" type="video/mp4" >
 </video>
 
 ## Getting started on Replit
 
 Head over to [Replit](https://replit.com/) and create a new repl, using "Kaboom" as the template. Name it something like "Game of life", and click "Create Repl".
 
-![Creating a new repl](https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/create-repl.png)
+![Creating a new repl](https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/create-repl.png)
 
 After the repl has booted up, you should see a `main.js` file under the "Code" section. This is where we'll start coding. It already has some code in it, but we'll replace that.
 
@@ -55,7 +55,7 @@ Game of Life is played on a two-dimensional grid, or matrix. Each cell has a sta
 
 Since we only need to have two states per cell, we can use a Boolean value to represent the state of these four cells:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/small-row.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/small-row.png"
   alt="4 cells in a row"
   style={{ width: "50% !important" }}
 />
@@ -73,7 +73,7 @@ JavaScript has a concept of an [array](https://developer.mozilla.org/en-US/docs/
 
 So, this row could be represented in a JavaScript array as:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/grid-row.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/grid-row.png"
   alt="a row of cells"
   style={{ width: "70% !important" }}
 />
@@ -85,7 +85,7 @@ let row1 = [false, true, true, true, false, true, false];
 
 If we wanted to represent this grid:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/grid.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/grid.png"
   alt="a grid of cells"
   style={{ width: "70% !important" }}
 />
@@ -149,7 +149,7 @@ Note that we use the array constructor by calling `new Array(MATRIX_SIZE)` to cr
 
 In the Game of Life rules, there are multiple references to "neighbor" cells. Neighbors are any cells that touch a particular cell. For example, for the blue cell below, all the red cells are neighbors.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/neighbors.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/neighbors.png"
  alt="cell neighbors"
  style={{ width: "70% !important" }}
 />
@@ -531,14 +531,14 @@ Now that we've finished building the game, let's give it a go!
 
 We'll start off with some basic patterns that oscillate between two or more states. Using the left mouse button, click on cells to fill them with the following starting patterns. 
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/oscillating-start.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/oscillating-start.png"
   alt="oscillating starting patterns"
   style={{ width: "80% !important" }}
 />
 
 After you enter them, press the space bar to start the simulation. You should see something like this:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/oscillators.gif"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/oscillators.gif"
   alt="oscillators"
   style={{ width: "80% !important" }}
 />
@@ -548,7 +548,7 @@ Try using the up and down arrow keys to speed up or slow down the simulation.
 
 Now let's try some patterns that move and are a bit more lifelike. This one is called a glider:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/glider-start.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/glider-start.png"
   alt="glider starting pattern"
   style={{ width: "40% !important" }}
 />
@@ -557,7 +557,7 @@ Create it somewhere near the top left of your grid (you can press space to stop 
 
 After entering the glider pattern, press `space` to start the simulation. You should see it move across the screen like this:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/glider.gif"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/glider.gif"
   alt="glider moving"
   style={{ width: "70% !important" }}
 />
@@ -565,35 +565,35 @@ After entering the glider pattern, press `space` to start the simulation. You sh
 
 Pretty cool! Let's try some spaceships now:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/spaceship-start.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/spaceship-start.png"
   alt="space ship starting pattern"
   style={{ width: "40% !important" }}
 />
 
 This should start flying across the screen:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/spaceship.gif"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/spaceship.gif"
   alt="space ship flying"
   style={{ width: "70% !important" }}
 />
 
 Here's a more random one. It's called "die hard", and goes through 130 generations with random patterns before dying out. Create it near the center of the grid, as it needs a bit of space:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/die-hard-start.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/die-hard-start.png"
   alt="die hard starting pattern"
   style={{ width: "40% !important" }}
 />
 
 It looks a bit like a wild fireworks show when it runs:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/die-hard.gif"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/die-hard.gif"
   alt="die hard show"
   style={{ width: "70% !important" }}
 />
 
 There are also patterns that can create other patterns. These type of patterns are known as *guns*. Here is Gosper's glider gun, the first that was discovered. It creates gliders. Try this pattern out:
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/glider-gun-start.png"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/glider-gun-start.png"
   alt="glider gun starting pattern"
   style={{ width: "80% !important" }}
 />
@@ -601,7 +601,7 @@ There are also patterns that can create other patterns. These type of patterns a
 
 When you run it, you should see it emit gliders! Guns are some of the coolest patterns you can create.
 
-<img src="https://replit-docs-images.bardia.repl.co/images/tutorials/45-game-of-life/glider-gun.gif"
+<img src="https://replit-docs-images.util.repl.co/images/tutorials/45-game-of-life/glider-gun.gif"
   alt="glider gun"
   style={{ width: "80% !important" }}
 />

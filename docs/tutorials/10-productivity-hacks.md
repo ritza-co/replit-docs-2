@@ -16,7 +16,7 @@ Similarly to learning to touch type, there is often a steep *learning curve* whe
 
 If you hit `Ctrl+.` (or `Cmd+K` on MacOS) you'll see the following modal pop up, which lets you navigate through different parts of Replit at lightning speed using only your keyboard.
 
-![**Image 1:** *Using the global command palette.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-01-global-cmd-palette.png)
+![**Image 1:** *Using the global command palette.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-01-global-cmd-palette.png)
 
 
 ## Using the code editing command palette
@@ -29,7 +29,7 @@ The keyboard shortcut indicated to the right of each option shows how to activat
 
 If you have a lot of files, it's often useful to open them like this rather than scrolling through the directory structure in the files pane (the `Files` option searches through files by their *name* while the `Search` option searches through files by their *contents*.) For example, in our weather project app, I can type `Cmd+P` and then type `fi` (start of `Files`) and press `Enter` and then type `Lo` (start of `London.txt`) and press `Enter` again to quickly open the weather log for London.
 
-![**Image 2:** *Opening a file with the global command palette.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-02-GIF-find.gif)
+![**Image 2:** *Opening a file with the global command palette.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-02-GIF-find.gif)
 
 Of course, with only six files it might be faster to reach for your mouse, but as the find searches through all files in all directories this method can be significantly faster for larger projects.
 
@@ -55,7 +55,7 @@ ball3 = Ball()
 
 Instead of typing out all three lines, you can type out the first one, leave your cursor position on that line, and press `Shift+Alt+down` twice. This will create two copies of the line, directly below the original one, and then you can simply change the number in the variable to account for the second two balls.
 
-![**Image 4:** *Copying the current selected line.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-04-GIF-duplicate-line-entries.gif)
+![**Image 4:** *Copying the current selected line.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-04-GIF-duplicate-line-entries.gif)
 
 ## Deleting entire lines
 
@@ -70,7 +70,7 @@ Instead of deleting the entire line, you can also delete from your cursor up to 
 
 As an example, below you can see how we might use this to first delete one of the our `elif` blocks by doing two "delete line" operations. We then change our random speed to be constant by using a "delete to end of line" operation from the `=` sign and then typing our constant.
 
-![**Image 5:** *Deleting selected lines of code.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-05-GIF-deleting-entire-lines.gif)
+![**Image 5:** *Deleting selected lines of code.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-05-GIF-deleting-entire-lines.gif)
 
 ## Inserting blank lines
 
@@ -90,7 +90,7 @@ Instead you can use `Ctrl+]` to indent and use `Ctrl+[` dedent the line no matte
 
 Now your code's indentation will be fixed.
 
-![**Image 7:** *Indenting a line.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-07-GIF-indenting-lines.gif)
+![**Image 7:** *Indenting a line.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-07-GIF-indenting-lines.gif)
 
 ### Moving blocks of code within a file
 
@@ -98,17 +98,17 @@ Sometimes you need to move a block of code up or down in the file. For example, 
 
 Instead of cutting and pasting a block, you can shunt it by pressing `Alt+up` or `Alt+down`. As with the others, this works on the line under your cursor or a larger selection.
 
-![**Image 8:** *Moving the current line selection.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-08-GIF-moving-blocks-code.gif)
+![**Image 8:** *Moving the current line selection.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-08-GIF-moving-blocks-code.gif)
 
 ## Adding cursors
 
 Sometimes it's useful to make exactly the same changes in multiple places at once. For example, we might want to rename our `speed` attribute to `velocity`. Put your cursor anywhere on the word that you want to change and press `Ctrl+D`. Repeatedly press `Ctrl+D` to select matching words individually, each with their own cursor. Now you can apply edits and they will appear at each selection, as below.
 
-![**Image 9:** *Adding cursors to multiple instances of the same selection.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-09-GIF-adding-cursors.gif)
+![**Image 9:** *Adding cursors to multiple instances of the same selection.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-09-GIF-adding-cursors.gif)
 
 If you want multiple cursors on consecutive lines, press `Ctrl+Alt` and use your mouse to select areas to add a new cursor. For example, if we want a square game we could change both width and height to be `1000` simultaneously as follows.
 
-![**Image 10:** *Adding cursors to multiple lines.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-10-GIF-consecutive-cursors.gif)
+![**Image 10:** *Adding cursors to multiple lines.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-10-GIF-consecutive-cursors.gif)
 
 ## Navigating to specific pieces of code
 
@@ -116,13 +116,13 @@ Sometimes, especially in larger projects, you'll call a function or instantiate 
 
 If you're reading a piece of code that calls a function and you want to quickly see what that function actually does, you can use the **go to definition** keybinding `Ctrl+F12`. This will jump to the definition of the function or class selected. The **peek definition** has a similar functionality, but instead of jumping to the definition, it opens in a separate modal. For example, below, the cursor is on the instantiation of `Ball()` and we can quickly see how this class is defined.
 
-![**Image 11:** *Peeking the definition.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-11-GIF-peek-definition.gif)
+![**Image 11:** *Peeking the definition.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-11-GIF-peek-definition.gif)
 
 The **go to line** operation (`Ctrl+G`) allows you to navigate to a line by giving its line number. This is useful to track down the source of those error messages that tell you what line had an issue, or if you're on a call with someone who says "I'm looking at line 23" and you can quickly jump to the same place.
 
 Finally, you can open a specific file by searching for a part of the name by pressing `Ctrl+P`, which can be quicker than scrolling through the files pane if you have a lot of files.
 
-![**Image 12:** *Opening existing files.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-12-GIF-open-files.gif)
+![**Image 12:** *Opening existing files.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-12-GIF-open-files.gif)
 
 ## Vim and Emacs key bindings
 
@@ -132,7 +132,7 @@ The two main keyboard-focused text editors are called [Vim](https://www.vim.org/
 
 If you've gotten used to either, you can emulate the experience in Replit by switching your keybinds. Go to the "Settings" tab and scroll down to where you can toggle between "default", "emacs" and "vim".
 
-![**Image 13:** *Setting your keybinds to vim or emacs.*](https://replit-docs-images.bardia.repl.co/images/tutorials/10-productivity/10-13-vim-emacs.png)
+![**Image 13:** *Setting your keybinds to vim or emacs.*](https://replit-docs-images.util.repl.co/images/tutorials/10-productivity/10-13-vim-emacs.png)
 
 ## Make it your own
 

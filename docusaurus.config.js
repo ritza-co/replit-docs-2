@@ -10,6 +10,10 @@ const editUrlFn = ({docPath}) => {
 
 const redirects = [
   {
+    from: '/repls/repl-run',
+    to: '/misc/repl-run'
+  },
+  {
       from: '/misc/General-FAQ',
       to: '/getting-started/faq'
   }, {

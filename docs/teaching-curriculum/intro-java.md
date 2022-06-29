@@ -63,7 +63,7 @@ Course contents:
 
 ## Our Awesome Creator
 
-<img class="profile_pic" src="https://replit-docs-images.bardia.repl.co/images/curriculumImg/brendanmccart.jpg" width="300px"/>
+<img class="profile_pic" src="https://replit-docs-images.util.repl.co/images/curriculumImg/brendanmccart.jpg" width="300px"/>
 
 This course was created by **Brendan McCart**.
 

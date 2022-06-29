@@ -9,7 +9,7 @@ Every new repl comes with a `.replit` and a `replit.nix` file that let you confi
 In most repls, these files are hidden by default. But you can find them easily by clicking the three dot menu in the file tree, and selecting _Show hidden files_.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/30-build-with-nix/show-hidden-files.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/show-hidden-files.png"
   alt="Show configuration"
   style={{ width: "200px !important" }}
 />

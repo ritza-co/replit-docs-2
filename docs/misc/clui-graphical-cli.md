@@ -8,7 +8,7 @@ Replit has created a text-based interface to interact with various aspects of yo
 
 Navigate to https://replit.com/~/cli and the following prompt will appear:
 
-![clui](https://replit-docs-images.bardia.repl.co/images/misc/clui.png)
+![clui](https://replit-docs-images.util.repl.co/images/misc/clui.png)
 
 The prompt will display in-line information about the commands which can be run.
 

@@ -7,7 +7,7 @@ Are you looking for an integrated solution for your site’s checkout process, w
 
 In this tutorial, we'll create an online store (which sells bricks) and integrate it with Stripe's checkout process. Both the frontend and stripe checkout server will be hosted on [Replit](https://replit.com). In part 1, we will start our Replit Stripe server. In part 2, we will set up our repl frontend. Finally, in part 3, we will tie it all together. 
 
-![Checkout process](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/checkout_functionality.gif)
+![Checkout process](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/checkout_functionality.gif)
 
 ## Requirements
 
@@ -20,7 +20,7 @@ To follow along in this tutorial, you will need:
 Sign in to Replit and create a new repl by clicking the "+" button in the top right. 
 Choose Node.js as your language and name it whatever makes sense to you. 
 
-![Picking a repl](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/1.png)
+![Picking a repl](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/1.png)
 
 Next, pick the Express server template as a starting point. It’ll provide the framework to integrate with Stripe from a server. 
 
@@ -40,7 +40,7 @@ app.listen(port, () => {
 
 Giving it a run generates the following:
 
-![Running the repl](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/2.png)
+![Running the repl](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/2.png)
 
 Terrific! We’re already “hosting” our server with [Replit](https://replit.com).
 
@@ -112,7 +112,7 @@ To create an environment variable for the API key, click on the lock icon on the
 sk_test_51IKlwdAhJUZ4ZUqHFBRpOTbbNVakSMbHbouhVH89YPszHcOftinFd6Vi5oOOaY1HZ1PDNmOfiKEEdR03vOqeaHWU00TnpDSj8N
 ``` 
 
-![Our .env](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/5.png)
+![Our .env](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/5.png)
 
 We can then reference the environment variable in code using `process.env.STRIPE_KEY`. Change this line:
 
@@ -205,7 +205,7 @@ In this section, we will make a site that’ll act as the online store where we 
 
 To do this, we’ll start off with a new repl, using the “HTML,CSS, JS” option and call it "BrickSite". 
 
-![Creating a new repl](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/new-frontend.png)
+![Creating a new repl](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/new-frontend.png)
 
 We’ll create a one-page application with minimal functionality: a static list of bricks that a user can buy. Each brick has a price, a name, a description and an image. A "Buy this brick" button will allow the user to purchase a brick.
 
@@ -215,7 +215,7 @@ Our first step is to add the Bulma styling library. It’s a great way to style 
 
 *Nifty-tip!* Searching “bulma” in the packages tab in our Replit IDE means we can insert it automatically. See here:
 
-![Auto adding Bulma](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/adding_bulma.gif)
+![Auto adding Bulma](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/adding_bulma.gif)
 
 This inserts the following into our `index.html`:
 
@@ -470,7 +470,7 @@ We can test this page by adding the file name as the button's href inside the `s
 
 Here’s how the success page will look - `success.html`:
 
-![Success page](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/9.png)
+![Success page](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/9.png)
 
 Place the code below in the `cancel.html` file:
 
@@ -507,7 +507,7 @@ We can test this page by adding the file name as the button's href inside the `s
 
 And here’s how the cancel page will look:
 
-![Failure page](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/10.png)
+![Failure page](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/10.png)
 
  
 Alright, now that we have the groundwork on the frontend, this brings us to **Part 3** – connecting the parts!
@@ -518,7 +518,7 @@ Going back to our server repl, we’ll notice the `YOUR_DOMAIN` constant. Set th
 
 e.g. My frontend URL is: `https://bricksite-stripe-checkout.ritza.repl.co` as you can see below:
 
-![URL](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/11.png)
+![URL](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/11.png)
 
 Replace `YOUR_DOMAIN` with the frontend URL:
 
@@ -817,7 +817,7 @@ async function buttonClick(event) {
 
 To test, make sure the server-side is running. You can confirm this by making sure you see the "Stop" button at the top:
 
-![New tab icon](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/18.png)
+![New tab icon](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/18.png)
 
 Now go back to the frontend, and press "Run" there too. Unlike the server-side, it won't continue to say "Stop", but it is running. Now we are ready to attempt to buy a brick by clicking on a brick's "Buy this brick" button.
 
@@ -832,13 +832,13 @@ To fix this, follow the link and add a company name on your Stripe dashboard.
 
 You may also get the error, "Does not have permission to redirect" after clicking on "Buy this brick" using the Replit browser preview mode. In order to avoid this, open the frontend in a new tab by clicking on the "Open in new tab" icon:
 
-![New tab icon](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/14.png)
+![New tab icon](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/14.png)
 
 ### Buying a Brick
 
 Clicking on "Buy this brick" on any of the bricks redirects to the Stripe session checkout page thanks to our server-side creating the session and sending the session id back to the frontend. I've chosen to buy a Bricketty Brick:
 
-![Checkout page](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/16.png)
+![Checkout page](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/16.png)
 
 Now test the purchase process by entering the Stripe test payment card details:
 
@@ -848,7 +848,7 @@ Card number: 4242 4242 4242 4242
 
 Email address, expiry date, CVV and name on card can be anything. Pressing "Pay $5.00" should redirect to our `success.html` page:
 
-![Success](https://replit-docs-images.bardia.repl.co/images/tutorials/20-online-checkout/17.png)
+![Success](https://replit-docs-images.util.repl.co/images/tutorials/20-online-checkout/17.png)
 
 We've successfully made a purchase with Stripe!
 

@@ -8,7 +8,7 @@ In this guide, we'll show you how to embed a repl on another platform using an `
 
 Repls support the [oEmbed](https://oembed.com/) standard, so you can embed a repl on any platform that supports this standard by pasting your repl URL formatted as `https://replit.com/@username/repl-name`, and a preview will be rendered.
 
-![Oembed demo](https://replit-docs-images.bardia.repl.co/images/repls/embed/oembed-demo.gif)
+![Oembed demo](https://replit-docs-images.util.repl.co/images/repls/embed/oembed-demo.gif)
 
 ## Embedding a repl using `<iframe>`
 
@@ -30,7 +30,7 @@ The query parameter `?embed=true` produces a preview of the repl that is optimis
 <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@ritza/demo-embed?embed=true"></iframe>
 ```
 
-![Spotlight view](https://replit-docs-images.bardia.repl.co/images/repls/embed/embed-true.png)
+![Spotlight view](https://replit-docs-images.util.repl.co/images/repls/embed/embed-true.png)
 
 
 ### Query parameter `?lite=true`
@@ -41,7 +41,7 @@ The query parameter `?lite=true` produces a full preview of a repl in an embed, 
 <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@ritza/demo-embed?lite=true"></iframe>
 ```
 
-![Editor view](https://replit-docs-images.bardia.repl.co/images/repls/embed/lite-true.png)
+![Editor view](https://replit-docs-images.util.repl.co/images/repls/embed/lite-true.png)
 
 
 ## Embedding on WordPress
@@ -52,10 +52,10 @@ WordPress does support oEmbed, but will only embed content from an approved whit
 
 To embed your repl on Medium, paste the repl link `https://replit.com/@username/repl-name` into your Medium post and hit "Enter".
 
-![Embedding on medium](https://replit-docs-images.bardia.repl.co/images/repls/embed/medium-embed.gif)
+![Embedding on medium](https://replit-docs-images.util.repl.co/images/repls/embed/medium-embed.gif)
 
 ## Embedding on Ghost
 
 To embed your repl on Ghost, paste the repl link `https://replit.com/@username/repl-name` into your Ghost post. The link will automatically be converted to an interactive IDE, where you can edit and run code.
 
-![Ghost demo](https://replit-docs-images.bardia.repl.co/images/repls/embed/oembed-demo.gif)
+![Ghost demo](https://replit-docs-images.util.repl.co/images/repls/embed/oembed-demo.gif)

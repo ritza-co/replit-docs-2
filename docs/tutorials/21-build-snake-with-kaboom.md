@@ -9,7 +9,7 @@ Snake was an incredibly popular game, mostly remembered from 1990s era cell phon
 In this tutorial, we'll implement Snake using [Kaboom.js](https://kaboomjs.com) built into [Replit](https://replit.com)
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/updated-graphic.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/updated-graphic.gif"
   alt="game functionality"
   style={{ width: "550px !important" }}
 />
@@ -37,7 +37,7 @@ That's a lot to think about! Let's get started and create a project in [Replit](
 
 Log into your [Replit](https://replit.com) account and create a new repl. Choose **Kaboom** as your project type. Now, give this repl a name, like "snake-kaboom".
 
-![New repl](https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/new-repl.png)
+![New repl](https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/new-repl.png)
 
 After the repl has booted up, you should see a `main.js` file under the "Scenes" section. This is where we'll start coding.
 
@@ -101,7 +101,7 @@ Then Kaboom.js allows us to specify what to draw for each symbol in the text map
 If we run this code, we should see the outline of a red square on the screen, representing the map.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/boundary-wall.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/boundary-wall.png"
   alt="Boundary wall from map"
   style={{ width: "650px !important" }}
 />
@@ -180,7 +180,7 @@ You'll notice that we also add in a function `respawn_all`, and a call to the fu
 Running the code now, you should see a blue line at the top-left side of the map.
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/static-snake.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/static-snake.png"
   alt="static snake"
   style={{ width: "650px !important" }}
 />
@@ -286,7 +286,7 @@ Now all that remains is to remove a block at the tail end of the snake, using th
 
 Running the project now and clicking into the game screen should allow you to move the snake around. Note that there isn't collision detection yet, so the snake can go out of bounds without consequence.
 
-![Moving the snake](https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/snake-move.gif)
+![Moving the snake](https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/snake-move.gif)
 
 
 ## Adding Snake Food
@@ -340,7 +340,7 @@ function respawn_all(){
 Running the game now shows a green food block positioned somewhere randomly on the map:
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/food-added.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/food-added.png"
   alt="food added"
   style={{ width: "650px !important" }}
 />
@@ -366,7 +366,7 @@ We set up the `onCollide` function with tags for the snake, and the food object.
 Running this, and eating the food, you should see the snake grow each time, and the food re-appear on another block:
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/eat-food.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/eat-food.gif"
   alt="eating food"
   style={{ width: "650px !important" }}
 />
@@ -396,7 +396,7 @@ onCollide("snake", "snake", (s, t) => {
 Running the game now, and crashing into the wall should look something like this:
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/snake-prang.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/snake-prang.gif"
   alt="snake prang"
   style={{ width: "650px !important" }}
 />
@@ -414,13 +414,13 @@ Using sprites, let's give the snake something nicer to eat than a green block. R
 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/pizza.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/pizza.png"
   alt="pizza"
   style={{ width: "50px !important" }}
 />
 
 
-![add pizza sprite](https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/add-pizza-sprite.gif)
+![add pizza sprite](https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/add-pizza-sprite.gif)
 
 
 Now, we can update the `respawn_food` function to use this sprite, instead of drawing a green block. Remove the lines `rect` and `color`, and replace with a call to add the pizza sprite, like this:
@@ -448,7 +448,7 @@ We can also update the background to be more interesting. To do this, we can mak
 
 We'll create 2 layers, background and game, to support a background. Download and add the background grass image below to your repl as you did for the pizza slice:
 
-![background](https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/background.png)
+![background](https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/background.png)
 
 Now, we can set up the layers and add the background grass. Add the following code to the top of the `main` file:
 
@@ -470,42 +470,42 @@ This sets up our 2 layers, and makes the `game` layer the default layer to draw 
 Next, we can update the boundaries to look a bit better. Recall that in our map we add with [`addLevel`](https://kaboomjs.com/doc#addLevel), each different symbol we use can map to a different game object. Using this, we can create a good looking border fence, with different elements for each side and corners. Download the following 8 sprites as before, and upload them to your repl:
 
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/fence-bottom.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-bottom.png"
     alt="fence bottom"
     style={{ width: "50px !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/fence-left.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-left.png"
     alt="fence left"
     style={{ width: "50px !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/fence-right.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-right.png"
     alt="fence right"
     style={{ width: "50px !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/fence-top.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-top.png"
     alt="fence top"
     style={{ width: "50px !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/post-bottom-left.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-bottom-left.png"
     alt="post bottom left"
     style={{ width: "50px !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/post-bottom-right.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-bottom-right.png"
     alt="post bottom right"
     style={{ width: "50px !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/post-top-left.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-top-left.png"
     alt="post top left"
     style={{ width: "50px !important" }}
   />
   <img
-    src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/post-top-right.png"
+    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-top-right.png"
     alt="post top right"
     style={{ width: "50px !important" }}
   />
@@ -580,7 +580,7 @@ The last thing is to upgrade the snake itself. Download the skin below, and uplo
 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/snake-skin.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/snake-skin.png"
   alt="snake skin"
   style={{ width: "50px !important" }}
 />
@@ -640,7 +640,7 @@ loadSprite("pizza", "sprites/pizza.png");
 If you run the game now, you should see it looking much better!
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/21-snake-kaboom/updated-graphic.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/updated-graphic.gif"
   alt="game functionality"
   style={{ width: "550px !important" }}
 />

@@ -8,15 +8,15 @@ Multiplayer can only be used if you're signed into Replit. We are working on som
 
 1. Click the "invite" button in your repl.
 
-![Multiplayer invite button](https://replit-docs-images.bardia.repl.co/images/repls/multiplayer-invite-button.png)
+![Multiplayer invite button](https://replit-docs-images.util.repl.co/images/repls/multiplayer-invite-button.png)
 
 2. Copy the join link in your repl. 
 
-![Copy join link](https://replit-docs-images.bardia.repl.co/images/repls/multiplayer-invite-link.png)
+![Copy join link](https://replit-docs-images.util.repl.co/images/repls/multiplayer-invite-link.png)
 
 3. Send your collaborator the join link. They'll be redirected to the sign in page below:
 
-![Login](https://replit-docs-images.bardia.repl.co/images/repls/login.png)
+![Login](https://replit-docs-images.util.repl.co/images/repls/login.png)
 
 4. After they sign in, they'll be redirected back to your repl as a collaborator!
 

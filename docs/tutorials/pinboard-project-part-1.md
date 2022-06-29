@@ -5,7 +5,7 @@ In this project, you'll create a 'Pinboard': a web application to save, categori
 * Assign specific tags to these images.
 * Filter the board to show only images matching a specific tag.
 
-![Example of the Moodboard functionality](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/pinboard.gif)
+![Example of the Moodboard functionality](https://replit-docs-images.util.repl.co/images/teamsForEducation/pinboard-project/pinboard.gif)
 
 You can take a look at the final code that we will have at the end of this project by going to [https://replit.com/@ritza/Pinboard-Project](https://replit.com/@ritza/Pinboard-Project). In addition, you can view it as a standalone page by pressing the `Open in a new tab` button (at the top right of the repl) or by going straight to the following URL: [https://pinboard-project.ritza.repl.co](https://pinboard-project.ritza.repl.co/)
 
@@ -45,7 +45,7 @@ If you haven't already, head to the [signup page](https://replit.com/signup) a
 3. Giving your repl a name: In our case "pinboard-project".
 4. Clicking the `Create repl` button.
 
-![Creating a new Repl](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/image-1.png)
+![Creating a new Repl](https://replit-docs-images.util.repl.co/images/teamsForEducation/pinboard-project/image-1.png)
 
 Because we selected "HTML, CSS, JS" as our repl language, Replit has created the basic files needed for our front-end project, which should be:
 
@@ -509,11 +509,11 @@ After adding the above code to `style.css`, open your `index.html` file and re
 
 Yikes! That is quite a lot of HTML and CSS. Regardless, if you run your repl (with the big `Run` button at the top) you should see your project spring to life, as shown below.
 
-![First Run](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/image-2.png)
+![First Run](https://replit-docs-images.util.repl.co/images/teamsForEducation/pinboard-project/image-2.png)
 
 You can click the `Open in new tab` button at the far top right to open your project in a separate browser tab as follows:
 
-![Open in new browser tab](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/image-3.png)
+![Open in new browser tab](https://replit-docs-images.util.repl.co/images/teamsForEducation/pinboard-project/image-3.png)
 
 ## Markup
 
@@ -678,7 +678,7 @@ Lastly, is a `<dialog>` element. While the `<dialog>` element is currently hidde
 
 When unhidden, the dialog will look as follows:
 
-![Unhidden dialog](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/image-4.png)
+![Unhidden dialog](https://replit-docs-images.util.repl.co/images/teamsForEducation/pinboard-project/image-4.png)
 
 ## Styling
 
@@ -863,7 +863,7 @@ Note that a blank space in our CSS selectors does not imply a direct parent-chil
 
 Our hover effect will display the `info` and `remove` classes over our image, as follows:
 
-![Image hover overlay](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/image-5.gif)
+![Image hover overlay](https://replit-docs-images.util.repl.co/images/teamsForEducation/pinboard-project/image-5.gif)
 
 ### Object-fit
 
@@ -886,7 +886,7 @@ Our `<img>` elements' behaviour needs to be a bit different from the default `<i
 
 If we leave out the `object-fit` property, then our images will get stretched as follows:
 
-![Stretched images](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/pinboard-project/image-6.png)
+![Stretched images](https://replit-docs-images.util.repl.co/images/teamsForEducation/pinboard-project/image-6.png)
 
 ### Fixed overlay
 

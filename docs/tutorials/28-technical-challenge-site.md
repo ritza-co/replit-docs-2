@@ -8,7 +8,7 @@ Code competitions and hackathons are a fun way to expand your programming skills
 
 In this tutorial, we'll use the `replit.web` framework to build a leaderboard website for an online technical challenge in the vein of [Advent of Code](https://adventofcode.com/) or [Hackasat](https://www.hackasat.com/). We'll focus on the generic aspects of the site, such as teams, challenges and scores, so once we're done, you can use the site for your own competition.
 
-![Challenge site functionality](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/site-functionality.gif)
+![Challenge site functionality](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/site-functionality.gif)
 
 By the end of this tutorial, you'll be able to:
 
@@ -20,7 +20,7 @@ By the end of this tutorial, you'll be able to:
 
 To get started, sign into [Replit](https://replit.com) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a Python repl.
 
-![Creating a new repl](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/create-python-repl.png)
+![Creating a new repl](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/create-python-repl.png)
 
 Our competition website will have the following functionality:
 
@@ -59,11 +59,11 @@ import random, string
 ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(20))
 ```
 
-![Generating a random string](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/randomstring.png)
+![Generating a random string](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/randomstring.png)
 
 You'll notice that `db_init()` is undefined. As this is going to be a fairly large codebase, we're going to put it in a separate file. Create the file `db_init.py` in your repl's files tab:
 
-![Database init file](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/dbinit.png)
+![Database init file](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/dbinit.png)
 
 Add the following code to this file:
 
@@ -105,7 +105,7 @@ web.run(app)
 
 Because we've added the `@web.authenticated` [function decorator](https://realpython.com/primer-on-python-decorators/) to our index page, it will only be available to logged in users. You should see this now, as your app will show a login button. Click on that button, and authorize your application to use Replit authentication in the window that pops up.
 
-![Login Button](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/login-button.png)
+![Login Button](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/login-button.png)
 
 Having done that, you should now see the greeting we implemented above. If you send your repl to a friend, they will also be able to log in, and see their own Replit username on the greeting message.
 
@@ -252,7 +252,7 @@ We could build all of this ourselves using Flask's `request.form` as a basis, bu
 
 To keep our codebase navigable, we'll put all our form code in a separate file, like we did with our database initialization code. Create `forms.py` in your repl's files tab now:
 
-![Building forms](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/forms.png)
+![Building forms](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/forms.png)
 
 We'll start this file off with some imports:
 
@@ -448,7 +448,7 @@ The `/team-create` and `/team-join` routes will use their respective forms. User
 
 Because we'll be dealing with passwords, we're going to store them as [one-way encrypted hashes](https://en.wikipedia.org/wiki/Hash_function). This will prevent anyone with access to our repl's database from easily seeing all team passwords. We'll use Flask's `Bcrypt` extension for this, which you can install by searching for "flask-bcrypt" in the Packages tab on the Replit IDE sidebar.
 
-![Flask bcrypt package](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/bcrypt-package.gif)
+![Flask bcrypt package](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/bcrypt-package.gif)
 
 While Replit usually automatically installs packages based on our import statements, this one must be manually installed, as its package name is slightly different on Pypi and on disk. Once it's installed, we import it with the following additional line at the top of `main.py`:
 
@@ -712,7 +712,7 @@ templates/
     |__  team.html
 ```
 
-![HTML templates](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/templates.gif)
+![HTML templates](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/templates.gif)
 
 Once you've created these files, let's populate them, starting with `templates/layout.html`:
 
@@ -993,7 +993,7 @@ We're done! Run your repl now to see your app in action. As your user account wi
 
 For best results, open your repl's web page in a new tab.
 
-![Open in new tab button](https://replit-docs-images.bardia.repl.co/images/tutorials/28-technical-challenge-site/replit-browser-open-in-new-tab.png)
+![Open in new tab button](https://replit-docs-images.util.repl.co/images/tutorials/28-technical-challenge-site/replit-browser-open-in-new-tab.png)
 
 If you run into unexplained errors, you may need to clear your browser cookies, or flush the database.
 

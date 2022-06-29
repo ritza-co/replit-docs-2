@@ -24,13 +24,13 @@ Turtle graphics is a classic of the genre. First created way back in the 1960s, 
 
 Replit has support for Python `turtle`, which is the current incarnation of the turtle graphics idea. Choose the "Python (with Turtle)" template when creating a new repl to use it. 
 
-![turtle-template](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/turtle-template.png)
+![turtle-template](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/turtle-template.png)
 
 Python `turtle` uses commands like `forward(10)`, `back(10)`, `left(50)`, `right(30)` `pendown()` and `penup()` to control the turtle. The methods `forward` and `back` take the distance the turtle should move as their arguments, while `left` and `right` take the angle in degrees to turn the turtle on the spot (the turtle is very nimble!). You can use `pendown` and `penup` to tell the turtle to draw or not draw while moving.
 
 When you create a new Python (with Turtle) template, you'll notice a small program is included as an example to show you the basics. When you run this program, it will draw a square with each side a different color. 
 
-![turtle square](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/turtle-square.gif)
+![turtle square](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/turtle-square.gif)
 
 Although `turtle` has a small set of simple commands, it can be used to make some impressive-looking graphics. This is because you can use loops and calculations and all the other programming constructs available in Python to control the turtle. 
 
@@ -57,7 +57,7 @@ for x in range(360):
 
 This code generates a spiral by drawing a slightly rotated and increasingly larger triangle for each of the 360 degrees specified in the main loop. This short little script produces a cool-looking output:
 
-![turtle spiral](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/turtle-spiral.png)
+![turtle spiral](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/turtle-spiral.png)
 
 Try changing up the `sides` parameter to draw different shapes, and play with the color combos to come up with new artworks. 
 
@@ -68,11 +68,11 @@ Try changing up the `sides` parameter to draw different shapes, and play with th
 
 Replit has two templates for p5.js - one for pure JavaScript, and another that interprets Python code, but still uses the underlying p5.js JavaScript library. You can use the Python version if you are more familiar with Python syntax than JavaScript syntax. 
 
-![p5 templates](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/p5-templates.png)
+![p5 templates](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/p5-templates.png)
 
 If you create a repl using one of the templates, you'll see it includes some sample code. Running it will draw random color circles on the screen wherever the mouse pointer is.
 
-![p5 sample sketch output](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/p5-circles.gif)
+![p5 sample sketch output](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/p5-circles.gif)
 
 
 p5.js has two main functions in every sketch: `setup()`, which is run once when the sketch is executed, and `draw()`, which is run every frame.
@@ -104,7 +104,7 @@ function draw() {
 In this sketch, we draw a few shapes in various colors on the screen, in a kind of 80s geometric art style:
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/p5-shapes.png"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/p5-shapes.png"
   alt="p5 shapes examples"
   style={{ width: "500px !important" }}
 />
@@ -121,7 +121,7 @@ Replit has two official templates for Kaboom:
 - A specialized Kaboom template, with an integrated sprite editor and gallery, as well as pre-defined folders for assets. This is perfect for getting started with Kaboom and making games in general, as you don't need to worry about folder structures or sourcing graphics. 
 - A 'light' template that is a simple web template with just the Kaboom package referenced. This is for coders with a little more experience, as the intent is to give you more control and flexibility
 
-![Kaboom templates](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/kaboom-templates.png)
+![Kaboom templates](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/kaboom-templates.png)
 
 One of the great features of Kaboom is the simple way you can define level maps, drawing them with text characters, and then mapping the text characters to game elements:
 
@@ -163,7 +163,7 @@ Pygame is a well-established library (from 2000!) for making games. It has funct
 Replit has a specialised Python template for Pygame. Choose this template for creating Pygame games:
 
 
-![Pygame template](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/pygame-template.png)
+![Pygame template](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/pygame-template.png)
 
 
 Try out this code in a Pygame repl:
@@ -217,7 +217,7 @@ Check out some of our tutorials for Pygame :
 
 Choose the 'Pyxel' template on Replit to create a new Pyxel environment. 
 
-![pyxel template](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/pyxel-template.png)
+![pyxel template](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/pyxel-template.png)
 
 Try this code in a Pyxel repl to draw rectangles of random size and color, changing every two frames: 
 
@@ -246,7 +246,7 @@ App()
 ```
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/pyxel-rect.gif"
+  src="https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/pyxel-rect.gif"
   alt="Changing rectangles in pyxel"
   style={{ width: "500px !important" }}
 />
@@ -264,11 +264,11 @@ GLSL gives you  control over the graphics rendering pipeline, enabling you to cr
 
 Choose the "GLSL" template to create a new GLSL repl:
 
-![GLSL template](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/glsl-template.png)
+![GLSL template](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/glsl-template.png)
 
 The template has a sample fragment shader in the file `shader.glsl` as well as some web code to setup a [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) resource to apply the shader to. Running the sample will show some pretty gradients on the screen that vary with time and as you move the mouse over it. 
 
-![GLSL sample code](https://replit-docs-images.bardia.repl.co/images/tutorials/34-creative-coding/glsl-effect.gif)
+![GLSL sample code](https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/glsl-effect.gif)
 
 Try this code out in the shader file to make a kind of moving "plaid" effect: 
 

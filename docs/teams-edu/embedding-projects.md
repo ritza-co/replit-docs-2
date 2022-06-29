@@ -12,7 +12,7 @@ To embed a project, follow the simple steps below or follow along with our [vide
 2. Copy the embed code. This will provide you with an [iframe](/teams-edu/embedding-projects) which you can paste into HTML or copy the project link.
 3. Paste it wherever you are trying to embed the project, and you'll be good to go!
 
-![Embedding projects](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/embedProjectsImage.png)
+![Embedding projects](https://replit-docs-images.util.repl.co/images/teamsForEducation/embedProjectsImage.png)
 
 The embed code you copy will look like the example below:
 

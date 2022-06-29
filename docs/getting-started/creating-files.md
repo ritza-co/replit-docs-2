@@ -6,7 +6,7 @@ sidebar_position: 3
 
 When starting a new repl, we create a "main" file for you so you can start coding quickly. However, if you want to split your project into multiple files, you can add new files from the "Files" sidebar.
 
-![Add new files](https://replit-docs-images.bardia.repl.co/images/repls/add_file.png)
+![Add new files](https://replit-docs-images.util.repl.co/images/repls/add_file.png)
 
 Then, you can import the files by referencing the file name. Every language will have different syntax for doing this, so please consult the respective language documentation.
 
@@ -18,7 +18,7 @@ Here is an example in Python:
 
 You can upload files by either dragging and dropping them into the "Files" sidebar, or by clicking the three dot menu at the top-right of the sidebar and selecting "Upload file" (or folder, if you wish):
 
-![Uploading files](https://replit-docs-images.bardia.repl.co/images/repls/upload.png)
+![Uploading files](https://replit-docs-images.util.repl.co/images/repls/upload.png)
 
 We support any file type including images, video, and audio files. These will be displayed correctly in the browser. These files can also be programmatically generated. For example, you can upload an image, alter it programmatically, and save the result to a new image.
 Like this (which you can try out [here](https://replit.com/@masonclayton/rotatify)):

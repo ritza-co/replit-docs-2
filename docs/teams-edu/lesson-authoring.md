@@ -11,18 +11,18 @@ Teachers may create read-only instructions for their students to follow as well 
 To add Lesson Plan and Instructions files to your project, click on "Add Lesson Contents" as shown below:
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/curriculum-authoring/Add%20_lesson_contents.png"
+  src="https://replit-docs-images.util.repl.co/images/teamsForEducation/curriculum-authoring/Add%20_lesson_contents.png"
   style={{ width: "60%", height: "60%" }}
 />
 
 The lesson contents are automatically created as shown below. Instructions and Lesson Plan files are written in markdown. You can find a handy guide to markdown [here](https://www.markdownguide.org/cheat-sheet/)!
 
-![Lesson Contents](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/curriculum-authoring/Student_view.png)
+![Lesson Contents](https://replit-docs-images.util.repl.co/images/teamsForEducation/curriculum-authoring/Student_view.png)
 
 To preview the lesson from a student's point of view, as an admin you can add a new non-admin member to your team for testing purposes. You can log in as the member in a different browser to keep the ‘teacher’ (admin) and ‘student’ (non-admin) separate and logged in at the same time. 
 
 <img
-  src="https://replit-docs-images.bardia.repl.co/images/teamsForEducation/curriculum-authoring/Manage%20team%20members.png"
+  src="https://replit-docs-images.util.repl.co/images/teamsForEducation/curriculum-authoring/Manage%20team%20members.png"
   style={{ width: "60%", height: "60%" }}
 />
 
@@ -32,7 +32,7 @@ Lesson Plans are accessible only to admins in the `lessonplan.md` file. They are
 
 _Do not place project solutions in the Lesson Plan._
 
-![Teacher View](https://replit-docs-images.bardia.repl.co/images/teamsForEducation/curriculum-authoring/Teacher_view.png)
+![Teacher View](https://replit-docs-images.util.repl.co/images/teamsForEducation/curriculum-authoring/Teacher_view.png)
 
 ## Assets
 

@@ -186,9 +186,6 @@ const redirects = [
       from: '/pro/replManagement',
       to: '/teams-pro/managing-public-private-repls'
   }, {
-      from: '/teams-pro/interviewing-candidates-guest-mode',
-      to: '/teams-pro/interviewing-candidates'
-  }, {
       from: '/pro/guests',
       to: '/teams-pro/interviewing-candidates'
   }, {

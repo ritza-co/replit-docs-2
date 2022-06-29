@@ -341,7 +341,7 @@ The `onKeyPress` handler calls the `spawnBullet` function with the player's curr
 
 Then we add a new bullet object to the game using the [`add`](https://kaboomjs.com/doc#add) function. We don't use a sprite for the bullet, but draw a [`rect`](https://kaboomjs.com/doc#rect), or rectangle, with our given color. We tag it `bullet` so we can refer to it later when detecting if it hit something. We also give it a custom property, `bulletSpeed`, which is the distance and direction we want the bullet to move on each frame.
 
-Finally, we add sound effects when the player shoots. The [`play`](https://kaboomjs.com/doc#play) function plays our "shoot.wav" file. We adjust the volume down a bit, so it fits in better with the overall sound mix. We use the `detune` parameter along with a random number generator, [`rand`]('https://kaboomjs.com/doc#rand'), to change the pitch of the sound each time it's played. This is so the sound doesn't become too repetitive and also because it sounds weird and "spacey".
+Finally, we add sound effects when the player shoots. The [`play`](https://kaboomjs.com/doc#play) function plays our "shoot.wav" file. We adjust the volume down a bit, so it fits in better with the overall sound mix. We use the `detune` parameter along with a random number generator, [`rand`](https://kaboomjs.com/doc#rand), to change the pitch of the sound each time it's played. This is so the sound doesn't become too repetitive and also because it sounds weird and "spacey".
 
 Now that we've set up the bullet, we need to make it move on each frame. To do this we can use the [`onUpdate`](https://kaboomjs.com/doc#onUpdate) event, using the `bullet` tag to identify the objects we want to update:
 

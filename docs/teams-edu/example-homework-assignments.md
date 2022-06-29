@@ -14,11 +14,11 @@ These are higher level guides and walkthrough tutorials that you can use as-is o
 
 This is a full tutorial on how to build a pinboard project with Replit. It focuses on front-end coding and uses examples targetted to be more inclusive towards girls when compared to traditional beginner coding project examples, which tend to skew towards appealing more to boys. This is a two part tutorial where [Part 1](../tutorials/pinboard-project-part-1) covers HTML and CSS then [Part 2](../tutorials/pinboard-project-part-2) introduces JavaScript.
 
-### [How to create a good enrichment coding assignment using Replit](tutorials/EnrichmentHomework)
+### [How to create a good enrichment coding assignment using Replit](/teams-edu/EnrichmentHomework)
 
 This is a higher-level guide on how to set a good enrichment assignment, using a PyGame project as an example. It contains starter code, example instructions, and some guidelines on what to look for in the solution.
 
-### [Teach your kid to code](tutorials/TeachYourKid)
+### [Teach your kid to code](/teams-edu/TeachYourKid)
 
 This guide shows you how to get started with teaching your kid to code, showing examples of our different GUI libraries, including Pygame, Python Play, Turtle, and Basic.
 

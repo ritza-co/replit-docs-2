@@ -15,7 +15,7 @@ Input/output testing is a feature of [Teams for Education](https://teamsforeduca
 
 ## Creating a Project
 
-If you are new to projects, you can find more info on creating a project [here](./Projects).
+If you are new to projects, you can find more info on creating a project [here](/teams-edu/creating-projects-assignments).
 
 ## Input/Output Tests
 

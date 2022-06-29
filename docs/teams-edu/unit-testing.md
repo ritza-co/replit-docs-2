@@ -164,7 +164,7 @@ Unit testing is supported in [Teams for Education](https://teamsforeducationreso
 
 ### Creating a project
 
-If you are new to projects, you can find more info on creating a project [here](./Projects). 
+If you are new to projects, you can find more info on creating a project [here](/teams-edu/creating-projects-assignments). 
 
 <!-- 
 TBD

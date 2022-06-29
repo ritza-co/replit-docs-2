@@ -3,44 +3,45 @@
 Here are some tables with information on the permissions each role in a Replit Organization has. The Team Owner is, by default, the user who created the Team.
 
 ## Organization Roles and Permissions
-|                          | Org Owner              | Org Admin | Team Owner |
-|--------------------------|------------------------|-----------|------------|
-| Add & Remove Seats       | ✅                      |           |            |
+|                          | Org Owner               | Org Admin | Team Owner |
+|--------------------------|-------------------------|-----------|------------|
+| Add & remove Seats       | ✅                      |           |            |
 | Change payment method    | ✅                      |           |            |
 | Cancel plan              | ✅                      |           |            |
-| Leave Org                | If joined Organization | ✅         |            |
+| Leave Org                | If joined Organization  | ✅        |            |
 | Add others as Org Owners | ✅                      |           |            |
-| Add others as Org Admins | ✅                      | ✅         |            |
+| Add others as Org Admins | ✅                      | ✅        |            |
 | Remove Org Owners        | ✅                      |           |            |
 | Remove Org Admins        | ✅                      |           |            |
-| Create Teams in Org      | ✅                      | ✅         |            |
-| Join Teams in Org        | ✅                      | ✅         |            |
-| Archive Team             | ✅                      |           | ✅          |
-| Delete Team              | ✅                      |           | ✅          |
-| Rename Team              | ✅                      |           | ✅          |        
+| Create Teams in Org      | ✅                      | ✅        |            |
+| Join Teams in Org        | ✅                      | ✅        |            |
+| Archive Team             | ✅                      |           | ✅         |
+| Delete Team              | ✅                      |           | ✅         |
+| Rename Team              | ✅                      |           | ✅         |        
 
-## Team roles and permissions
-|                                 | Team Owner | Team Admin | Team Member (Pro, Edu, Friends) | Guest |
+
+## Team roles and permissions (Pro, Edu, Friends)
+|                                 | Team Owner | Team Admin | Team Member                     | Guest |
 |---------------------------------|------------|------------|---------------------------------|-------|
-| Add & remove Team Members       | ✅          | ✅          |                              |       |
-| Add & remove Team Admins        | ✅          |             |                               |       |
-| Change Team Member role         | ✅          |             |                               |       |
-| Leave Team                      |             | ✅          | ✅                            |       |
+| Add & remove Team Members       | ✅         | ✅         |                                 |       |
+| Add & remove Team Admins        | ✅         |            |                                 |       |
+| Change Team Member role         | ✅         |            |                                 |       |
+| Leave Team                      |            | ✅         | ✅                              |       |
 
 
 ## Team Roles and Permissions (Pro & Friends)
 |                                   | Team Owner | Team Admin | Team Member  | Guest |
-|-----------------------------------|------------|------------|-------------------|-------|
-| Create & delete Repls & Projects  | ✅          | ✅          | ✅                 |       |      
-| Edit Repls                        | ✅          | ✅          | ✅                 | ✅    |            
-| Add & remove guests to Repls      | ✅          | ✅          | ✅                 |       |       
+|-----------------------------------|------------|------------|--------------|-------|
+| Create & delete repls & Projects  | ✅         | ✅         | ✅          |       |      
+| Edit repls                        | ✅         | ✅         | ✅          | ✅    |            
+| Add & remove guests to repls      | ✅         | ✅         | ✅          |       |       
 
 ## Team Roles and Permissions (Edu)
-|                                    | Team Owner | Teacher (Team Admin) | Student (Team Member) |
-|------------------------------------|------------|------------|---------------------------|
-| Add others as Teachers   | ✅          |             |                           |       
-| Add others as Students   | ✅          | ✅          |                           |       
-| Remove Students          | ✅          | ✅          |                           |       
-| Create/ Publish/Unpublish projects     | ✅          | ✅                        |                                  
-| Open/Submit Projects    |              |             | ✅                        |             
+|                                     | Team Owner | Teacher (Team Admin) | Student (Team Member)         |
+|-------------------------------------|------------|----------------------|-------------------------------|
+| Add others as Teachers              | ✅          |                     |                               |       
+| Add others as Students              | ✅          | ✅                  |                               |       
+| Remove Students                     | ✅          | ✅                  |                               |       
+| Create/Publish/Unpublish Projects   | ✅          | ✅                  |                               |      
+| Open/Submit Projects                |             |                     | ✅                            |             
 

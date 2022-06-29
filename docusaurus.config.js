@@ -9,7 +9,7 @@ const editUrlFn = ({docPath}) => {
 }
 
 const redirects = [
-  {
+     {
       from: '/misc/General-FAQ',
       to: '/getting-started/faq'
   }, {

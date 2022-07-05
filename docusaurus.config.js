@@ -386,7 +386,11 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: editUrlFn,
         },
-        blog: false,
+        blog: {
+          blogTitle: 'Replit Changelog',
+          blogDescription: 'What\'s new in Replit?',
+          postsPerPage: 'ALL',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -411,6 +415,7 @@ const config = {
           {label: 'Features',
            href: 'https://replit.com/site/ide',
            target: '_blank'},
+          {to: 'blog', label: 'Changelog'},
           {label: 'Careers',
            href: 'https://replit.com/site/careers',
            target: '_blank'},

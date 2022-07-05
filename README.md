@@ -30,18 +30,30 @@ This command generates static content into the `build` directory and can be serv
 $ yarn serve
 ```
 
-### Contributing
+### Contributing as a Replit Team Member
 
-1. Create a new repl
-2. Fork the [GitHub repo](https://github.com/replit/replit-docs-2)
-3. Pull the fork into the repl you just made
-4. Make your changes
-5. Preview the changes using a local dev server by running `yarn start`  in the repl console
-6. Once you're happy with your changes, run `yarn build` in the repl console
-7. Once it builds succesffuly, run `yarn serve` in the repl console
-8. Test your changes to make sure they're good in production
-9.  Submit a PR to this [repo](https://github.com/replit/replit-docs-2)
-10. Request @Bardia95 for review
+**Steps:**
+
+1. Fork the [official docs repl](https://replit.com/@util/replit-docs-2)
+2. Open shell
+  - `$ git checkout -b YOUR_BRANCH_NAME`
+3. Make your changes (if you need to add static files add them to [this repl](https://replit.com/@util/replit-docs-images))
+4. Open console
+  - `> yarn start` to preview changes 
+  - `> yarn build` once you're happy with your changes
+  - `> yarn serve` once it builds successfully
+5. Test your changes in the browser to make sure they're good in a production environment
+6. Open shell
+- `$ git add .`
+- `$ git config --global user.email "your@email.com"`
+- `$ git config --global user.name "Your Name"`
+- `$ git commit -m "describe your changes"`
+- `$ git remote add origin https://github.com/replit/replit-docs-2.git`
+- `$ git push --set-upstream origin YOUR_BRANCH_NAME`
+    -  Enter your GitHub username
+    -  Copy and paste your GitHub PAT from 1Password into the password field
+6.  Create a pull request to the official docs [GitHub repo](https://github.com/replit/replit-docs-2) with longer description of changes
+7. Request `@Bardia95` for review
 
 When adding new pages, the markdown file should be placed in the appropriate folder inside  (`programming-ide`/`teams-edu`/`misc`).
 

@@ -1,4 +1,4 @@
-# Building a Discord bot with Node.js and Repl.it
+# Building a Discord bot with Node.js and Replit
 
 In this tutorial, we'll use [Replit](https://replit.com) and Node.js to build a Discord Chatbot. The bot will be able to join a Discord server and respond to messages sent by people. 
 

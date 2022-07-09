@@ -386,13 +386,6 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: editUrlFn,
         },
-        blog: {
-          blogTitle: 'Changelog',
-          blogDescription: 'What\'s new in Replit?',
-          postsPerPage: 'ALL',
-          routeBasePath: 'changelog',
-          path: './changelog',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

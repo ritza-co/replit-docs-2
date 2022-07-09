@@ -9,6 +9,8 @@ const editUrlFn = ({docPath}) => {
 }
 
 const redirects = [
+  { from: '/hosting/browsing-publishing-repls',
+    to: '/hosting/sharing-your-repl'},
   {
     from: '/repls/repl-run',
     to: '/misc/repl-run'
@@ -35,8 +37,8 @@ const redirects = [
       from: '/repls/vnc',
       to: '/hosting/streaming-native-graphics-vnc'
   }, {
-      from: '/repls/apps-and-publishing',
-      to: '/hosting/browsing-publishing-repls'
+      from: ['/repls/apps-and-publishing', '/hosting/nix'],
+      to: '/hosting/sharing-your-repl'
   }, {
       from: '/repls/strike-system-apps',
       to: '/hosting/strike-system-faq'

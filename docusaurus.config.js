@@ -410,7 +410,6 @@ const config = {
           {label: 'Features',
            href: 'https://replit.com/site/ide',
            target: '_blank'},
-          {to: 'changelog', label: 'Changelog'},
           {label: 'Careers',
            href: 'https://replit.com/site/careers',
            target: '_blank'},

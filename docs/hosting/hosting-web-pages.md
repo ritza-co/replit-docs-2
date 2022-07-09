@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Hosting web pages
+# Hosting Web Pages
 
 Web pages written in HTML, CSS, and JavaScript can be hosted on Replit. HTML/CSS/JS repls are given a unique URL that can be shared with your friends, family, peers, and clients.
 

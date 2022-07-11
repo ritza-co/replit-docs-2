@@ -6,7 +6,7 @@ title: Card game with Pygame
 
 Card games are a great way to learn how to program. We get to build a model of the game, game logic, and a visual interface. 
 
-![playing snaPy](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/gameplay.gif)
+![Playing snapy](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/gameplay.gif)
 
 A classic card game is Snap. The rules are pretty simple, which makes it great for building a first card game. We can spend more time on the modelling and visualization, which can be used on other card games too. 
 
@@ -64,7 +64,7 @@ If you run the project, using the "Run" button at the top center of the Repl, yo
 
 Python is an object-oriented language. With object-oriented programming, we identify different parts and entities of the game and model them as classes and objects. Let's draw the game, and see what parts we need to model.
 
-![game-objects](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/game-objects.png)
+![Game-objects](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/game-objects.png)
 
 From the above image, we can see that we can model the following:
 
@@ -80,7 +80,7 @@ We'll also need logic to control the rules and the state of the game. Often this
 
 Here is a diagram of all the classes we'll build. 
 
-![class-model](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/class-model.png)
+![Class model](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/class-model.png)
 
 The classes have some of the key properties and methods that they will need.
 
@@ -543,7 +543,7 @@ Add this code to the `renderGame` function, to implement the above logic:
 
 Now that we have implemented the game, we can give it a test run. Click the big green "Run" button at the top of your repl. You should see the game start up, prompting "player 1" to flip a card.
 
-![playing snaPy](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/gameplay.gif)
+![Playing snapy](https://replit-docs-images.bardia.repl.co/images/tutorials/card-game-pygame/gameplay.gif)
 
 Player 1's keys are `q` to flip a card, and `w` to call snap. 
 Player 2's keys are `o` to flip a card, and `p` to call snap.

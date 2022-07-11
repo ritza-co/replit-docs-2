@@ -1,12 +1,16 @@
-# Building a CRM app with NodeJS, Replit, and MongoDB
+---
+title: CRM app with Node.js, Replit, and MongoDB
+---
 
-In this tutorial we'll use NodeJS on Replit, along with a MongoDB database to build a basic [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create, Read, Update, Delete) [CRM](https://en.wikipedia.org/wiki/Customer_relationship_management) (Customer Relationship Management) application. A CRM lets you store information about customers to help you track the status of every customer relationship. This can help businesses keep track of their clients and ultimately increase sales. The application will be able to store and edit customer details, as well as keep notes about them.
+# Building a CRM app with Node.js, Replit, and MongoDB
+
+In this tutorial we'll use Node.js on Replit, along with a MongoDB database to build a basic [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create, Read, Update, Delete) [CRM](https://en.wikipedia.org/wiki/Customer_relationship_management) (Customer Relationship Management) application. A CRM lets you store information about customers to help you track the status of every customer relationship. This can help businesses keep track of their clients and ultimately increase sales. The application will be able to store and edit customer details, as well as keep notes about them.
 
 This tutorial won't be covering the basics of Node.js, but each line of code will be explained in detail.
 
 ## Setting up
 
-All of the code will be written and hosted in Replit, so you won't need to install any additional software on your computer.
+All of the code will be written and hosted on Replit, so you won't need to install any additional software on your computer.
 
 For setup, we'll be walking you through the following steps. Skip any that don't apply to you (e.g. if you already have a Replit account, you don't have to make a new one).
 
@@ -15,7 +19,7 @@ For setup, we'll be walking you through the following steps. Skip any that don't
 
 ### Creating an account on Replit
 
-The first thing you need to do is create an account on Replit. You can find instructions on how to do so [here](https://www.codementor.io/garethdwyer/building-a-discord-bot-with-node-js-and-repl-it-mm46r1u8y#creating-an-account-on-replit). Once you're done, head back here and continue the tutorial.
+The first thing you need to do is create an account on [Replit](https://replit.com/signup). 
 
 ### Creating an account on MongoDB Atlas
 
@@ -27,37 +31,36 @@ After signing up, under "Shared Clusters", press the "Create a Cluster" button.
 
 You now have to select a provider and a region. For the purposes of this tutorial, we chose Google Cloud Platform as the provider and Iowa (us-central1) as the region, although it should work regardless of the provider and region. 
 
-![*Cluster Region*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/mongo-setup.png)
+![Cluster Region](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/mongo-setup.png)
 
 Under "Cluster Name" you can change the name of your cluster. Note that you can only change the name now - it can't be changed once the cluster is created. After you've done that, click "Create Cluster". 
 
-![*Cluster Name*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/cluster-name.png)
+![Cluster Name](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/cluster-name.png)
 
 After a bit of time, your cluster will be created. Once it's available, click on “Database Access” under the Security heading in the left-hand column and then click "Add New Database User". You need a database user to actually store and retrieve data. Enter a username and password for the user and make a note of those details - you'll need them later. Select “Read and write to any database” as the user privilege. Hit "Add User" to complete this step.
 
-![*Adding a New Database User Step 1*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/add-db-user-1.png)
+![Adding a New Database User](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/add-db-user.png)
 
-![*Adding a New Database User Step 2*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/add-db-user-2.png)
 
 Next, you need to allow network access to the database. Click on "Network Access" in the left-hand column, and “Add IP Address”. Because we won't have a static IP from Replit, we're just going to allow access from anywhere - don't worry, the database is still secured with the username and password you created earlier. In the popup, click "Allow Access From Anywhere" and then "Confirm". 
 
-![*Allow Access From Anywhere*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/whitelist-entry.png)
+![Allow Access From Anywhere](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/whitelist-entry.png)
 
-Now select "Database", under "Deployement" in the left-hand column. Click on "Connect" and select “Connect Your Application”. This will change the pop-up view. Copy the "Connection String" as you will need it shortly to connect to your database from Replit. It will look something like this: `mongodb+srv://<username>:<password>@cluster0-zrtwi.gcp.mongodb.net/test?retryWrites=true&w=majority`
+Now select "Database", under "Deployment" in the left-hand column. Click on "Connect" and select “Connect Your Application”. This will change the pop-up view. Copy the "Connection String" as you will need it shortly to connect to your database from Replit. It will look something like this: `mongodb+srv://<username>:<password>@cluster0-zrtwi.gcp.mongodb.net/test?retryWrites=true&w=majority`
 
-![*Retrieve Your Connection String*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/db-connect-string.png)
+![Retrieve Your Connection String](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/db-connect-string.png)
 
-## Creating a Repl and connecting to our Database
+## Creating a Repl and connecting to our database
 
-First, we need to create a new Node.js Repl to write the code necessary to connect to our shiny new Database. Navigate to replit and create a new Repl, selecting "Node.js" as the language.
+First, we need to create a new Node.js Repl to write the code necessary to connect to our shiny new database. Navigate to Replit and create a new Repl, selecting "Node.js" as the language.
 
-A great thing about Repl is that it makes projects public by default. This makes it easy to share and is great for collaboration and learning, but we have to be careful not to make our database credentials available on the open Internet.
+A great thing about Replit is that it makes projects public by default. This makes it easy to share and is great for collaboration and learning, but we have to be careful not to make our database credentials available on the open Internet.
 
 To solve this problem, we'll be using Replit's `environment variables`, as we have done in previous tutorials. Replit allows us to set secret environment variables through the "Secrets (Environment variables)" menu option. 
 
-Open the "Secrets" menu option, there you will be able to set environment variables for your Repl. Set the key as the name of your environment variable to `MONGO_USERNAME`. Set the value as your database username, then click "Add new secret". Then create a new key called `MONGO_DATABASE` with its value set to your database password, then click "Add new secret". It should look something like: 
+Open the "Secrets" menu option, there you will be able to set environment variables for your Repl. Set the key as the name of your environment variable to `MONGO_USERNAME`. Set the value as your database username, then click "Add new secret". Then create a new key called `MONGO_PASSWORD` with its value set to your database password, then click "Add new secret". It should look something like: 
 
-![Set Secrets Key Value](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/replit-secrets.png)
+![Set Secrets Key Value](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/replit-secrets.png)
 
 * **Replace** `username` and `password` with your database username and password
 
@@ -108,7 +111,7 @@ Let's break this down.
 * **Line 4** adds a dependency for a basic HTTP server.
 * **Line 6 & 7** tell the Express app which parsers to use on incoming data. This is needed to handle form data.
 
-Next, we need to add a way for the Express to handle an incoming request and give us the form that we want. Add the following lines of code below that which you just added:
+Next, we need to add a way for the Express app to handle an incoming request and give us the form that we want. Add the following lines of code below that which you just added:
 ```
 app.get('/', function (req, res) {
   res.sendFile('/index.html', {root:'.'});
@@ -120,7 +123,7 @@ app.get('/create', function (req, res) {
 ```
 * `app.get` tells Express that we want it to handle a GET request.
 * `'/'` tells Express that it should respond to GET requests sent to the root URL. A root URL looks something like 'https://crm.hawkiesza.repl.co' - note that there are no slashes after the URL.
-* `'/create'` tells Express that it should respond to GET requests to /create after the root URL i.e. 'https://crm.hawkiesza.repl.co/create'
+* `'/create'` tells Express that it should respond to GET requests sent to the `/create` endpoint after the root URL i.e. 'https://crm.hawkiesza.repl.co/create'
 * `res.sendFile` tells Express to send the given file as a response.
 
 Before the server will start receiving requests and sending responses, we need to tell it to run. Add the following code below the previous line.
@@ -177,19 +180,19 @@ Make a new file called `create.html` and paste the following into it:
 </body>
 </html>
 ```
-We won't go in-depth into the above HTML. It is a very basic form with 4 fields (name, address, telephone, note) and a Submit button, which creates an interface that will look like the one below.
+We won't go in-depth into the above HTML. It is a very basic form with 4 fields (name, address, telephone, note) and a submit button, which creates an interface that will look like the one below.
 
-![*Customer Details*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/customer-details.png)
+![Customer Details](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/customer-details.png)
 
 When the user presses the submit button a POST request is made to `/create` with the data in the form - we still have to handle this request in our code as we're currently only handling a GET request to `/`.
 
-If you now start up your application (click the “run” button)  a new window should appear on the right that displays the "create" button we defined just now in "create.html". You can also navigate to `https://<repl_name>.<your_username>.repl.co` (replace <repl_name> with whatever you named your Repl (but with no underscores or spaces) and  <your_username> with your Repl username) to see the form. You will be able to see this URL in your Repl itself.
+If you now start up your application (click the "Run" button)  a new window should appear on the right that displays the "create" button we defined just now in "index.html". You can also navigate to `https://<repl_name>.<your_username>.repl.co` (replace <repl_name> with whatever you named your Repl (but with no underscores or spaces) and  <your_username> with your Repl username) to see the form. You will be able to see this URL in your Repl itself.
 
-![*Run Your Application*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/first-run.png)
+![Run Your Application](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/first-run.png)
 
-If you select "create" and then fill in the form and hit submit, you'll get a response back that says ```Cannot POST /create```. This is because we haven't added the code that handles the form POST request, so let's do that. 
+If you select "Create" and then fill in the form and hit submit, you'll get a response back that says ```Cannot POST /create```. This is because we haven't added the code that handles the form POST request, so let's do that. 
 
-![*Cannot POST/create*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/cannot-post.png)
+![*Cannot POST/create*](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/cannot-post.png)
 
 Add the following code into your `index.js` file, below the `app.get` entry that we made above.
 ```
@@ -208,7 +211,7 @@ app.post('/create', function (req, res, next) {
 ```
 * **Line 1** defines a new route that listens for an HTTP 'POST' request at `/create`.
 * **Line 2** connects to the database. This happens asynchronously, so we define a callback function that will be called once the connection is made.
-* **Line 3** creates a new collection of customers. Collections in MongoDB are similar to Tables in SQL.
+* **Line 3** creates a new collection of customers. Collections in MongoDB are similar to tables in SQL.
 * **Line 5** defines customer data that will be inserted into the collection. This is taken from the incoming request. The form data is parsed using the parsers that we defined earlier and is then placed in the `req.body` variable for us to use in the code.
 * **Line 6** inserts the customer data into the collection. This also happens asynchronously, and so we define another callback function that will get an error if an error occurred, or the response if everything happened successfully.
 * **Line 7** throws an error if the above insert had a problem.
@@ -216,7 +219,7 @@ app.post('/create', function (req, res, next) {
 
 If you now run the Repl (you may need to refresh it) and submit the filled-in form, you'll get a message back that says "Customer created". If you then go and look in your cluster in MongoDB and select the "collections" button, you'll see a document has been created with the details that we submitted in the form.
 
-![*Customer Created*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/customer-created.png)
+![Customer Created](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/customer-created.png)
 
 ## Updating and deleting database entries
 As a final step in this tutorial, we want to be able to update and delete database documents in our collection. To make things simpler, we're going to make a new HTML page where we can request a document and then update or delete it.
@@ -250,7 +253,7 @@ In your `index.html` file, add the following code after the `</form>` tag:
 ```
 This adds a new button that will make a GET request to `/get`, which will then return `get.html`.
 
-![*Index*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/buttons.png)
+![Index](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/buttons.png)
 
 Make a new file called `get.html` with the following contents:
 ```
@@ -267,15 +270,15 @@ Make a new file called `get.html` with the following contents:
 ```
 This makes a simple form with an input for the customer's name and a button. 
 
-![*Get Customer*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/get-customer.png)
+![Get Customer](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/get-customer.png)
 
-Clicking this button will then make a GET call to `/get-client` which will respond with the client details where we will be able to update or delete them.
+Clicking this button will then make a GET request to `/get-client` which will respond with the client details where we will be able to update or delete them.
 
 To actually see the customer details on a form after requesting them, we need a templating engine to render them onto the HTML page and send the rendered page back to us. With a templating engine, you define a template - a page with variables in it - and then give it the values you want to fill into the variables. In our case, we're going to request the customer details from the database and tell the templating engine to render them onto the page.
 
 We're going to use a templating engine called [Pug](https://pugjs.org/api/getting-started.html). Pug is a simple templating engine that integrates fully with Express. The syntax that Pug uses is very similar to HTML. One important difference in the syntax is that spacing is very important as it determines your parent/child hierarchy.
 
-First, we need to tell Express which templating engine to use and where to find our templates. Put the following line above your route definitions (i.e. after the other app. lines in index.js):
+First, we need to tell Express which templating engine to use and where to find our templates. Put the following line above your route definitions (i.e. after the other `app.use` lines in index.js):
 ```
 app.engine('pug', require('pug').__express)
 app.set('views', '.')
@@ -317,11 +320,11 @@ Using the old details to update the customer is an easy solution, but not the be
 
 We have also put in placeholder variables for name, address, telephone, and note, and we have given the form 2 buttons with different actions.
 
-If you now run the code, you will have an index page with 2 buttons. Pressing the 'Update/Delete' button will take you to a new page that asks for a Customer name. Filling the customer name and pressing 'Get customer' will, after a little time, load a page with the customer's details and 2 buttons below that say 'Update' and 'Delete'. Make sure you enter a customer name you have entered before.
+If you now run the code, you will have an index page with 2 buttons. Pressing the "Update/Delete" button will take you to a new page that asks for a customer name. Filling the customer name and pressing "Get customer" will, after a little time, load a page with the customer's details and 2 buttons below that say "Update" and "Delete". Make sure you enter a customer name you have entered before.
 
-![*Update-Delete*](https://replit-docs-images.bardia.repl.co/images/tutorials/build-crm-app-mongodb-nodejs/customer-details-final.png)
+![Update-Delete](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/customer-details-final.png)
 
-Our next step is to add the 'Update' and 'Delete' functionality. Add the following code below your routes in `index.js`:
+Our next step is to add the "Update" and "Delete" functionality. Add the following code below your routes in `index.js`:
 ```
 app.post('/update', function(req, res) {
   client.connect(err => {
@@ -370,12 +373,16 @@ This introduces 2 new 'POST' handlers - one for `/update`, and one for `/delete`
 If you run your application now, you'll be able to create, update, and delete documents in a MongoDB database. This is a very basic CRUD application, with a very basic and unstyled UI, but it should give you the foundation to build much more sophisticated applications.
 
 Some ideas for this are:
-*You could add fields to the database to classify customers according to which stage they are in your sales [pipeline](https://www.bitrix24.com/glossary/what-is-pipeline-management-definition-crm.php) so that you can track if a customer is potentially stuck somewhere and contact them to re-engage.
-*You could then integrate some basic marketing automation with a page allowing you to send an email or SMS to customers (though don't spam clients!).
-*You could also add fields to keep track of customer purchasing information so that you can see which products do well with which customers.
 
-If you want to start from where this tutorial leaves off, fork the Repl at [https://replit.com/@JamesWhitford/ReplCRM](https://replit.com/@JamesWhitford/ReplCRM)
-To get additional guidance from the Repl community, also join Repl's Discord server by using this invite link [http://replit.com/discord](http://replit.com/discord).
+* You could add fields to the database to classify customers according to which stage they are in your sales [pipeline](https://www.bitrix24.com/glossary/what-is-pipeline-management-definition-crm.php) so that you can track if a customer is potentially stuck somewhere and contact them to re-engage.
+* You could then integrate some basic marketing automation with a page allowing you to send an email or SMS to customers (though don't spam clients!).
+* You could also add fields to keep track of customer purchasing information so that you can see which products do well with which customers.
+
+If you want to start from where this tutorial leaves off, fork the Repl at [https://replit.com/@ritza/replcrm](https://replit.com/@ritza/replcrm)
+To get additional guidance from the Repl community, also join Repl's Discord server by using this invite link [https://replit.com/discord](https://replit.com/discord).
 
 
 _This article was contributed by Gerrit Vermeulen and edited by Katherine James._
+
+
+<iframe height="400px" width="100%" src="https://replit.com/@ritza/replcrm?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

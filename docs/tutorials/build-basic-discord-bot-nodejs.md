@@ -188,7 +188,8 @@ After doing this and hitting the green "Run" button again, you should see some c
 
 ![Running a Node server in the background](https://replit-docs-images.bardia.repl.co/images/tutorials/basic-discord-bot-nodejs/keep-alive.png)
 
-Now your bot will stay alive even after closing your browser or shutting down your development machine. Repl will still clean up your server and kill your bot after about one hour of inactivity, so if you don't use your bot for a while, you'll have to log into your Repl and start the bot up again or use an [Always-on](https://docs.replit.com/hosting/enabling-always-on) repl to keep it running 24/7.
+Now your bot will stay alive even after closing your browser or shutting down your development machine. Repl will still clean up your server and kill your bot after about one hour of inactivity, so if you don't use your bot for a while, you'll have to log into your Repl and start the bot up again. Alternatively, you can set up a third-party (free!) service like [Uptime Robot](https://uptimerobot.com/). Uptime Robot pings your site every 5 minutes to make sure it's still working -- usually to notify you of unexpected downtime, but in this case the constant pings have the side effect of keeping our Repl alive as it will never go more than an hour without receiving any activity. Note that you need to select the HTTP option instead of the Ping option when setting up Uptime Robot, as Replit requires regular HTTP requests to keep your chatbot alive or use an [Always-on](https://docs.replit.com/hosting/enabling-always-on) repl to keep it running 24/7.
+
 
 ## Forking and extending our basic bot
 
@@ -198,9 +199,10 @@ If you followed along this tutorial, you'll have your own basic Repl bot to play
 
 If you're stuck for ideas, why not link up your Discord bot to the [Twitch API](https://dev.twitch.tv/) to get notified when your favourite streamers are online, or build a [text adventure](https://en.wikipedia.org/wiki/Interactive_fiction). 
 
-In the next [tutorial](https://ritza.co/showcase/repl.it/creating-and-hosting-a-basic-django-application-with-django-and-repl-it.html), we'll be looking at building our own basic web application, using Django. This tutorial will also introduce you to HTML, JavaScript, and jQuery and will assist you in getting to the point where you can begin to build your own custom web applications.You can also find more tutorials like this one [here](https://www.codewithreplit.com/python-projects-for-beginners.html).
 
 ## Further Reading:
 
 If you are interested, here are some more Discord bot tutorials:
 - [Role assignment bot with Python](https://docs.replit.com/tutorials/discord-role-bot)
+
+<iframe height="400px" width="100%" src="https://replit.com/@ritza/discord-bot-node-1?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

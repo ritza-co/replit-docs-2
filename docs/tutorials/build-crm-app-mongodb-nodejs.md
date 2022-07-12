@@ -69,7 +69,7 @@ Now that we have credentials set up for the database, we can move on to connecti
 
 MongoDB is kind enough to provide a client that we can use. To test out our database connection, we're going to insert some customer data into our database. In your `index.js` file (created automatically and found under the Files pane), add the following code:
 
-```
+```javascript
 const MongoClient = require('mongodb').MongoClient;
 const mongo_username = process.env['MONGO_USERNAME']
 const mongo_password = process.env['MONGO_PASSWORD']
@@ -94,7 +94,8 @@ In order to actually present and handle an HTML form, we need a way to process H
 A really simple, fast and flexible Node.js web application framework is [Express](https://expressjs.com/), which provides a robust set of features for the development of web applications.
 
 The first thing we need to do is add the dependencies we need. Right at the top of your index.js file (above the MongoDB code), add the following lines:
-```
+
+```javascript
 let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
@@ -112,7 +113,8 @@ Let's break this down.
 * **Line 6 & 7** tell the Express app which parsers to use on incoming data. This is needed to handle form data.
 
 Next, we need to add a way for the Express app to handle an incoming request and give us the form that we want. Add the following lines of code below that which you just added:
-```
+
+```javascript
 app.get('/', function (req, res) {
   res.sendFile('/index.html', {root:'.'});
 });
@@ -121,13 +123,15 @@ app.get('/create', function (req, res) {
   res.sendFile('/create.html', {root:'.'});
 });
 ```
+
 * `app.get` tells Express that we want it to handle a GET request.
 * `'/'` tells Express that it should respond to GET requests sent to the root URL. A root URL looks something like 'https://crm.hawkiesza.repl.co' - note that there are no slashes after the URL.
 * `'/create'` tells Express that it should respond to GET requests sent to the `/create` endpoint after the root URL i.e. 'https://crm.hawkiesza.repl.co/create'
 * `res.sendFile` tells Express to send the given file as a response.
 
 Before the server will start receiving requests and sending responses, we need to tell it to run. Add the following code below the previous line.
-```
+
+```javascript
 app.set('port', process.env.PORT || 5000);
 http.listen(app.get('port'), function() {
     console.log('listening on port', app.get('port'));
@@ -140,9 +144,10 @@ http.listen(app.get('port'), function() {
 Now we have an Express server listening for requests, but we haven't yet built the form that it needs to send back if it receives a request.
 
 Make a new file called `index.html` and paste the following code into it:
-```
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <body>
 <form action="/create" method="GET">
   <input type="submit" value="Create">
@@ -154,9 +159,10 @@ Make a new file called `index.html` and paste the following code into it:
 This is just a simple bit of HTML that puts a single button on the page. When this button is clicked it sends a GET request to `/create`, which the server will then respond to according to the code that we wrote above - in our case it will send back the `create.html` file which we will define now.
 
 Make a new file called `create.html` and paste the following into it:
-```
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <body>
 
 <h2>Customer details</h2>
@@ -195,13 +201,14 @@ If you select "Create" and then fill in the form and hit submit, you'll get a re
 ![*Cannot POST/create*](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/cannot-post.png)
 
 Add the following code into your `index.js` file, below the `app.get` entry that we made above.
-```
+
+```javascript
 app.post('/create', function (req, res, next) {
   client.connect(err => {
     const customers = client.db("crmdb").collection("customers");
 
-    let customer = { name: req.body.name, address: req.body.address, telephone: req.body.telephone, note: req.body.note };
-    customers.insertOne(customer, function(err, res) {
+    let customer = {name: req.body.name, address: req.body.address, telephone: req.body.telephone, note: req.body.note};
+    customers.insertOne(customer, function (err, res) {
       if (err) throw err;
       console.log("1 customer inserted");
     });
@@ -224,10 +231,11 @@ If you now run the Repl (you may need to refresh it) and submit the filled-in fo
 ## Updating and deleting database entries
 As a final step in this tutorial, we want to be able to update and delete database documents in our collection. To make things simpler, we're going to make a new HTML page where we can request a document and then update or delete it.
 
-First, let's make the routes to our new page. In your `index.js`, add the following code below the rest of your routing code (ie. before the MongoDB code):
-```
+First, let's make the routes to our new page. In your `index.js`, add the following code below the rest of your routing code (i.e. before the MongoDB code):
+
+```javascript
 app.get('/get', function (req, res) {
-  res.sendFile('/get.html', {root:'.'});
+  res.sendFile('/get.html', {root: '.'});
 });
 
 app.get('/get-client', function (req, res) {
@@ -245,7 +253,8 @@ app.get('/get-client', function (req, res) {
   * **Line 9** tells Express to render the `update` template, replacing variables with the given values as it goes. Important to note here is that we are also replacing values in the hidden form fields we created earlier with the current values of the customer details. This is to ensure that we update or delete the correct customer.
 
 In your `index.html` file, add the following code after the `</form>` tag:
-```
+
+```html
 <br>
 <form action="/get" method="GET">
   <input type="submit" value="Update/Delete">
@@ -256,15 +265,16 @@ This adds a new button that will make a GET request to `/get`, which will then r
 ![Index](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/buttons.png)
 
 Make a new file called `get.html` with the following contents:
-```
+
+```html
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <body>
-  <form action="/get-client" method="GET">
-    <label for="name" >Customer name *</label><br>
-    <input type="text" id="name" name="name" class="textInput" placeholder="John Smith" required>
-    <input type="submit" value="Get customer">
-  </form>
+<form action="/get-client" method="GET">
+  <label for="name">Customer name *</label><br>
+  <input type="text" id="name" name="name" class="textInput" placeholder="John Smith" required>
+  <input type="submit" value="Get customer">
+</form>
 </body>
 </html>
 ```
@@ -279,13 +289,16 @@ To actually see the customer details on a form after requesting them, we need a 
 We're going to use a templating engine called [Pug](https://pugjs.org/api/getting-started.html). Pug is a simple templating engine that integrates fully with Express. The syntax that Pug uses is very similar to HTML. One important difference in the syntax is that spacing is very important as it determines your parent/child hierarchy.
 
 First, we need to tell Express which templating engine to use and where to find our templates. Put the following line above your route definitions (i.e. after the other `app.use` lines in index.js):
-```
+
+```javascript
 app.engine('pug', require('pug').__express)
 app.set('views', '.')
 app.set('view engine', 'pug')
 ```
+
 Now create a new file called `update.pug` with the following content:
-```
+
+```html
 html
   body
     p #{message}
@@ -314,6 +327,7 @@ html
       button(type='submit' formaction="/update") Update
       button(type='submit' formaction="/delete") Delete
 ```
+
 This is very similar to the HTML form we created previously for `create.html`, however this is written in the Pug templating language. We're creating a hidden element to store the "old" name, telephone, address, and note of the customer - this is for when we want to do an update.
 
 Using the old details to update the customer is an easy solution, but not the best solution as it makes the query cumbersome and slow. If you add extra fields into your database you would have to remember to update your query as well, otherwise it could lead to updating or deleting the wrong customer if they have the same information. A better, but more complicated way is to use the unique ID of the database document as that will only ever refer to one customer.
@@ -325,7 +339,8 @@ If you now run the code, you will have an index page with 2 buttons. Pressing th
 ![Update-Delete](https://replit-docs-images.bardia.repl.co/images/tutorials/crm-app-mongodb-nodejs/customer-details-final.png)
 
 Our next step is to add the "Update" and "Delete" functionality. Add the following code below your routes in `index.js`:
-```
+
+```javascript
 app.post('/update', function(req, res) {
   client.connect(err => {
     if (err) throw err;
@@ -370,6 +385,7 @@ This introduces 2 new 'POST' handlers - one for `/update`, and one for `/delete`
 * **Line 21** sends a response to say that the customer was deleted.
 
 ## Putting it all together
+
 If you run your application now, you'll be able to create, update, and delete documents in a MongoDB database. This is a very basic CRUD application, with a very basic and unstyled UI, but it should give you the foundation to build much more sophisticated applications.
 
 Some ideas for this are:
@@ -379,10 +395,7 @@ Some ideas for this are:
 * You could also add fields to keep track of customer purchasing information so that you can see which products do well with which customers.
 
 If you want to start from where this tutorial leaves off, fork the Repl at [https://replit.com/@ritza/replcrm](https://replit.com/@ritza/replcrm)
-To get additional guidance from the Repl community, also join Repl's Discord server by using this invite link [https://replit.com/discord](https://replit.com/discord).
-
-
-_This article was contributed by Gerrit Vermeulen and edited by Katherine James._
+To get additional guidance from the Replit community, also join Replit's Discord server by using this invite link [https://replit.com/discord](https://replit.com/discord).
 
 
 <iframe height="400px" width="100%" src="https://replit.com/@ritza/replcrm?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

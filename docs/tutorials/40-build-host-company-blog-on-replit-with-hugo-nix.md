@@ -6,7 +6,7 @@ title: Static blog with Nix
 
 In this tutorial, we will detail how you can use Replit to write and publish a blog or website. This can be a solo endeavour or a group or company blog. We'll build on the versatile Nix repl, using a static site generator called [Hugo](https://gohugo.io/) to ensure our site is fast, secure and flexible. We'll also use some repl tricks which will allow us to develop and host our blog without ever leaving Replit.
 
-<video width="800" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/blogdemo.mp4" type="video/mp4">
+<video controls width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/blogdemo.mp4" type="video/mp4">
 </video>
 
 After this tutorial, you will:
@@ -56,7 +56,7 @@ You should now see a number of new directories and files in your repl's file pan
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/hugo-files.png"
   alt="hugo files"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 
@@ -181,7 +181,7 @@ Select the version control tab in your repl's side pane and click on **Create a 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/create-repo.png"
   alt="Creating a GitHub repo"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 
@@ -190,7 +190,7 @@ To push our repl to a repository on GitHub, we'll need a GitHub account. [Create
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/connect-github.png"
   alt="Connect to GitHub"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 
@@ -228,7 +228,7 @@ Return to your repl's version control tab and commit and push your changes. We a
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/commitpush.png"
   alt="Commit and push to GitHub"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 
@@ -239,7 +239,7 @@ Fork your development repl. Give the new repl a different name, such as "blog".
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/fork-repl.png"
   alt="Fork repl"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -257,7 +257,7 @@ Let's test out our publishing flow.
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/pull.png"
   alt="Pull from GitHub"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 
@@ -297,7 +297,7 @@ If you need to include diagrams in your blog posts, you can draw them using your
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/40-multiuser-blog-nix/diagram.png"
   alt="Drawing on Replit"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 ## Where next?

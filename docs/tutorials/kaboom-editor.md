@@ -34,7 +34,7 @@ There are several ways to add sprites to a Kaboom repl:
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/upload-icon.png"
   alt="Upload icon"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 2. Clicking on the files icon and then dragging and dropping the sprites onto the "sprites" folder.
@@ -42,7 +42,7 @@ There are several ways to add sprites to a Kaboom repl:
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/upload-sprites.gif"
   alt="Drag to upload"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 
@@ -51,7 +51,7 @@ There are several ways to add sprites to a Kaboom repl:
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/assets-lib.png"
   alt="Choose from assets library"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 4. Clicking the '+' icon to create a new sprite using the sprite editor.
@@ -59,7 +59,7 @@ There are several ways to add sprites to a Kaboom repl:
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/addsprite.png"
   alt="Create assets"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 
@@ -78,7 +78,7 @@ Notice the use of `loadPedit` instead of `loadSprite`. With this call in place y
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/loadpedit.png"
   alt="Load created assets"
-  style={{ width: "80% !important" }}
+  style={{ width: "80%" }}
 />
 
 (Right now, the sprite editor is not optimized for big sized sprites.)
@@ -90,7 +90,7 @@ Sound manager is currently just a place similar to sprite manager that lists you
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/kaboom/sounds.png"
   alt="Load sounds"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 

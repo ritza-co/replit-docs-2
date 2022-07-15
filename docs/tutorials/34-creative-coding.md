@@ -1,5 +1,5 @@
 ---
-title: Snake game with PyGame
+title: Creative coding with Replit
 ---
 
 # Creative coding with Replit
@@ -106,7 +106,7 @@ In this sketch, we draw a few shapes in various colors on the screen, in a kind 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/p5-shapes.png"
   alt="p5 shapes examples"
-  style={{ width: "500px !important" }}
+  style={{ width: "500px" }}
 />
 
 
@@ -248,7 +248,7 @@ App()
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/34-creative-coding/pyxel-rect.gif"
   alt="Changing rectangles in pyxel"
-  style={{ width: "500px !important" }}
+  style={{ width: "500px" }}
 />
 
 

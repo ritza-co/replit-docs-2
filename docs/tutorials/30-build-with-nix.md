@@ -79,7 +79,7 @@ Open it now, or fork it to your profile, and we'll go over how it works. Ensure 
   src="https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/
   show-hidden-files.png"
   alt="Show configuration"
-  style={{ width: "350px !important" }}
+  style={{ width: "350px" }}
 />
 
 The first file we'll look at is `replit.nix`. This is the base Nix file that tells our repl what packages to install. In the [default Nix repl](https://replit.com/@ritza/nix), it looks like this:

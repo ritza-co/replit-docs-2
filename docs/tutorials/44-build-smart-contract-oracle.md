@@ -37,7 +37,7 @@ If you're already using MetaMask, we recommend creating a new account for testin
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/44-smart-contract-oracle/createaccount.png"
   alt="New testing account in metamask"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 
@@ -854,7 +854,7 @@ Now that we have everything connected, we want to replace the Solidity starter i
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/44-smart-contract-oracle/showhidden.png"
   alt="Show hidden"
-  style={{ width: "40% !important" }}
+  style={{ width: "40%" }}
 />
 
 Replace `run = "node tools"` with the following:
@@ -880,7 +880,7 @@ Our client and oracle are finally both ready to roll. Stop your repl and rerun i
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/44-smart-contract-oracle/finalapp.png"
   alt="Final app"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 

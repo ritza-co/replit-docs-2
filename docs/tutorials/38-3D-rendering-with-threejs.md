@@ -115,7 +115,7 @@ Now try running the code, by pushing the `Run` button at the top of the Replit w
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/38-3drendering-threejs/static-scene.png"
   alt="static-scene"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -151,7 +151,7 @@ Press the "Run" button again and you should see the torus and cube rotating in t
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/38-3drendering-threejs/animated-scene.gif"
   alt="animated-scene"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -178,7 +178,7 @@ Add the model to your repl by dragging the folder into the "Files" panel on the 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/38-3drendering-threejs/add-model.gif"
   alt="add-model"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -295,7 +295,7 @@ If you run the code, you'll see that the model is now visible in the scene. Howe
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/38-3drendering-threejs/model-side-view.png"
   alt="model-side-view"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -339,7 +339,7 @@ Save and run the project. Now you can try using the mouse to rotate the model an
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/38-3drendering-threejs/model-orbit-controls.gif"
   alt="model-orbit-controls"
-  style={{ width: "90% !important" }}
+  style={{ width: "90%" }}
 />
 
 

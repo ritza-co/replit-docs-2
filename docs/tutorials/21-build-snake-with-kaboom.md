@@ -11,7 +11,7 @@ In this tutorial, we'll implement Snake using [Kaboom.js](https://kaboomjs.com) 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/updated-graphic.gif"
   alt="game functionality"
-  style={{ width: "550px !important" }}
+  style={{ width: "550px" }}
 />
 
 
@@ -103,7 +103,7 @@ If we run this code, we should see the outline of a red square on the screen, re
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/boundary-wall.png"
   alt="Boundary wall from map"
-  style={{ width: "650px !important" }}
+  style={{ width: "650px" }}
 />
 
 
@@ -182,7 +182,7 @@ Running the code now, you should see a blue line at the top-left side of the map
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/static-snake.png"
   alt="static snake"
-  style={{ width: "650px !important" }}
+  style={{ width: "650px" }}
 />
 
 
@@ -342,7 +342,7 @@ Running the game now shows a green food block positioned somewhere randomly on t
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/food-added.png"
   alt="food added"
-  style={{ width: "650px !important" }}
+  style={{ width: "650px" }}
 />
 
 
@@ -368,7 +368,7 @@ Running this, and eating the food, you should see the snake grow each time, and 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/eat-food.gif"
   alt="eating food"
-  style={{ width: "650px !important" }}
+  style={{ width: "650px" }}
 />
 
 
@@ -398,7 +398,7 @@ Running the game now, and crashing into the wall should look something like this
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/snake-prang.gif"
   alt="snake prang"
-  style={{ width: "650px !important" }}
+  style={{ width: "650px" }}
 />
 
 
@@ -416,7 +416,7 @@ Using sprites, let's give the snake something nicer to eat than a green block. R
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/pizza.png"
   alt="pizza"
-  style={{ width: "50px !important" }}
+  style={{ width: "50px" }}
 />
 
 
@@ -469,46 +469,53 @@ This sets up our 2 layers, and makes the `game` layer the default layer to draw 
 
 Next, we can update the boundaries to look a bit better. Recall that in our map we add with [`addLevel`](https://kaboomjs.com/doc#addLevel), each different symbol we use can map to a different game object. Using this, we can create a good looking border fence, with different elements for each side and corners. Download the following 8 sprites as before, and upload them to your repl:
 
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-bottom.png"
-    alt="fence bottom"
-    style={{ width: "50px !important" }}
-  />
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-left.png"
-    alt="fence left"
-    style={{ width: "50px !important" }}
-  />
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-right.png"
-    alt="fence right"
-    style={{ width: "50px !important" }}
-  />
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-top.png"
-    alt="fence top"
-    style={{ width: "50px !important" }}
-  />
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-bottom-left.png"
-    alt="post bottom left"
-    style={{ width: "50px !important" }}
-  />
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-bottom-right.png"
-    alt="post bottom right"
-    style={{ width: "50px !important" }}
-  />
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-top-left.png"
-    alt="post top left"
-    style={{ width: "50px !important" }}
-  />
-  <img
-    src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-top-right.png"
-    alt="post top right"
-    style={{ width: "50px !important" }}
-  />
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-bottom.png"
+  alt="fence bottom"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
+
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-left.png"
+  alt="fence left"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
+
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-right.png"
+  alt="fence right"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
+
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/fence-top.png"
+  alt="fence top"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
+
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-bottom-left.png"
+  alt="post bottom left"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
+
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-bottom-right.png"
+  alt="post bottom right"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
+
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-top-left.png"
+  alt="post top left"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
+
+<img
+  src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/post-top-right.png"
+  alt="post top right"
+  style={{ width: "50px", marginLeft: "10px" }}
+/>
 
 Now, we can update the level map to use these. Replace the previous `addLevel` code with the following code:
 
@@ -582,7 +589,7 @@ The last thing is to upgrade the snake itself. Download the skin below, and uplo
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/snake-skin.png"
   alt="snake skin"
-  style={{ width: "50px !important" }}
+  style={{ width: "50px" }}
 />
 
 
@@ -642,7 +649,7 @@ If you run the game now, you should see it looking much better!
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/21-snake-kaboom/updated-graphic.gif"
   alt="game functionality"
-  style={{ width: "550px !important" }}
+  style={{ width: "550px" }}
 />
 
 

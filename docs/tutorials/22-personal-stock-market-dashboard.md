@@ -35,7 +35,7 @@ Let's start by creating an HTML frontend with the basic data and form elements n
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/22-stock-market/create-files.png"
   alt="Creating the file structure"
-  style={{ width: "75% !important" }}
+  style={{ width: "70%" }}
 />
 
 Then enter the following HTML into the `index.html` file:
@@ -116,7 +116,7 @@ Now we can use the globally scoped variable `db` like a Python dictionary, keepi
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/22-stock-market/database-sidebar.png"
   alt="Database sidebar"
-  style={{ width: "55% !important" }}
+  style={{ width: "55%" }}
 />
 
 

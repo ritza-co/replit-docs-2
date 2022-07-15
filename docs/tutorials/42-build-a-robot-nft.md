@@ -39,7 +39,7 @@ If you're already using MetaMask, we recommend creating a new account for testin
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/createaccount.png"
   alt="Create new metamask account"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 
@@ -66,7 +66,7 @@ Our ReplBot NFT will consist of a base robot and three accessories. The base rob
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/bothead-01.svg"
   alt="Base robot"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -75,12 +75,13 @@ Each NFT will have three different colors for its frame, visor, and background. 
 <img
     src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-1.svg"
     alt="NFT 1"
-    style={{ width: "60% !important" }}
+    style={{ width: "60%" }}
 />
+
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/replbot-nft-2.svg"
   alt="NFT 2"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 Which colors and accessories each NFT has will be randomly determined at creation time.
@@ -378,19 +379,19 @@ Now you can deploy your contracts. Select "ReplBots" from the drop-down box and 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/confirmdeploy.png"
   alt="Confirm deploy"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 
 
 Once this contract has been deployed, it will show up as an expandable box below the drop-down box. Expand it and take a look at all the different functions available.
 
-<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/expand.mp4">
+<video controls width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/expand.mp4">
 </video>
 
 Mint your first NFT by navigating to the `mint` function. Click on your wallet address in the top right corner of the page to copy it, and then paste it into the `recipient` field. Then run the function and approve the MetaMask pop-up that appears.
 
-<video width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/mint.mp4" type="video/mp4">
+<video controls width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/42-robot-nft-ethereum/mint.mp4" type="video/mp4">
 </video>
 
 After a few seconds, you should see a pop-up indicating that your transaction has gone through. Congratulations, you're the proud owner of a ReplBot NFT! Check out its colors and accessories by entering ID 0 into `botColors` and `botAccessories`.

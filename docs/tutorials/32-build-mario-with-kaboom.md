@@ -34,7 +34,7 @@ Download [this archive of sprite and asset files](/tutorial-files/mario-kaboom/m
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/32-mario-kaboom/upload-assets.gif"
   alt="Uploading assets"
-  style={{ width: "500px !important" }}
+  style={{ width: "500px" }}
 />
 
 ## Setting up Kaboom
@@ -290,7 +290,7 @@ After copying the code into your repl, press Command + S (Mac) or Control + S (W
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/32-mario-kaboom/start-scene.png"
   alt="start game screen"
-  style={{ width: "600px !important" }}
+  style={{ width: "600px" }}
 />
 
 

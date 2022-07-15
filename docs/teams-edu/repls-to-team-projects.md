@@ -20,7 +20,7 @@ Open the CLUI tool from the top left drop down menu or by navigating to [replit.
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsForEducation/CLUI.png"
   alt="Opening the CLUI tool"
-  style={{ width: "350px !important" }}
+  style={{ width: "350px" }}
 />
 
 
@@ -38,7 +38,7 @@ Copy and paste the *username* of the destination team into the second form field
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsForEducation/team-username.png"
   alt="Where to find a team username"
-  style={{ width: "350px !important" }}
+  style={{ width: "350px" }}
 />
 
 If you would like this to be a group project, check off the box next to `isGroupProject`.

@@ -104,7 +104,7 @@ This will add the new page to the website's navigation bar.
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/hosting-docs/new-page.gif"
   alt="new page"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -126,7 +126,7 @@ Next, click on the name of your repl and turn on "Always On" and "Add Boost". Th
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/hosting-docs/boost.png"
   alt="boost repl"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -140,7 +140,7 @@ Navigate to the "Version control" tab on the left-hand side of your project work
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/hosting-docs/create-repo.png"
   alt="create a repo"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 
@@ -150,7 +150,7 @@ This will initiate a repository with the current version of your project. Cick o
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/hosting-docs/connect-github.png"
   alt="connect to GitHub"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 
@@ -159,7 +159,7 @@ From the popup window, choose the name of your repository and create it.
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/hosting-docs/create-git-repo.png"
   alt="create git repo"
-  style={{ width: "70% !important" }}
+  style={{ width: "70%" }}
 />
 
 
@@ -176,7 +176,7 @@ To add those changes, click on the pull button which will update your project.
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/hosting-docs/replit-pr.png"
   alt="pull changes"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -190,7 +190,7 @@ For a more professional docs site, you'll probably want to run it on your own do
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/hosting-docs/domain.png"
   alt="custom domain"
-  style={{ width: "70% !important" }}
+  style={{ width: "70%" }}
 />
 
 

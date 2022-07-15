@@ -1,5 +1,5 @@
 ---
-title: Asteroids game with PyGame
+title: Asteroids game with Kaboom.js
 ---
 
 # Building Asteroids in Kaboom.js
@@ -39,7 +39,7 @@ Before we start coding, we need to upload our sprites and sounds. Download [this
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/23-asteroids-kaboom/upload-sprites.gif"
   alt="Uploading files"
-  style={{ width: "55% !important" }}
+  style={{ width: "55%" }}
 />
 
 

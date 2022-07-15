@@ -11,7 +11,7 @@ In most repls, these files are hidden by default. But you can find them easily b
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/30-build-with-nix/show-hidden-files.png"
   alt="Show configuration"
-  style={{ width: "200px !important" }}
+  style={{ width: "200px" }}
 />
 
 

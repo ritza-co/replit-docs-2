@@ -67,7 +67,7 @@ Next we need to create `start.sh` in the repl's files tab:
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/31-news-digest-app/new-file.png"
   alt="Start script"
-  style={{ width: "350px !important" }}
+  style={{ width: "350px" }}
 />
 
 And add the following bash code to `start.sh`:
@@ -105,7 +105,7 @@ Before we run our repl, we'll need to create our MongoDB data and logging direct
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/31-news-digest-app/mongodirs.png"
   alt="Mongo directories"
-  style={{ width: "350px !important" }}
+  style={{ width: "350px" }}
 />
 
 
@@ -169,7 +169,7 @@ Instead of rewriting our `start.sh` script to run this Python file, we can just 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/31-news-digest-app/script-test.png"
   alt="Scrapper cript test"
-  style={{ width: "400px !important" }}
+  style={{ width: "400px" }}
 />
 
 Now we need to write the second function. Add the following code to the `get_items` function definition:
@@ -239,7 +239,7 @@ Back in your repl, create two environment variables, `MAILGUN_DOMAIN` and `MAILG
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/31-news-digest-app/add-env-var.png"
   alt="Add environment variable"
-  style={{ width: "400px !important" }}
+  style={{ width: "400px" }}
 />
 
 
@@ -484,7 +484,7 @@ Once that's done, run your repl. You should see a login form.
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/31-news-digest-app/login-form.png"
   alt="Start script"
-  style={{ width: "450px !important" }}
+  style={{ width: "450px" }}
 />
 
 

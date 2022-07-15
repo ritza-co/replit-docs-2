@@ -9,7 +9,7 @@ To create a team, click the "Teams" tab in the sidebar. From the Teams dashboard
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/manageTeam.png"
   alt="Manage Team"
-  style={{ width: "70% !important" }}
+  style={{ width: "70%" }}
 />
 
 If you've already created a team, navigate to the [Teams dashboard](https://replit.com/teams) and then click on your team name. Once inside, click "Manage team members" in the header. From there, you can invite new members to your existing team.

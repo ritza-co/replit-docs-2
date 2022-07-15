@@ -32,7 +32,7 @@ Before we start coding, we need to upload our sprites and sounds. Download [this
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/upload-assets.gif"
   alt="Uploading assets"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 
@@ -150,7 +150,7 @@ We've used Kaboom's [`loadFont()`](https://kaboomjs.com/#loadFont) function, spe
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/37-breakout-kaboom/breakout_font.png"
   alt="Breakout font"
-  style={{ width: "30% !important" }}
+  style={{ width: "30%" }}
 />
 
 

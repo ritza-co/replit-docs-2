@@ -43,7 +43,7 @@ If you haven't already, download this [zip file](/tutorial-files/space-shooter-k
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/24-space-shooter-kaboom/upload-sprites.gif"
   alt="Uploading assets"
-  style={{ width: "500px !important" }}
+  style={{ width: "500px" }}
 />
 
 

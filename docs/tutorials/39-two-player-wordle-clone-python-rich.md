@@ -8,7 +8,7 @@ In this guide, we'll build a version of the popular game *Wordle*. Instead of th
 
 Once you're done, you'll be able to play a command-line-based game with a friend (with both of you sitting at the same machine), as shown below.
 
-<video width="800" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/twordledemo.mp4" type="video/mp4">
+<video controls width="80%" autoplay loop src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/twordledemo.mp4" type="video/mp4">
 </video>
 
 
@@ -35,7 +35,7 @@ This will create a `pyproject.toml` file to define Rich as a dependency, and Rep
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/shell.png"
   alt="Running commands in shell"
-  style={{ width: "75% !important" }}
+  style={{ width: "75%" }}
 />
 
 
@@ -86,7 +86,7 @@ Run this code, and you'll see a Wordle-styled welcome message, demonstrating all
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/welcometowordle.png"
   alt="Wordle welcome message"
-  style={{ width: "80% !important" }}
+  style={{ width: "80%" }}
 />
 
 
@@ -143,7 +143,7 @@ If you run this, you'll be prompted (as player 1) to enter a word. The entered w
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/gameloop.png"
   alt="Game loop"
-  style={{ width: "80% !important" }}
+  style={{ width: "80%" }}
 />
 
 
@@ -188,7 +188,7 @@ Now player 2 has something to work on from each guess, and it should be a lot ea
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/feedback.png"
   alt="Feedback"
-  style={{ width: "80% !important" }}
+  style={{ width: "80%" }}
 />
 
 
@@ -249,7 +249,7 @@ If you run again, the game will work as before, but now you'll see the emoji rep
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/withemoji.png"
   alt="EmojiS"
-  style={{ width: "85% !important" }}
+  style={{ width: "85%" }}
 />
 
 
@@ -282,7 +282,7 @@ This clears the console completely after each guess by player 2, and then prints
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/39-two-player-wordle-clone-python-rich/clearedinputs.png"
   alt="Cleared inputs"
-  style={{ width: "85% !important" }}
+  style={{ width: "85%" }}
 />
 
 

@@ -37,7 +37,7 @@ Navigate to the "Teams" page. Under "Team Repls", click the "Create team repl" b
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/create_interview_repl.png"
   alt="Creating a repl"
-  style={{ width: "80% !important" }}
+  style={{ width: "80%" }}
 />
 
 
@@ -54,7 +54,7 @@ Once you have written your challenges, invite candidates by clicking on the "Inv
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/invite_members.png"
   alt="repl invitation"
-  style={{ width: "90% !important" }}
+  style={{ width: "90%" }}
 />
 
 
@@ -64,7 +64,7 @@ You can invite candidates by entering their email address or by generating a joi
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/notification.png"
   alt="invite notification"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
 
@@ -87,7 +87,7 @@ To remove candidates from interview repls so they cannot access the interview on
 <img
   src="https://replit-docs-images.util.repl.co/images/teamsPro/interviewing-candidates-tutorial-images/remove-candidates.png"
   alt="remove candidate access"
-  style={{ width: "90% !important" }}
+  style={{ width: "90%" }}
 />
 
 Click on the "x" next to their name and they will be removed from the interview rempl. They will no longer be able to access the repl via the invite link.

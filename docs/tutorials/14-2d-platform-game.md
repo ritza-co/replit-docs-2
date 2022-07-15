@@ -21,7 +21,7 @@ Before we start writing code, we're going to need a few sprites, which we've mad
 
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/14-2d-platform-game/14-02-repl-files.png"
-  style={{ width: "60%", height: "60%" }}
+  style={{ width: "70%", height: "80%" }}
 />
 
 In this tutorial, we will be gradually building up the `main.py` file, adding code in different parts of the file as we go along. Each code snippets will contain some existing code to give you an idea of where in the file the new additions should be placed. The line `# ...` will be used to represent existing code that has been left out for brevity.

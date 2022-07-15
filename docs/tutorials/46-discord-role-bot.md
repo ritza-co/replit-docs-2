@@ -41,7 +41,7 @@ The token you just copied is required for the code in our repl to interface with
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/46-discord-role-bot/secret-token.png"
   alt="Secret token"
-  style={{ height: "40% !important" }}
+  style={{ height: "40%" }}
 />
 
 

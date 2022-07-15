@@ -38,7 +38,7 @@ If you haven't already, download this [zip file](/tutorial-files/3d-game-kaboom/
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/25-3d-game-kaboom/upload-sprites.gif"
   alt="Uploading sprites"
-  style={{ width: "50% !important" }}
+  style={{ width: "50%" }}
 />
 
 

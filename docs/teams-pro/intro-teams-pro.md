@@ -61,7 +61,7 @@ The platform it is built around four cornerstones which we used to inform its fe
 <img
   src="https://pbs.twimg.com/media/EuCd-dvVkAwNO8K?format=jpg&name=large"
   alt="Our internal tool"
-  style={{ width: "60% !important" }}
+  style={{ width: "60%" }}
 />
 
   - If you use always-on with hosting, you can spin up your blogs, docs, scripting tools, etc., at unprecedented speeds.

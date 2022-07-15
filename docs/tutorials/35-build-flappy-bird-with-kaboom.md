@@ -20,7 +20,7 @@ Head over to [Replit](https://replit.com) and create a new repl. Choose **Kaboom
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/new-repl.png"
   alt="Creating a new repl"
-  style={{ width: "90% !important" }}
+  style={{ width: "90%" }}
 />
 
 
@@ -31,7 +31,7 @@ Download the [sprites and asset files](/tutorial-files/flappy-bird-kaboom/flappy
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/upload-sprites.gif"
   alt="Uploading sprites"
-  style={{ width: "80% !important" }}
+  style={{ width: "80%" }}
 />
 
 
@@ -68,7 +68,7 @@ The first argument in each `load` function is the name we want to use to refer t
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/game-scenes.png"
   alt="game scenes"
-  style={{ width: "350px !important", height: "40% !important" }}
+  style={{ width: "350px", height: "40%" }}
 />
 
 For this tutorial, we'll omit the intro scene, since we already know what Flappy bird is and how to play it, but you can add your own intro scene later!
@@ -170,7 +170,7 @@ Here is a diagram of the layout of the pipes in the game.
 <img
   src="https://replit-docs-images.util.repl.co/images/tutorials/35-flappy-bird/pipe-gap.png"
   alt="pipe layout and gap"
-  style={{ width: "75% !important" }}
+  style={{ width: "75%" }}
 />
 
 

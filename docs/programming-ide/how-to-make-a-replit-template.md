@@ -9,12 +9,11 @@ You can share your Repl with the Replit community by publishing it. Published Re
 You can also publish your Repl as a template. This is a good option if your Repl can be used as a starting point for projects. Let's learn what a Replit template is and how to make a good one.
 
 
-
 ## What's a template?
 
 Templates are a type of published Repl. Published Repls are Repls that you share with the community, you can publish your Repl using the following [guide](https://docs.replit.com/hosting/sharing-your-repl). Published Repls are added to the Replit [Community page](https://replit.com/community). You can find interesting projects or people to follow there.
 
-You can create just about anything with Replit, wheather it's a game, a personal website, an operating system or even a MacOS clone.
+You can create just about anything with Replit, whether it's a game, a personal website, an operating system or even a macOS clone.
 
 Once you publish a Repl, comments will be enabled, which allows you to get useful feedback. You can also disable comments if you want to. You can edit published Repls and share update messages to show how your project has changed over time.
 
@@ -22,23 +21,26 @@ Templates are published Repls that can be used as a starting point for a project
 
 There are different kinds of templates on the [Templates page](https://replit.com/templates). The official templates, made by Replit, have a checkbox next to the name of the template:
 
-<img src="/images/author/template-official.png" alt="Official Replit template" />
-
+![Official Replit templates](https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/template-official.png)
 
 
 The other templates are community templates that have been created by community members. Such as the following template:
 
-<img src="/images/author/template-community.png" alt="Community Replit template" />
-
+<img 
+    src="https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/template-community.png" 
+    alt="Community Replit template"
+    style={{ width: "33%" }}
+/>
 
 
 Now let's learn how to make a template.
 
 
-
 ## Creating a template
 
-You can learn how to make a Repl by using the following [guide](https://docs.replit.com/tutorials/introduction-to-the-repl-it-ide). Once you have created a Repl, you can publish it as a template by following the Replit [publishing flow](https://blog.replit.com/publishing). To make your published Replit a template, tick the checkbox on the last step of the publish flow that is called "Publish as template".
+You can learn how to make a Repl by using the following [guide](https://docs.replit.com/tutorials/introduction-to-the-repl-it-ide). Once you have created a Repl, you can publish it as a template by following the Replit [publishing flow](https://blog.replit.com/publishing). To make your published Repl a template, tick the checkbox on the last step of the publishing flow that is called "Publish Repl as a Template".
+
+![Publish as template](https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/publish.png)
 
 The possibilities for the templates that you can create are just about endless. For example, you can create a template for building a portfolio website, using a particular library such as React Native, creating a Chrome extension, or a creating Shopify theme.
 
@@ -65,13 +67,13 @@ Let's look at a practical example of how to create a template.
 
 ## A practical example: Phaser Vite starter template
 
-Let's look at how the following community template was created: [Phaser Vite starter template](https://replit.com/@MattClarke2/Phaser-Vite-starter-template?v=1). Phaser is a beginner-friendly 2D JavaScript game framework that is used to create HTML5 games. [Vite](https://vitejs.dev) is a development server and JavaScript bundler. This template will allow you to do everything that you need to do for creating a Phaser game in Replit: developing your game as well as creating, serving and downloading the production bundle. You can do all stages of development in your browser. Now let's learn how the template was configured to build a production-ready bundle of a Phaser game.
+Let's look at how the following community template was created: [Phaser Vite starter template](https://replit.com/@ritza/Phaser-Vite-starter-template?v=1). Phaser is a beginner-friendly 2D JavaScript game framework that is used to create HTML5 games. [Vite](https://vitejs.dev) is a development server and JavaScript bundler. This template will allow you to do everything that you need to do for creating a Phaser game in Replit: developing your game as well as creating, serving and downloading the production bundle. You can do all stages of development in your browser. Now let's learn how the template was configured to build a production-ready bundle of a Phaser game.
 
 This template was made as an alternative to using Phaser 3 with Webpack for bundling. A major advantage of using Vite is that the re-build time during development is faster than Webpack, this is especially true for larger projects. When a file is changed, the changes in the dev server are seen right away. Vite is also easier to use than Webpack.
 
 
 
-The  Replit Phaser Vite starter template is based on this [Phaser 3 TypeScript Starter template](https://github.com/geocine/phaser3-rollup-typescript). The Replit template uses Vite 3, which is currently the latest Vite version, and has some basic starting code which demonstrates these useful features of Phaser 3 for building games:
+The  Replit Phaser Vite starter template is based on this [Phaser 3 TypeScript starter template](https://github.com/geocine/phaser3-rollup-typescript). The Replit template uses Vite 3, which is currently the latest Vite version, and has some basic starting code which demonstrates these useful features of Phaser 3 for building games:
 
 - Loading game assets: images.
 - Moving a sprite.
@@ -86,8 +88,8 @@ When you fork a template, the npm packages in the `package.json` file are automa
 
 The following commands are available for Vite:
 
-- `npm run dev` runs `vite` - runs the dev server.
-- `npm run build` runs `vite build` - builds the production bundle. Added to the `dist` folder.
+- `npm run dev` runs `vite` - starts the dev server.
+- `npm run build` runs `vite build` - builds the production bundle to the `dist` folder.
 - `npm run preview` runs `vite preview` - serves the production bundle.
 
 
@@ -96,6 +98,12 @@ To get the dev server template working in Replit required changing the `vite.con
 
 The `.replit` file is used to determine what the Repl "Run" button will do. In this template, it's modified during development to make the "Run" button run different Vite commands for development and production. The `.replit` file is hidden in most Repls. You can show the hidden files by clicking the three dot menu in the file tree of the Repl template, and selecting "Show hidden files".
 
+<img
+ src="https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/show-hidden.png"
+ alt="Community Replit template"
+ style={{ width: "33%" }}
+/>
+
 The "Run" button is initially configured to run the dev server. You can see this in the `.replit` file:
 
 ```toml
@@ -103,7 +111,6 @@ The "Run" button is initially configured to run the dev server. You can see this
 run="npm run dev"
 entrypoint="/src/main.js"
 ```
-
 
 
 The `entrypoint` command is the name of the main file. It's the file that will be run and is shown by default when opening the editor. For development, the `/src/main.js` file is used.
@@ -129,9 +136,8 @@ language="nodejs"
 
 # run production build
 run="npm run preview"
-entrypoint="/dist/index.a808088d.js"
+entrypoint="/dist/assets/index.a808088d.js"
 ```
-
 
 
 When you bundle your code using Vite, a random hash is added to the `html`, `css`, and `js` files. The hash in the `js` file of the `entrypoint` command of your bundle would be different from the one above.
@@ -145,6 +151,12 @@ zip -r myPhaserGameDownload.zip dist
 
 
 This will create a zip file named `myPhaserGameDownload.zip` in the file tree. You can download this zip file by clicking the three dot menu that appears next to the zip file name, when you hover your mouse over the zip file or select the zip file, and selecting "Download".
+
+<img
+ src="https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/file-download.png"
+ alt="Download zip"
+ style={{ width: "40%" }}
+/>
 
 To create the zip file, the Nix `zip` package was added to the Repl. It's used to create a zip folder of your production bundle that can then be downloaded. If you have a Repl that does not have the `zip` package installed and try to use the `zip` command in the "Shell" tab, you will get the following message in the shell:
 
@@ -182,7 +194,7 @@ During the [publish flow](https://blog.replit.com/publishing) when the template 
 
 
 
-Another thing to consider when choosing bundlers is the production bundle size. To compare the bundle size of Vite vs Webpack, production bundles of a [Flappy Bird game](https://replit.com/@MattClarke2/Flappy-Bird-Phaser#script.js) were created. The following starter template was used for the Webpack bundle: [Phaser starter template (using Webpack 4)](https://github.com/photonstorm/phaser3-project-template). The JavaScript bundle size was 1.02 MB using Webpack and 1.29 MB using the Replit Phaser Vite starter template. To further reduce the bundle size the configurations of each can be tweaked to optimize the build for a particular project. For example, Storybook compared [Webpack vs Vite bundling](https://storybook.js.org/blog/storybook-performance-from-webpack-to-vite) and found that Vite produced smaller production bundles for published Storybooks.
+Another thing to consider when choosing bundlers is the production bundle size. To compare the bundle size of Vite vs Webpack, production bundles of a [Flappy Bird game](https://replit.com/@ritza/Flappy-Bird-Phaser#script.js) were created. The following starter template was used for the Webpack bundle: [Phaser starter template (using Webpack 4)](https://github.com/photonstorm/phaser3-project-template). The JavaScript bundle size was 1.02 MB using Webpack and 1.29 MB using the Replit Phaser Vite starter template. To further reduce the bundle size the configurations of each can be tweaked to optimize the build for a particular project. For example, Storybook compared [Webpack vs Vite bundling](https://storybook.js.org/blog/storybook-performance-from-webpack-to-vite) and found that Vite produced smaller production bundles for published Storybooks.
 
 Ultimately Vite was chosen for making this Replit Phaser template because of its ease of use and fast development build times, which makes for a better developer experience. Vite also updates the development server when code changes, even before the file is saved. It has very fast [Hot Module Replacement](https://vitejs.dev/guide/features.html#hot-module-replacement).
 

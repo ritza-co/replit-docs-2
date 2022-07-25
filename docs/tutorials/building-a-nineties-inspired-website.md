@@ -1,25 +1,25 @@
 ---
-title: Learning HTML and CSS by building a 90s inspired website
+title: Learning HTML and CSS by building a 90s-inspired website
 ---
 
-# Learning HTML and CSS by building a 90s inspired website
+# Learning HTML and CSS by building a 90s-inspired website
 
-In this tutorial, we will make a 90s inspired website using HTML and a tiny bit of CSS.
+In this tutorial, we will make a 90s-inspired website using HTML and a little CSS.
 
 Nineties web design is pretty iconic. With backgrounds that can make your eyes water, animated GIFs and cursors, and an overload of text, graphics, and ads, there is only one word to describe 90s web design - garish!
 
-Yet for those who have seen the birth of the world wide web, 90s web design brings back fond memories.
+Yet for those who witnessed the birth of the world wide web, 90s web design brings back fond memories.
 
-As most of the websites built in the 90s didn't require complicated CSS and JavaScript, building a 90s inspired website can be a fun first project to learn web development.
+As most of the websites built in the 90s didn't require complicated CSS and JavaScript, building a 90s-inspired website can be a fun first project to learn web development.
 
 
 ## HTML and CSS
 
-Every website you see on the web has two main building blocks - [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
+Every website you see on the web has two main building blocks: [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
- Hyper Text Markup Language (HTML) is not a programming language. It is, as the name suggests, a markup language. To understand what a markup language is, we need to travel in history.
+Hyper Text Markup Language (HTML) is not a programming language. It is, as the name suggests, a markup language. To understand what a markup language is, we need to travel back in history.
 
-Imagine you are an editor in the olden days and you receive a manuscript to revise. You want to write a bunch of revision instructions for the author, on the manuscript. Or you may want to write instructions for the copy editor (write certain lines in a bigger font, make certain words bold, and so on).
+Imagine you are an editor in the olden days and you receive a manuscript to revise. You want to write a bunch of revision instructions for the author on the manuscript. Or you may want to write instructions for the copy editor (write certain lines in a bigger font, make certain words bold, and so on).
 
 To keep your instructions distinct from the content of the manuscript itself, you grab a [red or blue pencil](<https://en.wikipedia.org/wiki/Blue_pencil_(editing)>) and write your instructions. In other words, you "mark up" the manuscript.
 
@@ -49,7 +49,7 @@ And we want to instruct the browser to display this text as a heading. We can si
 
 There are tons of HTML elements. But don't worry! You don't have to memorize everything. Once you understand how elements and tags work, you can always refer to [the documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and find relevant elements and their usage.
 
-HTML is the skeleton of our website. But CSS or Cascading Style Sheets is what adds interest to a website. CSS is used to style and alter the layout of HTML elements. We use CSS to alter fonts, change colors and size, add animations, and control other decorative features of our website.
+HTML is the skeleton of our website. But CSS or Cascading Style Sheets is what adds interest to a website. CSS is used to style and alter the layout of HTML elements. We use CSS to specify fonts, change colors and size, add animations, and control other decorative features of our website.
 
 We will learn more about HTML and CSS as we make our website.
 
@@ -61,11 +61,11 @@ Create an account on [Replit](https://replit.com/) if you haven't already. Creat
 
 ![create a new repl]( https://replit-docs-images.bardia.repl.co/images/tutorials/nineties-website/create-a-new-repl.png)
 
-You will see that we have three files added to our project. `index.html` is the file where we will write our HTML. And `style.css` is where we will write our CSS. You can delete the `script.js` file as we won't write any JavaScript in this tutorial.
+You will see that we have three files added to our project. The `index.html` file is where we will write our HTML. The `style.css` file is where we will write our CSS. You can delete the `script.js` file, as we won't write any JavaScript in this tutorial.
 
-Replit pre-populates the `index.html` file with a bunch of code. Delete everything in there as we will start from scratch.
+Replit prepopulates the `index.html` file with a bunch of code. Delete everything in there as we will start from scratch.
 
-Copy the following line in your `index.html` file, and you will see it formatted as a heading in the browser preview window.
+Copy the following line in your `index.html` file, and you will see it formatted as a heading in the browser preview window:
 
 ```html
 <h1>Web Design in the 90s</h1>
@@ -79,7 +79,7 @@ That's it! You just made your very own web page 🎉🎉🎉
 
 While writing individual HTML tags does work, to create a real website we need to combine individual elements in a structured way. We will also need to add some extra information and metadata about our site for SEO and other purposes.
 
-In your code editor erase everything.
+In your code editor, erase everything.
 
 The very first piece of HTML we will write is `<!DOCTYPE html>`.
 
@@ -100,7 +100,7 @@ The `<html>` tag wraps around all the content and is often called the root eleme
 
 Also, notice how we set the language to USA English by setting the value of the `lang` attribute to `"en-US"`. We can pass extra information to an HTML element using attributes.
 
-## The `<head>`
+## The `<head>` element
 
 Inside the `<html>` element, the content is divided into a `<head>` element and a `<body>` element.
 
@@ -129,7 +129,7 @@ Let's add these elements to the `<head>`:
 </html>
 ```
 
-To display an HTML page correctly, a web browser must know which character set to use. Adding the line `<meta charset="utf-8">` tells our browser to use the [`UTF-8`](https://en.wikipedia.org/wiki/UTF-8) character set. `UTF-8` is the recommended character set as it covers almost all of the characters and symbols in the world!
+To display an HTML page correctly, a web browser must know which character set to use. Adding the line `<meta charset="utf-8">` tells our browser to use the [UTF-8](https://en.wikipedia.org/wiki/UTF-8) character set. UTF-8 is the recommended character set as it covers almost all of the characters and symbols in the world!
 
 The `<title>` element contains the title of our website. This title appears in the browser tab. It is also used to describe the page when you bookmark it.
 
@@ -139,11 +139,11 @@ In Replit you can generate this boilerplate code by typing `!` followed by the t
 
 :::
 
-## The `<body>`
+## The `<body>` element
 
 Everything we want to display on our website will be nested within the `<body>` element. We will spend most of our time as web developers in this element.
 
-Let's add a `<header>` element and a heading to our site:
+Let's add a `<header>` element and a heading to the `<body>` of our site:
 
 ```html
 <!DOCTYPE html>
@@ -162,7 +162,7 @@ Let's add a `<header>` element and a heading to our site:
 
 The `<header>` element usually contains introductory and/or navigational content. Don't confuse the `<header>` with the `<head>` element.
 
-The `<h1>` element is the level one heading element. Heading elements allow us to specify that certain parts of our content are headings - or subheadings. There are 6 heading levels in HTML, `<h1>` to `<h6>`.
+The `<h1>` element is the level one heading element. Heading elements allow us to specify that certain parts of our content are headings or subheadings. There are six heading levels in HTML, `<h1>` to `<h6>`.
 
 :::info Indentation
 
@@ -172,7 +172,7 @@ The indentation in the HTML code is not required. The only reason we indent our 
 
 ## Adding more content
 
-Let's add some more content to our site. We already have a heading so let's add a `<main>` element to our web page:
+Let's add some more content to our site. We already have a heading, so let's add a `<main>` element to our web page:
 
 ```html
 <body>
@@ -224,7 +224,7 @@ Hit the "Run" button on your Replit site and you will see the new text appear in
 
 ![paragraphs added]( https://replit-docs-images.bardia.repl.co/images/tutorials/nineties-website/paragraphs-added.png)
 
-## Links
+## Adding links
 
 Next, we will add a link to [the web design museum](https://www.webdesignmuseum.org/exhibitions/web-design-in-the-90s) so our readers can see some actual 90s websites. We want to make some of our text clickable. We can do that by using [the anchor tag `<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).
 
@@ -237,7 +237,7 @@ First wrap the text that you want to make clickable with the `<a></a>` tags, lik
 </p>
 ```
 
-The anchor element also requires a `href` or hyperlink reference attribute, which is the URL that the hyperlink points to.
+The anchor element requires an `href` or hyperlink reference attribute, which is the URL that the hyperlink points to.
 
 ```html
 <p>
@@ -252,9 +252,9 @@ Hit "Run" and you should see the link in action:
 
 ![hyperlink-added.png]( https://replit-docs-images.bardia.repl.co/images/tutorials/nineties-website/hyperlink-added.png)
 
-## Images
+## Adding images
 
-You can't have a 90s inspired website without the animated GIF of the dancing baby!
+You can't have a 90s-inspired website without the animated GIF of the dancing baby!
 
 Create a new folder in the "Files" section in your repl, and name it "img". Download the images from [here](/tutorial-files/nineties-website/assets.zip) and upload them to the "img" folder.
 
@@ -336,7 +336,7 @@ The `<!-- -->` characters mark a comment. Anything written between these two tag
 
 The website has all the content that we need. Now it's time to add some CSS magic.
 
-But before we write any CSS, we need to leave instructions for our browser so it knows where to look for our CSS file.
+Before we write any CSS, we need to leave instructions for our browser so it knows where to look for our CSS file.
 
 To link the CSS file to the HTML file, we will use a [link element `<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link). The `<link>` element is used to specify relationships between the current document and an external resource. This element is most commonly used to link to CSS, but it can be used to link other files.
 
@@ -351,7 +351,7 @@ We will add the `<link>` element within the `<head>` element of our site:
 </head>
 ```
 
-The `<link>` element needs a `rel` or relationship attribute and a `href` attribute. We set the `rel` attribute to "stylesheet" to tell our browser what kind of document are we linking. We will add the name of our stylesheet as the value of the `href` attribute.
+The `<link>` element needs a `rel` or relationship attribute and an `href` attribute. We set the `rel` attribute to "stylesheet" to tell our browser what kind of document are we linking. We will add the name of our stylesheet as the value of the `href` attribute.
 
 :::info
 
@@ -413,7 +413,7 @@ A good way to learn CSS is by playing around with different properties and their
 
 :::
 
-## Classes
+## HTML classes
 
 Selecting elements by name comes in handy when we want to select all elements of the same type on a page at once. But for better control, we may want to select and make changes to individual elements. One way to select individual elements is using _classes_.
 
@@ -455,7 +455,7 @@ Let's also add a class `container` to our `<div>` element and use it to add a ba
 </body>
 ```
 
-Upload the `window.png` file to your image folder, if you haven't already. And add the following CSS code to your `style.css` file:
+Upload the `window.png` file to your image folder, if you haven't already. Now add the following CSS code to your `style.css` file:
 
 ```css
 .container {
@@ -469,9 +469,9 @@ Upload the `window.png` file to your image folder, if you haven't already. And a
 }
 ```
 
-CSS properties are pretty self-explanatory. In the code above, we are using an image as a background with a `url()` function. This is just like passing the URL of an image to the `href` attribute in HTML.
+CSS properties are pretty self-explanatory. In the code above, we use an image as a background with a `url()` function. This is just like passing the URL of an image to the `href` attribute in HTML.
 
-Next, we are telling the browser to position this image in the center and not to repeat it multiple times. We also set the height and width. This time we are using absolute length units `px`.
+Next, we tell the browser to position this image in the center and not to repeat it multiple times. We also set the height and width. This time we use absolute length units `px`.
 
 The `margin` property controls the extra space around an element. Setting it to `auto` means we want equal space all around an element, which is a good way to center an element.
 
@@ -500,7 +500,7 @@ Our website is done! We can share it with the world by sharing the URL of our re
 
 There is one problem, however. The URL is not very reader-friendly. We want something easier like "ilove90sdesign.com".
 
-There are many places where we can buy a custom URL or domain. Some of them are [Google Domains](https://domains.google/v2/), [GoDaddy](https://www.godaddy.com), and [Namecheap](https://www.namecheap.com/).
+There are many places you can buy a custom URL or domain. Some of them are [Google Domains](https://domains.google/v2/), [GoDaddy](https://www.godaddy.com), and [Namecheap](https://www.namecheap.com/).
 
 Let's walk through the process of connecting our repl to a custom domain from Namecheap.
 
@@ -510,7 +510,7 @@ Next, in your Replit site, click on the pencil icon in the browser preview windo
 
 ![domain linking]( https://replit-docs-images.bardia.repl.co/images/tutorials/nineties-website/domain-linking.png)
 
-Copy the IP address from step 2.
+Copy the IP address from the "Domain Linking" dialog.
 
 Sign in to your Namecheap account. Follow the instructions from step 3 of [this guide](https://www.namecheap.com/support/knowledgebase/article.aspx/9837/46/how-to-connect-a-domain-to-a-server-or-hosting/). Select "@" for "Host" and enter the IP address that you have copied above in the "IP Address" field.
 
@@ -524,7 +524,7 @@ It can take some time before the changes take effect.
 
 ## Where next?
 
-That's it for this tutorial. But you can build your site further. Try adding more sections to your website. Play around with CSS properties and selectors and give your site a different look.
+That's it for this tutorial, but you can build your site further. Try adding more sections to your website, or play around with CSS properties and selectors to give your site a different look.
 
 
 You can find our repl below:

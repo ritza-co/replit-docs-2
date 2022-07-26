@@ -78,8 +78,6 @@ When you fork the template, the npm packages in the `package.json` file are auto
 
 To get the dev server template working in Replit, we needed to add a `vite.config.js` file and configure it to conditionally determine the configuration options based on the Vite command used: `dev`, `serve`, or `build`. You can read more about conditional Vite configuration in the [Vite docs](https://docs.replit.com/hosting/deploying-http-servers).
 
-To get the dev server template working in Replit, we needed to edit the `vite.config.js` file that came with the Vite installation. We set the server `host` to `0.0.0.0` for development so that Replit knows that a web server is running, which allows Replit to show a preview of the app on the dev server. You don't always need to explicitly set the host. Read more about this in the [docs](https://docs.replit.com/hosting/deploying-http-servers).
-
 
 ### Configuring the "Run" button
 

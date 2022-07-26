@@ -18,7 +18,7 @@ By the end of this tutorial, you will have:
 
 Sign in to [Replit](https://replit.com) or [create an account](https://replit.com/signup) if you haven't already. Once logged in, create a Python repl.
 
-![](/images/author/create-repl.png)
+![Create repl](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/create-repl.png)
 
 ## Game design
 
@@ -66,7 +66,7 @@ import enum, random, sys
 from copy import deepcopy
 ```
 
-![](/images/author/gamedotpy.png)
+![Game file](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/gamedotpy.png)
 
 We're pulling in the [Python library](https://replit-py.readthedocs.io/en/latest/db_tutorial.html) for [Replit Database](https://docs.replit.com/hosting/database-faq), a persistent key-value store attached to every repl. If you haven't used this before, think of it as a Python dictionary with contents that persist between restarts of your repl. We'll be using it to store the state of our game and its characters as they fight enemies and level up.
 
@@ -103,7 +103,7 @@ Next, we'll create classes for living creatures, such as players' characters and
       `--------'   `------'
 ```
 
-Let's start by implementing our parent class, `Actor`. This class will define all of the attributes characters and enemies have in common and implement a `fight()` method. Add the following code at the bottom of `game.py`:
+Let's start by implementing our parent class, `Actor`. This class will define all of the attributes, characters and enemies have in common and implement a `fight()` method. Add the following code at the bottom of `game.py`:
 
 ```python
 # Living creatures
@@ -305,7 +305,7 @@ class Character(Actor):
         self.mana = mana
         self.level = level
         
-        self.inventory = [] 
+        self.inventory = inventory 
 
         self.mode = mode
         # NEW CODE BELOW THIS LINE
@@ -389,7 +389,7 @@ First, we use [`random.choice()`](https://docs.python.org/3/library/random.html#
 
 Once the enemy is chosen, we initialize an instance of it, switch the game mode, and save a reference to it in `battling`. We then update the player object in the database and return the enemy object.
 
-We will need to call `save_to_db()` at the end of every method that changes the character's state. This includes the `fight()` method defined in `Actor`. Add the following method to accomplish this:
+We will need to call `save_to_db()` at the end of every method that changes the character's state. This includes the `fight()` method defined in `Actor`. Add the following method to the `Character` class to accomplish this:
 
 ```python
    def fight(self, enemy):
@@ -460,7 +460,7 @@ Let's define `ready_to_level_up()` next:
         return (self.xp >= xp_needed, xp_needed-self.xp) #(ready, XP needed)
 ```
 
-This method merely checks whether the current XP is greater than or equal to ten times the character's level. Characters will need 10 XP to advance to level 2, 20 XP to advance to level 3, etc... The method returns a tuple containing a boolean that indicates whether the character is ready to level up and the amount of XP still needed. As it does not change the character's state, we do not need a call to `save_to_db`.
+This method merely checks whether the current XP is greater than or equal to ten times the character's level. Characters will need 10 XP to advance to level 2, 20 XP to advance to level 3, etc. The method returns a tuple containing a boolean that indicates whether the character is ready to level up and the amount of XP still needed. As it does not change the character's state, we do not need a call to `save_to_db`.
 
 Now that we're increasing the player's XP and checking whether they're ready to level up, we need a method to level them up. Add the following method:
 
@@ -481,7 +481,7 @@ Now that we're increasing the player's XP and checking whether they're ready to 
         return (True, self.level) # (leveled up, new level)
 ```
 
-After ensuring that the player is ready to level up, we increase their level and use Python built-ins [`setattr`](https://docs.python.org/3/library/functions.html#getattr) and `getattr` to increment one of the character's stats. We reset their HP to the max value, save the state, and finally return the outcome of the action (a tuple indicating whether leveling up succeeded and what the character's new level is).
+After ensuring that the player is ready to level up, we increase their level and use Python built-ins [`setattr`](https://docs.python.org/3/library/functions.html#setattr) and [`getattr`](https://docs.python.org/3/library/functions.html#getattr) to increment one of the character's stats. We reset their HP to the max value, save the state, and finally return the outcome of the action (a tuple indicating whether leveling up succeeded and what the character's new level is).
 
 The last method we need is `die()`, which will be called when a character is defeated in battle. We could handle player death in a few different ways, but for the sake of simplicity, we'll just delete the character from the database.
 
@@ -501,7 +501,7 @@ Open another browser tab and visit the [Discord Developer Portal](http://discord
 
 Once you're logged in, create a new application. Give it a name like "MyRPG".
 
-![](/images/author/discord-create-app.png)
+![Discord create app](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/discord-create-app.png)
 
 Discord applications can interact with Discord in several different ways, not all of which require bots, so creating one is optional. That said, we'll need one for this project. Let's create a bot.
 
@@ -511,25 +511,32 @@ Discord applications can interact with Discord in several different ways, not al
 4. Click **Reset Token** and then **Yes, do it!**.
 4. Copy the token that appears just under your bot's username.
 
-![](/images/author/discord-create-bot.png)
+![Discord create bot](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/discord-create-bot.png)
 
 The token you just copied is required for the code in our repl to interface with Discord's API. Return to your repl and open the Secrets tab in the left sidebar. Create a new secret with `DISCORD_TOKEN` as its key and the token you copied as its value.
 
-![](/images/author/secret-token.png)
+
+<img
+    src="https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/secret-token.png"
+    alt="Secret token"
+    style={{ width: "50%" }}
+/>
 
 Once you've done that, return to the Discord developer panel. We need to finish setting up our bot.
 
 You can leave the **Public Bot** option enabled or disable it, depending on whether you'd like other people to be able to find and install your bot on their server. Keep in mind that bots on 100 or more servers have to go through a special verification and approval process.
 
+![Public Bot option](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/public-bot.png)
+
 Next, we need to configure access to privileged [Gateway Intents](https://discord.com/developers/docs/topics/gateway#gateway-intents). Depending on a bot's functionality, it will require access to different events and sources of data. Events involving users' actions and the content of their messages are considered more sensitive and need to be explicitly enabled.
 
 For this bot to work, we'll need the **Message Content Intent**, which will allow our bot to see the content of users' messages. Toggle it to the on position and save changes when prompted.
 
-![](/images/author/bot-intents.png)
+![Bot intents](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/bot-intents.png)
 
-Now that we've created our application and its bot, we need to add it to a server. We'll walk you through creating a test server for this tutorial, but you can also any server you've created in the past, as long as the other members won't get too annoyed about it becoming a bot testing ground. You can't use a server that you're just a normal user on, as adding bots requires special privileges.
+Now that we've created our application and its bot, we need to add it to a server. We'll walk you through creating a test server for this tutorial, but you can also use any server you've created in the past, as long as the other members won't get too annoyed about it becoming a bot testing ground. You can't use a server that you're just a normal user on, as adding bots requires special privileges.
 
-Open [Discord.com](http://discord.com) in your browser. You should already be logged in. Then click on the **+** icon in the leftmost panel to create a new server. Alternatively, open an existing server you own.
+Open [Discord](http://discord.com) in your browser. You should already be logged in. Then click on the **+** icon in the leftmost panel to create a new server. Alternatively, open an existing server you own.
 
 In a separate tab, return to the [Discord Dev Portal](https://discord.com/developers/applications) and open your application. Then follow these steps to add your bot to your server:
 
@@ -537,13 +544,13 @@ In a separate tab, return to the [Discord Dev Portal](https://discord.com/develo
 2. In the menu that appears under **OAuth2**, select **URL Generator**.
 4. Under **Scopes**, mark the checkbox labelled *bot*.
 5. Under **Bot Permissions**, mark the checkboxes labelled *Read Messages/View Channels* and *Send Messages*.
-    ![](/images/author/bot-permissions.png)
+    ![Bot permissions](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/bot-permissions.png)
 
 5. Scroll down and copy the URL under **Generated URL**.
 6. Paste the URL in your browser's navigation bar and hit Enter.
 7. On the page that appears, select your server from the drop-down box and click **Continue**.
 8. When prompted about permissions, click **Authorize**, and complete the CAPTCHA.
-    ![](/images/author/bot-connect.png)
+    ![Bot connect](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/bot-connect.png)
 
 8. Return to your Discord server. You should see that your bot has just joined.
 
@@ -577,11 +584,11 @@ We then retrieve the value of the `DISCORD_TOKEN` environment variable, which we
 
 However, the first event we're interested in is not a command. The [`on_ready()`](https://discordpy.readthedocs.io/en/stable/api.html#discord.on_ready) event will trigger when our bot logs onto Discord (the `@bot.event` [decorator](https://realpython.com/primer-on-python-decorators/) ensures this). All this event will do is print a message to our repl's console, telling us that the bot has connected.
 
-Note that we've prepended `async` to the function definition – this makes our `on_ready()` function into a [coroutine](https://docs.python.org/3/library/asyncio-task.html). Co-routines are largely similar to functions, but may not execute immediately, and must be invoked with the `await` keyword. Using co-routines makes our program [asynchronous](https://realpython.com/async-io-python/#the-10000-foot-view-of-async-io), which means it can continue executing code while waiting for the results of a long-running function, usually one that depends on input or output. If you've used JavaScript before, you'll recognize this style of programming.
+Note that we've prepended `async` to the function definition – this makes our `on_ready()` function into a [coroutine](https://docs.python.org/3/library/asyncio-task.html). Coroutines are largely similar to functions, but may not execute immediately, and must be invoked with the `await` keyword. Using co-routines makes our program [asynchronous](https://realpython.com/async-io-python/#the-10000-foot-view-of-async-io), which means it can continue executing code while waiting for the results of a long-running function, usually one that depends on input or output. If you've used JavaScript before, you'll recognize this style of programming.
 
 The final line in our file starts the bot, providing `DISCORD_TOKEN` to authenticate it. Run your repl now to see it in action. Once it's started, return to your Discord server. You should see that your bot user is now online.
 
-![](/images/author/online-bot.png)
+![Online bot](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/online-bot.png)
 
 ## Handling user commands
 
@@ -605,7 +612,7 @@ async def create(ctx, name=None):
 
 ```
 
-The `@bot.command` decorator will ensure that our function is invoked when a user types a message starting with `!create`. We also use it to define some help text – the commands extension provides a default `!help` command, and each command we define can two types of explanatory text:
+The `@bot.command` decorator will ensure that our function is invoked when a user types a message starting with `!create`. We also use it to define some help text – the commands extension provides a default `!help` command, and each command we define can have two types of explanatory text:
 
 * `brief`: a short description of the command that will show alongside other defined commands when the user types `!help`.
 * `help`: a longer description of the command that will show when the user types `!help name_of_command`. 
@@ -657,7 +664,7 @@ Next, we'll implement the `!status` command, which players will use to view thei
 
 Embeds are usually used to provide link previews, but can also be constructed from scratch, providing a powerful tool for bots to display richly formatted information of any kind. This is what our embed will look like:
 
-![](/images/author/status-embed.png)
+![Status embed](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/status-embed.png)
 
 Add the following function below the definition `create()`:
 
@@ -743,7 +750,7 @@ Finally, we'll return the embed.
 
 Run your repl now, and then switch tabs to your Discord server. Create a character with `!create` and view its status with `!status`.
 
-![](/images/author/create-character.png)
+![Create character](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/create-character.png)
 
 ### Battles
 
@@ -869,7 +876,7 @@ Once again, this function loads the character, checks that the game mode is appr
 
 Rerun your repl and try hunting, fighting and fleeing.
 
-![](/images/author/hunt-and-fight.png)
+![Hunt and fight](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/hunt-and-fight.png)
 
 ### Leveling up
 
@@ -922,7 +929,7 @@ Finally, we call the character's `level_up()` method and report on its results:
 
 Rerun your repl and test this out. If you'd prefer to avoid grinding, edit your character creation code temporarily to increase the initial amount of XP.
 
-![](/images/author/levelup.png)
+![Level up](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/levelup.png)
 
 ### Character death
 
@@ -971,4 +978,4 @@ Discord bot code can be hosted on Replit permanently, but you'll need to use an 
 
 You can find our repl below:
 
-!!!repl embed
+<iframe height="400px" width="100%" src="https://replit.com/@ritza/DiscordRPG?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

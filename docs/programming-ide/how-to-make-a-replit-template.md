@@ -21,7 +21,6 @@ Other templates have been created by community members, like this one:
 <img 
     src="https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/template-community.png" 
     alt="Community Replit template"
-    style={{ width: "33%" }}
 />
 
 
@@ -76,7 +75,7 @@ When you fork the template, the npm packages in the `package.json` file are auto
 
 ### Setting up the development server
 
-To get the dev server template working in Replit, we needed to add a `vite.config.js` file and configure it to conditionally determine the configuration options based on the Vite command used: `dev`, `serve`, or `build`. You can read more about conditional Vite configuration in the [Vite docs](https://docs.replit.com/hosting/deploying-http-servers).
+To get the dev server template working in Replit, we needed to add a `vite.config.js` file and configure it to conditionally determine the configuration options based on the Vite command used: `dev` / `serve` or `build`. You can read more about conditional Vite configuration in the [Vite docs](https://vitejs.dev/config/#conditional-config).
 
 
 ### Configuring the "Run" button
@@ -86,7 +85,6 @@ The `.replit` file is used to determine what the repl "Run" button will do. The 
 <img
  src="https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/show-hidden.png"
  alt="Community Replit template"
- style={{ width: "33%" }}
 />
 
 The "Run" button is initially configured to run the dev server. You can see this in the `.replit` file:
@@ -140,7 +138,6 @@ This will create a zip file named `myPhaserGameDownload.zip` in the file tree. Y
 <img
  src="https://replit-docs-images.bardia.repl.co/images/programming-ide/creating-a-template/file-download.png"
  alt="Download zip"
- style={{ width: "40%" }}
 />
 
 To create the zip file, the Nix `zip` package is added to the repl. It's used to create a zip folder of your production bundle that you can download. If you have a repl that does not have the `zip` package installed and try to use the `zip` command in the "Shell" tab, you will get the following message in the shell:

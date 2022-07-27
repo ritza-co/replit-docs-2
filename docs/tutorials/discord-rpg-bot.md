@@ -5,12 +5,12 @@ title: Discord RPG bot with Python
 
 # Create a Discord RPG bot with Python
 
-In this tutorial, we'll create a text-based RPG that users of a [Discord](https://discord.com) server can play by entering special commands. Users will be able to create characters, fight enemies and earn experience and gold which they can use to develop their skills and buy powerful items.
+In this tutorial, we'll create a text-based RPG that users of a [Discord](https://discord.com) server can play by entering special commands. Users will be able to create characters, fight enemies, and earn experience and gold, which they can use to develop their skills and buy powerful items.
 
 By the end of this tutorial, you will have:
 
 * Used [discord.py](https://discordpy.readthedocs.io/en/stable/) to create an RPG that can be added to any Discord server, and which can be expanded as you see fit.
-* Used Replit DB to store information about the game world through serialization.
+* Used Replit Database to store information about the game world through serialization.
 * Created a custom Discord message embed.
 * Hosted your own Discord bot on Replit!
 
@@ -26,20 +26,20 @@ Before we dive into writing code, it's worth taking a moment to think about how 
 
 Players will start the game by creating a character, whom they can name. This character will have the following:
 
-* Hitpoints to determine how much damage they can take
-* Attack and defense skills to determine how they fare in battle
-* A level and experience points
-* Mana for casting spells
-* An inventory for collecting items
-* Gold for purchasing items
+* Hitpoints to determine how much damage they can take.
+* Attack and defense skills to determine how they fare in battle.
+* A level and experience points.
+* Mana for casting spells.
+* An inventory for collecting items.
+* Gold for purchasing items.
 
-Characters will gain experience and gold for fighting and defeating enemies. They will be able to seek out enemies and battle them. In battle mode, they will be able to fight, use an item or flee if it doesn't look like they're going to win. Battles will continue until one participant runs out of hitpoints, or until the player's character flees.
+Characters will gain experience and gold for fighting and defeating enemies. They will be able to seek out enemies and battle them. In battle mode, they will be able to fight, use an item, or flee if it doesn't look like they're going to win. Battles will continue until one participant runs out of hitpoints, or until the player's character flees.
 
 At the end of a successful battle, characters will gain experience points and gold, based on the strength of the defeated enemy. If a character is defeated in battle, they will die and the player will have to create a new character.
 
-At certain thresholds of experience points, characters will level up. Every time a player levels up their character, they will be able to choose to increase the character's hitpoints, attack, defense or mana.
+At certain thresholds of experience points, characters will level up. Every time a player levels up their character, they will be able to choose to increase the character's hitpoints, attack, defense, or mana.
 
-While we've included gold, mana and an inventory in our design, the implementation of these aspects will be left as an exercise for the reader. For this tutorial, we'll focus on implementing battling enemies and leveling up.
+While we've included gold, mana, and an inventory in our design, the implementation of these aspects will be left as an exercise for the reader. For this tutorial, we'll focus on implementing battling enemies and leveling up.
 
 To facilitate the above, our game will need two modes:
 
@@ -51,14 +51,14 @@ We will also need a few commands for players to take game actions:
 * `!create <name>`: Create a new character with the name provided.
 * `!status`: Display the character's current hitpoints, level, carried items, and other information.
 * `!die`: Destroy the current character.
-* `!hunt`: (in adventure mode) Seek out an enemy to fight.
-* `!fight`: (in battle mode) Attack an enemy.
-* `!flee`: (in battle mode) Flee from a battle.
-* `!levelup <stat>`: (in adventure mode) Advance to the next level if enough XP is available, increasing the provided stat (hitpoints, attack, defense, mana).
+* `!hunt`: (In adventure mode) seek out an enemy to fight.
+* `!fight`: (In battle mode) attack an enemy.
+* `!flee`: (In battle mode) flee from a battle.
+* `!levelup <stat>`: (In adventure mode) advance to the next level if enough XP is available, increasing the provided stat (hitpoints, attack, defense, mana).
 
 ## Game classes
 
-Before we start on the Discord code, let's create some classes to represent the characters, enemies, modes and items in our game. In your repl, create a new file named `game.py` and add the following import code to it:
+Before we start on the Discord code, let's create some classes to represent the characters, enemies, modes, and items in our game. In your repl, create a new file named `game.py` and add the following import code to it:
 
 ```python
 from replit import db
@@ -70,7 +70,7 @@ from copy import deepcopy
 
 We're pulling in the [Python library](https://replit-py.readthedocs.io/en/latest/db_tutorial.html) for [Replit Database](https://docs.replit.com/hosting/database-faq), a persistent key-value store attached to every repl. If you haven't used this before, think of it as a Python dictionary with contents that persist between restarts of your repl. We'll be using it to store the state of our game and its characters as they fight enemies and level up.
 
-Additionally, we're importing the Python built-in libraries [`enum`](https://docs.python.org/3/library/enum.html), [`random`](https://docs.python.org/3/library/random.html), [`sys`](https://docs.python.org/3/library/sys.html) as well as [`deepcopy()`](https://docs.python.org/3/library/copy.html#copy.deepcopy) from [`copy`](https://docs.python.org/3/library/copy.html). These will provide a number of helpful utilities we'll use while building our game.
+Additionally, we're importing the Python built-in libraries [`enum`](https://docs.python.org/3/library/enum.html), [`random`](https://docs.python.org/3/library/random.html), [`sys`](https://docs.python.org/3/library/sys.html), and [`deepcopy()`](https://docs.python.org/3/library/copy.html#copy.deepcopy) from [`copy`](https://docs.python.org/3/library/copy.html). These will provide a number of helpful utilities we'll use while building our game.
 
 First off, we'll use [`enum.IntEnum`](https://docs.python.org/3/library/enum.html#enum.IntEnum) to enumerate our game modes. Add the following code below your imports:
     
@@ -103,7 +103,7 @@ Next, we'll create classes for living creatures, such as players' characters and
       `--------'   `------'
 ```
 
-Let's start by implementing our parent class, `Actor`. This class will define all of the attributes, characters and enemies have in common and implement a `fight()` method. Add the following code at the bottom of `game.py`:
+Let's start by implementing our parent class, `Actor`. This class will define all of the attributes that characters and enemies have in common and implement a `fight()` method. Add the following code at the bottom of `game.py`:
 
 ```python
 # Living creatures
@@ -133,7 +133,7 @@ class Actor:
 
 Our `__init__()` method defines several variables per our game design specification above. Note that we've defined both `hp` and `max_hp`: these should be the same value when we first create a character or enemy class, but will diverge for characters and enemies we read from the database. Once we get into the game logic, we will be recreating instances of these classes from the database constantly.
 
-Also note that `self.xp` will represent something slightly different in characters and enemies: for characters, it will be the cumulative experience points earned, whereas for enemies it will be the amount of XP rewarded to characters when the enemy is defeated. A more complex design might instead enable enemies to gain experience points and level up like player characters.
+Also note that `self.xp` will represent something slightly different in characters and enemies: For characters, it will be the cumulative experience points earned, whereas for enemies it will be the amount of XP rewarded to characters when the enemy is defeated. A more complex design might instead enable enemies to gain experience points and level up like player characters.
 
 The `fight()` method takes `other`, an instance of a class that inherits from `Actor`. The attack is simulated by first calculating the chance to hit based on the opponent's `defense` attribute. If `chance_to_hit` is 0, the attack will miss. The likelihood of a miss happening increases in probability as the `defense` value increases. For example, an attack will have a 95% chance of succeeding against an enemy with a `defense` of 1, but only a 50% chance of succeeding against an enemy with `defense` of 19. We use Python's built-in `min()` function to cap the value of `defense` at 19, to avoid creating a completely invulnerable character.
 
@@ -227,7 +227,7 @@ class Dragon(Enemy):
         super().__init__("🐉 Dragon", 10, 6, 2, 5, 5) # HP, attack, defense, XP, gold
 ```
 
-In addition to providing names and hardcoded HP, attack, defense, XP and gold values, we've implemented `min_level` as a class variable. This specifies the minimum level the player must be to face this enemy. By implementing this, we avoid having low-level players die instantly against too-powerful enemies and ensure that new enemies will show up as the player levels up, creating a sense of progression. Feel free to change any of these enemies, or add your own.
+In addition to providing names and hardcoded HP, attack, defense, XP, and gold values, we've implemented `min_level` as a class variable. This specifies the minimum level the player must be to face this enemy. By implementing this, we avoid having low-level players die instantly against too-powerful enemies and ensure that new enemies will show up as the player levels up, creating a sense of progression. Feel free to change any of these enemies, or add your own.
 
 ## Saving and loading from the database
 
@@ -250,7 +250,7 @@ class Character(Actor):
         db["characters"][self.user_id] = character_dict
 ```
 
-At the top of `game.py`, we imported `db` from the `replit` Python library – this object provides an interface to our repl's database. `db` is designed to be used like a dictionary, so we can create keys and values as we would with any other dictionary. Our database layout will look like this:
+At the top of `game.py`, we imported `db` from the `replit` Python library – this object provides an interface to our repl's database. The `db` object is designed to be used like a dictionary, so we can create keys and values as we would with any other dictionary. Our database layout will look like this:
 
 ```
 {
@@ -270,11 +270,11 @@ At the top of `game.py`, we imported `db` from the `replit` Python library – t
 }
 ```
 
-The [`vars()` function](https://docs.python.org/3/library/functions.html#vars) is a Python built-in that returns the value of `__dict__` for any class, module or instance we pass to it. For most instances, this will be a dictionary containing that instance's attributes. In the case of our `Character` object, the dictionary will contain all of the attributes we defined in `__init__`. We use [`deepcopy()`](https://docs.python.org/3/library/copy.html#copy.deepcopy) to make a full copy of this dictionary. 
+The [`vars()` function](https://docs.python.org/3/library/functions.html#vars) is a Python built-in that returns the value of `__dict__` for any class, module, or instance we pass to it. For most instances, this will be a dictionary containing that instance's attributes. In the case of our `Character` object, the dictionary will contain all of the attributes we defined in `__init__`. We use [`deepcopy()`](https://docs.python.org/3/library/copy.html#copy.deepcopy) to make a full copy of this dictionary. 
 
-Any attributes that contain strings, numbers, boolean values or even lists or dictionaries can be easily and meaningfully stored in our repl's database. Attributes that reference instances of our custom classes cannot be usefully stored, as the referenced instance may not exist the next time the data is loaded. `deepcopy()` alone does not solve this problem. Thus, we need to store the object referenced by `battling` as a dictionary of its attributes using `vars()`, just like we did for the `Character` instance itself.
+Any attributes that contain strings, numbers, boolean values, or even lists or dictionaries can be easily and meaningfully stored in our repl's database. Attributes that reference instances of our custom classes cannot be usefully stored, as the referenced instance may not exist the next time the data is loaded. The `deepcopy()` operation alone does not solve this problem. Thus, we need to store the object referenced by `battling` as a dictionary of its attributes using `vars()`, just like we did for the `Character` instance.
 
-However, we have a slight problem: while we can store the attributes of the enemy, this way we're not storing its class. There are a few ways we could go resolve this issue – the easiest one is to store the instance's class name as an attribute. Go to your `Enemy` class's `__init__()` method and add the following line:
+However, we have a slight problem: While we can store the attributes of the enemy, this way we're not storing its class. There are a few ways we could resolve this issue – the easiest one is to store the instance's class name as an attribute. Go to your `Enemy` class's `__init__()` method and add the following line:
 
 ```python
 class Enemy(Actor):
@@ -322,9 +322,9 @@ class Character(Actor):
 
 This code converts the value of the `enemy` attribute we created above from a string into a class, initializes a copy of that class, and then calls `rehydrate`, unpacking the `battling` dictionary as its arguments. We'll write both the `str_to_class` function and the `Enemy.rehydrate()` method shortly.
 
-`str_to_class` will take a `string` and return the `class` with its name.
+The `str_to_class` function will take a `string` and return the `class` with its name.
 
-`rehydrate` will set all attributes of the instance to those provided. While we could do this with the `__init__()` method as we did with `Character`, this would force us to specify all our attribute values every time we initialized any subclass of `Enemy`, defeating the point of having subclasses in the first place.
+The `rehydrate` method will set all attributes of the instance to those provided. While we could do this with the `__init__()` method as we did with `Character`, this would force us to specify all our attribute values every time we initialize any subclass of `Enemy`, defeating the point of having subclasses in the first place.
 
 Navigate to the top of `game.py` and create the `str_to_class` function just below your imports, as below:
 
@@ -460,7 +460,7 @@ Let's define `ready_to_level_up()` next:
         return (self.xp >= xp_needed, xp_needed-self.xp) #(ready, XP needed)
 ```
 
-This method merely checks whether the current XP is greater than or equal to ten times the character's level. Characters will need 10 XP to advance to level 2, 20 XP to advance to level 3, etc. The method returns a tuple containing a boolean that indicates whether the character is ready to level up and the amount of XP still needed. As it does not change the character's state, we do not need a call to `save_to_db`.
+This method merely checks whether the current XP is greater than or equal to ten times the character's level. Characters will need 10 XP to advance to level 2, 20 XP to advance to level 3, etc. The method returns a tuple containing a Boolean that indicates whether the character is ready to level up and the amount of XP still needed. As it does not change the character's state, we do not need a call to `save_to_db`.
 
 Now that we're increasing the player's XP and checking whether they're ready to level up, we need a method to level them up. Add the following method:
 
@@ -542,23 +542,23 @@ In a separate tab, return to the [Discord Dev Portal](https://discord.com/develo
 
 1. Click on **OAuth2** in the left sidebar.
 2. In the menu that appears under **OAuth2**, select **URL Generator**.
-4. Under **Scopes**, mark the checkbox labelled *bot*.
-5. Under **Bot Permissions**, mark the checkboxes labelled *Read Messages/View Channels* and *Send Messages*.
+3. Under **Scopes**, mark the checkbox labelled *bot*.
+4. Under **Bot Permissions**, mark the checkboxes labelled *Read Messages/View Channels* and *Send Messages*.
     ![Bot permissions](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/bot-permissions.png)
 
 5. Scroll down and copy the URL under **Generated URL**.
-6. Paste the URL in your browser's navigation bar and hit Enter.
+6. Paste the URL in your browser's navigation bar and hit enter.
 7. On the page that appears, select your server from the drop-down box and click **Continue**.
 8. When prompted about permissions, click **Authorize**, and complete the CAPTCHA.
     ![Bot connect](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/bot-connect.png)
 
-8. Return to your Discord server. You should see that your bot has just joined.
+9. Return to your Discord server. You should see that your bot has just joined.
 
 Now that we've done the preparatory work, it's time to write some code. Return to your repl for the next section.
 
 ## Writing the Discord bot code 
 
-We'll be using [Discord.py](https://discordpy.readthedocs.io/en/stable/) to interface with Discord's API using Python. Open `main.py` in your repl and add the following code:
+We'll be using [discord.py](https://discordpy.readthedocs.io/en/stable/) to interface with Discord's API using Python. Open `main.py` in your repl and add the following code:
 
 ```python
 import os, discord
@@ -578,13 +578,13 @@ async def on_ready():
 bot.run(DISCORD_TOKEN)
 ```
 
-First, we import some Python libraries we'll need, including Discord.py and its [commands extension](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html), as well as our database and the contents of `game.py`.
+First, we import the Python libraries we'll need, including discord.py and its [commands extension](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html), as well as our database and the contents of `game.py`.
 
-We then retrieve the value of the `DISCORD_TOKEN` environment variable, which we set in our repl's secrets tab above. Following that, we instantiate a [`Bot` object](https://discordpy.readthedocs.io/en/stable/ext/commands/api.html#discord.ext.commands.Bot). We'll use this object to listen for Discord events and respond to them. For the most part, we'll be responding to *commands*: messages from users which start with `!` (the `command_prefix` we specified when creating our `Bot` object).
+We then retrieve the value of the `DISCORD_TOKEN` environment variable, which we set in our repl's Secrets tab above. Following that, we instantiate a [`Bot` object](https://discordpy.readthedocs.io/en/stable/ext/commands/api.html#discord.ext.commands.Bot). We'll use this object to listen for Discord events and respond to them. For the most part, we'll be responding to *commands*: messages from users which start with `!` (the `command_prefix` we specified when creating our `Bot` object).
 
 However, the first event we're interested in is not a command. The [`on_ready()`](https://discordpy.readthedocs.io/en/stable/api.html#discord.on_ready) event will trigger when our bot logs onto Discord (the `@bot.event` [decorator](https://realpython.com/primer-on-python-decorators/) ensures this). All this event will do is print a message to our repl's console, telling us that the bot has connected.
 
-Note that we've prepended `async` to the function definition – this makes our `on_ready()` function into a [coroutine](https://docs.python.org/3/library/asyncio-task.html). Coroutines are largely similar to functions, but may not execute immediately, and must be invoked with the `await` keyword. Using co-routines makes our program [asynchronous](https://realpython.com/async-io-python/#the-10000-foot-view-of-async-io), which means it can continue executing code while waiting for the results of a long-running function, usually one that depends on input or output. If you've used JavaScript before, you'll recognize this style of programming.
+Note that we've prepended `async` to the function definition – this makes our `on_ready()` function into a [coroutine](https://docs.python.org/3/library/asyncio-task.html). Coroutines are largely similar to functions, but may not execute immediately, and must be invoked with the `await` keyword. Using coroutines makes our program [asynchronous](https://realpython.com/async-io-python/#the-10000-foot-view-of-async-io), which means it can continue executing code while waiting for the results of a long-running function, usually one that depends on input or output. If you've used JavaScript before, you'll recognize this style of programming.
 
 The final line in our file starts the bot, providing `DISCORD_TOKEN` to authenticate it. Run your repl now to see it in action. Once it's started, return to your Discord server. You should see that your bot user is now online.
 
@@ -592,9 +592,9 @@ The final line in our file starts the bot, providing `DISCORD_TOKEN` to authenti
 
 ## Handling user commands
 
-Now we can start writing the handlers for our game's actions, such as `!create`, `!hunt` and `!fight`.
+Now we can start writing the handlers for our game's actions, such as `!create`, `!hunt`, and `!fight`.
 
-The Discord.py commands extension allows us to define command handlers using the `@bot.command` decorator. Without this, we'd have to manually parse the content of all user messages to determine whether a command had been issued, as was necessary for our [role assignment bot tutorial](https://docs.replit.com/tutorials/discord-role-bot).
+The discord.py commands extension allows us to define command handlers using the `@bot.command` decorator. Without this, we'd have to manually parse the content of all user messages to determine whether a command has been issued, as was necessary for our [role assignment bot tutorial](https://docs.replit.com/tutorials/discord-role-bot).
 
 ### Character creation
 
@@ -614,14 +614,14 @@ async def create(ctx, name=None):
 
 The `@bot.command` decorator will ensure that our function is invoked when a user types a message starting with `!create`. We also use it to define some help text – the commands extension provides a default `!help` command, and each command we define can have two types of explanatory text:
 
-* `brief`: a short description of the command that will show alongside other defined commands when the user types `!help`.
-* `help`: a longer description of the command that will show when the user types `!help name_of_command`. 
+* `brief`: A short description of the command that will show alongside other defined commands when the user types `!help`.
+* `help`: A longer description of the command that will show when the user types `!help name_of_command`. 
 
 In the absence of `brief`, the `help` text will be used in both cases, though it may be truncated for the output of `!help`.
 
 Our `create` function takes two parameters:
 
-* `ctx`: This is the *invocation context*, a special object containing information such as the user who called the command, the server it was called in and the files attached to the calling message if any. All commands must take this parameter.
+* `ctx`: This is the *invocation context*, a special object containing information such as the user who called the command, the server it was called in, and the files attached to the calling message if any. All commands must take this parameter.
 * `name`: This will be the name for the character we're creating and is an optional parameter.
 
 The function body retrieves the Discord user ID of the user who issued the `!create` command. It then checks whether a `name` parameter was provided. If not, it sets `name` to the name of the user.
@@ -660,7 +660,7 @@ After creating and saving a new character, or failing to do so, this code sends 
 
 ### Character status
 
-Next, we'll implement the `!status` command, which players will use to view their character's current statistics, inventory and game mode. To convey this information compactly and attractively, we'll use an [embed](https://python.plainenglish.io/send-an-embed-with-a-discord-bot-in-python-61d34c711046) rather than a plain Discord message.
+Next, we'll implement the `!status` command, which players will use to view their character's current statistics, inventory, and game mode. To convey this information compactly and attractively, we'll use an [embed](https://python.plainenglish.io/send-an-embed-with-a-discord-bot-in-python-61d34c711046) rather than a plain Discord message.
 
 Embeds are usually used to provide link previews, but can also be constructed from scratch, providing a powerful tool for bots to display richly formatted information of any kind. This is what our embed will look like:
 
@@ -709,7 +709,7 @@ def status_embed(ctx, character):
 
 Just above the function definition, we've created a dictionary that maps game modes to colors. We'll use this to change the color of the vertical bar on the left side of the embed.
 
-In the function itself, we first check the game mode. This will determine the embed's description text, a paragraph that appears just below the embed's title. Once that's done, we create the embed with [`discord.Embed`](https://discordpy.readthedocs.io/en/stable/api.html#discord.Embed), setting the title, description and color. We then use [`set_author()`](https://discordpy.readthedocs.io/en/stable/api.html#discord.Embed.set_author) to include the calling user's name and profile picture at the top of the embed.
+In the function itself, we first check the game mode. This will determine the embed's description text, a paragraph that appears just below the embed's title. Once that's done, we create the embed with [`discord.Embed`](https://discordpy.readthedocs.io/en/stable/api.html#discord.Embed), setting the title, description, and color. We then use [`set_author()`](https://discordpy.readthedocs.io/en/stable/api.html#discord.Embed.set_author) to include the calling user's name and profile picture at the top of the embed.
 
 Next, we will construct the embed's [`fields`](https://discordpy.readthedocs.io/en/stable/api.html#discord.Embed.fields). You can think of these as individual text boxes, which will be displayed below the description. We'll start with a stats field:
 
@@ -771,7 +771,7 @@ async def hunt(ctx):
     await ctx.message.reply(f"You encounter a {enemy.name}. Do you `!fight` or `!flee`?")
 ```
 
-This function is fairly simple: we load the character, ensure they're not currently in a battle, call the `hunt()` to generate a random enemy and reply to the player with a message about what they're fighting and which commands they can use.
+This function is fairly simple: We load the character, ensure they're not currently in a battle, call `hunt()` to generate a random enemy, and reply to the player with a message about what they're fighting and which commands they can use.
 
 Next, we'll implement `!fight`:
 
@@ -840,7 +840,7 @@ Next, we need some code to check whether the player character was killed in the 
         return
 ```
 
-Here we delete the character from the database, send a message of condolences and return from the function.
+Here we delete the character from the database, send a message of condolences, and return from the function.
 
 The last case we need to handle is the most common one, where neither the player nor their enemy has died. We'll deal with this by sending a final message to close out this round of fighting.
 
@@ -874,7 +874,7 @@ async def flee(ctx):
 
 Once again, this function loads the character, checks that the game mode is appropriate for the invoked command, and then invokes the appropriate method in `Character`. We finish off the function by providing for three possible outcomes of an attempt to flee: the character dies, the character flees taking damage, and the character flees unscathed.
 
-Rerun your repl and try hunting, fighting and fleeing.
+Rerun your repl and try hunting, fighting, and fleeing.
 
 ![Hunt and fight](https://replit-docs-images.bardia.repl.co/images/tutorials/discord-rpg-bot/hunt-and-fight.png)
 
@@ -915,7 +915,7 @@ Next, we need to parse the value of `increase`. Add the following code to your f
         increase = "defense"
 ```
 
-We're allowing players to increase their characters' HP, attack or defense stats only. To make our game as user-friendly as possible, we accept a few different words for each of those stats.
+We're allowing players to increase their characters' HP, attack, or defense stats only. To make our game as user-friendly as possible, we accept a few different words for each of those stats.
 
 Finally, we call the character's `level_up()` method and report on its results:
 
